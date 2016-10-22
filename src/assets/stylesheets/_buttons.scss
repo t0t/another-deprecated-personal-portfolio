@@ -4,24 +4,37 @@
 
 /*
    Default button
-   ========================================================================== */
-
+   ========================================================== */
+.front {
+  background-color: red;
+}
+.face {
+  backface-visibility: hidden;
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: blue;
+}
 .btn {
   /* default button */
   display: inline-block;
   margin-bottom: 0.25em;
   padding: ($spacing-unit/1.5) ($spacing-unit);
   color: $black;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+  font-size: fs(normal);
+  @extend %altfont_angle;
+  letter-spacing: 3px;
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  border: 1px solid $black;
-  // border: 0 !important;
-  // border-radius: $border-radius;
   cursor: pointer;
-  // background-color: $color_alt;
+  background-color: $color-cool;
+
+  // transform: rotate3d(1, 1, 1, 348deg);
+
+  // transform: perspective(250px);
+
+  backface-visibility: visible;
 
   &:active {
     // move button slightly on click
@@ -31,7 +44,15 @@
   &:hover {
     color: $black;
     background-color: $color-cool;
-    border-color: $color-cool; 
+    border-color: $color-cool;
+
+    @media screen and (min-width: 768px) {
+      // transform: rotateY(180deg);
+      transform: rotate3d(1, 1, 0, 360deg);
+    }
+    @media screen and (min-width: 1430px) {
+      // line-height: $line-height-base - 0.8;
+    }
   }
 
   .icon {

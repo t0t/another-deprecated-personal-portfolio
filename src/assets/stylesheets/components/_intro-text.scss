@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: ($base_spacing) $base_spacing * 4;
+  padding: ($base_spacing) $base_spacing * 3;
   // background-color: $lighter-gray;
   letter-spacing: 3px;
 
@@ -50,7 +50,16 @@
 
   dt {
     @extend %altfont_angle; //fuente alternativa + angulo
+    line-height: 1.25;
     font-size: fs(x-normal);
+
+    @media screen and (min-width: 375px) {
+      // font-size: fs(colosal);
+    }
+  }
+
+  dd {
+    margin-left: $spacing-unit;
   }
 
   p {

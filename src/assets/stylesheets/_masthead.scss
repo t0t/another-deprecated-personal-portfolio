@@ -84,12 +84,14 @@
 }
 
 .masthead__menu-item {
-  position: relative;
+  // position: relative;
   display: block;
-  padding: 3px 12px;
+  padding: 3px 6px;
   text-transform: uppercase;
-  border-radius: $spacing-unit / 2;
-  letter-spacing: 2px;
+  font-family: 'Permanent Marker', cursive;
+  transform: rotate(-6deg);
+  letter-spacing: 1px;
+  font-size: fs(small) + 0.4;
 
   &.active {
     color: $color_alt5 !important;

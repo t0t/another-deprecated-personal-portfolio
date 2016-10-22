@@ -72,11 +72,12 @@
 
   @media screen and (min-width: 756px) {
     font-size: fs(huge);
-    line-height: $line-height-base - 0.50;
+    line-height: $line-height-base - 0.70;
     max-width: 700px;
   }
   @media screen and (min-width: 1430px) {
     font-size: fs(x-huge);
+    line-height: $line-height-base - 0.80;
   }
 }
 

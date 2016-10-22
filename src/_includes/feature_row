@@ -44,9 +44,10 @@
           {% endif %}
 
           {% if f.url %}
-            <p>
-              <a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
-            </p>
+              <a href="{{ f_url }}" class="face front btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}
+              </a>
+
+              <p class="face  back">hola</p>
           {% endif %}
 
         </div>

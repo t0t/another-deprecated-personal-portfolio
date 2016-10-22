@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /
-title: "Prototipos vivos con enfoque holístico"
+title: "T-O-D-H: Prototipos vivos con enfoque holístico"
 subtitle: "Transmite. Observa. Define. ¡Haz!"
 excerpt: "Proceso ideas y las llevo a productos mínimos viables reales que evolucionan."
 date: 2014-06-01
@@ -53,7 +53,7 @@ video:
   - url: '{::nomarkdown}<video>(external video embed code)</video>{:/nomarkdown}'
 
 introText:
-  - header: "Sergio Forés"
+  - header: "by Sergio Forés"
     description: "La espontaneidad permite poner a funcionar en combinación todo aquello que somos ahora"
     p: "Descubrir tesoros escondidos en lo obvio"
     small: "( Porque todo está vivo )"
@@ -63,11 +63,11 @@ introText:
     url: "url"
     list:
       - title: "Me gusta hacer:"
-      - item: "Wireframes"
-      - item: "Prototipado"
-      - item: "VISUAL DESIGN"
-      - item: "CSS / Sass"
-      - item: "Html templating"
+      - item: "-Wireframes"
+      - item: "-Prototipado"
+      - item: "-VISUAL DESIGN"
+      - item: "-CSS / Sass"
+      - item: "-Html templating"
 
   - header: "Experimentar y transmutar el error"
     description: "Decir, sentir, hacer, pensar en coherencia"
