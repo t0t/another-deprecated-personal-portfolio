@@ -26,7 +26,7 @@ feature_row:
     btn_label: "¿Hablamos?"
 
   - image_path:
-    img_as_bg: true
+    img_as_bg: false
     alt: "Descubrir la forma de las ideas"
     title: "Descubrir y actuar pronto"
     excerpt: "Tengo claro que buenas semillas hacen buenos árboles."
@@ -34,7 +34,7 @@ feature_row:
     btn_label: "Algunos proyectos"
 
   - image_path:
-    img_as_bg: true
+    img_as_bg: false
     alt: "TODH, mi visión"
     title: "Descifrar y comprender"
     excerpt: "Hablo de teorías, conceptos, herramientas, estrategias y maneras de pensar la realidad"
