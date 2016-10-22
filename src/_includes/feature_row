@@ -1,0 +1,58 @@
+{% include base_path %}
+
+{% if include.id %}
+  {% assign feature_row = page.[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+  {% for f in feature_row %}
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | prepend: base_path }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}"
+    {% if f.img_as_bg %}style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');"{% endif %}>
+
+        {% if f.image_path and f.img_as_bg != true %}
+          <div class="archive__item-teaser " accesskey="" style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');">
+            <!-- <img src=
+              {% if f.image_path contains "://" %}
+                "{{ f.image_path }}"
+              {% else %}
+                "{{ f.image_path | prepend: "/assets/images/" | prepend: base_path }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}"> -->
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body">
+
+          {% if f.title %}
+            <h1 class="archive__item-title">{{ f.title }}</h1>
+          {% endif %}
+
+          {% if f.excerpt %}
+            <h2 class="archive__item-excerpt">
+              {{ f.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+            </h2>
+          {% endif %}
+
+          {% if f.url %}
+            <p>
+              <a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+            </p>
+          {% endif %}
+
+        </div>
+
+    </div>
+
+  {% endfor %}
+
+</div>

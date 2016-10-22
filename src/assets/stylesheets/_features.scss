@@ -1,0 +1,39 @@
+/* ==========================================================================
+   FEATURES / SERVICES Ideal for cover, homepages...
+   ========================================================================== */
+
+.feature {
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $spacing-unit * 4;
+
+    @media screen and (min-width: 975px) {
+      // flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    flex: 1 100%;
+    // min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: inherit;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 600px;
+
+    // &:nth-child(2) {}
+
+    @media screen and (min-width: 769px) {
+      background-attachment: fixed;
+    }
+    @media screen and (min-width: 475px) {
+      // background-size: contain;
+    }
+  }
+
+}

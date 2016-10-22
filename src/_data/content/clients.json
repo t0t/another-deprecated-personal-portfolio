@@ -1,0 +1,57 @@
+[
+
+  {
+    "client_name": "TENTORIUM ENERGY S.L",
+    "client_id": "0001",
+    "cif": "B65483711",
+    "address": "C/ Mayor, 4",
+    "phone": "",
+    "invoices": [
+      {
+        "invoice": "15012",
+        "date": "26-11-015",
+        "description": "Web Design",
+        "tasks": {
+          "id": "Tareas diseño/desarrollo web",
+          "time": 83,
+          "price": 15,
+          "is_taxed": true
+        },
+        "discount": 0
+      },
+      {
+        "invoice": "0002",
+        "date": "",
+        "description": "",
+        "tasks": {
+          "id": "",
+          "time": "",
+          "price": "",
+          "is_taxed": true
+        },
+        "discount": 0
+      }
+    ]
+  },
+  {
+    "client_name": "Maderlim",
+    "client_id": "0002",
+    "cif": "",
+    "address": "",
+    "phone": "",
+    "invoices": [
+      {
+        "invoice": "",
+        "date": "21/12/16",
+        "description": "Web Design",
+        "tasks": {
+          "id": 1,
+          "time": "83",
+          "price": "15",
+          "is_taxed": true
+        },
+        "discount": 0
+      }
+    ]
+  }
+]

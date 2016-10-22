@@ -1,0 +1,33 @@
+.Widget {
+  padding: $spacing-unit;
+  // width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__title {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  &__list {
+    text-align: left;
+    // border: 1px solid $color-base;
+    border-radius: 5px;
+    padding: $spacing-unit;
+    background-color: $color_alt;
+
+    dd {
+      margin-left: 0;
+    }
+    dt {
+      margin-bottom: $spacing-unit / 1.5;
+      font-weight: bold;
+    }
+  }
+
+  &--list {
+    width: 100%;
+    margin: $spacing-unit 0;
+  }
+}

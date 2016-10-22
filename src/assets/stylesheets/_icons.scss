@@ -1,0 +1,86 @@
+/*
+   Icons
+   ========================================================================== */
+
+.icon {
+  // display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1.1em;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+
+  &.spin {
+    animation: spin 2s infinite linear;
+  }
+
+  &--todh {
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--linkedin {
+    color: $linkedin-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--flickr {
+    color: $flickr-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--instagram {
+    color: $instagram-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--youtube {
+    color: $youtube-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--twitter {
+    color: $twitter-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--tumblr {
+    color: $tumblr-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--facebook {
+    color: $facebook-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--codepen {
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--github {
+    color: $github-color;
+    fill: none;
+    width: 100%;
+    height: 100%;
+  }
+}

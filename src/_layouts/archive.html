@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% include masthead.html %}
+{% include browser-upgrade.html %}
+
+<div class="main" role="main">
+
+  <header class="container page-header">
+
+    <h1 class="page-title">{{ page.title }}</h1>
+
+    {% if page.excerpt %}
+      <h2 class="page-excerpt">
+        {{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}
+      </h2>
+    {% endif %}
+
+    {% include breadcrumbs.html %}
+
+  </header>
+
+  {% if page.feature.visible == true %}
+    {% include featured.html %}
+  {% endif %}
+
+  <div class="container post__content">
+
+    {% unless page.fullwidth == true %}
+    <div class="post__inner-wrapper">
+    {% endunless %}
+
+    <section class="post__body">
+      {{ content }}
+    </section>
+
+  </div>
+
+  {% if page.tiles == true %}
+  {% include archive__tiles.html %}
+  {% endif %}
+
+  {% if page.author != false %}
+  <footer class="post__footer">
+    {% include post__author.html %}
+  </footer>
+  {% endif %}
+
+</div>
+
+{% include colophon.html %}

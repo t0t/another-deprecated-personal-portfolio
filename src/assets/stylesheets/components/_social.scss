@@ -1,0 +1,31 @@
+.social {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  margin-bottom: 0;
+  max-width: 400px;
+
+  li {
+    @extend %altfont_angle; //fuente alternativa + angulo
+    text-transform: uppercase;
+    font-size: fs(x-small);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: $spacing-unit;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

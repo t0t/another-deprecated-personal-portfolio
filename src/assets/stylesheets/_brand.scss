@@ -1,0 +1,45 @@
+.brand {
+  display: flex;
+  align-items: center;
+  padding-right: $spacing-unit /2;
+
+  &__name {
+    color: $black;
+    font-size: inherit;
+    margin-left: $spacing-unit/2;
+    display: none;
+
+    @media screen and (min-width: 450px) {
+      // display: block;
+    }
+  }
+
+  a {
+    height: 26px;
+  }
+
+  svg {
+    // padding-right: $spacing-unit / 2;
+    path {
+      fill: none;
+      stroke: $black;
+      stroke-width: 2;
+      stroke-dashoffset: 50;
+      stroke-dasharray: 50;
+      stroke-width: 1;
+    }
+  }
+
+  &__logo {
+    background-color: red;
+  }
+
+  .efecto--stroke-logo {
+    animation-name: efecto-stroke-dashoffset;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+}

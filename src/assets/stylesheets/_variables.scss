@@ -1,0 +1,180 @@
+/* ==========================================================================
+   SCSS VARIABLES
+   ========================================================================== */
+
+
+/*
+Global variables
+========================================================================== */
+
+// Lines
+$fino                         : 1px;
+$medio                        : 2px;
+$base_line                    : 3px;
+$extra                        : 10px;
+
+
+/*
+   Typography related variables
+   ========================================================================== */
+
+$font_main  : "Open Sans", "Arial", sans-serif;
+// $font_alt   : "Shadows Into Light", cursive;
+$font_alt   : "Permanent Marker", cursive;
+
+$serif                        : "Playfair Display", serif;
+$sans-serif                   : 'Open Sans', "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
+$sans-serif-narrow            : $sans-serif, sans-serif;
+$monospace                    : Monaco, Consolas, "Lucida Console", monospace;
+
+$doc-font-size                : 16;
+$doc-line-height              : 24;
+
+$border-radius                : 4px;
+
+// Base
+$padding_base: 40px;
+$line-height-base: 1.7;
+$font_size: 12px;
+
+/*
+   Spacing variables
+   ========================================================================== */
+   $base_spacing: 25px;
+   $spacing-unit                 : $base_spacing;
+
+
+/*
+   Color variables
+   ========================================================================== */
+$color_alt                    : seashell;
+$color_alt2                   : rgb(129, 232, 179);
+$color_alt3                   : rgba(255, 0, 243, 0.38);
+$color_alt4                   : rgba(129, 232, 179, .7);
+$color_alt5                   : rgba(0, 0, 255, 0.5);
+$color_alt6                   : rgb(100, 100, 0);
+
+$white                        : #fff;
+$black                        : #000;
+
+$gray                         : #808080;
+$dark-gray                    : #191413;
+$light-gray                   : rgba(0,0,0,.5);
+$lighter-gray                 : #f9f9f9;
+
+$text-color                   : $black;
+// $headline-color               : $gray;
+$headline-color               : $color_alt3;
+
+$background-color             : $white;
+
+$highlighter-color            : #f3bc15;
+
+// $background-color3         : rgb(183,131,109);
+$color-cool                   : rgb(129,232,179);
+$brand-color                  : $black;
+$color_headers                : $color_alt3;
+// $color-cool                : rgb(224,108,117);
+
+
+$primary-color                : mix($black, $gray, 35%);
+$success-color                : mix($gray, rgb(129,232,179), 15%);
+$warning-color                : mix($gray, #f3bc15, 15%);
+$danger-color                 : mix($gray, #dc081d, 15%);
+$info-color                   : mix($gray, #427ab8, 15%);
+
+$border-color                 : mix($white, $gray, 80%);
+
+$link-color                   : $text-color;
+$link-underline-color         : #a9a9a9;
+$link-color-hover             : #000;
+
+$table-border-color           : $border-color;
+$table-border                 : 1px solid $table-border-color;
+$table-background             : $white;
+$table-header-color           : $white;
+$table-hover-color            : mix($gray, $table-background, 10%);
+$table-stripe-color           : mix($gray, $table-background, 10%);
+$table-stripe-color-hover     : mix($gray, $table-background, 10%);
+
+$badge-background             : $primary-color;
+$badge-dark-color             : $black;
+$badge-danger-color           : $danger-color;
+$badge-info-color             : $info-color;
+$badge-warning-color          : $warning-color;
+$badge-success-color          : $success-color;
+$badge-font-color             : $white;
+
+$facebook-color               : #3b5998;
+$flickr-color                 : #ff0084;
+$foursquare-color             : #0cbadf;
+$google-plus-color            : #dd4b39;
+$instagram-color              : #125688;
+$linkedin-color               : #007bb5;
+$pinterest-color              : #cb2027;
+$rss-color                    : #fa9b39;
+$tumblr-color                 : #32506d;
+$twitter-color                : #55acee;
+$vimeo-color                  : #1ab7ea;
+$github-color                 : #333333;
+$youtube-color                : #cd201f;
+
+
+/*
+   Masthead
+   ========================================================================== */
+
+$masthead-height              : 100px;
+
+
+/*
+   Form variables
+   ========================================================================== */
+
+$form-background              : mix($white, $border-color, 50%);
+$form-border-color            : $border-color;
+$form-border-color-hover      : mix($black, $border-color, 10%);
+$form-border-color-focus      : $primary-color;
+$form-border-radius           : $border-radius;
+$form-box-shadow              : inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
+$form-box-shadow-focus        : $form-box-shadow, 0 0 5px rgba(mix($black, $form-border-color-focus, 10%), 0.7);
+$form-font-family             : $sans-serif;
+$form-font-size               : $doc-font-size + 0px;
+
+/*
+   Code snippet variables
+   ========================================================================== */
+
+$code-background              : #002b36;
+$code-border-color            : $border-color;
+$code-border-color-hover      : mix($black, $border-color, 10%);
+$code-border-radius           : $border-radius;
+
+$inline-code-background       : mix($white, $border-color, 75%);
+
+
+/*
+   Screen sizes
+   ========================================================================== */
+
+$small                        : 600px;
+$medium                       : 768px;
+$medium-wide                  : 900px;
+$large                        : 1024px;
+$x-large                      : 1440px;
+
+
+/*
+   Visual sitemap
+   ========================================================================== */
+
+$sitemap-primary-color        : mix($white, $primary-color, 60%);
+$sitemap-sub-color            : mix($white, $primary-color, 80%);
+$sitemap-sub-sub-color        : mix($white, $primary-color, 90%);
+
+
+/*
+   Animation
+   ========================================================================== */
+
+$global-transition            : all 0.2s ease-in-out

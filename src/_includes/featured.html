@@ -1,0 +1,24 @@
+<div class="featured">
+
+  <div class="tiles">
+    {% assign features = site.categories[page.feature.category] | where:"featured", true %}
+    {% for post in features limit:6 %}
+
+      <article class="tile__item" itemscope itemtype="http://schema.org/CreativeWork"
+      style="background-image: url('{{ site.url }}/assets/images/{% if post.image.teaser %}{{ post.image.teaser }}{% else %}{{ site.teaser }}{% endif %}')"
+      >
+
+        <meta itemprop="text" content="{{ post.excerpt | strip_html }}">
+
+        <h3 class="tile__title" itemprop="headline"><a href="{{ site.url }}{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></h3>
+          <!-- <svg class="icon">
+            <use xlink:href="#icon-todh-grafico" />
+          </svg> -->
+
+        {% if post.work %}
+        {% endif %}
+      </article>
+
+    {% endfor %}
+  </div>
+</div>

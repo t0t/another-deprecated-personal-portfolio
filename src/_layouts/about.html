@@ -1,0 +1,50 @@
+---
+layout: default
+author: true
+---
+
+{% include masthead.html %}
+{% include browser-upgrade.html %}
+
+<main class="main" role="main">
+
+  <section itemscope itemtype="http://schema.org/CreativeWork">
+
+    <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
+
+    <header class="container page-header  page-header--about">
+
+      <h1 class="page-title" itemprop="headline">
+        {{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}
+      </h1>
+
+      {% if page.excerpt %}
+        <h2 class="page-excerpt">
+          {{ page.excerpt }}
+        </h2>
+      {% endif %}
+
+      {% include breadcrumbs.html %}
+
+    </header>
+
+    <article class="post__body" itemprop="text">
+      {{ content }}
+    </article>
+
+    {% include slider-perfil.html %}
+
+    {% if page.author != false %}
+      <footer class="post__footer">
+        {% include post__author.html %}
+      </footer>
+    {% endif %}
+
+  {% include conocimientos.html %}
+  {% include habilidades.html %}
+
+  </section>
+
+</main>
+
+{% include colophon.html %}
