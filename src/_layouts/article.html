@@ -28,6 +28,7 @@ sidebar: false
       {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
       {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
       {% include breadcrumbs.html %}
+
     </header>
 
     {% if page.feature.visible == true %}

@@ -3,19 +3,17 @@
     {% assign tiles = site.categories[page.feature.category] %}
 
     {% for post in tiles %}
-      <article class="tile__item">
-        <a href="{{ site.url }}{{ post.url }}">
-          <img src="{{ site.url }}/assets/images/{% if post.image.teaser %}{{ post.image.teaser }}{% else %}{{ site.teaser }}{% endif %}" alt="{{ post.title }}">
-        </a>
 
-        {% if post.categories contains 'mastering-paper' %}
-          <h3 class="tile__title"><a href="{{ site.url }}{{ post.url }}">XXX</a></h3>
-        {% else %}
-          <h3 class="tile__title"><a href="{{ site.url }}{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></h3>
-        {% endif %}
+      <article class="tile__item">
+
+        <img src="{{ site.url }}/assets/images/{% if post.image.teaser %}{{ post.image.teaser }}{% else %}{{ site.teaser }}{% endif %}" alt="{{ post.title }}">
 
         {% if post.work %}
+
+          <h3 class="tile__title"><a href="{{ site.url }}{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></h3>
+
           <span class="tile__category">{{ post.work }}</span>
+
         {% endif %}
 
       </article>

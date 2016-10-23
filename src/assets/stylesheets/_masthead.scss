@@ -3,10 +3,8 @@
    =========================================== */
 
 .masthead {
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
+  // padding-bottom: $spacing-unit;
+  margin-top: 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,8 +12,15 @@
   z-index: 11;
   background-color: $white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+
+  @media screen and (min-width: 425px) {
+    justify-content: space-between;
+    // margin-top: $spacing-unit;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
 
   @media (min-width: $small) {
     height: $masthead-height;
@@ -103,7 +108,7 @@
   }
 
   @media (min-width: $small) {
-    font-family: $font_alt;
+    padding: 6px 10px;
     letter-spacing: 5px;
     // line-height: 0.8rem;
     // height: $masthead-height;

@@ -1039,7 +1039,6 @@ body:hover .visually-hidden button {
     .page-title {
       margin-bottom: 8.3333333333px;
       font-size: 4rem;
-      line-height: 1.1;
       margin-left: 50px;
       margin-right: 50px;
       letter-spacing: 5px; } }
@@ -1064,7 +1063,7 @@ body:hover .visually-hidden button {
       margin-right: 50px; } }
   @media screen and (min-width: 756px) {
     .page-excerpt {
-      font-size: 2.3rem;
+      font-size: 1.8rem;
       line-height: 1.4; } }
   @media screen and (min-width: 1430px) {
     .page-excerpt {
@@ -1076,30 +1075,28 @@ body:hover .visually-hidden button {
    Content
    ========================================================================== */
 .post__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-top: 1em; }
+  margin-top: 1em;
+  font-size: 0.7rem; }
   @media (min-width: 37.5em) {
     .post__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; } }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  @media screen and (min-width: 769px) {
+    .post__content {
+      padding: 0; }
+      .post__content article {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 50%;
+                flex: 0 50%; } }
   .post__content--fullwidth {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
@@ -1411,18 +1408,6 @@ body:hover .visually-hidden button {
 /*
    Default button
    ========================================================== */
-.front {
-  background-color: red; }
-
-.face {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
-
-.back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-color: blue; }
-
 .btn {
   /* default button */
   display: inline-block;
@@ -1505,11 +1490,19 @@ body:hover .visually-hidden button {
     box-shadow: none;
     opacity: 0.65; }
   .btn--facebook {
-    background-color: #3b5998; }
+    background-color: #3b5998;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+    font-family: "Open Sans", "Arial", sans-serif; }
     .btn--facebook:hover {
       background-color: #2f477a; }
   .btn--twitter {
-    background-color: #55acee; }
+    background-color: #55acee;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+    font-family: "Open Sans", "Arial", sans-serif; }
     .btn--twitter:hover {
       background-color: #448abe; }
 
@@ -1529,17 +1522,26 @@ body:hover .visually-hidden button {
   padding-right: 25px;
   margin-bottom: 0;
   max-width: 400px; }
+  @media screen and (min-width: 425px) {
+    .social {
+      max-width: 550px; } }
+  @media screen and (min-width: 1024px) {
+    .social {
+      max-width: 720px; } }
   .social li {
     text-transform: uppercase;
-    font-size: 0.5rem;
-    letter-spacing: 2px;
+    font-size: 0.7rem;
     text-align: center;
     margin-bottom: 5px;
-    margin-right: 25px; }
+    margin-right: 25px;
+    text-decoration: underline; }
+    @media screen and (min-width: 1025px) {
+      .social li {
+        font-size: 1rem; } }
     .social li:last-child {
       margin-right: 0; }
   .social a:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
 
 .IntroText {
   display: -webkit-box;
@@ -1610,15 +1612,19 @@ body:hover .visually-hidden button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  letter-spacing: 4px; }
   .author__name {
-    font-size: 3rem;
-    margin-top: -70px;
+    font-size: 1.5rem;
+    margin-top: -10px;
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0; }
     .author__name a:hover {
       text-decoration: underline; }
+    @media screen and (min-width: 779px) {
+      .author__name {
+        font-size: 2.5rem; } }
     @media screen and (min-width: 1430px) {
       .author__name {
         font-size: 4rem; } }
@@ -1629,10 +1635,14 @@ body:hover .visually-hidden button {
     max-width: 800px;
     text-align: center;
     font-size: 1rem;
-    padding-top: 12.5px;
+    padding-top: 0;
     padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 25px; }
+    @media screen and (min-width: 779px) {
+      .author__bio {
+        margin-top: 0;
+        font-size: 1.5rem; } }
   .author__avatar {
     display: block;
     -ms-flex-negative: 0;
@@ -1649,10 +1659,7 @@ body:hover .visually-hidden button {
    MASTHEAD
    =========================================== */
 .masthead {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin-top: 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -1662,12 +1669,18 @@ body:hover .visually-hidden button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (min-width: 425px) {
+    .masthead {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-left: 25px;
+      padding-right: 25px; } }
   @media (min-width: 600px) {
     .masthead {
       height: 100px; } }
@@ -1733,7 +1746,7 @@ body:hover .visually-hidden button {
       background-color: rgba(129, 232, 179, 0.7); }
   @media (min-width: 600px) {
     .masthead__menu-item {
-      font-family: "Permanent Marker", cursive;
+      padding: 6px 10px;
       letter-spacing: 5px; } }
   @media (min-width: 37.5em) {
     .masthead__menu-item {
@@ -1878,13 +1891,16 @@ body:hover .visually-hidden button {
             transform: translateY(0); }
 
 .brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 12.5px; }
+  display: none; }
+  @media screen and (min-width: 425px) {
+    .brand {
+      padding-right: 12.5px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   .brand__name {
     color: #000;
     font-size: inherit;
@@ -1898,7 +1914,7 @@ body:hover .visually-hidden button {
     stroke-width: 2;
     stroke-dashoffset: 50;
     stroke-dasharray: 50;
-    stroke-width: 1; }
+    stroke-width: 3; }
   .brand__logo {
     background-color: red; }
   .brand .efecto--stroke-logo {
@@ -1924,7 +1940,7 @@ body:hover .visually-hidden button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 100px; }
+  margin-top: 200px; }
 
 .feature__item {
   -webkit-box-flex: 1;
@@ -3190,9 +3206,8 @@ green     #859900  operators, other keywords
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (min-width: 600px) {
@@ -3221,7 +3236,8 @@ green     #859900  operators, other keywords
   -webkit-box-flex: 1;
       -ms-flex: 1 300px;
           flex: 1 300px;
-  padding: 25px; }
+  padding: 25px;
+  position: relative; }
   .tile__item img {
     width: 100%;
     margin: 0.25em 0; }
@@ -3242,7 +3258,8 @@ green     #859900  operators, other keywords
   -webkit-box-flex: 0;
       -ms-flex: 0 100%;
           flex: 0 100%;
-  text-align: center; }
+  text-align: center;
+  position: absolute; }
   @media (min-width: 600px) {
     .tile__title:hover {
       background-color: #81e8b3;
@@ -3353,9 +3370,7 @@ h5.review__title {
    ========================================================================== */
 .colophon {
   margin-top: 4em;
-  padding: 20px 0;
-  background-color: #f9f9f9;
-  font-size: 0.8rem; }
+  padding: 20px 0; }
 
 .colophon__menu {
   display: -webkit-box;
@@ -3370,30 +3385,27 @@ h5.review__title {
   margin: 0;
   padding: 0; }
 
-.colophon__menu-item,
-.colophon__menu-item--social,
-.colophon__menu-label,
-.colophon__menu-sep {
-  text-align: center; }
-  @media (min-width: 37.5em) {
-    .colophon__menu-item,
-    .colophon__menu-item--social,
-    .colophon__menu-label,
-    .colophon__menu-sep {
-      width: initial; } }
-  .colophon__menu-item a,
-  .colophon__menu-item--social a,
-  .colophon__menu-label a,
-  .colophon__menu-sep a {
-    display: block;
-    margin-right: 20px;
-    padding-top: 10px;
-    color: #999; }
-    .colophon__menu-item a:hover,
-    .colophon__menu-item--social a:hover,
-    .colophon__menu-label a:hover,
-    .colophon__menu-sep a:hover {
-      color: #000; }
+@media (min-width: 37.5em) {
+  .colophon__menu-item,
+  .colophon__menu-item--social,
+  .colophon__menu-label,
+  .colophon__menu-sep {
+    width: initial; } }
+
+.colophon__menu-item a,
+.colophon__menu-item--social a,
+.colophon__menu-label a,
+.colophon__menu-sep a {
+  display: block;
+  margin-right: 20px;
+  padding-top: 10px;
+  color: #808080;
+  text-decoration: none; }
+  .colophon__menu-item a:hover,
+  .colophon__menu-item--social a:hover,
+  .colophon__menu-label a:hover,
+  .colophon__menu-sep a:hover {
+    color: #000; }
 
 .colophon__menu-item--social {
   text-transform: none; }
@@ -3402,8 +3414,9 @@ h5.review__title {
   padding: 10px 20px 10px 0; }
 
 .colophon__copyright {
-  text-align: center;
-  font-size: 0.5rem; }
+  letter-spacing: 1px;
+  text-align: right;
+  font-size: 0.7rem; }
   @media screen and (min-width: 1430px) {
     .colophon__copyright {
       font-size: 1rem;
@@ -3411,8 +3424,6 @@ h5.review__title {
   .colophon__copyright a {
     color: #999;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
-    .colophon__copyright a:hover {
-      border-bottom-style: solid; }
 
 /* ==========================================================================
    SlickMap CSS

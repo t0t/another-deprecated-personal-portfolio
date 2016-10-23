@@ -7,16 +7,20 @@
   align-content: center;
   align-items: center;
   position: relative;
+  letter-spacing: 4px;
 
   &__name {
-    font-size: fs(huge);
-    margin-top: -70px;
+    font-size: fs(x-normal);
+    margin-top: -10px;
     flex: 0;
     @extend %altfont_angle; //fuente alternativa + angulo
     a:hover {
       text-decoration: underline;
     }
 
+    @media screen and (min-width: 779px) {
+      font-size: fs(x-big);
+    }
     @media screen and (min-width: 1430px) {
       font-size: fs(x-huge);
       // line-height: $line-height-base - 0.15;
@@ -29,10 +33,16 @@
     max-width: 800px;
     text-align: center;
     font-size: fs(normal);
-    padding-top: $spacing-unit / 2;
+    // letter-spacing: 5px;
+    padding-top: 0;
     padding-bottom: $spacing-unit;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
+
+    @media screen and (min-width: 779px) {
+      margin-top: 0;
+      font-size: fs(x-normal);
+    }
   }
 
   &__avatar {

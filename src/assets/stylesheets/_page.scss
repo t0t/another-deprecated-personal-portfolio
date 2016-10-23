@@ -61,12 +61,13 @@
   @media screen and (min-width: 550px) {
     margin-bottom: $spacing-unit / 3;
     font-size: fs(x-huge);
-    line-height: $line-height-base - 0.60;
+    // line-height: $line-height-base - 0.60;
     margin-left: $spacing-unit*2;
     margin-right: $spacing-unit*2;
     letter-spacing: 5px;
   }
   @media screen and (min-width: 756px) {
+    // line-height: $line-height-base - 0.70;
     font-size: fs(colosal);
   }
   @media screen and (min-width: 1430px) {
@@ -90,7 +91,7 @@
     margin-right: $spacing-unit * 2;
   }
   @media screen and (min-width: 756px) {
-    font-size: fs(big) + 0.5;
+    font-size: fs(big);
     line-height: $line-height-base - 0.30;
     // max-width: 600px;
   }
@@ -107,17 +108,26 @@
    ========================================================================== */
 
 .post__content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+
   margin-top: 1em;
+  font-size: fs(small);
 
   @include breakpoint($small) {
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    // flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
+
+  @media screen and (min-width: 769px) {
+    padding: 0;
+
+    article {
+      flex: 0 50%;
+    }
+  }
+
 
   &--fullwidth {
     justify-content: space-around;
@@ -131,6 +141,10 @@
 }
 
 .post__body {
+
+  @media screen and (min-width: 767px) {
+    // display: flex;
+  }
 
   p {
     margin-left: auto;

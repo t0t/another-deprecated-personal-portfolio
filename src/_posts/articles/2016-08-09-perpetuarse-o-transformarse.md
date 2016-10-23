@@ -1,5 +1,5 @@
 ---
-title: "Perpetuarse o transformarse"
+title: "Perpetúa o transforma"
 headline: "Mi viaje de reinvención profesional"
 excerpt: "TODH también es... un viaje de reorientación profesional"
 modified: 2016-08-09T16:32:07-04:00

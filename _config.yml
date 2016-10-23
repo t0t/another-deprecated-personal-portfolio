@@ -43,7 +43,7 @@ owner:
     verify       : #"Y5DYjZ4VWlrQzBP5kcQJeOKLNas"
   yandex:
     verify       : #"55a5419baf76a498"
-  bio            : "Diseño y desarrollo web orientado a prototipos evolutivos para equipos ágiles y emprendedores"
+  bio            : "Diagramación y diseño de prototipos en entornos de desarrollo y producción"
   avatar         : "bio-photo.jpg" # 160x160 px image for author byline
 staticman:
   allowedFields  : ['name', 'email', 'url', 'message']

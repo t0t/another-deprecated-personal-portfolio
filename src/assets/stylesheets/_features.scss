@@ -7,7 +7,7 @@
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: $spacing-unit * 4;
+    margin-top: $spacing-unit * 8;
 
     @media screen and (min-width: 975px) {
       // flex-wrap: nowrap;

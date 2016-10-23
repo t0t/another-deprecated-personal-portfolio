@@ -1,12 +1,11 @@
 ---
 layout: home
 permalink: /
-title: "T-O-D-H: Prototipos vivos con enfoque holístico"
+title: "Prototipos vivos con enfoque holístico"
 subtitle: "Transmite. Observa. Define. ¡Haz!"
 excerpt: "Proceso ideas y las llevo a productos mínimos viables reales que evolucionan."
 date: 2014-06-01
 modified: 2016-02-11
-ads: false
 
 cta:
   cta_url: "/articles/todh/"
@@ -41,19 +40,11 @@ feature_row:
     url: "/articles/"
     btn_label: "Blog"
 
-  - image_path: bg-quiensoy.jpg
-    img_as_bg: true
-    alt: "Quien soy"
-    title: "Quién soy"
-    excerpt: "Me define lo que descubro, proceso, ejercito y comparto en el instante presente"
-    url: "/about"
-    btn_label: "Sobre mí"
-
 video:
   - url: '{::nomarkdown}<video>(external video embed code)</video>{:/nomarkdown}'
 
 introText:
-  - header: "by Sergio Forés"
+  - header: "T-O-D-H"
     description: "La espontaneidad permite poner a funcionar en combinación todo aquello que somos ahora"
     p: "Descubrir tesoros escondidos en lo obvio"
     small: "( Porque todo está vivo )"

@@ -1,10 +1,10 @@
 ---
 permalink: /about/
-title: "Sergio Forés"
+title: "Quién soy"
 date: 2014-06-01
 modified: 2016-02-11
 layout: about
-excerpt: "Las ocurrencias ocurren. Encuentro tesoros en lo obvio y natural"
+excerpt: "Me define lo que descubro, proceso, ejercito y comparto en el instante presente"
 image:
   feature: bg-quiensoy.jpg
   teaser: image1.jpg

@@ -8,7 +8,7 @@ excerpt: "Una colección de pensamientos 'confesables', inspiraciones, ideas, pl
 subtitle: "Una colección de pensamientos, inspiraciones, ideas, etc sobre todos aquellos temas que me interesan. Todo es mente y luego cualquier otra cosa pero lo primero siempre se manifiesta en lo mental."
 fullwidth: true
 feature:
-  visible: true
+  visible: false
   headline: ""
   category: articles
 ---

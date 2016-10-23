@@ -5,16 +5,16 @@
 /*
    Default button
    ========================================================== */
-.front {
-  background-color: red;
-}
-.face {
-  backface-visibility: hidden;
-}
-.back {
-  transform: rotateY(180deg);
-  background-color: blue;
-}
+// .front {
+//   background-color: red;
+// }
+// .face {
+//   backface-visibility: hidden;
+// }
+// .back {
+//   transform: rotateY(180deg);
+//   background-color: blue;
+// }
 .btn {
   /* default button */
   display: inline-block;
@@ -155,6 +155,8 @@
 
     &--#{$socialnetwork} {
       background-color: $color;
+      transform: rotate(0);
+      font-family: $font_main;
 
       &:hover {
         background-color: mix(#000, $color, 20%);

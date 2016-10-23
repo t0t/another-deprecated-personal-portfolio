@@ -5,8 +5,8 @@
 .colophon {
   margin-top: 4em;
   padding: 20px 0;
-  background-color: $lighter-gray;
-  font-size: 0.8rem;
+  // background-color: $lighter-gray;
+  // font-size: 0.8rem;
 }
 
 .colophon__menu {
@@ -23,7 +23,7 @@
 .colophon__menu-label,
 .colophon__menu-sep {
   // width: 50%;
-  text-align: center;
+  // text-align: center;
 
   @include breakpoint($small) {
     width: initial;
@@ -33,7 +33,8 @@
     display: block;
     margin-right: 20px;
     padding-top: 10px;
-    color: #999;
+    color: $gray;
+    text-decoration: none;
 
     &:hover {
       color: #000;
@@ -50,8 +51,9 @@
 }
 
 .colophon__copyright {
-  text-align: center;
-  font-size: fs(x-small);
+  letter-spacing: 1px;
+  text-align: right;
+  font-size: fs(small);
 
   @media screen and (min-width: 1430px) {
     font-size: fs(normal);
@@ -63,7 +65,7 @@
     border-bottom: 1px solid $light-gray;
 
     &:hover {
-      border-bottom-style: solid;
+      // border-bottom-style: solid;
     }
   }
 }

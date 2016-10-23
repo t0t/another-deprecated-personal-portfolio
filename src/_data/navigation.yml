@@ -66,16 +66,8 @@ secondary:
 # Footer navigation links
 
 colophon-menu:
-  - title: "About"
-    url: /about/
-  - title: "Guía de Estilos"
-    url: /style-guide/
-  - title: "Contact"
-    url: /contact/
   - title: "Mapa del sitio"
     url: /sitemap/
-  - title: "Terms &amp; Policies"
-    url: /terms/
 
 colophon-social:
   - title: "Twitter"

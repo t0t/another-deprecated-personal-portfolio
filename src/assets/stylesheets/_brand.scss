@@ -1,7 +1,11 @@
 .brand {
-  display: flex;
-  align-items: center;
-  padding-right: $spacing-unit /2;
+  display: none; // Oculta logo
+
+  @media screen and (min-width: 425px) {
+    padding-right: $spacing-unit /2;
+    align-items: center;
+    display: flex;
+  }
 
   &__name {
     color: $black;
@@ -9,9 +13,6 @@
     margin-left: $spacing-unit/2;
     display: none;
 
-    @media screen and (min-width: 450px) {
-      // display: block;
-    }
   }
 
   a {
@@ -26,7 +27,7 @@
       stroke-width: 2;
       stroke-dashoffset: 50;
       stroke-dasharray: 50;
-      stroke-width: 1;
+      stroke-width: 3;
     }
   }
 

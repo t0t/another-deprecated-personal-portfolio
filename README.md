@@ -2,6 +2,13 @@
 http://t0t.github.io/t-o-d-h.com o http://t-o-d-h.com
 
 This is the source code of [t-o-d-h.com](http://t-o-d-h.com), a personal blog and portfolio of Sergio Forés [sergiofores.es](http://sergiofores.es)
+
+
+`<svg class="icon icon--todh">
+  <use xlink:href="#icon-imagen-post"></use>
+</svg>`
+
+
 ### To Do
 - [ ] Bower for frontend libraries like:
   - Typed.js for animated text typing effect
