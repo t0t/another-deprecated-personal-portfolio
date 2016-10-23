@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/articles-feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-10-23T13:44:34+02:00</updated>
+  <updated>2016-10-24T01:53:12+02:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Articles - Sergio Forés</title>
@@ -307,9 +307,9 @@ El output es un prototipo funcional de baja fidelidad.&lt;/p&gt;
   &lt;li&gt;Testamos el proyecto en Github Pages o Netlify…&lt;/li&gt;
   &lt;li&gt;Si hay funcionalidades extra más específicas podemos usar servicios externos gratuítos como:
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;www.forestry.io&quot;&gt;Forestry&lt;/a&gt; CMS&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;www.formspree.io&quot;&gt;Formspree&lt;/a&gt; Formularios de contacto&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll&quot;&gt;Snip Cart&lt;/a&gt; Carritos de compras&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.forestry.io&quot; target=&quot;_blank&quot;&gt;Forestry&lt;/a&gt; CMS&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.formspree.io&quot; target=&quot;_blank&quot;&gt;Formspree&lt;/a&gt; Formularios de contacto&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll&quot; target=&quot;_blank&quot;&gt;Snip Cart&lt;/a&gt; Carritos de compras&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Control de versiones con Git. Es conveniente no sólo por poder volver a versiones anteriores del proyecto sino tambien porque nos permite tener varias ramas paralelas y simultáneas de nuestro proyecto.&lt;/li&gt;
@@ -474,11 +474,6 @@ El output es un prototipo funcional de baja fidelidad.&lt;/p&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;My life seemed to be a series of events and accidents. Yet when I look back I see a pattern.”
-  Benoit Mandelbrot&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;p&gt;Estoy tratando de mantener mi discurso tan simple y llano como soy capaz. De hecho es tan simple que parece complicado.&lt;/p&gt;
 
 &lt;p&gt;Yo sólo he descubierto la conexión obvia que existe entre las cuatro formas que tiene de suceder todo lo que sucede. Suena rebuscado pero no lo es. La cosa en sí que llamo TODH no es un gran descubrimiento, pero lo que puedes hacer con ello sí y lo que ello hace en tí o en tus proyectos una vez lo comprendes, no tiene límites. Negarlo o criticarlo sería tan absurdo como negar o criticar que las personas nacemos y morimos.&lt;/p&gt;
@@ -488,13 +483,16 @@ Imagina una película de 4 fotogramas por segundo que se repite como un loop. El
 
 &lt;p&gt;La realidad y todo lo que sucede en ella sigue este proceso. Nosotros mismos formamos parte de este proceso y en la medida en que somos más conscientes de él o estamos más alineados tendremos mayor o menor éxito porque estaremos más o menos resonantes con la música que está sonando.&lt;/p&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;My life seemed to be a series of events and accidents. Yet when I look back I see a pattern.”
+Benoit Mandelbrot&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;p&gt;No podemos controlar las dinámicas de TODH pero lo que sí podemos es fluir en ellas dandonos cuenta. Todo lo que tenemos que hacer es no ofrecer resistencia. La naturaleza real de las cosas tiende a la autoorganización, el equilibrio, el orden y la creatividad.&lt;/p&gt;
 
 &lt;p&gt;Miles de teorías nos hablan de conseguir objetivos desde el pensamiento pero el pensar es una parte, si te quedas demasiado tiempo en ese lugar te desconectas, te paras. No necesitamos intelectuales ni robots, necesitamos sabios. Lo mismo sucede con el decir, la sociedad cada vez dice más cosas en menos tiempo pero sólo crea ruído porque no sabemos lo que decimos o simplemente repetimos lo que otros dicen sin haberlo integrado. En el hacer aún creemos que cuanto más esfuerzo y sacrificio cueste materializar algo más merece la pena y es al revés, se trata de aprovechar la dinámica de TODH para que &lt;strong&gt;con el menor esfuerzo generemos la mayor inercia&lt;/strong&gt; y efectividad.&lt;/p&gt;
 
 &lt;p&gt;Las cuatro partes de TODH son: Transmitir. Observar. Decidir. Hacer. Cada una de ellas despliega y entraña una serie de actitudes, herramientas y conceptos.&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;1&lt;/h2&gt;
 
 &lt;h3 id=&quot;transmitir&quot;&gt;Transmitir&lt;/h3&gt;
 
@@ -502,15 +500,11 @@ Imagina una película de 4 fotogramas por segundo que se repite como un loop. El
 
 &lt;p&gt;Aportar tu información a lo colectivo e integrar su información.&lt;/p&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;2&lt;/h2&gt;
-
 &lt;h3 id=&quot;observar&quot;&gt;Observar&lt;/h3&gt;
 
 &lt;p class=&quot;notice notice--warning&quot;&gt;Sentir. Lo posible. Crear. Potencial. Los sentidos. Posibilidades. Apertura. Asociación. Lucidez. Sinápsis. Lo sutil. Lo elevado. El descubrir. Mente. La Empatía. Ideal. Disociación. Libertad. Disrupción. Desvelar. Sinceridad. Sueño. Ideas. Riqueza. Locura. Exploración. Percepción. Aroma. Difuso. Niebla. Sensación. Multiplicidad. Captar. Apreciar. Observar. Sensibilidad. Fantasía. Opciones. Mostrar…&lt;/p&gt;
 
 &lt;p&gt;Aceso veloz e instantáneo a todas las posibilidades, es el alcance de lo que puedes ver.&lt;/p&gt;
-
-&lt;h2 id=&quot;section-2&quot;&gt;3&lt;/h2&gt;
 
 &lt;h3 id=&quot;decidir&quot;&gt;Decidir&lt;/h3&gt;
 
@@ -519,8 +513,6 @@ Imagina una película de 4 fotogramas por segundo que se repite como un loop. El
 &lt;p&gt;Elegir qué es lo importante para tu fin y dotarte de las herramientas necesarias para llevarlo a cabo.&lt;/p&gt;
 
 &lt;p&gt;Prototipado, estrategias, herramientas. Penetra, profundiza, encuentra el oro y tira el resto.&lt;/p&gt;
-
-&lt;h2 id=&quot;section-3&quot;&gt;4&lt;/h2&gt;
 
 &lt;h3 id=&quot;hacer&quot;&gt;Hacer&lt;/h3&gt;
 
