@@ -5,18 +5,20 @@
 .tile__header {
   margin-top: 3em;
   font-size: 0.8rem;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   /* lines in headline */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: inherit;
+  text-align: center;
 
   &:after {
     content: '\a0';
     position: relative;
     top: 0.4rem;
     height: $base_line;
-    background: $color-cool;
+    // background: $color-cool;
     flex-grow: 1;
   }
 
@@ -46,8 +48,8 @@
   background-repeat: no-repeat;
   text-align: center;
   flex: 1 300px;
-  padding: $spacing-unit;
-  position: relative;
+  // padding: $spacing-unit;
+  // position: relative;
 
   img {
     width: 100%;
@@ -86,15 +88,19 @@
 .tile__item-time {}
 
 .tile__title {
-  color: $color_alt2;
-  font-weight: inherit;
-  @extend %altfont_angle; //fuente alternativa + angulo
-  border: 1px solid $color_alt2;
-  padding: $spacing-unit;
-  line-height: 1.1;
+  color: $color_alt5;
+  font-size: fs(x-normal);
+  line-height: $line-height-base - 0.50;
+  @extend %altfont_angle;
+  letter-spacing: 3px;
+  margin-top: 0;
+  padding-top: 4px;
+  border-top: 3px solid $color_alt5;
+  font-size: fs(normal);
   flex: 0 100%;
-  text-align: center;
-  position: absolute;
+  text-align: left;
+  padding-bottom: $spacing-unit;
+  // position: absolute;
 
   @media (min-width: $small) {
     &:hover {

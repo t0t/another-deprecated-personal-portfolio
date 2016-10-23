@@ -7,7 +7,7 @@ $size-vars: (
   "x-small"  :    .5,
   "small"    :    .7,
   "normal"   :    1,
-  "x-normal" :    1.5,
+  "x-normal" :    1.35,
   "big"      :    1.8,
   "x-big"    :    2.5,
   "huge"     :    3,
@@ -34,6 +34,79 @@ h1 {
   }
 }
 
+h2 {
+  font-size: fs(x-big);
+  line-height: $line-height-base;
+  @extend %altfont_angle;
+  letter-spacing: 3px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 425px) {
+    max-width: 550px;
+    // line-height: $line-height-base + 0.15;
+  }
+  @media screen and (min-width: 767px) {
+    // font-size: fs(huge);
+    max-width: 700px;
+    // line-height: $line-height-base - 0.3;
+  }
+  @media screen and (min-width: 1430px) {
+    // font-size: fs(huge);
+    max-width: 850px;
+    // line-height: $line-height-base - 0.3;
+  }
+}
+
+h3 {
+  font-size: fs(x-normal);
+  line-height: $line-height-base - 0.50;
+  @extend %altfont_angle;
+  letter-spacing: 3px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 425px) {
+    max-width: 500px;
+    // line-height: $line-height-base + 0.15;
+  }
+  @media screen and (min-width: 550px) {
+    font-size: fs(big);
+    line-height: $line-height-base - 0.3;
+  }
+  @media screen and (min-width: 756px) {
+    line-height: $line-height-base - 0.5;
+  }
+  @media screen and (min-width: 1430px) {
+    font-size: fs(huge);
+    line-height: $line-height-base - 0.15;
+  }
+}
+
+h4 {
+  font-size: fs(normal);
+  line-height: $line-height-base - 0.50;
+  @extend %altfont_angle;
+  letter-spacing: 3px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 550px) {
+    font-size: fs(big);
+    line-height: $line-height-base + 0.15;
+  }
+  @media screen and (min-width: 756px) {
+    line-height: $line-height-base;
+  }
+  @media screen and (min-width: 1430px) {
+    font-size: fs(huge);
+    line-height: $line-height-base - 0.15;
+  }
+}
+
 h1,
 h2 {
   font-weight: normal;
@@ -50,23 +123,6 @@ h2 {
   }
 }
 
-h3,
-h4 {
-  font-size: fs(normal);
-  line-height: $line-height-base;
-
-  @media screen and (min-width: 550px) {
-    font-size: fs(big);
-    line-height: $line-height-base + 0.15;
-  }
-  @media screen and (min-width: 756px) {
-    line-height: $line-height-base;
-  }
-  @media screen and (min-width: 1430px) {
-    font-size: fs(huge);
-    line-height: $line-height-base - 0.15;
-  }
-}
 
 figure,
 figcaption {

@@ -15,9 +15,9 @@
   justify-content: space-around;
   align-items: center;
 
-  @media screen and (min-width: 425px) {
+  @media screen and (min-width: 426px) {
     justify-content: space-between;
-    // margin-top: $spacing-unit;
+    margin-top: $spacing-unit;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
   }

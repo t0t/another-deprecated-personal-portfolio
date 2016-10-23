@@ -39,16 +39,16 @@ En los últimos años está habiendo un auge exponencial de empresas que adoptan
 
 Existe una estructura cíclica natural de Transmisión, Observación, Pensamiento y Acción que se ha dado siempre en la realidad sea cual sea su ámbito. El prototipo evolutivo se fusiona con esta estrucura básica y la recorre una y otra vez.
 
-**1. Decir**
+#### 1. Decir
 
 Se generan las preguntas. Se establecen las necesidades. Qué queremos transmitir. Nuestro mensaje, nuestra historia, valores... Al igual que las personas, los diseños también necesitan saber quiénes quieren ser. No tenemos certezas.
 
-**2. Sentir**
+#### 2. Sentir
 
 Planteamos hipótesis tanto estructurales como visuales. Desplegamos un abanico enorme de posibilidades rápidamente. Diagramamos la presentación. Sketching. Wireframes. Vamos viendo aquello que sólo estaba en nuestras mentes, captamos su aroma. En las sucesivas pasadas por esta fase vamos viendo y sintiendo qué gamas de colores se llevan mejor, etc.
 El output es un prototipo funcional de baja fidelidad.
 
-**3. Pensar**
+#### 3. Pensar
 
 Creamos un entorno de semi-desarrollo que variará en función del tipo de proyecto con el que conseguimos planificar y estructurar un prototipo de alta fidelidad con código real.
 
@@ -62,7 +62,7 @@ Creamos un entorno de semi-desarrollo que variará en función del tipo de proye
   - Sourcemaps
   - Minificado CSS y Html
 
-**4. Hacer**
+#### 4. Hacer
 
 Prototipo en semi-producción. Se generan respuestas de cliente y/o usuario. Completamos un ciclo. Esa misma idea intangible tiene ya un cuerpo. Hemos creado ya la primera capa de nuestra semilla.
 
@@ -70,9 +70,9 @@ Prototipo en semi-producción. Se generan respuestas de cliente y/o usuario. Com
   - Deployments de 5 segundos con 3 simples líneas de comandos: `gulp build --prod` `gulp cname` `gulp upload`
   - Testamos el proyecto en Github Pages o Netlify...
   - Si hay funcionalidades extra más específicas podemos usar servicios externos gratuítos como:
-    - [Forestry](www.forestry.io) CMS
-    - [Formspree](www.formspree.io) Formularios de contacto
-    - [Snip Cart](https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll) Carritos de compras
+    - [Forestry](http://www.forestry.io){:target="_blank"} CMS
+    - [Formspree](http://www.formspree.io){:target="_blank"} Formularios de contacto
+    - [Snip Cart](https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll){:target="_blank"} Carritos de compras
   - Control de versiones con Git. Es conveniente no sólo por poder volver a versiones anteriores del proyecto sino tambien porque nos permite tener varias ramas paralelas y simultáneas de nuestro proyecto.
 
 

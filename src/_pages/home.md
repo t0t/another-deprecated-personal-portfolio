@@ -16,13 +16,6 @@ image:
   teaser: logo-todh.svg
 
 feature_row:
-  - image_path: bg-main.jpg
-    img_as_bg: true
-    alt: "TODH, mi visión"
-    title: "El mapa más exacto es el territorio"
-    excerpt: "Diseño y maquetación de prototipos web  evolutivos para equipos multidisciplinares"
-    url: "/contact/"
-    btn_label: "¿Hablamos?"
 
   - image_path:
     img_as_bg: false
@@ -81,5 +74,6 @@ introText:
     small: ""
 ---
 
+<h1 class="page-title">{{ page.title }}</h1>
 {% include intro-text.html %}
 {% include feature_row %}

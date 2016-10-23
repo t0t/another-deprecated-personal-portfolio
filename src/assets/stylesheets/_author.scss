@@ -14,6 +14,9 @@
     margin-top: -10px;
     flex: 0;
     @extend %altfont_angle; //fuente alternativa + angulo
+    color: $color_alt5;
+    border-bottom: 3px solid $color_alt5;
+    padding-bottom: -10px;
     a:hover {
       text-decoration: underline;
     }

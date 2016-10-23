@@ -13,6 +13,46 @@ share: false
 author: true
 sidebar: false
 fullwidth: true
+
+introText:
+  - header: "Conocimientos"
+    description: "Agile"
+    p: "Trello"
+    small: "( Refactoring, BEM, Mobile First... )"
+    excerpt:
+    image_path: "bg-cor.svg"
+    image_description: "description"
+    url: "url"
+    list:
+      - title: "Aprender para ver:"
+      - item: "-Arquitectura de Información"
+      - item: "-Retoque Fotográfico"
+      - item: "-Diseño Gráfico / Editorial"
+      - item: "-Ilustración"
+      - item: "-React JS"
+      - item: "-Git / Github"
+      - item: "-Gulp, NPM"
+      - item: "-WP-Api REST"
+      - item: "-Liquid"
+      - item: "-JSON"
+      - item: "-Jade"
+      - item: "-Stylus / Sass"
+
+  - header: "Habilidades"
+    description: "Trello"
+    p: "Buenas prácticas"
+    small: "( Prototyping like a pro )"
+    excerpt:
+    image_path: "bg-mountain.svg"
+    image_description: "description"
+    url: "url"
+    list:
+      - title: "Diagramación + Diseño + Maquetación"
+      - item: "-Sketching en papel"
+      - item: "-Sketch / Principle"
+      - item: "-Axure RP"
+      - item: "-HTML + CSS (Sass)"
+      - item: "-Mockups"
 ---
 
 Nací en un mes de julio de 1975 en Barcelona. Apasionado desde muy pequeño por el dibujo, me formé en Bellas Artes (EARVIC) y más tarde en Arte Electrónico (ESDI). Inicié mi camino freelance en el 2000 como diseñador web y gráfico. Aprendí a desarrollar sitios web completos en Wordpress. Progresivamente he ido acercandome más y más al mundo del Frontend y el prototipado evolutivo.

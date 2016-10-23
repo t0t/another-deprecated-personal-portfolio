@@ -35,7 +35,7 @@ sidebar: false
       {% include featured.html %}
     {% endif %}
 
-      <article class="post__body" itemprop="text">
+      <article class="Content" itemprop="text">
         {{ content }}
         {% include post__comments.html %}
       </article>
@@ -48,11 +48,6 @@ sidebar: false
       </aside>
       {% endif %}
 
-      {% if page.author != false %}
-      <footer class="post__footer">
-        {% include post__author.html %}
-      </footer>
-      {% endif %}
 
   </section>
 
@@ -61,5 +56,11 @@ sidebar: false
   {% endif %}
 
 </main>
+
+{% if page.author != false %}
+<footer class="post__footer">
+  {% include post__author.html %}
+</footer>
+{% endif %}
 
 {% include colophon.html %}

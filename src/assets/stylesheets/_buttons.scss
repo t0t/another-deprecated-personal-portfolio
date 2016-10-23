@@ -19,8 +19,9 @@
   /* default button */
   display: inline-block;
   margin-bottom: 0.25em;
-  padding: ($spacing-unit/1.5) ($spacing-unit);
-  color: $black;
+  // padding-top: $spacing-unit/1.5;
+  padding-bottom: 5px;
+  // color: $black;
   font-size: fs(normal);
   @extend %altfont_angle;
   letter-spacing: 3px;
@@ -28,13 +29,15 @@
   line-height: 1.5;
   text-align: center;
   cursor: pointer;
-  background-color: $color-cool;
+  color: $color_alt5;
+  border-bottom: 2px solid $color_alt5;
+  // background-color: $color-cool;
 
   // transform: rotate3d(1, 1, 1, 348deg);
 
   // transform: perspective(250px);
 
-  backface-visibility: visible;
+  // backface-visibility: visible;
 
   &:active {
     // move button slightly on click
@@ -48,7 +51,8 @@
 
     @media screen and (min-width: 768px) {
       // transform: rotateY(180deg);
-      transform: rotate3d(1, 1, 0, 360deg);
+      transition: transform .3s ease-in-out;
+      transform: rotate3d(1, -1, 0, 36deg);
     }
     @media screen and (min-width: 1430px) {
       // line-height: $line-height-base - 0.8;
@@ -156,6 +160,8 @@
     &--#{$socialnetwork} {
       background-color: $color;
       transform: rotate(0);
+      padding: 10px 12px;
+      border-bottom: none;
       font-family: $font_main;
 
       &:hover {

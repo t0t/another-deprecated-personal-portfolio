@@ -2,32 +2,27 @@ $(document).ready(function(){
 
   $("body").addClass("js");
 
-
-  // move table of contents from post body to sidebar
-  $(".post__body .js-toc").hide().appendTo($(".toc--sidebar")).fadeIn(400);
-
-
   // sticky sidebar
   $(".sticky").Stickyfill();
 
-// slider
-  $(".slider").slick({
-
-    // normal options...
-    infinite: false,
-    speed: 1000,
-
-    // the magic
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          dots: false
-        }
-      }
-    ]
-  });
+// // slider
+//   $(".slider").slick({
+//
+//     // normal options...
+//     infinite: false,
+//     speed: 1000,
+//
+//     // the magic
+//     responsive: [
+//       {
+//         breakpoint: 600,
+//         settings: {
+//           slidesToShow: 1,
+//           dots: false
+//         }
+//       }
+//     ]
+//   });
 
   // FitVids init
   $(".main").fitVids();

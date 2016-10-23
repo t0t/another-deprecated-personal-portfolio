@@ -28,20 +28,17 @@ author: true
 
     </header>
 
-    <article class="post__body" itemprop="text">
+    <article class="Content" itemprop="text">
       {{ content }}
     </article>
 
-    {% include slider-perfil.html %}
+    {% include intro-text.html %}
 
-    {% if page.author != false %}
-      <footer class="post__footer">
-        {% include post__author.html %}
-      </footer>
-    {% endif %}
-
-  {% include conocimientos.html %}
-  {% include habilidades.html %}
+  {% if page.author != false %}
+  <footer class="post__footer">
+    {% include post__author.html %}
+  </footer>
+  {% endif %}
 
   </section>
 
