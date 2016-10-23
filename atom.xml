@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/atom.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-10-23T02:50:05+02:00</updated>
+  <updated>2016-10-23T13:44:34+02:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Sergio Forés</title>
@@ -269,16 +269,16 @@
 
 &lt;p&gt;Existe una estructura cíclica natural de Transmisión, Observación, Pensamiento y Acción que se ha dado siempre en la realidad sea cual sea su ámbito. El prototipo evolutivo se fusiona con esta estrucura básica y la recorre una y otra vez.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1. Decir&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;decir&quot;&gt;1. Decir&lt;/h4&gt;
 
 &lt;p&gt;Se generan las preguntas. Se establecen las necesidades. Qué queremos transmitir. Nuestro mensaje, nuestra historia, valores… Al igual que las personas, los diseños también necesitan saber quiénes quieren ser. No tenemos certezas.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;2. Sentir&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;sentir&quot;&gt;2. Sentir&lt;/h4&gt;
 
 &lt;p&gt;Planteamos hipótesis tanto estructurales como visuales. Desplegamos un abanico enorme de posibilidades rápidamente. Diagramamos la presentación. Sketching. Wireframes. Vamos viendo aquello que sólo estaba en nuestras mentes, captamos su aroma. En las sucesivas pasadas por esta fase vamos viendo y sintiendo qué gamas de colores se llevan mejor, etc.
 El output es un prototipo funcional de baja fidelidad.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;3. Pensar&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;pensar&quot;&gt;3. Pensar&lt;/h4&gt;
 
 &lt;p&gt;Creamos un entorno de semi-desarrollo que variará en función del tipo de proyecto con el que conseguimos planificar y estructurar un prototipo de alta fidelidad con código real.&lt;/p&gt;
 
@@ -297,7 +297,7 @@ El output es un prototipo funcional de baja fidelidad.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;4. Hacer&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;hacer&quot;&gt;4. Hacer&lt;/h4&gt;
 
 &lt;p&gt;Prototipo en semi-producción. Se generan respuestas de cliente y/o usuario. Completamos un ciclo. Esa misma idea intangible tiene ya un cuerpo. Hemos creado ya la primera capa de nuestra semilla.&lt;/p&gt;
 
@@ -651,7 +651,7 @@ El output es un prototipo funcional de baja fidelidad.&lt;/p&gt;
   
 
   
-    <summary type="text">Full stack development</summary>
+    <summary type="text">Full stack prototyping</summary>
   
 </entry>
 
@@ -814,19 +814,25 @@ Imagina una película de 4 fotogramas por segundo que se repite como un loop. El
 
 &lt;p&gt;Las cuatro partes de TODH son: Transmitir. Observar. Decidir. Hacer. Cada una de ellas despliega y entraña una serie de actitudes, herramientas y conceptos.&lt;/p&gt;
 
-&lt;h2 id=&quot;transmitir&quot;&gt;1. Transmitir&lt;/h2&gt;
+&lt;h2 id=&quot;section&quot;&gt;1&lt;/h2&gt;
+
+&lt;h3 id=&quot;transmitir&quot;&gt;Transmitir&lt;/h3&gt;
 
 &lt;p class=&quot;notice notice--warning&quot;&gt;El Decir. Presentar. Storytelling. Pronunciar. Preguntar. Aportar. Nombrar. Reconocer. Escuchar. Ser consciente. Integrar. Input/Output. Validar. Identificarse. El tema. Comunicar. Feedback. Unirte a la tribu…&lt;/p&gt;
 
 &lt;p&gt;Aportar tu información a lo colectivo e integrar su información.&lt;/p&gt;
 
-&lt;h2 id=&quot;observar&quot;&gt;2. Observar&lt;/h2&gt;
+&lt;h2 id=&quot;section-1&quot;&gt;2&lt;/h2&gt;
+
+&lt;h3 id=&quot;observar&quot;&gt;Observar&lt;/h3&gt;
 
 &lt;p class=&quot;notice notice--warning&quot;&gt;Sentir. Lo posible. Crear. Potencial. Los sentidos. Posibilidades. Apertura. Asociación. Lucidez. Sinápsis. Lo sutil. Lo elevado. El descubrir. Mente. La Empatía. Ideal. Disociación. Libertad. Disrupción. Desvelar. Sinceridad. Sueño. Ideas. Riqueza. Locura. Exploración. Percepción. Aroma. Difuso. Niebla. Sensación. Multiplicidad. Captar. Apreciar. Observar. Sensibilidad. Fantasía. Opciones. Mostrar…&lt;/p&gt;
 
 &lt;p&gt;Aceso veloz e instantáneo a todas las posibilidades, es el alcance de lo que puedes ver.&lt;/p&gt;
 
-&lt;h2 id=&quot;decidir&quot;&gt;3. Decidir&lt;/h2&gt;
+&lt;h2 id=&quot;section-2&quot;&gt;3&lt;/h2&gt;
+
+&lt;h3 id=&quot;decidir&quot;&gt;Decidir&lt;/h3&gt;
 
 &lt;p class=&quot;notice notice--warning&quot;&gt;Pensar. Inteligencia. Filosofía. Lógica. Análisis. Pensamiento. Roles. Rumbo. Dirección. Estrategia. Decidir. Relación. Digerir. Procesar. Demostrar. Prototipar. Hipótesis. Estructurar. Criterio. Discernimiento. Juicio. Estructuras. Construcción. Separaración. Plan. Criba. Error. Sintetizar. el signo. Destilar. Introspección. Definición. Comparación. Proponer. Medir. Predisposición. Actitud. Semiología…&lt;/p&gt;
 
@@ -834,7 +840,9 @@ Imagina una película de 4 fotogramas por segundo que se repite como un loop. El
 
 &lt;p&gt;Prototipado, estrategias, herramientas. Penetra, profundiza, encuentra el oro y tira el resto.&lt;/p&gt;
 
-&lt;h2 id=&quot;hacer&quot;&gt;4. Hacer&lt;/h2&gt;
+&lt;h2 id=&quot;section-3&quot;&gt;4&lt;/h2&gt;
+
+&lt;h3 id=&quot;hacer&quot;&gt;Hacer&lt;/h3&gt;
 
 &lt;p class=&quot;notice notice--warning&quot;&gt;Acción. La solución. El Ésto Correcto. Lo pragmático. Eficacia. Ejecutar. Ya!. Lo concreto. Sentido. Materia. El Objeto. Lo nuevo. Resultado. El Chiste. Comprensión. El hecho. Medir. Refinar. Utilidad. Subsistencia. Realidad. Aplicación. Contacto. La verdad. El Cambio…&lt;/p&gt;
 
@@ -842,7 +850,7 @@ Imagina una película de 4 fotogramas por segundo que se repite como un loop. El
 
 &lt;p&gt;Hacer es parir. Al hacer gastamos energía, recursos físicos, es el “precio” que paga lo que es para estar aquí y para poder transformarse y seguir evolucionando. Por eso cuando algo nace es pequeño, simple, util, listo para crecer, con todo lo que necesita para funcionar en el mundo. Hacer es completar un ciclo del proceso creativo, solidificarlo, aterrizarlo completamente.&lt;/p&gt;
 
-&lt;h2 id=&quot;reflexiones-finales&quot;&gt;Reflexiones finales&lt;/h2&gt;
+&lt;h3 id=&quot;reflexiones-finales&quot;&gt;Reflexiones finales&lt;/h3&gt;
 
 &lt;p&gt;TODH es tan simple y tan obvio que lamentablemente no lo vemos y no lo aplicamos en nuestras vidas ni en nuestros proyectos. Y cuando lo hacemos es de forma incoherente. Decimos mucho pero sin sentido. Hacemos las cosas tarde, invirtiendo demasiados recursos en pensarlas. Y sí, somos seres emocionales, sentimos mucho pero en desconexión con los demás centros.&lt;/p&gt;
 
