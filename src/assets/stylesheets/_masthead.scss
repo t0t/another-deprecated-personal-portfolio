@@ -17,7 +17,7 @@
 
   @media screen and (min-width: 426px) {
     justify-content: space-between;
-    margin-top: $spacing-unit;
+    // margin-top: $spacing-unit;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
   }
@@ -26,8 +26,8 @@
     height: $masthead-height;
   }
   @media (min-width: $small) {
-    height: auto;
-    background-color: transparent;
+    height: 100px;
+    background-color: $white;
   }
 
   .overlay__menu-trigger {

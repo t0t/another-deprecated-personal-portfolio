@@ -55,18 +55,18 @@ introText:
       - item: "-Mockups"
 ---
 
-Nací en un mes de julio de 1975 en Barcelona. Apasionado desde muy pequeño por el dibujo, me formé en Bellas Artes (EARVIC) y más tarde en Arte Electrónico (ESDI). Inicié mi camino freelance en el 2000 como diseñador web y gráfico. Aprendí a desarrollar sitios web completos en Wordpress. Progresivamente he ido acercandome más y más al mundo del Frontend y el prototipado evolutivo.
-
 {% capture caption %}
 Me gusta el mar
 {% endcapture %}
 
 <figure>
-  <img src="{{ site.url }}/assets/images/bio-kayak.jpg" alt="kayak">
-  <figcaption>
-    {{ caption | markdownify | remove: "<p>" | remove: "</p>" }}
-  </figcaption>
+<img src="{{ site.url }}/assets/images/bio-kayak.jpg" alt="kayak">
+<figcaption>
+{{ caption | markdownify | remove: "<p>" | remove: "</p>" }}
+</figcaption>
 </figure>
+
+Nací en un mes de julio de 1975 en Barcelona. Apasionado desde muy pequeño por el dibujo, me formé en Bellas Artes (EARVIC) y más tarde en Arte Electrónico (ESDI). Inicié mi camino freelance en el 2000 como diseñador web y gráfico. Aprendí a desarrollar sitios web completos en Wordpress. Progresivamente he ido acercandome más y más al mundo del Frontend y el prototipado evolutivo.
 
 En 2015 hago recapitulación y decido replantear completamente mis intereses personales y profesionales teniendo en cuenta el mundo cambiante en el que vivimos, desde entonces dirijo mi energía y enfoco mi propia evolución a formar parte de equipos multidisciplinares colaborando en prototipos evolutivos donde puedo sacar el máximo provecho de mis conocimientos y habilidades.
 

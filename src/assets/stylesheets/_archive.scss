@@ -17,7 +17,7 @@
   align-items: center;
   flex: 1 500px;
   padding-top: 0;
-  padding-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit * 2;
   // color: $color_alt5;
   align-self: center;
 
@@ -87,13 +87,13 @@
 }
 
 .archive__item-excerpt {
-
   font-size: fs(normal);
-  text-align: center;
+  text-align: center !important;
   margin-top: 10px;
   padding: 0;
+  margin-bottom: 0 !important;
   letter-spacing: 4px;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .archive__item-thumb {

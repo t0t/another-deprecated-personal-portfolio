@@ -19,6 +19,7 @@
 @import "mixins";
 @import "reset";
 @import "external"; // external css, fonts
+@import "archive"; // archive listing
 @import "tipografia";
 @import "base";
 @import "grid";
@@ -34,7 +35,6 @@
 @import "brand";
 @import "features";
 @import "breadcrumbs";
-@import "archive"; // archive listing
 @import "glitch"; // glitch effect
 @import "toc"; // table of contents
 

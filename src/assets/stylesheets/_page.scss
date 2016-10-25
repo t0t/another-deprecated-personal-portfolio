@@ -36,7 +36,7 @@
   margin-right: auto;
 
   &--about {
-    background-image: url('../images/bg-pincel.jpg');
+    // background-image: url('../images/bg-pincel.jpg');
     background-size: 500px;
     background-position: right;
     background-repeat: no-repeat;
@@ -117,15 +117,17 @@
 
     @media screen and (min-width: 426px) {
       font-size: fs(x-normal);
-      max-width: 700px; // keep measure at a readable length
+      max-width: 750px; // keep measure at a readable length
     }
     @media screen and (min-width: 1000px) {
       max-width: 800px; // keep measure at a readable length
     }
     @media screen and (min-width: 1430px) {
-      // max-width: 850px; // keep measure at a readable length
       font-size: fs(big);
       // line-height: $line-height-base - 0.15;
+    }
+    @media screen and (min-width: 1441px) {
+      max-width: 1200px; // keep measure at a readable length
     }
   }
 
@@ -210,9 +212,8 @@
     }
   }
 
-  /* hide toc to avoid flash of content as it moves to sidebar */
-  .js-toc {
-    display: none;
+  figure {
+    margin-bottom: $spacing-unit * 2;
   }
 
 }
