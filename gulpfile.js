@@ -8,7 +8,7 @@ const ghPages     = require('gulp-gh-pages');
 
 
 // 'gulp inject' -- injects CSS and JS into includes
-gulp.task('inject', gulp.parallel('inject:css', 'inject:scripts'));
+gulp.task('inject', gulp.parallel('inject:scripts'));
 
 
 // put css to prod

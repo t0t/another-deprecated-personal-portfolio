@@ -67,23 +67,13 @@
     {% if site.owner.yandex.verify %}
     <meta name="yandex-verification" content="{{ site.owner.yandex.verify }}">
     {% endif %}
-
     {% if site.owner.google.plus %}
     <link rel="author" href="{{ site.owner.google.plus }}?rel=author">
     {% endif %}
 
-    <!-- {% if page.layout == "glitch" %}
-      <style>{% include critical-glitch.css %}</style>
-    {% elsif page.layout == "archive" %}
-      <style>{% include critical-archive.css %}</style>
-    {% else page.layout == "tag_index" %}
-      <style>{% include critical-archive.css %}</style>
-    {% else %}
-      <style>{% include critical-article.css %}</style>
-    {% endif %} -->
-
     <!-- Main CSS -->
-    <!-- <link href="/assets/stylesheets/style.css" rel="stylesheet"> -->
+    <link href="{{ site.url }}/assets/stylesheets/style.css" rel="stylesheet">
+
     <!-- Slick sliders-->
     <!-- <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
 
@@ -96,10 +86,7 @@
     <meta name="application-name" content="TODH">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-
-    {% include loadcss.html %}
-
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
 
   </head>
 
