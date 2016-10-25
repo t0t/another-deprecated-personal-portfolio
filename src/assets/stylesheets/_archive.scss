@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: $spacing-unit/2;
+  padding-top: $spacing-unit * 4;
   // border-top: 3px solid $color-cool;
   @extend %altfont_angle; //fuente alternativa + angulo
 }
@@ -52,7 +52,7 @@
 }
 
 .archive__item-title {
-  @extend %altfont_angle; //fuente alternativa + angulo
+  // @extend %altfont_angle; //fuente alternativa + angulo
   padding-top: 0;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -87,13 +87,13 @@
 }
 
 .archive__item-excerpt {
-  font-size: fs(normal);
+  // font-size: fs(normal);
   text-align: center !important;
   margin-top: 10px;
   padding: 0;
   margin-bottom: 0 !important;
   letter-spacing: 4px;
-  max-width: 500px;
+  // max-width: 500px;
 }
 
 .archive__item-thumb {

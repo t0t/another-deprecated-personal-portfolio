@@ -74,7 +74,6 @@ gulp.task('styles', () =>
     .pipe(when(argv.prod, size({
       showFiles: true
     })))
-    .pipe(when(argv.prod, rev()))
     .pipe(when(!argv.prod, sourcemaps.write('.')))
     .pipe(when(argv.prod, gulp.dest('.tmp/assets/stylesheets')))
     .pipe(when(argv.prod, when('*.css', gzip({append: true}))))

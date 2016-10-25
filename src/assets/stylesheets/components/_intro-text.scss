@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: ($base_spacing) $base_spacing * 3;
+  padding: ($base_spacing) $base_spacing * 2;
   // background-color: $lighter-gray;
   letter-spacing: 3px;
 
@@ -21,6 +21,7 @@
 
   h2 {
     @extend %altfont_angle; //fuente alternativa + angulo
+    margin-top: 0;
     font-size: fs(x-big);
     line-height: 1;
     max-width: 450px;

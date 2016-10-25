@@ -42,6 +42,7 @@ This is the source code of [t-o-d-h.com](http://t-o-d-h.com), a personal blog an
 - Backend
 - CMS
 - Testing JS
+- hash CSS en producción
 
 
 

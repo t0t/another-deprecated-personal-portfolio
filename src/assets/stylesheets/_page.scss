@@ -7,10 +7,10 @@
   padding-top: $spacing-unit*2;
 
   &--home {
-    background-image: url('/assets/images/bg-pincel2.jpg');
-    background-size: contain;
-    background-position: right 50px;
-    background-repeat: no-repeat;
+    // background-image: url('/assets/images/bg-pincel2.jpg');
+    // background-size: contain;
+    // background-position: right 50px;
+    // background-repeat: no-repeat;
 
     @media screen and (min-width: 376px) {
       background-size: 75%;
@@ -31,24 +31,45 @@
   justify-content: center;
   align-items: center;
   padding-top: $spacing-unit*2;
-  padding-bottom: $spacing-unit*2;
+  padding-bottom: $spacing-unit;
+  // margin-bottom: $spacing-unit;
+  background-color: $color-cool;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
+  min-height: 25vh;
+
+  @media screen and (min-width: 1024px) {
+    min-height: 45vh;
+  }
 
   &--about {
     // background-image: url('../images/bg-pincel.jpg');
-    background-size: 500px;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-size: 500px;
+    // background-position: right;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+  }
+  &--home {
+    // min-height: 50vh;
+    // @media screen and (min-width: 1024px) {
+    //   min-height: 45vh;
+    // }
+    // background-image: url('../images/bg-pincel.jpg');
+    // background-size: 500px;
+    // background-position: right;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
   }
 }
 
 .page-title {
   flex: 1 100%;
   text-align: center;
-  padding-top: $spacing-unit;
+  padding-top: 0;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  margin-top: 0;
   margin-bottom: $spacing-unit;
   @extend %altfont_angle;
   font-size: fs(x-big);
@@ -57,13 +78,13 @@
 
   @media screen and (min-width: 550px) {
     margin-bottom: $spacing-unit / 3;
-    font-size: fs(x-huge);
+    // font-size: fs(x-huge);
     margin-left: $spacing-unit*2;
     margin-right: $spacing-unit*2;
     letter-spacing: 5px;
   }
   @media screen and (min-width: 1430px) {
-    font-size: fs(colosal);
+    font-size: fs(x-huge);
     line-height: $line-height-base - 0.8;
   }
 }
@@ -113,10 +134,10 @@
     margin-bottom: $spacing-unit;
     max-width: 685px; // keep measure at a readable length
     font-size: fs(normal);
-    text-align: justify;
     // letter-spacing: 1px;
 
     @media screen and (min-width: 426px) {
+      // text-align: justify;
       font-size: fs(x-normal);
       max-width: 750px; // keep measure at a readable length
     }
@@ -134,7 +155,7 @@
 
   /* introductory paragraph */
   > p:first-child {
-    margin-top: 0;
+    margin-top: $spacing-unit;
 
     @include breakpoint($medium) {}
   }
@@ -168,8 +189,6 @@
     }
     @media screen and (min-width: 1000px) {
       max-width: 783px; // keep measure at a readable length
-    }
-    @media screen and (min-width: 1430px) {
     }
   }
   li {
@@ -215,6 +234,10 @@
 
   figure {
     margin-bottom: $spacing-unit * 2;
+
+    @media screen and (min-width: 375px) {
+      margin-bottom: $spacing-unit;
+    }
   }
 
 }
@@ -315,8 +338,10 @@
 }
 
 .last-updated {
-  font-size: fs(normal);
+  font-size: fs(normal) !important;
   color: $gray;
+  @media screen and (min-width: 1430px) {
+  }
 }
 
 /* tag boxes */

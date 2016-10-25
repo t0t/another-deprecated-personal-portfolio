@@ -9,17 +9,25 @@ layout: default
 
   <section itemscope itemtype="http://schema.org/CreativeWork">
 
+    <header class="page-header  page-header--home">
+      <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+
+    {% if page.introText %}
+    <aside>
+      {% include intro-text.html %}
+    </aside>
+    {% endif %}
+
     <main itemprop="text">
-
       {{ content }}
-
-      {% if page.author != false %}
-      <footer class="post__footer">
-        {% include post__author.html %}
-      </footer>
-      {% endif %}
-
     </main>
+
+    {% if page.author != false %}
+    <footer class="post__footer">
+      {% include post__author.html %}
+    </footer>
+    {% endif %}
 
     <!-- <video playsinline autoplay muted loop poster="{{ site.url }}/assets/images/bg-hago.svg" class="video">
       <source src="{{ site.url }}/assets/images/video_bg1.webm" type="video/webm">

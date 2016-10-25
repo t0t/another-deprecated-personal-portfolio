@@ -30,6 +30,12 @@ author: true
     {{ content }}
   </div>
 
+  {% if page.introText %}
+  <aside>
+    {% include intro-text.html %}
+  </aside>
+  {% endif %}
+
   {% if page.tiles == true %}
   {% include archive__tiles.html %}
   {% endif %}

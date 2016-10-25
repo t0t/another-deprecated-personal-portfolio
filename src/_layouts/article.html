@@ -40,6 +40,12 @@ sidebar: false
         {% include post__comments.html %}
       </article>
 
+      {% if page.introText %}
+      <aside>
+        {% include intro-text.html %}
+      </aside>
+      {% endif %}
+
       {% include post__social.html %}
 
       {% if page.path contains '_posts' and page.tags %}
