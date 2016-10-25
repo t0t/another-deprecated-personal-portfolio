@@ -51,16 +51,17 @@ sidebar: false
 
   </section>
 
-  {% if page.path contains '_posts' and site.related_posts.size >= 1 %}
+  {% if page.author != false %}
+  <footer class="post__footer">
+    {% include post__author.html %}
+  </footer>
+  {% endif %}
+
+  {% if page.path contains '_posts' and site.related_posts.size >= 2 %}
     {% include related.html %}
   {% endif %}
 
 </main>
 
-{% if page.author != false %}
-<footer class="post__footer">
-  {% include post__author.html %}
-</footer>
-{% endif %}
 
 {% include colophon.html %}

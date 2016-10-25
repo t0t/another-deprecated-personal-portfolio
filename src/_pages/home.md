@@ -75,5 +75,6 @@ introText:
 ---
 
 <h1 class="page-title">{{ page.title }}</h1>
+
 {% include intro-text.html %}
 {% include feature_row %}

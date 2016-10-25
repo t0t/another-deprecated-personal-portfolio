@@ -1133,7 +1133,8 @@ body:hover .visually-hidden button {
    SINGLE PAGE/POST
    ========================================================================== */
 .main {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-top: 50px; }
   .main--home {
     background-image: url("/assets/images/bg-pincel2.jpg");
     background-size: contain;

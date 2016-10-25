@@ -4,6 +4,7 @@
 
 .main {
   overflow-x: hidden;
+  padding-top: $spacing-unit*2;
 
   &--home {
     background-image: url('/assets/images/bg-pincel2.jpg');

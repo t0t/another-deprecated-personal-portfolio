@@ -4,6 +4,52 @@ http://t0t.github.io/t-o-d-h.com o http://t-o-d-h.com
 This is the source code of [t-o-d-h.com](http://t-o-d-h.com), a personal blog and portfolio of Sergio Forés [sergiofores.es](http://sergiofores.es)
 
 
+## Qué incluye un prototipo evolutivo
+
+- Arquitectura HTML
+- Motor de plantillas (Jade, Liquid)
+- Maquetación CSS
+- Guía de estilo
+- Favicon
+- Javascript Puro básico orientado a DOM
+- Html Semántico
+- Tecnicas SVG
+- Animaciones y transiciones CSS
+- Minima configuración SEO
+- Formulario de contacto operativo
+- Optimización imágenes
+- Una nomenclatura clara y entendible
+- Compartir en twitter, facebook
+- Entorno de desarrollo
+  - Minificado CSS
+  - Minificado imagenes
+  - Preprocesamiento Sass
+  - Concatenación de JS
+  - Compresión CSS
+  - Compresión HTML
+  - Responsive Layout
+  - Deployment
+  - BrowserSync
+  - Watch
+
+## Que no necesita incluir un prototipo evolutivo
+
+- PostCSS
+- Critical CSS
+- Javascript avanzado
+- Frameworks o librerías (Angular, React...)
+- Backend
+- CMS
+- Testing JS
+
+
+
+
+
+
+
+
+
 `<svg class="icon icon--todh">
   <use xlink:href="#icon-imagen-post"></use>
 </svg>`
