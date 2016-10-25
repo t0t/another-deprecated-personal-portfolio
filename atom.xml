@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/atom.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-10-24T01:53:12+02:00</updated>
+  <updated>2016-10-25T16:58:08+02:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Sergio Forés</title>
@@ -31,12 +31,12 @@
 
   
     <entry>
-  <title>TAY</title>
-  <link href="http://t-o-d-h.com/articles/tay/" rel="alternate" type="text/html" title="TAY" />
+  <title>El fenómeno todo aquí ya</title>
+  <link href="http://t-o-d-h.com/articles/tay/" rel="alternate" type="text/html" title="El fenómeno todo aquí ya" />
   <published>2016-10-15T00:00:00+02:00</published>
 
   
-    <updated>2016-10-15T22:30:07+02:00</updated>
+    <updated>2016-10-24T22:30:07+02:00</updated>
   
 
   <id>http://t-o-d-h.com/articles/tay</id>
@@ -46,23 +46,77 @@
 &lt;p&gt;&lt;img src=&quot;http://t-o-d-h.com/assets/images/-1024.&quot; alt=&quot;&quot; class=&quot;page__hero-image&quot; srcset=&quot;http://t-o-d-h.com/assets/images/-320. 320w, http://t-o-d-h.com/assets/images/-600. 600w, http://t-o-d-h.com/assets/images/-768. 768w, http://t-o-d-h.com/assets/images/-1024. 1024w, http://t-o-d-h.com/assets/images/-1600. 1600w&quot; sizes=&quot;(max-width: 1200px) 100vw&quot; /&gt;&lt;/p&gt;
 
 
-    &lt;h2 id=&quot;ya-lo-tienes&quot;&gt;Ya lo tienes&lt;/h2&gt;
-&lt;p&gt;El propósito siempre es previo a la existencia.&lt;/p&gt;
+    
+&lt;figure&gt;
+&lt;img src=&quot;http://t-o-d-h.com/assets/images/magrana.jpg&quot; alt=&quot;kayak&quot; /&gt;
+&lt;figcaption&gt;
 
-&lt;p&gt;A veces me siento tentado de crear mi propio concepto “nuevo” y casi siempre acabo descubriendo más tarde que alguien ya tuvo esa misma idea antes que yo. Seguro que ocurre algo parecido con TAY (Todo Aquí Ya)… Creedme, podría escribir un libro entero sobre este fenómeno. Vivimos en la era del todo aquí ya.&lt;/p&gt;
 
-&lt;p&gt;El problema es que ese “todo” se ha ido vaciando de contenido. ¿Quieres un sitio web? En un chasquido de dedos tienes 200 plantillas html todas igual de bonitas por fuera y vacías por dentro. No son reales.&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;¿Podemos darle la vuelta al concepto de TAY “todo aquí ya” para que nos aporte algo con sentido práctico de verdad?&lt;/p&gt;
+&lt;p&gt;Hoy en dia es un hecho bastante obvio que la inmediatez está en todas partes, baña a todos y a todo por igual. No importa si estamos hablando de experiencia de usuario, procesos de desarrollo de productos digitales o de cualquier otro tema. Vivimos en la era del &lt;strong&gt;“todo aquí ya”&lt;/strong&gt;. Y vamos a profundizar en este fenómeno para ver qué enseñanzas podemos extraer.&lt;/p&gt;
 
-&lt;p&gt;Sí, se puede, mete en tu mochila únicamente TODO lo que es importante y empieza el viaje, la aventura real de ir a alguna parte. Cada paso que des te dara una sesación de plenitud TAY.&lt;/p&gt;
+&lt;h3 id=&quot;tomandole-el-pulso-al-presente&quot;&gt;Tomandole el pulso al presente&lt;/h3&gt;
 
-&lt;p class=&quot;last-updated&quot;&gt;Last updated: October 15, 2016&lt;/p&gt;
+&lt;p&gt;En primer lugar el “todo aquí ya” ha venido para quedarse, pero no es nuevo, ha estado aquí siempre, porque está embebido tanto en los artefactos como en los seres vivos. Observando el latido constante de nuestro corazón podemos llegar a comprender porqué nos gusta tanto que nos alimenten constantemente de significados, ya que ese “riego sanguíneo” está íntimamente ligado con la vida de la que formamos parte. Es un tema tan obvio que no lo vemos, como el pez que no es consciente del papel que el agua juega en su vida.&lt;/p&gt;
+
+&lt;p&gt;La instantaneidad, pues, tiene mucho que ver con la cadencia, el ritmo, el suministro de pequeñas porciones de realidad que sostienen nuestros pensamientos y nuestras ilusiones.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Vacía tu mente, se amorfo, moldeable, como el agua. Si pones agua en una taza se convierte en la taza. Si pones agua en una botella se convierte en la botella. Si la pones en una tetera se convierte en la tetera. El agua puede fluir o puede golpear. Sé agua amigo mío.” Bruce Lee&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Cuando estamos hablando de prototipado web vemos claramente como tiene más peso traer el potencial completo de algo que ya podemos experimentar y palpar, que simplemente creernos una promesa futura que no sabemos a ciencia cierta si va a resultar beneficiosa, porque &lt;strong&gt;una promesa no está a nuestro alcance aún y rompe el flujo natural de comunicación que tenemos con el presente&lt;/strong&gt;. El presente es, al final, lo único real que tenemos y se mantiene gracias a la &lt;strong&gt;actualización&lt;/strong&gt; constante.&lt;/p&gt;
+
+&lt;p&gt;Esos latidos del corazón que mencioné antes son, llevados a lo digital, las microinteracciones que realizamos y en que se subdivide cualquiera de nuestras acciones. La gran conclusión a la que siempre queremos llegar no llegará sin antes haber tejido toda una cadena de pequeñas conclusiones unidas a pequeñas preguntas que podemos contestar fácil y rápidamente. Esa es la magia que la inmediatez nos da y el éxito de las redes sociales.&lt;/p&gt;
+
+&lt;p&gt;Si observamos la ola que llegó a la orilla podremos darnos cuenta de que sólo es una consecuencia lógica de millones de otras pequeñas olas uniéndose y empujando en una misma dirección de forma sostenida y coherente.&lt;/p&gt;
+
+&lt;h3 id=&quot;qu-queremos-decir-cuando-decimos-que-lo-queremos-todo&quot;&gt;¿Qué queremos decir cuando decimos que lo queremos “todo”?&lt;/h3&gt;
+
+&lt;p&gt;Cuando un cliente le pide a un proveedor un árbol, tiene clara la idea de lo que es un árbol porque mira el bosque y ve muchos árboles que le sirven de referencia. Sin embargo no tiene la más remota idea de cómo será su árbol en particular. Saber esto es siempre complicado, al menos de entrada, de modo que la tendencia suele ser pedir un arbol genérico que sirva como modelo. &lt;strong&gt;“Quiero un árbol como ese de ahí”. El problema de esto es que al final todos los árboles terminan siendo practicamente iguales a “ese arbol de ahí”.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Por norma general un cliente o usuario que lo quiere “todo”  está buscando obtener algo (espectativas, valores) dando lo mínimo (tiempo, energía…) y eso es una paradoja en la que merece la pena detenerse, porque sí es posible pero no con un enfoque clásico.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“No podemos resolver los problemas con el mismo nivel de pensamiento que usamos cuando se crearon”. &lt;em&gt;A. Einstein&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;para-poder-obtenerlo-todo-hay-que-poder-darlo-todo&quot;&gt;Para poder obtenerlo todo hay que poder darlo todo.&lt;/h3&gt;
+
+&lt;p&gt;Todo está constituído por un intercambio equilibrado de energías y esto es una ley increbantable. La clave del éxito radica en ser exacto y preciso entre lo que se da y lo que se recibe. Cuando no es así hay drama, hay desajuste y hay engaño. Lamentablemente muchos proveedores terminan ofreciendo ungüentos y pociones edulcorados que no son más que humo. Y esto es así porque las más altas espectativas requieren de los más altos sacrificios. &lt;strong&gt;El proveedor honesto debe saber encontrar la forma de convertirse en ese héroe legendario capaz de robarle el fuego a los dioses&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ofrecerlo &lt;strong&gt;todo aquí ya&lt;/strong&gt; implica ese &lt;a href=&quot;https://es.wikipedia.org/wiki/El_h%C3%A9roe_de_las_mil_caras&quot; target=&quot;_blank&quot;&gt;viaje del héroe&lt;/a&gt; que no todos están dispuestos a transitar porque hay monstruos y trampas por el camino y muchos carteles que repiten la proclama castradora de que “esto no es posible”.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-buena-notcia-ya-lo-tienes&quot;&gt;La buena notícia: ¡Ya lo tienes!&lt;/h2&gt;
+
+&lt;p&gt;En este artículo estoy tratando de alinearte conceptualmente con aquello que es obvio, un aspecto estructural del funcionamiento de la realidad. Lo que espero haber conseguido transmitir es la idea de que estamos nadando en un mar de pequeñas posibilidades que actualizan permanentemente un gran potencial y no lo hacen &lt;em&gt;antes&lt;/em&gt; ni &lt;em&gt;después&lt;/em&gt; sino &lt;em&gt;durante&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Podemos alcanzar lo que sucede simplemente sucediendo de la misma manera, hablando el mismo idioma que la creación. Ya somos parte de un sistema que funciona a la perfección.&lt;/p&gt;
+
+&lt;p&gt;Buscamos quimeras de innovación, diseño, rapidez, validación, feedback, etc, y todo eso es en realidad lo único que hay en el momento presente, cada segundo, cada minuto, y cada hora de nuestra existencia. Es la inercia y la sinérgia lo que lleva las olas a la orilla, es el agua lo que da sentido a la botella… no al revés.&lt;/p&gt;
+
+&lt;p&gt;Un vasto campo de posibilidades se nos abre simplemente poniendo la atención al momento presente y negociando con él en su justa medida. Nos relacionamos con el todo a partir de pequeñas porciones completas de esa misma totalidad, pequeñas dosis que sí podemos anticipar y controlar y que no producen desgaste.&lt;/p&gt;
+
+&lt;p&gt;En una inmediatez coherente y alineada con nuestro propósito hayamos la plenitud, de lo contrario no somos más que galgos persiguiendo liebres de madera, hámsters en una rueda con prisa por una satisfacción inmediata mal entendida e incompleta.&lt;/p&gt;
+
+&lt;h3 id=&quot;llegas-cada-vez-que-das-un-paso&quot;&gt;Llegas cada vez que das un paso&lt;/h3&gt;
+
+&lt;p&gt;Seguramente si eres diseñador habrás oído de algún cliente la demoledora frase de: “No sé lo que quiero pero cuando lo vea lo sabré…”. Lo cual es como decir “invierte todo tu tiempo y tu energía en edificar un palacio que tal vez no sea el palacio que necesito”. El único que tuvo ese nivel de anticipación y acierto fué el que le encargo el arca a Noé.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;La clave está en la energía que te impulsa a dar el siguiente paso y la energía que tienes disponible ahora para corregirlo&lt;/strong&gt;, no cuan de fantástico es el palacio que te espera, o no, al final del camino. Porque lo único que sacia la sed al usuario, al cliente o al proveedor es el agua y cuanto antes esté disponible mejor. Ese es el estado en el que deben estar nuestras espectativas el lugar donde está verdaderamente todo lo que queremos y tenemos. Ese es el “fuego de los dioses” al que siempre, de manera mas o menos inconsciente, nos referimos cuando decimos que lo “queremos todo”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;El propósito siempre es previo a la existencia&lt;/strong&gt;. Las flores no son vistosas porque sí, ni el cielo es azúl porque “quede bien” en las fotos, todas estas cosas que anecdóticamente nos pueden agradar o disgustar no son más que la consecuencia lógica de un proceso anterior mucho más importante; el verdadero própósito que impulsa la evolución.&lt;/p&gt;
+
+&lt;p&gt;Sí, se puede, mete en tu mochila únicamente TODO lo que es importante y empieza el viaje, la aventura real de ir a alguna parte. Cada paso que des te dará una sensación de plenitud “todo aquí ya”.&lt;/p&gt;
+
+&lt;p class=&quot;last-updated&quot;&gt;Last updated: October 24, 2016&lt;/p&gt;
 
 
     
 
-&lt;p&gt;&lt;a href=&quot;http://t-o-d-h.com/articles/tay/&quot; rel=&quot;nofollow&quot;&gt;TAY&lt;/a&gt; was originally published by &lt;a href=&quot;http://t-o-d-h.com/about/&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt; on &lt;a href=&quot;http://t-o-d-h.com&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://t-o-d-h.com/articles/tay/&quot; rel=&quot;nofollow&quot;&gt;El fenómeno todo aquí ya&lt;/a&gt; was originally published by &lt;a href=&quot;http://t-o-d-h.com/about/&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt; on &lt;a href=&quot;http://t-o-d-h.com&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt;&lt;/p&gt;
 
 
   </content>
@@ -87,9 +141,11 @@
   
     <category term="Proceso" />
   
+    <category term="Prototipado" />
+  
 
   
-    <summary type="text">Dale la vuelta al ‘todo aquí ya’</summary>
+    <summary type="text">Como darlo todo ahora (y sin mentir)</summary>
   
 </entry>
 
