@@ -68,6 +68,8 @@ secondary:
 colophon-menu:
   - title: "Mapa del sitio"
     url: /sitemap/
+  - title: "Design Pattern"
+    url: /style-guide/
 
 colophon-social:
   - title: "Twitter"

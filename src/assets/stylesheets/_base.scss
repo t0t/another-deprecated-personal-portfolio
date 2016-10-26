@@ -90,7 +90,8 @@ ol, ul {
 
 tt, code, kbd, samp, pre {
   font-family: $monospace;
-  font-size: inherit;
+  font-size: fs(normal);
+  text-align: left;
 }
 
 pre {
@@ -184,6 +185,16 @@ figcaption {
   }
 }
 
+
+// Hiding elements (JS)
+.hide{
+  display: none;
+}
+
+::selection {
+  color: #000;
+  background: $color_alt7;
+}
 
 /* Fix IE9 SVG bug */
 

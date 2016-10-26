@@ -13,7 +13,6 @@ image:
 tags: [TODH, Proceso]
 comments: false
 comments_locked: true
-fullwidth: true
 sidebar: false
 featured: false
 ---

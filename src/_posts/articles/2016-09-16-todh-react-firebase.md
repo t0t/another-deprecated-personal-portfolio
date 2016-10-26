@@ -12,8 +12,7 @@ author: false
 tags: [TODH, Proceso]
 comments: false
 comments_locked: true
-fullwidth: true
-featured: true
+featured: false
 ---
 
 He querido bucear un poco en el mundo de ReactJS y en el uso de Firebase como CMS creando un prototipo.

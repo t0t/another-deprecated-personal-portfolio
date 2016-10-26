@@ -10,7 +10,20 @@ layout: default
   <section itemscope itemtype="http://schema.org/CreativeWork">
 
     <header class="page-header  page-header--home">
-      <h1 class="page-title">{{ page.title }}</h1>
+
+      <div id="step1" class="step">
+        <h1 class="page-title">{{ page.title }}</h1>
+        <button id="buttonStep1" class="btn  btn--step">+</button>
+      </div>
+      <div id="step2" class="hide  step">
+        <h1 class="page-title">{{ page.title2 }}</h1>
+        <button id="buttonStep2" class="btn  btn--step">+</button>
+      </div>
+      <div id="step3" class="hide  step">
+        <h1 class="page-title">{{ page.title3 }}</h1>
+        <button id="buttonStep3" class="btn  btn--step">+</button>
+      </div>
+
     </header>
 
     {% if page.introText %}

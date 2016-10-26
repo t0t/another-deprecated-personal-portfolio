@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  margin-top: 0;
+  margin-top: $spacing-unit;
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
   margin-bottom: 0;
@@ -19,16 +19,16 @@
 
   li {
     // @extend %altfont_angle; //fuente alternativa + angulo
-    text-transform: uppercase;
-    font-size: fs(small);
-    letter-spacing: 1px;
+    // text-transform: uppercase;
+    font-size: fs(normal);
+    letter-spacing: 0;
     text-align: center;
     margin-bottom: 5px;
     margin-right: $spacing-unit;
     // text-decoration: underline;
 
     @media screen and (min-width: 1441px) {
-      font-size: fs(normal);
+      // font-size: fs(normal);
     }
 
     &:last-child {

@@ -4,14 +4,11 @@
 
     <p class="colophon__copyright">
 
-      &#169; {{ site.time | date: '%Y' }}
-
-      {{ site.owner.name }},
-      <a href="{{ site.url }}/humans.txt">Hand-crafted by a real human being</a>.
-      <a href="{{ site.owner.github-repo }}" title="view source on GitHub" rel="nofollow">Repositorio</a>
+      <a href="{{ site.url }}/humans.txt">Soy un ser humano</a>
+      <a href="{{ site.owner.github-repo }}" title="view source on GitHub" rel="nofollow"> · Repositorio</a>
 
       {% for link in site.data.navigation.colophon-menu %}
-        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+        <a href="{{ site.url }}{{ link.url }}">· {{ link.title }}</a>
       {% endfor %}
 
     </p>

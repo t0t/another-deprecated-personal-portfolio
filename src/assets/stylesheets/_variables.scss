@@ -18,7 +18,8 @@ $extra                        : 10px;
    Typography related variables
    ========================================================================== */
 
-$font_main  : "Open Sans", "Arial", sans-serif;
+$font_main  : 'Proza Libre', "Arial", sans-serif;
+// $font_main  : "Open Sans", "Arial", sans-serif;
 // $font_alt   : "Shadows Into Light", cursive;
 $font_alt   : "Permanent Marker", cursive;
 
@@ -50,19 +51,22 @@ $font_size: 12px;
 $color_alt                    : seashell;
 $color_alt2                   : rgb(129, 232, 179);
 $color_alt3                   : rgba(255, 0, 243, 0.38);
-$color_alt4                   : rgba(129, 232, 179, .7);
+$color_alt4                   : rgba(129, 232, 179, .57);
+$color_alt7                   : rgb(183, 242, 212);
 $color_alt5                   : rgba(0, 0, 255, 0.5);
-$color_alt6                   : rgb(100, 100, 0);
+$color_alt6                   : rgb(206, 26, 44);
+// $color_alt6                   : rgb(179, 146, 94);
 
 $white                        : #fff;
 $black                        : #000;
 
 $gray                         : #808080;
-$dark-gray                    : #191413;
+$dark-gray                    : hsla(10,0%,15%,1);
 $light-gray                   : rgba(0,0,0,.5);
 $lighter-gray                 : #f9f9f9;
 
-$text-color                   : $black;
+$color_page_header            : $dark-gray;
+$text-color                   : $dark-gray;
 // $headline-color               : $gray;
 $headline-color               : $color_alt3;
 
@@ -71,17 +75,17 @@ $background-color             : $white;
 $highlighter-color            : #f3bc15;
 
 // $background-color3         : rgb(183,131,109);
-$color-cool                   : rgb(129,232,179);
+$color-cool                   : $color_alt7;
 $brand-color                  : $black;
 $color_headers                : $color_alt3;
 // $color-cool                : rgb(224,108,117);
 
 
-$primary-color                : mix($black, $gray, 35%);
-$success-color                : mix($gray, rgb(129,232,179), 15%);
+$primary-color                : mix($black, $lighter-gray, 20%);
+$success-color                : mix($gray, $color_alt2, 15%);
 $warning-color                : mix($gray, #f3bc15, 15%);
 $danger-color                 : mix($gray, #dc081d, 15%);
-$info-color                   : mix($gray, #427ab8, 15%);
+$info-color                   : mix($gray, $color_alt5, 15%);
 
 $border-color                 : mix($white, $gray, 80%);
 

@@ -1,25 +1,20 @@
 ---
-layout: archive
+layout: style-guide
 permalink: /style-guide/
 title: "Style Guide"
 date: 2015-01-28T12:05:57-05:00
-modified: 2015-02-05T10:32:14-05:00
+modified: 2016-10-26T10:32:14-05:00
 excerpt: "A handy collection of all the colors, typography, UI patterns, and components used on TODH."
-fullwidth: true
 ads: false
 share: false
 ---
 
-{{ page.excerpt | markdownify }}
-
-Where applicable links to a component's Sass partial[^sass] and/or `_include` are provided along with short descriptions of typical usage.
-
-[^sass]: Sass partials are written using the Sassy SCSS syntax (or SCSS) and can be found in [`_assets/stylesheets/`]({{ site.owner.github-repo }}_assets/stylesheets/).
+<!-- {{ page.excerpt }} -->
 
 {% assign entries = site.colors %}
 {% assign componentsByType = site.components | group_by:"type" %}
 
-<nav id="component-selector" class="wrap">
+<nav id="component-selector" class="component-selector">
   <form>
     <select name="newurl" id="component-select" onChange="window.location.replace(this.options[this.selectedIndex].value)">
       <option value="">Select a Component</option>
@@ -34,18 +29,18 @@ Where applicable links to a component's Sass partial[^sass] and/or `_include` ar
   </form>
 </nav>
 
-<h2 id="guide-color-palettes" class="cf">Colors</h2>
+<h2 id="guide-color-palettes" class="styleguide__header">Colors</h2>
 
 {% for entry in entries %}
   {% include component-color.html %}
 {% endfor %}
 
-<!--  revisar OJO -->
-<article class="component">
 
 {% for type in componentsByType %}
-  <h2 id="guide-{{ type.name }}" class="cf">{{ type.name | capitalize }}</h2>
-  {% for entry in type.items %}
-    {% include component.html %}
-  {% endfor %}
+  <article class="component">
+    <h2 id="guide-{{ type.name }}" class="styleguide__header">{{ type.name | capitalize }}</h2>
+    {% for entry in type.items %}
+      {% include component.html %}
+    {% endfor %}
+  </article>
 {% endfor %}

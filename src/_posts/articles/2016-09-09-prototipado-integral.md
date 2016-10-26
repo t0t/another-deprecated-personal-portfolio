@@ -7,7 +7,6 @@ image:
   teaser: proceso-web-todh.png
   svg: imagen-post
 comments: false
-fullwidth: true
 featured: false
 modified: 2016-09-09T16:32:07-04:00
 ---

@@ -1,7 +1,9 @@
 ---
 layout: home
 permalink: /
-title: "Visión global con foco en el prototipado"
+title: "Prototipado HTML/CSS"
+title2: "Prototipado Evolutivo, Sistémico, Disruptivo"
+title3: "Prototipado Holístico"
 subtitle: "Transmite. Observa. Define. ¡Haz!"
 excerpt: "Proceso ideas y las llevo a productos mínimos viables reales que evolucionan."
 date: 2014-06-01
@@ -48,8 +50,9 @@ introText:
     list:
       - title: ""
       - item: "-Wireframes"
-      - item: "-Prototipado"
-      - item: "-VISUAL DESIGN"
+      - item: "-Prototipado Hi/Lo Fi"
+      - item: "-Diseño Visual"
+      - item: "-System Design"
       - item: "-CSS / Sass"
       - item: "-Html templating"
 ---

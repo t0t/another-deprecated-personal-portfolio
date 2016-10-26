@@ -5,41 +5,25 @@
 /*
    Default button
    ========================================================== */
-// .front {
-//   background-color: red;
-// }
-// .face {
-//   backface-visibility: hidden;
-// }
-// .back {
-//   transform: rotateY(180deg);
-//   background-color: blue;
-// }
+
 .btn {
   /* default button */
+  font-size: fs(normal);
   display: inline-block;
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
-  // padding-top: $spacing-unit/1.5;
-  padding-bottom: 5px;
-  // color: $black;
-  font-size: fs(normal);
+  padding-bottom: 4px;
+  // font-size: fs(normal);
   @extend %altfont_angle;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  // letter-spacing: 3px;
+  // text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
   cursor: pointer;
   color: $color_alt5;
   border-bottom: 2px solid $color_alt5;
-  // background-color: $color-cool;
 
   transition: padding .3s ease-in-out;
-  // transform: rotate3d(1, 1, 1, 348deg);
-
-  // transform: perspective(250px);
-
-  // backface-visibility: visible;
 
   &:active {
     // move button slightly on click
@@ -73,13 +57,9 @@
   }
 
   &--tile {
-    // position: absolute;
-    // background-color: $color_alt2;
-    // flex-basis: 0;
     width: 50px;
     height: 50px;
     text-align: center;
-    // min-width: 100px;
     border-radius: 50%;
     font-size: fs(normal);
   }
@@ -100,6 +80,23 @@
 
     &:hover {
       background-color: mix(#000, #fff, 20%);
+    }
+  }
+
+  /* for "stepping" */
+  &--step {
+    font-size: fs(huge);
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    transition: color 1s ease-out;
+    margin: 0;
+    line-height: 1;
+
+    &:hover {
+      color: $black;
+      // background-color: $color_alt5;
+      border: none;
     }
   }
 
@@ -158,6 +155,8 @@
   /* social buttons */
   $social:
   (facebook, $facebook-color),
+  (linkedin, $linkedin-color),
+  (youtube, $youtube-color),
   (twitter, $twitter-color);
 
   @each $socialnetwork, $color in $social {
@@ -168,8 +167,13 @@
       padding: 10px 12px;
       border-bottom: none;
       font-family: $font_main;
+      // font-size: fs(small);
+      color: $white;
 
       &:hover {
+        padding: 10px 12px;
+        border-bottom: none;
+        color: $white;
         background-color: mix(#000, $color, 20%);
       }
     }

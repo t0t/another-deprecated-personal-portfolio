@@ -20,9 +20,15 @@
   font-size: fs(normal);
 
   h4 {
+    font-size: fs(normal);
+    max-width: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+    transform: rotate(0deg);
     margin-top: 0 !important; // override
     margin-bottom: 0.75em;
     line-height: 1 !important; // override
+
   }
 
   @at-root .page-content #{&} h4 {
