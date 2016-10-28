@@ -43,7 +43,7 @@ owner:
     verify       : #"Y5DYjZ4VWlrQzBP5kcQJeOKLNas"
   yandex:
     verify       : #"55a5419baf76a498"
-  bio            : "Diagramación y diseño de prototipos en entornos de desarrollo y producción"
+  bio            : "Soy un papá orgulloso de sus hijos, diseñador web y front-end y en la clandestinidad inventor y artista. Residente en un pueblecito cerca de Barcelona. Trato de aportar una visión holista, integradora y coherente de la vida, el arte y el desarrollo web con el proyecto TODH."
   avatar         : "bio-photo.jpg" # 160x160 px image for author byline
 staticman:
   allowedFields  : ['name', 'email', 'url', 'message']

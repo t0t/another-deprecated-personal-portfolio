@@ -278,10 +278,19 @@ blockquote {
   max-width: 1024px;
   align-self: center;
 }
+
+
+.cp_embed_iframe {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /*
    Global animation transition
    ========================================================================== */
 
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item, .archive__item-thumb, .archive__item-body, .palette__swatch {
-  transition: $global-transition;
-}
+// b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item, .archive__item-thumb, .archive__item-body, .palette__swatch {
+//   transition: $global-transition;
+// }

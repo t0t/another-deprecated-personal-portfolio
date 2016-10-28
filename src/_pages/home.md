@@ -25,7 +25,7 @@ feature_row:
     title:
     excerpt: "Tengo claro que buenas semillas hacen buenos árboles."
     url: "/work/"
-    btn_label: "Algunos proyectos"
+    btn_label: "Hago cosas"
 
   - image_path:
     img_as_bg: false

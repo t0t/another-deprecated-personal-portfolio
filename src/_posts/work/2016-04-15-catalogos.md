@@ -33,7 +33,7 @@ tags: [Graphic, Layout, Editorial]
 work: "Más de 10 años maquetando para papel"
 comments: false
 comments_locked: true
-featured: true
+featured: false
 ---
 
 Más de diez años maquetando catálogos de muebles, también he maquetado la portada del disco "Sempre de Vacances" del grupo 2princesses barbudes y el semanario 7dies Benicarló.

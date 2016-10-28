@@ -1,9 +1,9 @@
 ---
 permalink: /contact/
-title: "Contacto"
+title: "Transmitir"
 date: 2015-05-22
 modified: 2016-01-05T16:13:31-05:00
-excerpt: "Cuéntame lo que se te ocurre"
+excerpt: "Abramos un canal de comunicación"
 image:
   feature: manotierra.jpg
   teaser: image1.jpg

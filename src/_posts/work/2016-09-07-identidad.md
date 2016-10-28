@@ -23,7 +23,7 @@ tags: [Branding]
 work: "Experiencia en creación de logotipos"
 comments: false
 comments_locked: true
-featured: true
+featured: false
 ---
 
 :smile:.

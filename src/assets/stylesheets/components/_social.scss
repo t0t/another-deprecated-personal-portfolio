@@ -7,7 +7,7 @@
   margin-top: $spacing-unit;
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
-  margin-bottom: 0;
+  margin-bottom: $spacing-unit;
   max-width: 400px;
 
   @media screen and (min-width: 425px) {
@@ -18,14 +18,12 @@
   }
 
   li {
-    // @extend %altfont_angle; //fuente alternativa + angulo
-    // text-transform: uppercase;
     font-size: fs(normal);
     letter-spacing: 0;
     text-align: center;
     margin-bottom: 5px;
-    margin-right: $spacing-unit;
-    // text-decoration: underline;
+    margin-right: 10px;
+    margin-left: 10px;
 
     @media screen and (min-width: 1441px) {
       // font-size: fs(normal);

@@ -1,37 +1,37 @@
 .author {
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
+  padding-top: $spacing-unit*2;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
   position: relative;
-  letter-spacing: 4px;
+  background-color: $light-gray;
+
+  @media screen and (min-width: 426px) {
+    margin: $spacing-unit;
+  }
 
   &__name {
-    font-size: fs(x-normal);
-    margin-top: -10px;
-    flex: 0;
-    @extend %altfont_angle; //fuente alternativa + angulo
+    font-size: fs(big);
+    margin-top: 10px;
+    flex: 1 100%;
+    // @extend %altfont_angle; //fuente alternativa + angulo
     color: $color_alt5;
-    border-bottom: 3px solid $color_alt5;
+    // border-bottom: 3px solid $color_alt5;
     padding-bottom: -10px;
     a:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
     }
 
-    @media screen and (min-width: 779px) {
-      font-size: fs(x-big);
-    }
     @media screen and (min-width: 1430px) {
-      font-size: fs(huge);
+      // font-size: fs(huge);
       // line-height: $line-height-base - 0.15;
     }
   }
 
   &__bio {
-    @extend %altfont_angle; //fuente alternativa + angulo
+    // @extend %altfont_angle; //fuente alternativa + angulo
     flex: 1 100%;
     max-width: 800px;
     text-align: center;

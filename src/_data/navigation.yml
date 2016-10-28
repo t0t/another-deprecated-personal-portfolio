@@ -23,14 +23,14 @@ home-secondary:
 # Masthead navigation links
 
 masthead:
-  - title: "Soy"
-    url: /about/
-  - title: "Actúo"
-    url: /work/
-  - title: "Pienso"
-    url: /articles/
-  - title: "Comunico"
+  - title: "T"
     url: /contact/
+  - title: "O"
+    url: /about/
+  - title: "D"
+    url: /articles/
+  - title: "H"
+    url: /work/
 
 
 # Primary site navigation links (overlay)
