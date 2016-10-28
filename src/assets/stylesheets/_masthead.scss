@@ -15,7 +15,7 @@
   justify-content: space-around;
   align-items: center;
 
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: 374px) {
     justify-content: space-between;
     // margin-top: $spacing-unit;
     padding-left: $spacing-unit;
@@ -52,7 +52,7 @@
 }
 
 .masthead__menu-wrapper {
-  @media (max-width: $small) {
+  @media screen and (max-width: 375px) {
     width: 100%;
   }
 }

@@ -31,7 +31,6 @@
   }
 
   &__bio {
-    // @extend %altfont_angle; //fuente alternativa + angulo
     flex: 1 100%;
     max-width: 800px;
     text-align: center;
@@ -47,6 +46,7 @@
       font-size: fs(x-normal);
     }
     @media screen and (min-width: 1441px) {
+      max-width: 1810px;
       margin-top: $spacing-unit;
       font-size: fs(big);
     }
