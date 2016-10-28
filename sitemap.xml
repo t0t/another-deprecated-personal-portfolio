@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://t-o-d-h.com/work/ejercicios/</loc>
+<lastmod>2016-10-27T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://t-o-d-h.com/articles/tay/</loc>
 <lastmod>2016-10-15T00:00:00+02:00</lastmod>
 </url>
@@ -37,7 +41,7 @@
 <lastmod>2016-04-15T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://t-o-d-h.com/articles/video-tot/</loc>
+<loc>http://t-o-d-h.com/work/video-tot/</loc>
 <lastmod>2013-08-07T00:00:00+02:00</lastmod>
 </url>
 <url>

@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/atom.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-10-27T02:24:58+02:00</updated>
+  <updated>2016-10-28T07:20:50+02:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Sergio Forés</title>
@@ -28,6 +28,62 @@
   </author>
 
 
+
+  
+    <entry>
+  <title>Ejercicios</title>
+  <link href="http://t-o-d-h.com/work/ejercicios/" rel="alternate" type="text/html" title="Ejercicios" />
+  <published>2016-10-27T00:00:00+02:00</published>
+
+  
+    <updated>2016-10-27T19:32:07+02:00</updated>
+  
+
+  <id>http://t-o-d-h.com/work/ejercicios</id>
+  <content type="html" xml:base="http://t-o-d-h.com/work/ejercicios/">
+    
+
+&lt;p&gt;&lt;img src=&quot;http://t-o-d-h.com/assets/images/-1024.&quot; alt=&quot;&quot; class=&quot;page__hero-image&quot; srcset=&quot;http://t-o-d-h.com/assets/images/-320. 320w, http://t-o-d-h.com/assets/images/-600. 600w, http://t-o-d-h.com/assets/images/-768. 768w, http://t-o-d-h.com/assets/images/-1024. 1024w, http://t-o-d-h.com/assets/images/-1600. 1600w&quot; sizes=&quot;(max-width: 1200px) 100vw&quot; /&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Preparando un sistema de navegación a partir de SVGs superpuestos. Muy triky pero daré con ello.&lt;/p&gt;
+
+&lt;p data-height=&quot;375&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;ORGGNP&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/t0t/pen/ORGGNP/&quot;&gt;ORGGNP&lt;/a&gt; by Sergio Forés (&lt;a href=&quot;http://codepen.io/t0t&quot;&gt;@t0t&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+
+    
+
+&lt;p&gt;&lt;a href=&quot;http://t-o-d-h.com/work/ejercicios/&quot; rel=&quot;nofollow&quot;&gt;Ejercicios&lt;/a&gt; was originally published by &lt;a href=&quot;http://t-o-d-h.com/about/&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt; on &lt;a href=&quot;http://t-o-d-h.com&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt;&lt;/p&gt;
+
+
+  </content>
+
+  
+  <author>
+    
+      <name>Sergio Forés</name>
+    
+    
+    <uri>http://t-o-d-h.com/</uri>
+  </author>
+
+
+
+  
+    <category term="work" />
+  
+
+  
+    <category term="frontend" />
+  
+    <category term="css" />
+  
+
+  
+    <summary type="text">Algunas exploraciones de front</summary>
+  
+</entry>
 
   
     <entry>
@@ -945,15 +1001,15 @@ Benoit Mandelbrot&lt;/p&gt;
   
     <entry>
   <title>Video Tot</title>
-  <link href="http://t-o-d-h.com/articles/video-tot/" rel="alternate" type="text/html" title="Video Tot" />
+  <link href="http://t-o-d-h.com/work/video-tot/" rel="alternate" type="text/html" title="Video Tot" />
   <published>2013-08-07T00:00:00+02:00</published>
 
   
     <updated>2013-08-07T22:32:07+02:00</updated>
   
 
-  <id>http://t-o-d-h.com/articles/video-tot</id>
-  <content type="html" xml:base="http://t-o-d-h.com/articles/video-tot/">
+  <id>http://t-o-d-h.com/work/video-tot</id>
+  <content type="html" xml:base="http://t-o-d-h.com/work/video-tot/">
     
 
 &lt;p&gt;&lt;img src=&quot;http://t-o-d-h.com/assets/images/-1024.&quot; alt=&quot;&quot; class=&quot;page__hero-image&quot; srcset=&quot;http://t-o-d-h.com/assets/images/-320. 320w, http://t-o-d-h.com/assets/images/-600. 600w, http://t-o-d-h.com/assets/images/-768. 768w, http://t-o-d-h.com/assets/images/-1024. 1024w, http://t-o-d-h.com/assets/images/-1600. 1600w&quot; sizes=&quot;(max-width: 1200px) 100vw&quot; /&gt;&lt;/p&gt;
@@ -973,7 +1029,7 @@ Benoit Mandelbrot&lt;/p&gt;
 
     
 
-&lt;p&gt;&lt;a href=&quot;http://t-o-d-h.com/articles/video-tot/&quot; rel=&quot;nofollow&quot;&gt;Video Tot&lt;/a&gt; was originally published by &lt;a href=&quot;http://t-o-d-h.com/about/&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt; on &lt;a href=&quot;http://t-o-d-h.com&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://t-o-d-h.com/work/video-tot/&quot; rel=&quot;nofollow&quot;&gt;Video Tot&lt;/a&gt; was originally published by &lt;a href=&quot;http://t-o-d-h.com/about/&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt; on &lt;a href=&quot;http://t-o-d-h.com&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt;&lt;/p&gt;
 
 
   </content>
@@ -990,7 +1046,7 @@ Benoit Mandelbrot&lt;/p&gt;
 
 
   
-    <category term="articles" />
+    <category term="work" />
   
 
   
