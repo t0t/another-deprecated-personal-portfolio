@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/articles-feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-10-28T09:32:14+02:00</updated>
+  <updated>2016-10-28T13:19:14+02:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Articles - Sergio Forés</title>
@@ -28,6 +28,83 @@
   </author>
 
 
+
+  
+    <entry>
+  <title>El paradigma de sistemas y la gravedad</title>
+  <link href="http://t-o-d-h.com/articles/sistemas/" rel="alternate" type="text/html" title="El paradigma de sistemas y la gravedad" />
+  <published>2016-10-28T00:00:00+02:00</published>
+
+  
+    <updated>2016-10-25T22:30:07+02:00</updated>
+  
+
+  <id>http://t-o-d-h.com/articles/sistemas</id>
+  <content type="html" xml:base="http://t-o-d-h.com/articles/sistemas/">
+    
+
+&lt;p&gt;&lt;img src=&quot;http://t-o-d-h.com/assets/images/-1024.&quot; alt=&quot;Articles&quot; class=&quot;page__hero-image&quot; srcset=&quot;http://t-o-d-h.com/assets/images/-320. 320w, http://t-o-d-h.com/assets/images/-600. 600w, http://t-o-d-h.com/assets/images/-768. 768w, http://t-o-d-h.com/assets/images/-1024. 1024w, http://t-o-d-h.com/assets/images/-1600. 1600w&quot; sizes=&quot;(max-width: 1200px) 100vw&quot; /&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Mucho antes incluso del pensamiento occidental de Platón, Aristóteles, Heráclito o de las visiones más orientales de Lin Yu Tan y Lao Tsé… mucho antes de eso ya había humanos que comprendieron lo que ocurre. Yo no recuerdo haber estado allí pero sospecho que aquellos hombres no escribían libros ni tenían páginas web, quizás tan sólo pintaban en las paredes de las cuevas. &lt;strong&gt;Estoy seguro de que el hombre primitivo también “estaba en el ajo” de todo esto que venimos llamando la realidad.&lt;/strong&gt; Al fin y al cabo, uno no deja ser lo que es ni de estar donde está por la nimiedad de no ser consciente de ello.&lt;/p&gt;
+
+&lt;p&gt;De igual modo hace unos 40 años aparece formalmente lo que se conoce como &lt;strong&gt;Pensamiento de Sistemas&lt;/strong&gt;, algo que siempre ha estado impregnándolo todo y seguirá estándolo ya que forma parte de la realidad, aunque no seamos conscientes de ello. &lt;strong&gt;Las manzanas ya caían de los árboles incluso antes de que Newton descubriera la gravedad.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Esto me recuerda que tengo muchas ganas de desarrollar otro tema; el de los derechos de autor, porque ¿de quién son al final las ideas?, tal vez ya están siempre disponibles para todos y el hombre más rápido capaz de identificarlas y ponerles un nombre se las queda, tiene derechos sobre ellas. Vamos por el campo capturando el aire en frascos y poniendo etiquetas. No se… Quizás “tus ideas” no son tan tuyas, sino que tu eres de ellas.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Estar adaptado a un sistema enfermo no es saludable” &lt;em&gt;Krishnamurti&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Desde luego la &lt;a href=&quot;https://es.wikipedia.org/wiki/Teor%C3%ADa_del_campo_unificado&quot; target=&quot;_blank&quot;&gt;teoría unificada de campos&lt;/a&gt;, de Nassim Haramein, que nos habla de un universo conectado o la &lt;a href=&quot;https://es.wikipedia.org/wiki/Rupert_Sheldrake&quot; target=&quot;_blank&quot;&gt;teoría de los campos mórficos&lt;/a&gt; de Rupert Sheldrake, de corte más espiritual, allí nos llevan; a un “allí” muy lejos que en realidad es aquí y ahora. Pareciera que por poco que escarbes siempre vas a parar a cuestiones que tienen que ver con la estructura más básica de las cosas, patrones, dinámicas, flujos, procesos… más que en las cosas en sí mismas. Y eso nos trae de nuevo a la idea de sistemas, como no, la base de todo.&lt;/p&gt;
+
+&lt;p&gt;El pensamiento de sistemas nace desde el campo de la biología por Ludgwig Von Bertalanffy en 1974 y surge de una inquietud de ver y comprender la realidad y la vida de manera integral; en términos de totalidades, de “holones”. Es una actitud más natural y acorde con lo vivo en contraposición al método científico y mecanicista que sólo percibe las partes del mundo de manera inconexa. La base filosófica que sustenta esta posición es el &lt;a href=&quot;http://definicion.de/holistica/&quot; target=&quot;_blank&quot;&gt;Holismo&lt;/a&gt; (del griego holos = entero).&lt;/p&gt;
+
+&lt;p&gt;El tema “holos” ha traspasado la capa impermeabilizante de la filosofía y se oye mucho en el mundillo de las terapias, la “cuántica” ya no sólo es física sino también hay sanación cuántica. El sistema como “sociedad” o doctrina política ahora se usa en el mundo del desarrollo web con términos como diseño de sistemas. Podríamos seguir con mil ejemplos muy holistas de ver como todo tiene que ver con todo.&lt;/p&gt;
+
+&lt;p&gt;Vemos como están tomando cada vez más fuerza diversas metodologías de trabajo en equipo llamadas &lt;a href=&quot;https://es.wikipedia.org/wiki/Desarrollo_%C3%A1gil_de_software&quot; target=&quot;_blank&quot;&gt;Ágile&lt;/a&gt; que nacen del pensamiento sistémico. En el mundo front-end se habla de patrones de sistemas, modularidad, componentización y todo ello parte de la misma base. Los distintos niveles en que se organiza la materia atiende a diferentes grados de complejidad: átomo, molécula, célula, tejido, órgano, aparato, sistema, organismo… Un vivo ejemplo de ello es Atomic Design de &lt;a href=&quot;http://bradfrost.com/&quot; target=&quot;_blank&quot;&gt;Brad Frost&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Desde mi punto de vista, el pensamiento sistémico no es sólo una forma de pensar y comprender, no es sólo un mapa de la realidad sino que es la forma en que la propia realidad está sucendiendo. &lt;strong&gt;Lo que Es son distintos niveles de organización interconectados&lt;/strong&gt;. Trasciende cualquier ideología política o sistema de organización social artificial, trasciende y reemplaza el paradigma imperante desde su base.&lt;/p&gt;
+
+&lt;p&gt;Si esto es así, que lo es, es muy fuerte y no veo a nadie saltar de alegría… Estamos decubriendo una ley universal, las manzanas caen, las piedras tambien caen y las sillas y los paradigmas. ¿Seremos nosotros también TODOS capaces de &lt;em&gt;caer&lt;/em&gt;, de verdad, en ello?&lt;/p&gt;
+
+&lt;p class=&quot;last-updated&quot;&gt;Last updated: October 25, 2016&lt;/p&gt;
+
+
+    
+
+&lt;p&gt;&lt;a href=&quot;http://t-o-d-h.com/articles/sistemas/&quot; rel=&quot;nofollow&quot;&gt;El paradigma de sistemas y la gravedad&lt;/a&gt; was originally published by &lt;a href=&quot;http://t-o-d-h.com/about/&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt; on &lt;a href=&quot;http://t-o-d-h.com&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt;&lt;/p&gt;
+
+
+  </content>
+
+  
+  <author>
+    
+      <name>Sergio Forés</name>
+    
+    
+    <uri>http://t-o-d-h.com/</uri>
+  </author>
+
+
+
+  
+    <category term="articles" />
+  
+
+  
+    <category term="TODH" />
+  
+    <category term="Proceso" />
+  
+    <category term="sistemas" />
+  
+
+  
+    <summary type="text">Aplicado a arte, vida y el mundo frontend</summary>
+  
+</entry>
 
   
     <entry>
