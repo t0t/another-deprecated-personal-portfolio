@@ -3,13 +3,23 @@
 var s= document.querySelector(".masthead");
 
 window.addEventListener("scroll", function() {
-  if(window.pageYOffset > 50) {
+  if(window.pageYOffset > 200) {
     s.classList.add("masthead--sticky");
   } else{
     s.classList.remove("masthead--sticky");
   }
 });
 
+/* SHOW ELEMENT AFTER PAGE IS SCROLLED 100px */
+// var win = window,
+//     docEl = document.documentElement,
+//     $logo = document.getElementById('logo-scroll');
+//
+// win.onscroll = function(){
+//    var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+//    console.log(sTop);
+//    $logo.style.display =  sTop > 100 ? "block":"none" ;
+// };
   // var h = document.getElementById("header");
   // var readout = document.getElementById("readout");
   // var stuck = false;

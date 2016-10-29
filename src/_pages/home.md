@@ -1,6 +1,7 @@
 ---
 layout: home
 permalink: /
+bg: bg-matrioska.svg
 title: "Prototipado HTML/CSS"
 title2: "Prototipado Evolutivo, Sistémico, Disruptivo"
 title3: "Prototipado Holístico"
@@ -56,6 +57,5 @@ introText:
       - item: "-CSS / Sass"
       - item: "-Html templating"
 ---
-
 
 {% include feature_row %}

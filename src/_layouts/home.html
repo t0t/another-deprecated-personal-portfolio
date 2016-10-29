@@ -9,7 +9,9 @@ layout: default
 
   <section itemscope itemtype="http://schema.org/CreativeWork">
 
-    <header class="page-header  page-header--home">
+    <header class="page-header  page-header--home"
+    {% if page.bg %}style="background-image: url('{{ site.url }}/assets/images/{{ page.bg }}');"{% endif %}
+    >
 
       <div id="step1" class="step">
         <h1 class="page-title">{{ page.title }}</h1>
@@ -25,6 +27,9 @@ layout: default
       </div>
 
     </header>
+
+    <p data-height="230" data-theme-id="light" data-slug-hash="YGoyXZ" data-default-tab="html,result" data-user="t0t" data-embed-version="2" data-pen-title="todh" class="codepen">See the Pen <a href="http://codepen.io/t0t/pen/YGoyXZ/">todh</a> by Sergio Forés (<a href="http://codepen.io/t0t">@t0t</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
     {% if page.introText %}
     <aside>

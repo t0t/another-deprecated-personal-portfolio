@@ -279,13 +279,15 @@ blockquote {
   align-self: center;
 }
 
-
 .cp_embed_iframe {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1000px;
 }
 
+.cp_embed_wrapper {
+  text-align: center;
+  // margin-right: auto;
+  // margin-left: auto;
+}
 
 /*
    Global animation transition

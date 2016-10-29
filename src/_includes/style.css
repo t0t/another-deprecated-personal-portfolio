@@ -726,9 +726,10 @@ blockquote {
       align-self: center; }
 
 .cp_embed_iframe {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto; }
+  max-width: 1000px; }
+
+.cp_embed_wrapper {
+  text-align: center; }
 
 /*
    Global animation transition
@@ -880,45 +881,6 @@ blockquote {
 /*
    Glitcher
    ========================================================================== */
-@-webkit-keyframes glitch-start {
-  0% {
-    background-image: url("../images/black-glitched-1.png"); }
-  100% {
-    background-image: url("../images/black-glitched-2.png"); } }
-@keyframes glitch-start {
-  0% {
-    background-image: url("../images/black-glitched-1.png"); }
-  100% {
-    background-image: url("../images/black-glitched-2.png"); } }
-
-@-webkit-keyframes glitch-mid {
-  0% {
-    background-image: url("../images/black-glitched-3.png"); }
-  50% {
-    background-image: url("../images/black-glitched-4.png"); }
-  100% {
-    background-image: url("../images/black-glitched-2.png"); } }
-
-@keyframes glitch-mid {
-  0% {
-    background-image: url("../images/black-glitched-3.png"); }
-  50% {
-    background-image: url("../images/black-glitched-4.png"); }
-  100% {
-    background-image: url("../images/black-glitched-2.png"); } }
-
-@-webkit-keyframes glitch-end {
-  50% {
-    background-image: url("../images/black-glitched-1.png"); }
-  70% {
-    background-image: url("../images/black-glitched-4.png"); } }
-
-@keyframes glitch-end {
-  50% {
-    background-image: url("../images/black-glitched-1.png"); }
-  70% {
-    background-image: url("../images/black-glitched-4.png"); } }
-
 @-webkit-keyframes blur {
   0% {
     -webkit-filter: blur(1px);
@@ -932,7 +894,6 @@ blockquote {
     -webkit-filter: blur(1px);
             filter: blur(1px);
     opacity: 1; } }
-
 @keyframes blur {
   0% {
     -webkit-filter: blur(1px);
@@ -1147,8 +1108,7 @@ body:hover .visually-hidden button {
    SINGLE PAGE/POST
    ========================================================================== */
 .main {
-  overflow-x: hidden;
-  padding-top: 50px; }
+  overflow-x: hidden; }
   @media screen and (min-width: 376px) {
     .main--home {
       background-size: 75%;
@@ -1164,7 +1124,7 @@ body:hover .visually-hidden button {
               flex: 1 500px; } }
 
 .page-header {
-  height: 35vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1178,18 +1138,16 @@ body:hover .visually-hidden button {
           align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #b7f2d4;
   -ms-flex-line-pack: center;
       align-content: center;
   margin-left: auto;
   margin-right: auto;
-  color: #262626; }
-  @media screen and (min-width: 767px) {
-    .page-header {
-      height: 55vh; } }
-  @media screen and (min-width: 1024px) {
-    .page-header {
-      min-height: 45vh; } }
+  color: #262626;
+  background-attachment: fixed;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #b7f2d4; }
 
 .page-title {
   -webkit-box-flex: 1;
@@ -1901,7 +1859,6 @@ body:hover .visually-hidden button {
   width: 100%;
   height: 50px;
   z-index: 11;
-  background-color: #b7f2d4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1925,7 +1882,7 @@ body:hover .visually-hidden button {
       height: 100px; } }
   .masthead--sticky {
     height: 50px;
-    background-color: #e2faee; }
+    background-color: #b7f2d4; }
   .masthead .overlay__menu-trigger {
     padding-left: 10px;
     padding-right: 10px;
@@ -1969,14 +1926,12 @@ body:hover .visually-hidden button {
 
 .masthead__menu-item {
   display: block;
-  padding: 9px 13px;
+  padding: 13px 13px;
   text-transform: uppercase;
   font-family: 'Permanent Marker', cursive;
-  -webkit-transform: rotate(-6deg);
-      -ms-transform: rotate(-6deg);
-          transform: rotate(-6deg);
-  letter-spacing: 1px;
-  font-size: 1.1rem; }
+  letter-spacing: -2px;
+  font-size: 1.1rem;
+  line-height: 1.2; }
   .masthead__menu-item.active {
     color: rgba(0, 0, 255, 0.5) !important; }
     .masthead__menu-item.active:hover {
@@ -2150,24 +2105,19 @@ body:hover .visually-hidden button {
     fill: none;
     stroke: #000;
     stroke-width: 2;
-    stroke-dashoffset: 50;
-    stroke-dasharray: 50;
-    stroke-width: 3; }
+    stroke-dashoffset: 13;
+    stroke-dasharray: 3; }
   .brand__logo {
     background-color: red; }
   .brand .efecto--stroke-logo {
     -webkit-animation-name: efecto-stroke-dashoffset;
             animation-name: efecto-stroke-dashoffset;
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards; }
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
 
 /* ==========================================================================
    FEATURES / SERVICES Ideal for cover, homepages...

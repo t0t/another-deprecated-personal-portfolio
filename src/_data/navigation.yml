@@ -23,13 +23,13 @@ home-secondary:
 # Masthead navigation links
 
 masthead:
-  - title: "T"
+  - title: "T r a n s m i t i r"
     url: /contact/
-  - title: "O"
+  - title: "O b s e r v a r"
     url: /about/
-  - title: "D"
+  - title: "D e f i n i r"
     url: /articles/
-  - title: "H"
+  - title: "H a c e r"
     url: /work/
 
 
