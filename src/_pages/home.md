@@ -15,7 +15,7 @@ cta:
   cta_label: "Descubro cómo descubrir"
 
 image:
-  feature: bg-pincel.jpg
+  feature: bg-pincel2.jpg
   teaser: logo-todh.svg
 
 feature_row:
