@@ -21,6 +21,10 @@ introText:
     description: "Alineación con el propósito"
     p: "Cambio radical"
     small: "Atención plena"
+image:
+  feature:
+  teaser:
+  icon_bg: mountain
 ---
 
 <div class="Contact">

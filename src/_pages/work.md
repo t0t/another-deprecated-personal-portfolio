@@ -11,6 +11,10 @@ feature:
   visible: false
   headline: ""
   category: work
+image:
+  feature:
+  teaser:
+  icon_bg: mountain
 ---
 
 {% for post in site.categories.work %}

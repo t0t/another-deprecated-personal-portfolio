@@ -10,6 +10,10 @@ feature:
   visible: false
   headline: ""
   category: articles
+image:
+  feature:
+  teaser:
+  icon_bg: todh-grafico
 ---
 
 {% for post in site.categories.articles %}

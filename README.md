@@ -49,7 +49,9 @@ This is the source code of [t-o-d-h.com](http://t-o-d-h.com), a personal blog an
 
 
 
-
+`<header class="container page-header"
+{% if page.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ page.image.feature }}');"{% endif %}
+>`
 
 
 `<svg class="icon icon--todh">

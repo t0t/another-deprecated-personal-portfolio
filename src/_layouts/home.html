@@ -9,9 +9,11 @@ layout: default
 
   <section itemscope itemtype="http://schema.org/CreativeWork">
 
-    <header class="page-header  page-header--home"
-    {% if page.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ page.image.feature }}');"{% endif %}
-    >
+    <header class="page-header  page-header--home">
+
+    {% if page.image.icon_bg %}
+    <svg class="icon  icon--bg"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
+    {% endif %}
 
       <svg class="icon"><use xlink:href="#icon-mountain" /></svg>
       <svg class="icon"><use xlink:href="#icon-matrioska" /></svg>
@@ -22,22 +24,25 @@ layout: default
       <div id="step1" class="step">
         <h1 class="page-title">{{ page.title }}</h1>
         <button id="buttonStep1" class="btn  btn--step">
-          <svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg> :frog:
+          <svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg>
+          <svg class="icon  icon--arrow-next"><use xlink:href="#icon-arrow-next" /></svg>
         </button>
       </div>
       <div id="step2" class="hide  step">
         <h1 class="page-title">{{ page.title2 }}</h1>
-        <button id="buttonStep2" class="btn  btn--step"><svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg> :mount_fuji:</button>
+        <button id="buttonStep2" class="btn  btn--step">
+          <svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg>
+          <svg class="icon  icon--arrow-next"><use xlink:href="#icon-arrow-next" /></svg></button>
       </div>
       <div id="step3" class="hide  step">
         <h1 class="page-title">{{ page.title3 }}</h1>
-        <button id="buttonStep3" class="btn  btn--step"><svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg>:art:</button>
+        <button id="buttonStep3" class="btn  btn--step">
+          <svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg>
+          <svg class="icon  icon--arrow-next"><use xlink:href="#icon-arrow-next" /></svg>
+      </button>
       </div>
 
     </header>
-
-    <p data-height="230" data-theme-id="light" data-slug-hash="YGoyXZ" data-default-tab="html,result" data-user="t0t" data-embed-version="2" data-pen-title="todh" class="codepen">See the Pen <a href="http://codepen.io/t0t/pen/YGoyXZ/">todh</a> by Sergio Forés (<a href="http://codepen.io/t0t">@t0t</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
     {% if page.introText %}
     <aside>

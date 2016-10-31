@@ -8,6 +8,7 @@ excerpt: "Soy todo aquello que soy capaz de ver"
 image:
   feature: bg-quiensoy.jpg
   teaser: image1.jpg
+  icon_bg: matrioska
 ads: false
 share: false
 author: true

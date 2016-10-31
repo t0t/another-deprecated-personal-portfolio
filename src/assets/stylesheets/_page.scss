@@ -26,6 +26,8 @@
 }
 
 .page-header {
+  position: relative;
+  z-index: 10;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;

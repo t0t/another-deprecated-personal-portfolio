@@ -1122,6 +1122,8 @@ body:hover .visually-hidden button {
               flex: 1 500px; } }
 
 .page-header {
+  position: relative;
+  z-index: 10;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2630,6 +2632,7 @@ form ul, form ol, form li {
    Icons
    ========================================================================== */
 .icon {
+  position: absolute;
   fill: none;
   width: 50px;
   height: 50px;
@@ -2638,15 +2641,7 @@ form ul, form ol, form li {
   top: 0;
   vertical-align: middle;
   stroke-width: 1px;
-  stroke: #000;
-  -webkit-animation-name: efecto-stroke-dashoffset;
-          animation-name: efecto-stroke-dashoffset;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear; }
+  stroke: #000; }
   .icon.spin {
     -webkit-animation: spin 2s infinite linear;
             animation: spin 2s infinite linear; }
@@ -2658,6 +2653,21 @@ form ul, form ol, form li {
     position: absolute;
     left: -10px;
     top: 10px; }
+  .icon--bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    stroke: #fff;
+    -webkit-animation-name: efecto-stroke-dashoffset;
+            animation-name: efecto-stroke-dashoffset;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  .icon--arrow-next:hover {
+    stroke-width: 2px; }
   .icon--todh {
     fill: none;
     width: 100%;
