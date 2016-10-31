@@ -10,9 +10,10 @@
   /* default button */
   font-size: fs(normal);
   display: inline-block;
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+  margin: 0;
+  // margin-bottom: $spacing-unit;
   padding-bottom: 4px;
+  // position: relative;
   // font-size: fs(normal);
   @extend %altfont_angle;
   // letter-spacing: 3px;
@@ -35,8 +36,8 @@
     background-color: $color-cool;
     border-color: $color-cool;
     border-bottom: 2px solid $color_alt5;
-    padding-left: 5px;
-    padding-right: 5px;
+    // padding-left: 5px;
+    // padding-right: 5px;
     transition: padding .3s ease-in-out;
 
     @media screen and (min-width: 768px) {
@@ -49,11 +50,10 @@
   }
 
   .icon {
-    margin-right: 0.5em;
   }
 
   .icon + .hidden {
-    margin-left: -0.5em; // override for hidden text
+    // margin-left: -0.5em; // override for hidden text
   }
 
   &--tile {
@@ -85,17 +85,17 @@
 
   /* for "stepping" */
   &--step {
-    font-size: fs(huge);
+    position: relative;
+    width: 140px;
     background-color: transparent;
     text-align: center;
     border: none;
     transition: color 1s ease-out;
     margin: 0;
-    line-height: 1;
+    line-height: 4;
 
     &:hover {
       color: $black;
-      // background-color: $color_alt5;
       border: none;
     }
   }

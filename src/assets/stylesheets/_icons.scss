@@ -22,19 +22,19 @@
     animation: spin 2s infinite linear;
   }
 
-  &-mountain {
+  &--mountain {
     fill: none;
   }
-  &-cor {
-
+  &--cor {}
+  &--logo {}
+  &--logo-todh {}
+  &--button {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    left: -10px;
+    top: 10px;
   }
-  &-logo {
-
-  }
-  &-logo-todh {
-
-  }
-
 
   &--todh {
     fill: none;
@@ -73,8 +73,10 @@
   &--twitter {
     color: $twitter-color;
     fill: none;
-    width: 100%;
-    height: 100%;
+    stroke: $white;
+    stroke-width: 1px;
+    width: 20px;
+    height: 20px;
   }
 
   &--tumblr {
@@ -87,8 +89,10 @@
   &--facebook {
     color: $facebook-color;
     fill: none;
-    width: 100%;
-    height: 100%;
+    stroke-width: 1px;
+    width: 20px;
+    height: 20px;
+    stroke: $white;
   }
 
   &--codepen {
