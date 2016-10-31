@@ -35,13 +35,16 @@
   // iconos dentro de header (funcionan como bg)
   &--bg {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    stroke: $white;
-    animation-name: efecto-stroke-dashoffset;
+    top: 270px;
+    right: 0;
+    height: 70%;
+    width: 80%;
+    stroke: lighten($color_alt2,7);
+    stroke-width: 10px;
+    animation-name: fade-in;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
   }
 
   &--arrow-next {

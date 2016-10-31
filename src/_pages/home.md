@@ -17,7 +17,7 @@ cta:
 image:
   feature: bg-pincel2.jpg
   teaser: logo-todh.svg
-  icon_bg: cor
+  icon_bg: logo
 
 feature_row:
 

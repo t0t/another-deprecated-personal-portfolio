@@ -17,6 +17,7 @@
   }
   &__submit {
     background-color: transparent;
+
   }
 
   /**
@@ -60,11 +61,15 @@
   input[type="submit"] {
 
     margin-top: $spacing-unit;
-    padding: $spacing-unit / 2;
+    padding: 0;
+    width: 100%;
+    border: none;
+    letter-spacing: 5px;
+    font-family: 'Permanent Marker', cursive;
 
     &:hover {
       // cursor: pointer;
-      // background-color: $brand-color;
+      background-color: inherit;
       // color: $white;
     }
   }

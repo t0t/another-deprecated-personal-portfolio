@@ -35,7 +35,10 @@ image:
   <input type="hidden" name="subject" value="sergiofores.es contact form" />
   <textarea name="message" placeholder="Mensaje" class="Contact__textarea"></textarea>
 
-  <input type="submit" value="Enviar" class="btn btn--success">
+  <button id="buttonStep2" class="btn  btn--step">
+    <svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg>
+    <input type="submit" value="Enviar">
+  </button>
 
   <input type="hidden" name="next" value="http://sergiofores.es/" />
   <input type="text" name="gotcha" style="display:none" />

@@ -16,7 +16,7 @@ select {
 }
 
 label {
-  font-family: $sans-serif;
+  // font-family: $sans-serif;
   margin-bottom: (0px + $doc-line-height) / 4;
 
   &.required:after {
@@ -34,12 +34,12 @@ select,
 select[multiple=multiple] {
   box-sizing: border-box;
   transition: border-color;
-  background-color: $white;
-  border-radius: $form-border-radius;
-  border: 1px solid $form-border-color;
-  box-shadow: $form-box-shadow;
-  font-family: $form-font-family;
-  font-size: $form-font-size;
+  background-color: transparent;
+  // border-radius: $form-border-radius;
+  // border: 1px solid $form-border-color;
+  // box-shadow: $form-box-shadow;
+  // font-family: $form-font-family;
+  // font-size: $form-font-size;
   margin-bottom: (0px + $doc-line-height) / 2;
   padding: ((0px + $doc-line-height) / 3) ((0px + $doc-line-height) / 3);
   width: 100%;

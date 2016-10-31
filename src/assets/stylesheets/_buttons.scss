@@ -126,7 +126,7 @@
 
   /* success */
   &--success {
-    background-color: $success-color;
+    // background-color: $success-color;
 
     &:hover {
       background-color: mix(#000, $success-color, 20%);

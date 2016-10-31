@@ -87,7 +87,13 @@ Global variables
     margin-top: 25px; }
   .Contact input[type="submit"] {
     margin-top: 25px;
-    padding: 12.5px; }
+    padding: 0;
+    width: 100%;
+    border: none;
+    letter-spacing: 5px;
+    font-family: 'Permanent Marker', cursive; }
+    .Contact input[type="submit"]:hover {
+      background-color: inherit; }
 
 /*
    Vendor
@@ -1605,10 +1611,8 @@ body:hover .visually-hidden button {
     background-color: #e3b426; }
     .btn--warning:hover {
       background-color: #b6901e; }
-  .btn--success {
-    background-color: #82daad; }
-    .btn--success:hover {
-      background-color: #68ae8a; }
+  .btn--success:hover {
+    background-color: #68ae8a; }
   .btn--danger {
     background-color: #cf1b2d; }
     .btn--danger:hover {
@@ -2529,7 +2533,6 @@ select {
   margin-bottom: 0; }
 
 label {
-  font-family: "Open Sans", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
   margin-bottom: 6px; }
   label.required:after {
     content: "*"; }
@@ -2543,12 +2546,7 @@ select[multiple=multiple] {
   box-sizing: border-box;
   -webkit-transition: border-color;
   transition: border-color;
-  background-color: #fff;
-  border-radius: 4px;
-  border: 1px solid #e7e7e7;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "Open Sans", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 16px;
+  background-color: transparent;
   margin-bottom: 12px;
   padding: 8px 8px;
   width: 100%; }
@@ -2655,17 +2653,20 @@ form ul, form ol, form li {
     top: 10px; }
   .icon--bg {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    stroke: #fff;
-    -webkit-animation-name: efecto-stroke-dashoffset;
-            animation-name: efecto-stroke-dashoffset;
+    top: 270px;
+    right: 0;
+    height: 70%;
+    width: 80%;
+    stroke: #9feec5;
+    stroke-width: 10px;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; }
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in; }
   .icon--arrow-next:hover {
     stroke-width: 2px; }
   .icon--todh {
