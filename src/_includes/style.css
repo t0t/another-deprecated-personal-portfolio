@@ -715,8 +715,8 @@ blockquote {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
-  border-top: 1px solid #81e8b3;
-  border-bottom: 1px solid #81e8b3;
+  border-top: 1px solid #e06c75;
+  border-bottom: 1px solid #e06c75;
   margin-bottom: 50px; }
   blockquote > p {
     max-width: 400px;
@@ -1047,21 +1047,25 @@ blockquote {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
-/*
-   Typed.js
-   ========================================================================== */
-.typed-cursor {
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-          animation: blink 0.7s infinite; }
-
-@-webkit-keyframes ready {
+@-webkit-keyframes content {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
   to {
-    visibility: hidden; } }
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
 
-@keyframes ready {
+@keyframes content {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
   to {
-    visibility: hidden; } }
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
 
 /* ==========================================================================
    UTILITY CLASSES
@@ -1721,6 +1725,13 @@ body:hover .visually-hidden button {
   .btn:hover {
     -webkit-transition: padding .3s ease-in-out;
     transition: padding .3s ease-in-out; }
+    @media screen and (min-width: 375px) {
+      .btn:hover {
+        cursor: pointer; } }
+  .btn--tabs {
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    font-weight: normal; }
   .btn--tile {
     width: 50px;
     height: 50px;
@@ -1939,6 +1950,172 @@ body:hover .visually-hidden button {
 
 .step {
   text-align: center; }
+
+.TabsPanel {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  background: white;
+  padding: 50px;
+  padding-bottom: 25px;
+  width: 100%;
+  background-color: #b7f2d4;
+  min-width: 240px; }
+  .TabsPanel input[name="tab-control"] {
+    display: none; }
+  .TabsPanel ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .TabsPanel ul li {
+      box-sizing: border-box;
+      padding: 0 10px;
+      text-align: center; }
+      .TabsPanel ul li label {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        color: rgba(0, 0, 0, 0.3);
+        padding: 5px auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        white-space: nowrap;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+  .TabsPanel ul li label svg {
+    fill: #e2faee;
+    height: 1.2em;
+    vertical-align: bottom;
+    margin-right: 0.2em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .TabsPanel ul li label:hover,
+  .TabsPanel ul li label:focus,
+  .TabsPanel ul li label:active {
+    outline: 0;
+    color: #262626; }
+  .TabsPanel ul li label:hover svg,
+  .TabsPanel ul li label:focus svg,
+  .TabsPanel ul li label:active svg {
+    fill: #262626; }
+  .TabsPanel .slider--tabs {
+    position: relative;
+    width: 50%;
+    -webkit-transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+    transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07); }
+  .TabsPanel .slider--tabs .indicator {
+    position: relative;
+    width: 50px;
+    max-width: 100%;
+    margin: 0;
+    height: 4px;
+    background: #000; }
+  .TabsPanel .content {
+    margin-top: 30px; }
+    .TabsPanel .content section h2,
+    .TabsPanel .content ul li label {
+      font-weight: bold;
+      font-size: 18px;
+      color: rgba(0, 0, 255, 0.5); }
+    .TabsPanel .content section {
+      display: none;
+      -webkit-animation-name: content;
+              animation-name: content;
+      -webkit-animation-direction: normal;
+              animation-direction: normal;
+      -webkit-animation-duration: 0.3s;
+              animation-duration: 0.3s;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+              animation-iteration-count: 1;
+      line-height: 1.4; }
+    .TabsPanel .content section h2 {
+      display: none; }
+    .TabsPanel .content section h2::after {
+      content: "";
+      position: relative;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background: rgba(0, 0, 255, 0.5);
+      margin-top: 5px;
+      left: 1px; }
+  .TabsPanel input[name="tab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label,
+  .TabsPanel input[name="tab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label,
+  .TabsPanel input[name="tab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label,
+  .TabsPanel input[name="tab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+    cursor: default;
+    color: #000; }
+  .TabsPanel input[name="tab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label svg,
+  .TabsPanel input[name="tab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label svg,
+  .TabsPanel input[name="tab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label svg,
+  .TabsPanel input[name="tab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label svg {
+    fill: rgba(0, 0, 255, 0.5); }
+  .TabsPanel input[name="tab-control"]:nth-of-type(1):checked ~ .content > section:nth-child(1),
+  .TabsPanel input[name="tab-control"]:nth-of-type(2):checked ~ .content > section:nth-child(2),
+  .TabsPanel input[name="tab-control"]:nth-of-type(3):checked ~ .content > section:nth-child(3),
+  .TabsPanel input[name="tab-control"]:nth-of-type(4):checked ~ .content > section:nth-child(4) {
+    display: block; }
+  .TabsPanel input[name="tab-control"]:nth-of-type(1):checked ~ .slider--tabs {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%); }
+  .TabsPanel input[name="tab-control"]:nth-of-type(2):checked ~ .slider--tabs {
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%); }
+  .TabsPanel input[name="tab-control"]:nth-of-type(3):checked ~ .slider--tabs {
+    -webkit-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+            transform: translateX(200%); }
+  .TabsPanel input[name="tab-control"]:nth-of-type(4):checked ~ .slider--tabs {
+    -webkit-transform: translateX(300%);
+        -ms-transform: translateX(300%);
+            transform: translateX(300%); }
+  @media (max-width: 600px) {
+    .TabsPanel input[name="tab-control"]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label,
+    .TabsPanel input[name="tab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label,
+    .TabsPanel input[name="tab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label,
+    .TabsPanel input[name="tab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
+      background: rgba(0, 0, 0, 0.08); } }
+  @media (max-width: 1000px) {
+    .TabsPanel ul li label {
+      white-space: initial; }
+    .TabsPanel ul li label br {
+      display: initial; }
+    .TabsPanel ul li label svg {
+      height: 1.5em; } }
+  @media (max-width: 600px) {
+    .TabsPanel ul li label {
+      padding: 5px;
+      border-radius: 5px; }
+    .TabsPanel ul li label span {
+      display: none; }
+    .TabsPanel .slider--tabs {
+      display: none; }
+    .TabsPanel .content {
+      margin-top: 20px; }
+      .TabsPanel .content section h2 {
+        display: block; } }
 
 .author {
   padding-top: 50px;
@@ -2797,7 +2974,6 @@ form ul, form ol, form li {
     -webkit-animation: spin 2s infinite linear;
             animation: spin 2s infinite linear; }
   .icon--mountain {
-    fill: none;
     -webkit-animation-name: blur;
             animation-name: blur;
     -webkit-animation-duration: 2s;

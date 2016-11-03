@@ -15,7 +15,7 @@ author: true
 sidebar: false
 fullwidth: true
 
-introText:
+tabsPanel:
   - header: "Conocimientos"
     description:
     p:

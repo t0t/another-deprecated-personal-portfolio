@@ -169,19 +169,15 @@ svg {
   }
 }
 
+// tabs content
+@keyframes content {
+  from {
+   opacity: 0;
+   transform: translateY(5%);
+  }
 
-
-/*
-   Typed.js
-   ========================================================================== */
-
-.typed-cursor{
-  opacity: 1;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes ready {
   to {
-    visibility: hidden;
+    opacity: 1;
+    transform: translateY(0%);
   }
 }

@@ -1,0 +1,62 @@
+<aside class="TabsPanel">
+
+  {% include base_path %}
+  {% if page.tabsPanel %}
+
+    <input type="radio" id="tab1" name="tab-control" checked>
+    <input type="radio" id="tab2" name="tab-control">
+    <input type="radio" id="tab3" name="tab-control">
+    <input type="radio" id="tab4" name="tab-control">
+
+    <ul>
+      <li title="Conocimientos">
+        <label for="tab1" role="button" class="btn  btn--tabs">
+          <svg class="icon  icon--matrioska"><use xlink:href="#icon-mountain" /></svg>
+          Conocimientos
+        </label>
+      </li>
+      <li title="Habilidades">
+        <label for="tab2" role="button" class="btn  btn--tabs">
+          <svg class="icon  icon--matrioska"><use xlink:href="#icon-matrioska" /></svg>
+          Habilidades
+        </label>
+      </li>
+    </ul>
+
+    <div class="slider--tabs">
+      <div class="indicator"></div>
+    </div>
+
+    {% assign tabs = page.tabsPanel %}
+
+    <div class="content">
+
+      {% for t in tabs %}
+
+        <section class="TabsPanel__tab">
+
+          {% if t.description %}<h3> {{ t.description }} </h3> {% endif %}
+          {% if t.header %}<p> {{ t.header }} </p> {% endif %}
+          {% if t.p %}<p> {{ t.p }} </p> {% endif %}
+          {% if t.small %}<small> {{ i.small }} </small> {% endif %}
+
+          <dl>
+          {% for list in t.list %}
+            <dt>{{ list.title }}</dt>
+            <dd>{{ list.item }}</dd>
+          {% endfor %}
+          </dl>
+
+          {% if t.image_path %}
+            <img src="{{t.image_path | prepend: "/assets/images/" | prepend: base_path}}" alt="{%if t.image_description %}{{t.image_description}}{%endif%}">
+          {% endif %}
+
+        </section>
+
+      {% endfor %}
+
+    </div>
+
+  {% endif %}
+
+</aside>
