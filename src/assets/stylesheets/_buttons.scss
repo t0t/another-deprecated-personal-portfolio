@@ -35,6 +35,9 @@
     text-transform: uppercase;
     font-size: fs(x-normal);
     font-weight: normal;
+    &:hover {
+      color: $black;
+    }
   }
 
   &--tile {
@@ -155,17 +158,11 @@
 
     &--#{$socialnetwork} {
       background-color: $color;
-      transform: rotate(0);
-      padding: 10px 12px;
-      border-bottom: none;
-      font-family: $font_main;
-      // font-size: fs(small);
+      padding: 11px;
+      text-transform: uppercase;
       color: $white;
 
       &:hover {
-        padding: 10px 12px;
-        border-bottom: none;
-        color: $white;
         background-color: mix(#000, $color, 20%);
       }
     }

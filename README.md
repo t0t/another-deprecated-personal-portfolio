@@ -46,7 +46,7 @@ This is the source code of [t-o-d-h.com](http://t-o-d-h.com), a personal blog an
 
 
 
-
+`<!-- <img src="{{t.image_path | prepend: "/assets/images/" | prepend: base_path}}" alt="{%if t.image_description %}{{t.image_description}}{%endif%}"> -->`
 
 
 `<header class="container page-header"

@@ -60,14 +60,61 @@ introText:
     image_description: "description"
     url: "url"
     list:
-      - title: ""
+      - title:
       - item:
       - item:
       - item:
       - item:
       - item:
       - item:
+
+tabsPanel:
+
+  - tab_btn: "Conocimientos"
+    header:
+    description:
+    p:
+    small:
+    excerpt:
+    image_path:
+    image_description:
+    url:
+    list:
+      - title:
+      - item: "Arquitectura de Información"
+      - item: "Retoque Fotográfico"
+      - item: "Diseño Gráfico / Editorial"
+      - item: "Artes plásticas"
+      - item: "React JS"
+      - item: "Javascript"
+      - item: "inDesign"
+      - item: "Git / Github"
+      - item: "Gulp, NPM"
+      - item: "Jekyll"
+      - item: "Wordpress"
+      - item: "WP-Api REST"
+      - item: "Liquid"
+      - item: "JSON"
+      - item: "Jade"
+      - item: "Stylus / Sass"
+      - item: "Axure RP"
+
+  - tab_btn: "Habilidades"
+    header:
+    description:
+    p:
+    small:
+    excerpt:
+    image_path:
+    image_description:
+    url:
+    list:
+      - title:
+      - item: "Sketching en papel"
+      - item: "Diseño de patrones, sistemas, guías"
+      - item: "Mucho Sketch / Principle"
+      - item: "Diseño gráfico / web"
+      - item: "HTML + CSS (Sass)"
+      - item: "Mockups"
+      - item: "Encontrar tesoros"
 ---
-
-
-{% include feature_row %}

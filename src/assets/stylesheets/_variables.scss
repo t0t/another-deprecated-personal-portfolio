@@ -70,7 +70,10 @@ $color_page_header            : $dark-gray;
 $text-color                   : $dark-gray;
 // $headline-color               : $gray;
 $headline-color               : $color_alt3;
-$color_alpha_black            : rgba(0,0,0,0.3);
+
+$color_alpha_black            : rgba(0,0,0,.3);
+$color_alpha_black2           : rgba(0,0,0,.1);
+$color_alpha_white            : rgba(255,255,255,.25);
 
 $background-color             : $white;
 

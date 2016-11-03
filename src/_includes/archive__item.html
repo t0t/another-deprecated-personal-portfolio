@@ -2,9 +2,9 @@
 
   <div class="archive__item-body">
 
-    <h1 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title" itemprop="headline">
       {{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}
-    </h1>
+    </h2>
 
     <p class="archive__item-excerpt" itemprop="text">
       {{ post.excerpt markdownify | strip_html | strip_newlines | escape_once }}

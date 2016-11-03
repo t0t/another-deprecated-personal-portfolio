@@ -5,64 +5,41 @@ date: 2014-06-01
 modified: 2016-02-11
 layout: about
 excerpt: "Soy todo aquello que soy capaz de ver"
+author: true
+
 image:
   feature: bg-quiensoy.jpg
   teaser: image1.jpg
   icon_bg: matrioska
-ads: false
-share: false
-author: true
-sidebar: false
-fullwidth: true
 
 tabsPanel:
-  - header: "Conocimientos"
-    description:
-    p:
-    small:
-    excerpt:
-    image_path:
-    image_description: "description"
-    url: "url"
-    list:
-      - title:
-      - item: "-Arquitectura de Información"
-      - item: "-Retoque Fotográfico"
-      - item: "-Diseño Gráfico / Editorial"
-      - item: "-Artes plásticas"
-      - item: "-React JS"
-      - item: "-Javascript"
-      - item: "-inDesign"
-      - item: "-Git / Github"
-      - item: "-Gulp, NPM"
-      - item: "-Jekyll"
-      - item: "-Wordpress"
-      - item: "-WP-Api REST"
-      - item: "-Liquid"
-      - item: "-JSON"
-      - item: "-Jade"
-      - item: "-Stylus / Sass"
-      - item: "-Axure RP"
 
-  - header: "Habilidades"
-    description:
+  - tab_btn: "Filosofía"
+    header: "No hay mapa más exacto que la realidad misma"
+    description: "El mundo de la forma se actualiza el mundo de las ideas y viceversa"
     p:
     small:
     excerpt:
-    image_path:
-    image_description: "description"
-    url: "url"
+    image_path: mountain
+    image_description:
+    url:
+
+  - tab_btn: "Proceso"
+    header: "Todo aquí ya"
+    description: "El proceso se basa en iteración y mejora contínua."
+    p: "Es una espiral en la que actualizamos el estado. Empezamos en pequeño buscando desde el principio abarcar todo el proceso para ir de lo difuso a lo concreto. Busco permanecer ligero, usando tecnologías, rápidas, fáciles y útiles como Sass, liquid, Jade, Markdown, Yaml, Json, Html5, Gulp, Git... Refactorizar constantemente. Usar convenciones en la nomenclatura, html5 semántico..."
+    small:
+    excerpt:
+    image_path: cor
+    image_description:
+    url:
     list:
-      - title:
-      - item: "-Sketching en papel"
-      - item: "-Diseño de patrones, sistemas, guías"
-      - item: "-Mucho Sketch / Principle"
-      - item: "-Diseño gráfico / web"
-      - item: "-HTML + CSS (Sass)"
-      - item: "-Mockups"
-      - item: "-Encontrar tesoros"
+      - item: "1. Entrevistas, research, feedback, testing..."
+      - item: "2. Sketching, wireframes con Axure..."
+      - item: "3. Diseño UI con Sketch, look&feel, tono, grafica..."
+      - item: "4. Maquetación en entorno de desarrollo, templating, CSS"
+      - item: "5. Control de versiones, entorno de producción, refinamientos"
 ---
-
 {% capture caption %}
 Me gusta el mar
 {% endcapture %}

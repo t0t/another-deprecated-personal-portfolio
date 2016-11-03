@@ -34,13 +34,13 @@
         <div class="archive__item-body">
 
           {% if f.title %}
-            <h1 class="archive__item-title">{{ f.title }}</h1>
+            <h2 class="archive__item-title">{{ f.title }}</h2>
           {% endif %}
 
           {% if f.excerpt %}
-            <h2 class="archive__item-excerpt">
+            <h4 class="archive__item-excerpt">
               {{ f.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-            </h2>
+            </h4>
           {% endif %}
 
           {% if f.url %}

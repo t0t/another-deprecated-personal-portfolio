@@ -3,16 +3,36 @@
   transform: translateX(-50%);
   position: relative;
   background: white;
-  padding: 50px;
-  padding-bottom: $spacing-unit;
+  padding: ($spacing-unit * 2) $spacing-unit;
   width: 100%;
   background-color: $color_alt7;
   min-width: 240px;
+
+  &__item {
+    h5 {
+      color: $color-cool2;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li,
+    dd {
+      margin-left: 0;
+      padding: ($spacing-unit / 2) $spacing-unit;
+      // background-color: white;
+    }
+  }
 
   input[name="tab-control"] { display: none; }
 
   ul {
     margin-top: 0;
+    margin-bottom: 0;
     list-style-type: none;
     padding-left: 0;
     display: flex;
@@ -22,13 +42,18 @@
 
     li {
       box-sizing: border-box;
-      padding: 0 10px;
       text-align: center;
+
+      @media screen and (max-width: 440px) {
+        margin-bottom: $spacing-unit/2;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       label {
         transition: all 0.3s ease-in-out;
         color: $color_alpha_black;
-        padding: 5px auto;
         overflow: hidden;
         text-overflow: ellipsis;
         display: block;
@@ -41,50 +66,82 @@
 
   }
 
-  ul li label svg {
-    fill: lighten($color_alt7,10);
-    height: 1.2em;
-    vertical-align: bottom;
-    margin-right: 0.2em;
-    transition: all 0.2s ease-in-out;
-  }
+  // ul li label svg {
+  //   fill: lighten($color_alt7,10);
+  //   height: $spacing-unit;
+  //   vertical-align: bottom;
+  //   transition: all 0.2s ease-in-out;
+  // }
 
   ul li label:hover,
   ul li label:focus,
   ul li label:active {
     outline: 0;
-    color: $color_page_header;
   }
 
-  ul li label:hover svg,
-  ul li label:focus svg,
-  ul li label:active svg {
-    fill: $color_page_header;
-  }
+  // ul li label:hover svg,
+  // ul li label:focus svg,
+  // ul li label:active svg {
+  //   fill: $color_page_header;
+  // }
 
   .slider--tabs {
     position: relative;
     width: 50%;
     transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+
+    .indicator {
+      position: relative;
+      width: 50px;
+      max-width: 100%;
+      margin: 0;
+      height: 4px;
+      background: $color-cool2;
+    }
   }
 
-  .slider--tabs .indicator {
-    position: relative;
-    width: 50px;
-    max-width: 100%;
-    margin: 0;
-    height: 4px;
-    background: $black;
-  }
 
   .content {
-
     margin-top: 30px;
+
+    h4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: space-around;
+    }
+
+    p {
+      font-size: fs(normal);
+      margin-top: $spacing-unit;
+    }
+
+    small {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 450px) {
+      p,
+      h5 {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h5 {
+        text-transform: none;
+        text-align: center;
+        margin-top: 0;
+      }
+      h4 {
+        flex: 0 400px;
+        text-align: center;
+      }
+    }
 
     section h2,
     ul li label {
-      font-weight: bold;
-      font-size: 18px;
+      // font-weight: bold;
+      // font-size: 18px;
       color: $color_alt5;
     }
 
@@ -95,22 +152,6 @@
       animation-duration: 0.3s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: 1;
-      line-height: 1.4;
-    }
-
-    section h2 {
-      display: none;
-    }
-
-    section h2::after {
-      content: "";
-      position: relative;
-      display: block;
-      width: 30px;
-      height: 3px;
-      background: $color_alt5;
-      margin-top: 5px;
-      left: 1px;
     }
 
   }
@@ -135,11 +176,12 @@
   input[name="tab-control"]:nth-of-type(2):checked ~ .content > section:nth-child(2),
   input[name="tab-control"]:nth-of-type(3):checked ~ .content > section:nth-child(3),
   input[name="tab-control"]:nth-of-type(4):checked ~ .content > section:nth-child(4) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  input[name="tab-control"]:nth-of-type(1):checked ~ .slider--tabs {transform: translateX(0%);}
-  input[name="tab-control"]:nth-of-type(2):checked ~ .slider--tabs {transform: translateX(100%);}
+  input[name="tab-control"]:nth-of-type(1):checked ~ .slider--tabs {transform: translateX(70%);}
+  input[name="tab-control"]:nth-of-type(2):checked ~ .slider--tabs {transform: translateX(122%);}
   input[name="tab-control"]:nth-of-type(3):checked ~ .slider--tabs {transform: translateX(200%);}
   input[name="tab-control"]:nth-of-type(4):checked ~ .slider--tabs {transform: translateX(300%);}
 
@@ -148,7 +190,11 @@
     input[name="tab-control"]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label,
     input[name="tab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label,
     input[name="tab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
-      background: rgba(0, 0, 0, 0.08);
+      padding-top: $spacing-unit/2;
+      padding-right: $spacing-unit/2;
+      padding-bottom: $spacing-unit/3;
+      padding-left: $spacing-unit/2;
+      background: $color_alpha_white;
     }
   }
 

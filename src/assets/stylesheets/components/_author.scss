@@ -6,34 +6,33 @@
   align-content: center;
   align-items: center;
   position: relative;
-  // background-color: $light-gray;
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+  to bottom,
   $white 0%,
   $light-gray 26%,
   $light-gray 99%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-  @media screen and (min-width: 426px) {
-    // margin: $spacing-unit;
-  }
+  // @media screen and (min-width: 426px) {
+  //   margin: $spacing-unit;
+  // }
 
   &__name {
     text-transform: uppercase;
-    font-size: fs(big);
+    font-size: fs(x-normal);
     margin-top: 10px;
     flex: 1 100%;
-    // @extend %altfont_angle; //fuente alternativa + angulo
     color: $color_alt5;
-    // border-bottom: 3px solid $color_alt5;
-    padding-bottom: -10px;
-    a:hover {
-      // text-decoration: underline;
-    }
+    padding-bottom: $spacing-unit / 2;
 
-    @media screen and (min-width: 1430px) {
-      // font-size: fs(huge);
-      // line-height: $line-height-base - 0.15;
-    }
+    // a:hover {
+    //   text-decoration: underline;
+    // }
+
+    // @media screen and (min-width: 1430px) {
+    //   font-size: fs(huge);
+    //   line-height: $line-height-base - 0.15;
+    // }
   }
 
   &__bio {
@@ -41,15 +40,12 @@
     max-width: 800px;
     text-align: center;
     font-size: fs(normal);
-    // letter-spacing: 5px;
     padding-top: 0;
-    // padding-bottom: $spacing-unit;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
 
     @media screen and (min-width: 779px) {
       margin-top: 0;
-      font-size: fs(x-normal);
     }
     @media screen and (min-width: 1441px) {
       max-width: 1810px;

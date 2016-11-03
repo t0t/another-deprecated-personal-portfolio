@@ -9,17 +9,12 @@
    ========================================================================== */
 
 @import "components/contact"; // contact form
-
-/*
-   Vendor
-   ========================================================================== */
-
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 
 @import "mixins";
 @import "reset";
 @import "external"; // external css, fonts
-@import "archive"; // archive listing
+@import "components/archive"; // archive listing
 @import "tipografia";
 @import "base";
 @import "grid";
@@ -32,9 +27,9 @@
 @import "components/steps"; // Steps
 @import "components/tabs-panel"; // Steps
 
-@import "author";
+@import "components/author";
 @import "masthead"; // page header with navigation
-@import "brand";
+@import "components/brand";
 @import "features";
 @import "breadcrumbs";
 // @import "glitch"; // glitch effect
@@ -44,7 +39,7 @@
 @import "notices";
 @import "thumbnail-grids";
 @import "forms";
-@import "videos";
+@import "components/videos";
 @import "icons";
 @import "slider";
 @import "google-search"; // Google search form box

@@ -39,12 +39,14 @@ layout: default
 
     {% if page.introText %}
     <aside>
-      {% include intro-text.html %}
+      {% include components/intro-text.html %}
     </aside>
     {% endif %}
 
     <main itemprop="text">
       {{ content }}
+      {% include feature_row %}
+      {% include components/tabs_panel.html %}
     </main>
 
     {% if page.author != false %}
