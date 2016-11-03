@@ -164,7 +164,8 @@ figcaption {
   margin-right: auto;
   // font-size: fs(small);
   line-height: $line-height-base;
-  @extend %altfont_angle;
+  // @extend %altfont_angle;
+  text-transform: uppercase;
   letter-spacing: 3px;
   max-width: 250px;
 
@@ -249,9 +250,9 @@ blockquote {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  border-top: 1px solid $color-cool;
-  border-bottom: 1px solid $color-cool;
-  margin-bottom: $spacing-unit;
+  border-top: 1px solid $color_alt2;
+  border-bottom: 1px solid $color_alt2;
+  margin-bottom: $spacing-unit*2;
 
   > p {
     max-width: 400px;

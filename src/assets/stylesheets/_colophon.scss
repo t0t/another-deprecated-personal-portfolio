@@ -7,6 +7,11 @@
   padding: 20px 0;
   // background-color: $lighter-gray;
   // font-size: 0.8rem;
+
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .colophon__menu {
@@ -51,7 +56,9 @@
 }
 
 .colophon__copyright {
-  // letter-spacing: 1px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   text-align: center;
   font-size: fs(small);
 
@@ -62,10 +69,10 @@
 
   a {
     color: #999;
-    border-bottom: 1px solid $light-gray;
+    // border-bottom: 1px solid $light-gray;
 
     &:hover {
-      // border-bottom-style: solid;
+      color: $black;
     }
   }
 }

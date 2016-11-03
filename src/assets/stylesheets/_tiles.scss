@@ -4,27 +4,13 @@
 
 .tile__header {
   margin-top: 3em;
-  font-size: 0.8rem;
-  // text-transform: uppercase;
-  /* lines in headline */
+  font-size: fs(normal);
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: inherit;
   text-align: center;
 
-  &:after {
-    content: '\a0';
-    position: relative;
-    top: 0.4rem;
-    height: $base_line;
-    // background: $color-cool;
-    flex-grow: 1;
-  }
-
-  &:after {
-    margin-left: 10px;
-  }
 }
 
 .tiles {
@@ -90,9 +76,10 @@
 .tile__title {
   color: $color_alt5;
   font-size: fs(x-normal);
-  line-height: $line-height-base - 0.50;
-  @extend %altfont_angle;
-  letter-spacing: 3px;
+  line-height: $line-height-base - 0.20;
+  // @extend %altfont_angle;
+  // letter-spacing: 3px;
+  text-transform: uppercase;
   margin-top: 0;
   padding-top: 4px;
   border-top: 3px solid $color_alt5;

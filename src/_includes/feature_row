@@ -44,9 +44,8 @@
           {% endif %}
 
           {% if f.url %}
-              <a href="{{ f_url }}" class="btn  btn--step">
-              <svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg>
-              {{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}
+              <a href="{{ f_url }}" class="btn  btn--default">
+                {{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}
               </a>
           {% endif %}
 

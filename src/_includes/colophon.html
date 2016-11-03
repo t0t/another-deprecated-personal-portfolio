@@ -4,11 +4,14 @@
 
     <p class="colophon__copyright">
 
-      <a href="{{ site.url }}/humans.txt">Soy un ser humano</a>
+      <svg class="icon"><use xlink:href="#icon-matrioska" /></svg>
+      <a href="{{ site.url }}/humans.txt">
+        Soy un ser humano
+      </a>
       <a href="{{ site.owner.github-repo }}" title="view source on GitHub" rel="nofollow"> · Repositorio</a>
 
       {% for link in site.data.navigation.colophon-menu %}
-        <a href="{{ site.url }}{{ link.url }}">· {{ link.title }}</a>
+        <a href="{{ site.url }}{{ link.url }}"> · {{ link.title }}</a>
       {% endfor %}
 
     </p>

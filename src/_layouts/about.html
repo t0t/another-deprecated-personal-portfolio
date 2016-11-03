@@ -15,7 +15,7 @@ author: true
     <header class="container page-header  page-header--about">
 
       {% if page.image.icon_bg %}
-      <svg class="icon  icon--bg"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
+      <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
       {% endif %}
 
       <h1 class="page-title" itemprop="headline">

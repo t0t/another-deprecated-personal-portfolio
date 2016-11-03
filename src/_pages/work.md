@@ -14,7 +14,7 @@ feature:
 image:
   feature:
   teaser:
-  icon_bg: mountain
+  icon_bg: cor
 ---
 
 {% for post in site.categories.work %}

@@ -53,6 +53,7 @@ $color_alt2                   : rgb(129, 232, 179);
 $color_alt3                   : rgba(255, 0, 243, 0.38);
 $color_alt4                   : rgba(129, 232, 179, .57);
 $color_alt7                   : rgb(183, 242, 212);
+$color_alt8                   : #8080FF;
 $color_alt5                   : rgba(0, 0, 255, 0.5);
 $color_alt6                   : rgb(206, 26, 44);
 // $color_alt6                   : rgb(179, 146, 94);
@@ -64,7 +65,7 @@ $gray                         : #888;
 $dark-gray                    : hsla(10,0%,15%,1);
 $light-gray                   : rgba(0,0,0,.05);
 $lighter-gray                 : #f9f9f9;
-
+$color_links                  : $color_alt5;
 $color_page_header            : $dark-gray;
 $text-color                   : $dark-gray;
 // $headline-color               : $gray;
@@ -75,10 +76,10 @@ $background-color             : $white;
 $highlighter-color            : #f3bc15;
 
 // $background-color3         : rgb(183,131,109);
-$color-cool                   : $color_alt7;
+$color-cool                   : $lighter-gray;
 $brand-color                  : $black;
 $color_headers                : $color_alt3;
-// $color-cool                : rgb(224,108,117);
+$color-cool2                : rgb(224,108,117);
 
 
 $primary-color                : mix($black, $lighter-gray, 20%);

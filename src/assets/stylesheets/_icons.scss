@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .icon {
-  position: absolute;
+  // position: absolute;
   fill: none;
   width: $spacing-unit*2;
   height: $spacing-unit*2;
@@ -13,6 +13,8 @@
   vertical-align: middle;
   stroke-width: 1px;
   stroke: $black;
+  // -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+  // perspective: 150px;
 
   &.spin {
     animation: spin 2s infinite linear;
@@ -20,36 +22,76 @@
 
   &--mountain {
     fill: none;
+    animation-name: blur;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
   }
-  &--cor {}
-  &--logo {}
+  &--matrioska {
+    fill: none;
+    // transform: perspective( 20px );
+    transform: rotateZ(13deg);
+    // rotate3d(1, 2, -1, 100deg);
+    transform-origin: bottom;
+    animation-name: balanceo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  &--cor {
+    fill: none;
+    animation-name: latido;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  &--todh-grafico {
+    fill: none;
+    animation-name: spin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  &--logo {
+    transform-origin: 75% center;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
   &--logo-todh {}
+  &--anim-sentir {
+    animation-name: anim;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
   &--button {
     width: 150px;
     height: 60px;
-    position: absolute;
-    left: -10px;
+    // position: absolute;
+    // left: -10px;
     top: 10px;
   }
 
   // iconos dentro de header (funcionan como bg)
   &--bg {
     position: absolute;
-    top: 270px;
-    right: 0;
-    height: 70%;
+    top: 10%;
+    left: 10%;
+    height: 80%;
     width: 80%;
-    stroke: lighten($color_alt2,7);
-    stroke-width: 10px;
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+    stroke: $color-cool2;
+    filter: blur(3px);
   }
 
   &--arrow-next {
+    transition-property: transform, stroke-width;
+    transition-duration: .5s;
+    stroke-width: 4px;
     &:hover {
-      stroke-width: 2px;
+      stroke-width: 8px;
+      transform: translateX(8px);
     }
   }
 

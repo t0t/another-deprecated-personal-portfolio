@@ -6,13 +6,19 @@
   align-content: center;
   align-items: center;
   position: relative;
-  background-color: $light-gray;
+  // background-color: $light-gray;
+  background: linear-gradient(to bottom,
+  $white 0%,
+  $light-gray 26%,
+  $light-gray 99%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   @media screen and (min-width: 426px) {
-    margin: $spacing-unit;
+    // margin: $spacing-unit;
   }
 
   &__name {
+    text-transform: uppercase;
     font-size: fs(big);
     margin-top: 10px;
     flex: 1 100%;

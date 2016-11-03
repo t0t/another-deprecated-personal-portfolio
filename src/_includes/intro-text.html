@@ -9,10 +9,10 @@
 
       <article class="IntroText">
 
-        <h2> {{ i.header }} </h2>
-        <h3> {{ i.description }} </h3>
-        <p> {{ i.p }} </p>
-        <small> {{ i.small }} </small>
+        {% if i.header %}<h2> {{ i.header }} </h2> {% endif %}
+        {% if i.description %}<h3> {{ i.description }} </h3> {% endif %}
+        {% if i.p %}<p> {{ i.p }} </p> {% endif %}
+        {% if i.small %}<small> {{ i.small }} </small> {% endif %}
 
         <dl>
         {% for list in i.list %}

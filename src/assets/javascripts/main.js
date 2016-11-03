@@ -3,7 +3,7 @@
 var s= document.querySelector(".masthead");
 
 window.addEventListener("scroll", function() {
-  if(window.pageYOffset > 200) {
+  if(window.pageYOffset > 50) {
     s.classList.add("masthead--sticky");
   } else{
     s.classList.remove("masthead--sticky");

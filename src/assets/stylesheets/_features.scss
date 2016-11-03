@@ -5,12 +5,13 @@
 .feature {
 
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+
     margin-top: $spacing-unit * 8;
 
-    @media screen and (min-width: 975px) {
+    @media screen and (min-width: 775px) {
       // flex-wrap: nowrap;
+      // display: flex;
+      // flex-wrap: wrap;
     }
   }
 

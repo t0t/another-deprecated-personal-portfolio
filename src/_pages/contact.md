@@ -11,16 +11,6 @@ ads: false
 share: false
 author: true
 
-introText:
-  - header: "Siempre tengo ganas de trabajar en equipo."
-    description: "Decir, sentir, hacer, pensar en coherencia"
-    p: "Haz las cosas ya, la creatividad no puede esperar"
-    small: "Construyo posibilidades"
-
-  - header: "Evolución contínua"
-    description: "Alineación con el propósito"
-    p: "Cambio radical"
-    small: "Atención plena"
 image:
   feature:
   teaser:
@@ -35,10 +25,7 @@ image:
   <input type="hidden" name="subject" value="sergiofores.es contact form" />
   <textarea name="message" placeholder="Mensaje" class="Contact__textarea"></textarea>
 
-  <button id="buttonStep2" class="btn  btn--step">
-    <svg class="icon  icon--button"><use xlink:href="#icon-button" /></svg>
-    <input type="submit" value="Enviar">
-  </button>
+  <input type="submit" value="Enviar" class="btn  btn--default">
 
   <input type="hidden" name="next" value="http://sergiofores.es/" />
   <input type="text" name="gotcha" style="display:none" />

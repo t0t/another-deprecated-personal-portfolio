@@ -1,0 +1,89 @@
+<svg width="158" height="122" viewBox="150 -64 158 122" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path d="M3 3c2.41-5.38 152 0 152 0s4.627 99.442 0 105c-42.606-2.557-152 0-152 0S-3.047 16.493 3 3z" id="a"/>
+    <mask id="n" x="0" y="0" width="156.744" height="107.391" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+    <path d="M.382 5.564C.458 4.467 1.395 3.4 2.48 3.19c0 0 17.502-3.613 18.19-1.613.688 2 .087 14.012.087 14.012-.048 1.096-.958 2.164-2.046 2.38 0 0-17.106 3.606-18.19 1.606-1.083-2-.137-14.013-.137-14.013z" id="b"/>
+    <mask id="o" x="0" y="0" width="21" height="19.207" fill="#fff">
+      <use xlink:href="#b"/>
+    </mask>
+    <path d="M.382 5.564C.458 4.467 1.395 3.4 2.48 3.19c0 0 17.502-3.613 18.19-1.613.688 2 .087 14.012.087 14.012-.048 1.096-.958 2.164-2.046 2.38 0 0-17.106 3.606-18.19 1.606-1.083-2-.137-14.013-.137-14.013z" id="c"/>
+    <mask id="p" x="0" y="0" width="21" height="19.207" fill="#fff">
+      <use xlink:href="#c"/>
+    </mask>
+    <path d="M.382 5.564C.458 4.467 1.395 3.4 2.48 3.19c0 0 17.502-3.613 18.19-1.613.688 2 .087 14.012.087 14.012-.048 1.096-.958 2.164-2.046 2.38 0 0-17.106 3.606-18.19 1.606-1.083-2-.137-14.013-.137-14.013z" id="d"/>
+    <mask id="q" x="0" y="0" width="21" height="19.207" fill="#fff">
+      <use xlink:href="#d"/>
+    </mask>
+    <path d="M.382 5.564C.458 4.467 1.395 3.4 2.48 3.19c0 0 17.502-3.613 18.19-1.613.688 2 .087 14.012.087 14.012-.048 1.096-.958 2.164-2.046 2.38 0 0-17.106 3.606-18.19 1.606-1.083-2-.137-14.013-.137-14.013z" id="e"/>
+    <mask id="r" x="0" y="0" width="21" height="19.207" fill="#fff">
+      <use xlink:href="#e"/>
+    </mask>
+    <path id="f" d="M41 24h31v4H41z"/>
+    <mask id="s" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#f"/>
+    </mask>
+    <path id="g" d="M41 30h31v4H41z"/>
+    <mask id="t" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#g"/>
+    </mask>
+    <path id="h" d="M41 47h31v4H41z"/>
+    <mask id="u" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#h"/>
+    </mask>
+    <path id="i" d="M41 53h31v4H41z"/>
+    <mask id="v" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#i"/>
+    </mask>
+    <path id="j" d="M110 24h31v4h-31z"/>
+    <mask id="w" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#j"/>
+    </mask>
+    <path id="k" d="M110 30h31v4h-31z"/>
+    <mask id="x" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#k"/>
+    </mask>
+    <path id="l" d="M110 47h31v4h-31z"/>
+    <mask id="y" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#l"/>
+    </mask>
+    <path id="m" d="M110 53h31v4h-31z"/>
+    <mask id="z" x="0" y="0" width="31" height="4" fill="#fff">
+      <use xlink:href="#m"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(150 -64)" stroke="#000">
+    <use mask="url(#n)" stroke-width="2" xlink:href="#a"/>
+    <path d="M3.984 8.147s67.353-2.632 151.002 0"/>
+    <g transform="translate(14 20)">
+      <use mask="url(#o)" stroke-width="2" xlink:href="#b"/>
+      <path d="M0 17.524c.934-4.428 4.74-2.408 3.77-4.428C3.12 11.744.7 9.212 3.092 7.17c2.407-2.05 4.204-.98 4.866 0 1.077 1.6 1.685 3.737-.663 5.926C5.62 14.658 11 13.873 11 17.524"/>
+    </g>
+    <g transform="translate(14 43)">
+      <use mask="url(#p)" stroke-width="2" xlink:href="#c"/>
+      <path d="M0 17.524c.934-4.428 4.74-2.408 3.77-4.428C3.12 11.744.7 9.212 3.092 7.17c2.407-2.05 4.204-.98 4.866 0 1.077 1.6 1.685 3.737-.663 5.926C5.62 14.658 11 13.873 11 17.524"/>
+    </g>
+    <g transform="translate(84 20)">
+      <use mask="url(#q)" stroke-width="2" xlink:href="#d"/>
+      <path d="M0 17.524c.934-4.428 4.74-2.408 3.77-4.428C3.12 11.744.7 9.212 3.092 7.17c2.407-2.05 4.204-.98 4.866 0 1.077 1.6 1.685 3.737-.663 5.926C5.62 14.658 11 13.873 11 17.524"/>
+    </g>
+    <g transform="translate(84 43)">
+      <use mask="url(#r)" stroke-width="2" xlink:href="#e"/>
+      <path d="M0 17.524c.934-4.428 4.74-2.408 3.77-4.428C3.12 11.744.7 9.212 3.092 7.17c2.407-2.05 4.204-.98 4.866 0 1.077 1.6 1.685 3.737-.663 5.926C5.62 14.658 11 13.873 11 17.524"/>
+    </g>
+    <path d="M66 107.184S63.465 88.398 66 78c1.016-4.168 21 0 21 0v29.228"/>
+    <use mask="url(#s)" stroke-width="2" xlink:href="#f"/>
+    <use mask="url(#t)" stroke-width="2" xlink:href="#g"/>
+    <use mask="url(#u)" stroke-width="2" xlink:href="#h"/>
+    <use mask="url(#v)" stroke-width="2" xlink:href="#i"/>
+    <use mask="url(#w)" stroke-width="2" xlink:href="#j"/>
+    <use mask="url(#x)" stroke-width="2" xlink:href="#k"/>
+    <use mask="url(#y)" stroke-width="2" xlink:href="#l"/>
+    <use mask="url(#z)" stroke-width="2" xlink:href="#m"/>
+    <path d="M64.933 120.857v-6.204h5.387v-5.572h5.28v-6.055h5.236v-5.46h5.642"/>
+    <circle cx="12" cy="5" r="2"/>
+    <circle cx="19" cy="5" r="2"/>
+    <circle cx="26" cy="5" r="2"/>
+  </g>
+</svg>

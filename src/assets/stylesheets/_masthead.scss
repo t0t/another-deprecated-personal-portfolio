@@ -8,11 +8,12 @@
   top: 0;
   width: 100%;
   height: 50px;
-  z-index: 11;
-  // background-color: $color-cool;
+  z-index: 500;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition-duration: .2s;
+  transition-timing-function: linear;
 
   @media screen and (min-width: 374px) {
     justify-content: space-between;
@@ -27,9 +28,13 @@
   }
 
   &--sticky {
-   height: 50px;
-   background-color: $color-cool;
-  //  background-color: lighten($color_alt7,10);
+    height: 50px;
+    transition-property: height, background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    background-color: $color-cool;
+    box-shadow: 0px 3px 52px 13px rgba(0,0,0,0.12);
+    // background-color: lighten($color_alt7,10);
   }
 
   .overlay__menu-trigger {
@@ -62,7 +67,7 @@
 
   a:not(.active) {
     cursor: default;
-    background-color: $color-cool;
+    color: $black;
     &:hover {
       // background-color: $color-cool;
       // color: red;
@@ -94,9 +99,9 @@
   display: block;
   padding: 13px 13px;
   text-transform: uppercase;
-  font-family: 'Permanent Marker', cursive;
+  // font-family: 'Permanent Marker', cursive;
   // transform: rotate(-6deg);
-  letter-spacing: -2px;
+  // letter-spacing: -2px;
   font-size: fs(small) + 0.4;
   line-height: 1.2;
 

@@ -17,15 +17,15 @@ fullwidth: true
 
 introText:
   - header: "Conocimientos"
-    description: "Agile"
-    p: "Trello"
-    small: "( Refactoring, BEM, Mobile First... )"
+    description:
+    p:
+    small:
     excerpt:
-    image_path: "bg-cor.svg"
+    image_path:
     image_description: "description"
     url: "url"
     list:
-      - title: "Aprender para ver:"
+      - title:
       - item: "-Arquitectura de Información"
       - item: "-Retoque Fotográfico"
       - item: "-Diseño Gráfico / Editorial"
@@ -45,16 +45,15 @@ introText:
       - item: "-Axure RP"
 
   - header: "Habilidades"
-    description: "Trello"
-    p: "Buenas prácticas"
-    small: "( Prototyping like a pro )"
+    description:
+    p:
+    small:
     excerpt:
-    image_path: "bg-mountain.svg"
+    image_path:
     image_description: "description"
     url: "url"
     list:
-      - title: "Diagramación de presentación"
-      - title: "Trazar conexiones"
+      - title:
       - item: "-Sketching en papel"
       - item: "-Diseño de patrones, sistemas, guías"
       - item: "-Mucho Sketch / Principle"
@@ -77,10 +76,11 @@ Me gusta el mar
 
 Nací en un mes de julio de 1975 en Barcelona. Apasionado desde muy pequeño por el dibujo, me formé en Artes Aplicadas y Oficios Artísticos (Gargallo, EARVIC) y más tarde en Arte Electrónico y Diseño Digital (ESDI). Inicié mi camino freelance en el 2000 como diseñador web y gráfico. Desde entonces me he dedicado a hacer mucho Wordpress y también diseño gráfico y editorial. Paralelamente he ido acercandome más y más al mundo del Frontend realizando multiples cursos y a partir de la propia experiencia.
 
+> Es vital comprender cada pequeña tarea como lo que es: un todo abarcable, consciente y conectado.
+
 En 2015, con 41 añitos, hago recapitulación y decido replantear completamente mis intereses personales y profesionales teniendo en cuenta el mundo cambiante en el que vivimos y mi constante necesidad de autorealización, desde entonces dirijo mi energía y enfoco mi evolución hacia lo que realmente importa: sacar el máximo partido de mis conocimientos y habilidades para brindarlos a quien más pueda aportar valor.
 
 Tengo una visión holística de las cosas y me siento especialmente cómodo en el prototipado Html/CSS aportando en equipos multidisciplinares. Soy lo que viene llamándose un profesional con [forma de T](https://en.wikipedia.org/wiki/T-shaped_skills){: target="_blank"} pero, ante todo, un ser humano siendo humano. Ese es mi trabajo, el alineamiento, una coherencia entre el interior y el mundo. Así nace TODH.
-Es vital para mí comprender cada pequeña tarea como un todo abarcable, consciente y conectado.
 
 > Sigo siendo ese niño que trataba de comprender el mundo con sus lápices de colores, aunque ahora uso más herramientas.
 
