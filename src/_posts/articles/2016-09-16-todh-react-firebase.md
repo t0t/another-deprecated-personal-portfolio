@@ -2,8 +2,8 @@
 title: Prototipado de SPA con React + Firebase
 headline: Prototipo evolutivo construido en ReactJS + Firebase
 excerpt: >-
-  Explorando las posibilidades y beneficios de nuevas formas de hacer y entender
-  la creación web
+  Explorando las posibilidades y beneficios de nuevas formas de hacer prototipos
+  web
 modified: 2016-09-16T20:32:07.000Z
 image:
   feature: todh-react.png
