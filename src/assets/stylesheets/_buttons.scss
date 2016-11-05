@@ -4,7 +4,7 @@
 
 /*
    Default button
-   ========================================================== */
+   =========================================== */
 
 .btn {
   font-size: fs(normal);
@@ -71,27 +71,20 @@
   }
 
   &--default {
-    // position: relative;
     display: flex;
     justify-content: center;
-    // align-content: center;
     align-items: center;
     min-width: 100px;
     min-height: 50px;
-    // padding-bottom: 0;
-    // padding-right: 0;
     background-color: $color_alt7;
-    // text-align: center;
     border: none;
     transition: color 1s ease-out;
     margin-top: $spacing-unit / 2;
-    // line-height: 5;
     text-transform: uppercase;
 
     &:hover {
       color: $black;
       border: none;
-      // background-color: transparent;
     }
   }
 
@@ -112,10 +105,12 @@
 
   /* warning */
   &--warning {
+    color: $white;
     background-color: $warning-color;
 
     &:hover {
-      background-color: mix(#000, $warning-color, 20%);
+      color: $black;
+      background-color: $color_alpha_white;
     }
   }
 

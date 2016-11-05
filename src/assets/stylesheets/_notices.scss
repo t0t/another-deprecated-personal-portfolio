@@ -11,10 +11,8 @@
  */
 
 @mixin notice($notice-color) {
-  max-width: 700px;
-  margin: 2em 0;
-  padding: 1em;
-  background-color: mix(#fff, $notice-color, 60%);
+  padding: $spacing-unit;
+  background-color: $notice-color;
   border-top: 0.25em solid mix(#fff, $notice-color, 50%);
   border-bottom: 0.25em solid mix(#fff, $notice-color, 50%);
   font-size: fs(normal);
@@ -51,8 +49,7 @@
   }
 
   a {
-    color: mix(#000, $notice-color, 25%) !important; // override
-    border-bottom: 1px solid mix(#fff, $notice-color, 50%) !important; // override
+    border-bottom: 1px solid mix(#fff, $notice-color, 20%) !important; // override
   }
 
   h4 + p {
@@ -68,7 +65,7 @@
 
 /* default notice */
 .notice {
-
+  color: $white;
   @include notice($primary-color);
 }
 
@@ -81,7 +78,7 @@
 /* warning notice */
 .notice--warning {
 
-  @include notice($color_alt);
+  @include notice($warning-color);
 }
 
 /* success notice */

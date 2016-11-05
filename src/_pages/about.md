@@ -16,8 +16,8 @@ tabsPanel:
 
   - tab_btn: "Filosofía"
     header: "No hay mapa más exacto que la realidad misma"
-    description: "El mundo de la forma se actualiza el mundo de las ideas y viceversa"
-    p:
+    description: "El mundo de la forma actualiza al mundo de las ideas, y al revés."
+    p: "El mundo es relación y constantemente traemos micropaquetes de información de un contexto a otro. Este vaivén es el motor que da sentido a la existencia de todo, ya sea un proyecto profesional o tu propia vida."
     small:
     excerpt:
     image_path: mountain
@@ -34,11 +34,11 @@ tabsPanel:
     image_description:
     url:
     list:
-      - item: "1. Entrevistas, research, feedback, testing..."
-      - item: "2. Sketching, wireframes con Axure..."
-      - item: "3. Diseño UI con Sketch, look&feel, tono, grafica..."
-      - item: "4. Maquetación en entorno de desarrollo, templating, CSS"
-      - item: "5. Control de versiones, entorno de producción, refinamientos"
+      - item: "1. Propósito, Entrevistas, Research, Feedback, Testing..."
+      - item: "2. Sketching en papel, Wireframes en Axure RP..."
+      - item: "3. Diseño UI con Sketch, Look&feel, Tono, Gráfica..."
+      - item: "4. Maquetación en entorno de desarrollo, Templating, CSS..."
+      - item: "5. Control de versiones, Entorno de producción, refinamientos"
 ---
 {% capture caption %}
 Me gusta el mar

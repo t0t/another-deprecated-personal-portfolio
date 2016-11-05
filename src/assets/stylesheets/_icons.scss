@@ -59,7 +59,11 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  &--logo-todh {}
+  &--logo-todh {
+    stroke: $white;
+    width: 150px;
+    height: 150px;
+  }
   &--anim-sentir {
     animation-name: anim;
     animation-duration: .5s;

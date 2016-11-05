@@ -472,7 +472,7 @@ h4 {
       max-width: 400px; } }
   @media screen and (min-width: 1430px) {
     h4 {
-      font-size: 3rem; } }
+      font-size: 1.35rem; } }
 
 h5 {
   font-size: 1rem;
@@ -1265,9 +1265,6 @@ body:hover .visually-hidden button {
     @media screen and (min-width: 1437px) {
       .page-header ul li {
         font-size: 1rem; } }
-  @media screen and (min-width: 1437px) {
-    .page-header {
-      height: 75vh; } }
 
 .page-title {
   -webkit-box-flex: 1;
@@ -1702,7 +1699,7 @@ body:hover .visually-hidden button {
    ========================================================================== */
 /*
    Default button
-   ========================================================== */
+   =========================================== */
 .btn {
   font-size: 1rem;
   display: inline-block;
@@ -1784,9 +1781,11 @@ body:hover .visually-hidden button {
     .btn--info:hover {
       background-color: rgba(29, 29, 132, 0.66); }
   .btn--warning {
-    background-color: #e3b426; }
+    color: #fff;
+    background-color: #e06c75; }
     .btn--warning:hover {
-      background-color: #b6901e; }
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.25); }
   .btn--success:hover {
     background-color: #68ae8a; }
   .btn--danger {
@@ -1828,6 +1827,242 @@ body:hover .visually-hidden button {
     .btn--twitter:hover {
       background-color: #448abe; }
 
+/* ==========================================================================
+   NOTICE TEXT BLOCKS
+   ========================================================================== */
+/**
+ * Default Kramdown usage (no indents!):
+ * <div class="notice" markdown="1">
+ * #### Headline for the Notice
+ * Text for the notice
+ * </div>
+ */
+/* default notice */
+.notice {
+  color: #fff;
+  padding: 25px;
+  background-color: #c7c7c7;
+  border-top: 0.25em solid #e3e3e3;
+  border-bottom: 0.25em solid #e3e3e3;
+  font-size: 1rem; }
+  .notice h4 {
+    font-size: 1rem;
+    max-width: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice a:hover {
+      background-color: transparent !important; }
+  .notice p {
+    margin-bottom: 0; }
+  .notice a {
+    border-bottom: 1px solid #d2d2d2 !important; }
+  .notice h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice code {
+    background-color: #eeeeee; }
+
+/* info notice */
+.notice--info {
+  padding: 25px;
+  background-color: rgba(47, 47, 214, 0.575);
+  border-top: 0.25em solid rgba(195, 195, 243, 0.7875);
+  border-bottom: 0.25em solid rgba(195, 195, 243, 0.7875);
+  font-size: 1rem; }
+  .notice--info h4 {
+    font-size: 1rem;
+    max-width: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--info h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--info a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--info a:hover {
+      background-color: transparent !important; }
+  .notice--info p {
+    margin-bottom: 0; }
+  .notice--info a {
+    border-bottom: 1px solid rgba(127, 127, 230, 0.66) !important; }
+  .notice--info h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--info code {
+    background-color: rgba(224, 224, 249, 0.8725); }
+
+/* warning notice */
+.notice--warning {
+  padding: 25px;
+  background-color: #e06c75;
+  border-top: 0.25em solid #f0b6ba;
+  border-bottom: 0.25em solid #f0b6ba;
+  font-size: 1rem; }
+  .notice--warning h4 {
+    font-size: 1rem;
+    max-width: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--warning h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--warning a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--warning a:hover {
+      background-color: transparent !important; }
+  .notice--warning p {
+    margin-bottom: 0; }
+  .notice--warning a {
+    border-bottom: 1px solid #e68991 !important; }
+  .notice--warning h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--warning code {
+    background-color: #f6d3d6; }
+
+/* success notice */
+.notice--success {
+  padding: 25px;
+  background-color: #82daad;
+  border-top: 0.25em solid #c1edd6;
+  border-bottom: 0.25em solid #c1edd6;
+  font-size: 1rem; }
+  .notice--success h4 {
+    font-size: 1rem;
+    max-width: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--success h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--success a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--success a:hover {
+      background-color: transparent !important; }
+  .notice--success p {
+    margin-bottom: 0; }
+  .notice--success a {
+    border-bottom: 1px solid #9be1bd !important; }
+  .notice--success h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--success code {
+    background-color: #daf4e6; }
+
+/* danger notice */
+.notice--danger {
+  padding: 25px;
+  background-color: #cf1b2d;
+  border-top: 0.25em solid #e78d96;
+  border-bottom: 0.25em solid #e78d96;
+  font-size: 1rem; }
+  .notice--danger h4 {
+    font-size: 1rem;
+    max-width: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-top: 0 !important;
+    margin-bottom: 0.75em;
+    line-height: 1 !important; }
+  .page-content .notice--danger h4 {
+    /* using at-root to override .page-content h4 font size */
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .page-content .notice--danger a {
+    border-bottom-width: 2px;
+    box-shadow: none !important; }
+    .page-content .notice--danger a:hover {
+      background-color: transparent !important; }
+  .notice--danger p {
+    margin-bottom: 0; }
+  .notice--danger a {
+    border-bottom: 1px solid #d94957 !important; }
+  .notice--danger h4 + p {
+    /* remove space above paragraphs that appear directly after notice headline */
+    margin-top: 0;
+    padding-top: 0; }
+  .notice--danger code {
+    background-color: #f1bbc0; }
+
+.cc_banner-wrapper {
+  background-color: #000;
+  color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100; }
+  .cc_banner-wrapper .cc_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    justify-conbntent: center;
+    font-size: 70%; }
+    @media screen and (max-width: 399px) {
+      .cc_banner-wrapper .cc_container {
+        font-size: 100%; } }
+  .cc_banner-wrapper .cc_logo {
+    display: none; }
+  .cc_banner-wrapper .cc_more_info {
+    border-bottom: 1px dashed #fff; }
+  .cc_banner-wrapper .cc_btn_accept_all {
+    text-transform: uppercase;
+    padding: 12.5px;
+    background-color: rgba(255, 255, 255, 0.18);
+    text-align: center; }
+    .cc_banner-wrapper .cc_btn_accept_all:hover {
+      background-color: rgba(255, 255, 255, 0.25); }
+
 .social {
   list-style: none;
   display: -webkit-box;
@@ -1863,6 +2098,7 @@ body:hover .visually-hidden button {
     text-decoration: none; }
 
 .IntroText {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1874,26 +2110,31 @@ body:hover .visually-hidden button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin-top: 0;
   padding: 25px 50px;
-  color: #fff;
-  background-color: #e06c75;
   min-height: 300px; }
-  .IntroText h1 {
+  .IntroText__title {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
     line-height: 1;
     text-align: center;
-    text-transform: uppercase; }
-  .IntroText h2 {
-    margin: 0;
-    text-align: center;
-    margin-bottom: 0; }
-  .IntroText h3 {
+    text-transform: uppercase;
+    margin: 25px 0; }
+  .IntroText__subtitle {
+    margin-bottom: 25px;
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     max-width: 700px;
     line-height: 1.3;
     text-align: center; }
+  .IntroText a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 100%;
+            flex: 0 100%;
+    max-width: 100px; }
   .IntroText small {
     line-height: 1.3;
     max-width: 150px; }
@@ -1914,17 +2155,12 @@ body:hover .visually-hidden button {
         font-size: 3rem; } }
   .IntroText p {
     text-align: center;
-    max-width: 300px;
     line-height: 1.2;
-    font-size: 1rem; }
-    @media screen and (min-width: 1023px) {
-      .IntroText p {
-        max-width: 500px;
-        font-size: 3rem; } }
-    @media screen and (min-width: 1439px) {
-      .IntroText p {
-        max-width: 800px;
-        font-size: 4rem; } }
+    font-size: 1rem;
+    margin-bottom: 25px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%; }
   .IntroText img {
     min-width: 100px; }
 
@@ -2556,256 +2792,6 @@ tr, td, th {
   vertical-align: middle; }
 
 /* ==========================================================================
-   NOTICE TEXT BLOCKS
-   ========================================================================== */
-/**
- * Default Kramdown usage (no indents!):
- * <div class="notice" markdown="1">
- * #### Headline for the Notice
- * Text for the notice
- * </div>
- */
-/* default notice */
-.notice {
-  max-width: 700px;
-  margin: 2em 0;
-  padding: 1em;
-  background-color: #e9e9e9;
-  border-top: 0.25em solid #e3e3e3;
-  border-bottom: 0.25em solid #e3e3e3;
-  font-size: 1rem; }
-  .notice h4 {
-    font-size: 1rem;
-    max-width: inherit;
-    letter-spacing: inherit;
-    font-family: inherit;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    margin-top: 0 !important;
-    margin-bottom: 0.75em;
-    line-height: 1 !important; }
-  .page-content .notice h4 {
-    /* using at-root to override .page-content h4 font size */
-    margin-bottom: 0;
-    font-size: 1rem; }
-  .page-content .notice a {
-    border-bottom-width: 2px;
-    box-shadow: none !important; }
-    .page-content .notice a:hover {
-      background-color: transparent !important; }
-  .notice p {
-    margin-bottom: 0; }
-  .notice a {
-    color: #959595 !important;
-    border-bottom: 1px solid #e3e3e3 !important; }
-  .notice h4 + p {
-    /* remove space above paragraphs that appear directly after notice headline */
-    margin-top: 0;
-    padding-top: 0; }
-  .notice code {
-    background-color: #eeeeee; }
-
-/* info notice */
-.notice--info {
-  max-width: 700px;
-  margin: 2em 0;
-  padding: 1em;
-  background-color: rgba(211, 211, 246, 0.83);
-  border-top: 0.25em solid rgba(195, 195, 243, 0.7875);
-  border-bottom: 0.25em solid rgba(195, 195, 243, 0.7875);
-  font-size: 1rem; }
-  .notice--info h4 {
-    font-size: 1rem;
-    max-width: inherit;
-    letter-spacing: inherit;
-    font-family: inherit;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    margin-top: 0 !important;
-    margin-bottom: 0.75em;
-    line-height: 1 !important; }
-  .page-content .notice--info h4 {
-    /* using at-root to override .page-content h4 font size */
-    margin-bottom: 0;
-    font-size: 1rem; }
-  .page-content .notice--info a {
-    border-bottom-width: 2px;
-    box-shadow: none !important; }
-    .page-content .notice--info a:hover {
-      background-color: transparent !important; }
-  .notice--info p {
-    margin-bottom: 0; }
-  .notice--info a {
-    color: rgba(26, 26, 117, 0.68125) !important;
-    border-bottom: 1px solid rgba(195, 195, 243, 0.7875) !important; }
-  .notice--info h4 + p {
-    /* remove space above paragraphs that appear directly after notice headline */
-    margin-top: 0;
-    padding-top: 0; }
-  .notice--info code {
-    background-color: rgba(224, 224, 249, 0.8725); }
-
-/* warning notice */
-.notice--warning {
-  max-width: 700px;
-  margin: 2em 0;
-  padding: 1em;
-  background-color: #fffbf8;
-  border-top: 0.25em solid #fffaf7;
-  border-bottom: 0.25em solid #fffaf7;
-  font-size: 1rem; }
-  .notice--warning h4 {
-    font-size: 1rem;
-    max-width: inherit;
-    letter-spacing: inherit;
-    font-family: inherit;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    margin-top: 0 !important;
-    margin-bottom: 0.75em;
-    line-height: 1 !important; }
-  .page-content .notice--warning h4 {
-    /* using at-root to override .page-content h4 font size */
-    margin-bottom: 0;
-    font-size: 1rem; }
-  .page-content .notice--warning a {
-    border-bottom-width: 2px;
-    box-shadow: none !important; }
-    .page-content .notice--warning a:hover {
-      background-color: transparent !important; }
-  .notice--warning p {
-    margin-bottom: 0; }
-  .notice--warning a {
-    color: #bfb8b3 !important;
-    border-bottom: 1px solid #fffaf7 !important; }
-  .notice--warning h4 + p {
-    /* remove space above paragraphs that appear directly after notice headline */
-    margin-top: 0;
-    padding-top: 0; }
-  .notice--warning code {
-    background-color: #fffcfa; }
-
-/* success notice */
-.notice--success {
-  max-width: 700px;
-  margin: 2em 0;
-  padding: 1em;
-  background-color: #cdf0de;
-  border-top: 0.25em solid #c1edd6;
-  border-bottom: 0.25em solid #c1edd6;
-  font-size: 1rem; }
-  .notice--success h4 {
-    font-size: 1rem;
-    max-width: inherit;
-    letter-spacing: inherit;
-    font-family: inherit;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    margin-top: 0 !important;
-    margin-bottom: 0.75em;
-    line-height: 1 !important; }
-  .page-content .notice--success h4 {
-    /* using at-root to override .page-content h4 font size */
-    margin-bottom: 0;
-    font-size: 1rem; }
-  .page-content .notice--success a {
-    border-bottom-width: 2px;
-    box-shadow: none !important; }
-    .page-content .notice--success a:hover {
-      background-color: transparent !important; }
-  .notice--success p {
-    margin-bottom: 0; }
-  .notice--success a {
-    color: #62a482 !important;
-    border-bottom: 1px solid #c1edd6 !important; }
-  .notice--success h4 + p {
-    /* remove space above paragraphs that appear directly after notice headline */
-    margin-top: 0;
-    padding-top: 0; }
-  .notice--success code {
-    background-color: #daf4e6; }
-
-/* danger notice */
-.notice--danger {
-  max-width: 700px;
-  margin: 2em 0;
-  padding: 1em;
-  background-color: #eca4ab;
-  border-top: 0.25em solid #e78d96;
-  border-bottom: 0.25em solid #e78d96;
-  font-size: 1rem; }
-  .notice--danger h4 {
-    font-size: 1rem;
-    max-width: inherit;
-    letter-spacing: inherit;
-    font-family: inherit;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    margin-top: 0 !important;
-    margin-bottom: 0.75em;
-    line-height: 1 !important; }
-  .page-content .notice--danger h4 {
-    /* using at-root to override .page-content h4 font size */
-    margin-bottom: 0;
-    font-size: 1rem; }
-  .page-content .notice--danger a {
-    border-bottom-width: 2px;
-    box-shadow: none !important; }
-    .page-content .notice--danger a:hover {
-      background-color: transparent !important; }
-  .notice--danger p {
-    margin-bottom: 0; }
-  .notice--danger a {
-    color: #9b1422 !important;
-    border-bottom: 1px solid #e78d96 !important; }
-  .notice--danger h4 + p {
-    /* remove space above paragraphs that appear directly after notice headline */
-    margin-top: 0;
-    padding-top: 0; }
-  .notice--danger code {
-    background-color: #f1bbc0; }
-
-.cc_banner-wrapper {
-  background-color: #000;
-  color: #fff;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 100; }
-  .cc_banner-wrapper .cc_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    justify-conbntent: center;
-    font-size: 70%; }
-    @media screen and (max-width: 399px) {
-      .cc_banner-wrapper .cc_container {
-        font-size: 100%; } }
-  .cc_banner-wrapper .cc_logo {
-    display: none; }
-  .cc_banner-wrapper .cc_more_info {
-    border-bottom: 1px dashed #fff; }
-  .cc_banner-wrapper .cc_btn_accept_all {
-    text-transform: uppercase;
-    padding: 12.5px;
-    background-color: rgba(255, 255, 255, 0.18);
-    text-align: center; }
-    .cc_banner-wrapper .cc_btn_accept_all:hover {
-      background-color: rgba(255, 255, 255, 0.25); }
-
-/* ==========================================================================
    THUMBNAIL GRIDS
    ========================================================================== */
 /* Thumbnail image grid (default content width) */
@@ -3041,6 +3027,10 @@ form ul, form ol, form li {
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
+  .icon--logo-todh {
+    stroke: #fff;
+    width: 150px;
+    height: 150px; }
   .icon--anim-sentir {
     -webkit-animation-name: anim;
             animation-name: anim;
@@ -4097,7 +4087,7 @@ green     #859900  operators, other keywords
   background-color: #82daad; }
 
 .color__tile--warning {
-  background-color: #e3b426; }
+  background-color: #e06c75; }
 
 .color__tile--danger {
   background-color: #cf1b2d; }

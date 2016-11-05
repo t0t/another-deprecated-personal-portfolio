@@ -1,20 +1,35 @@
-<aside>
-
+<aside class="notice notice--warning">
 
   {% include base_path %}
   {% if page.introText %}
 
-
   {% assign intro = page.introText %}
+
+
 
     {% for i in intro %}
 
       <article class="IntroText">
+        {% if i.icon_bg %}
+        <svg class="icon  icon--{{ i.icon_bg}}"><use xlink:href="#icon-{{ i.icon_bg}}" /></svg>
+        {% endif %}
+        {% if i.header %}
+          <h1 class="IntroText__title"> {{ i.header }} </h1>
+        {% endif %}
+        {% if i.description %}
+          <h3 class="IntroText__subtitle"> {{ i.description }} </h3>
+        {% endif %}
+        {% if i.p %}
+          <p> {{ i.p }} </p>
+        {% endif %}
+        {% if i.small %}
+          <small> {{ i.small }} </small>
+        {% endif %}
 
-        {% if i.header %}<h2> {{ i.header }} </h2> {% endif %}
-        {% if i.description %}<h3> {{ i.description }} </h3> {% endif %}
-        {% if i.p %}<p> {{ i.p }} </p> {% endif %}
-        {% if i.small %}<small> {{ i.small }} </small> {% endif %}
+        <a class="btn btn--warning" href="{{ site.baseurl }}/{{ i.url }}/">
+          + info
+        </a>
+
 
         <dl>
         {% for list in i.list %}
@@ -33,4 +48,4 @@
 
   {% endif %}
 
-</aside class="TabsPanel">
+</aside>

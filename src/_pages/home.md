@@ -53,19 +53,15 @@ video:
 introText:
   - header: "T-O-D-H"
     description: "Transmitir, Observar, Definir y Hacer en coherencia"
-    p: ""
-    small: ""
+    p: "Un metamodelo de lo que es"
+    small:
     excerpt: 'Get notified when I add new stuff &nbsp; [<i class="fa fa-twitter"></i> @t0tinspire](https://twitter.com/t0tinspire){: .btn .btn--twitter}'
+    icon_bg: logo-todh
     image_path:
     image_description: "description"
-    url: "url"
+    url: "articles/todh"
     list:
       - title:
-      - item:
-      - item:
-      - item:
-      - item:
-      - item:
       - item:
 
 tabsPanel:

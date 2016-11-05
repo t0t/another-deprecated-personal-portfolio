@@ -88,7 +88,7 @@ $color-cool2                : rgb(224,108,117);
 
 $primary-color                : mix($black, $lighter-gray, 20%);
 $success-color                : mix($gray, $color_alt2, 15%);
-$warning-color                : mix($gray, #f3bc15, 15%);
+$warning-color                : $color-cool2;
 $danger-color                 : mix($gray, #dc081d, 15%);
 $info-color                   : mix($gray, $color_alt5, 15%);
 
