@@ -1,18 +1,23 @@
 ---
-title: "Prototipado de SPA con React + Firebase"
-headline: "Prototipo evolutivo paralelo construido en ReactJS + Firebase"
-excerpt: "Explorando las posibilidades y beneficios de nuevas formas de hacer y entender la creación web"
-modified: 2016-09-16T16:32:07-04:00
+title: Prototipado de SPA con React + Firebase
+headline: Prototipo evolutivo construido en ReactJS + Firebase
+excerpt: >-
+  Explorando las posibilidades y beneficios de nuevas formas de hacer y entender
+  la creación web
+modified: 2016-09-16T20:32:07.000Z
 image:
   feature: todh-react.png
   teaser: bg-react-firebase.jpg
   thumb: todh-react.png
 sidebar: false
 author: false
-tags: [TODH, Proceso]
+tags:
+  - TODH
+  - Proceso
 comments: false
 comments_locked: true
 featured: false
+published: true
 ---
 
 He querido bucear un poco en el mundo de ReactJS y en el uso de Firebase como CMS creando un prototipo.
