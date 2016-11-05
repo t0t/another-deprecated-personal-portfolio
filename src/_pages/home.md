@@ -96,6 +96,6 @@ tabsPanel:
       - item: Diseño gráfico / web
       - item: HTML + CSS (Sass)
       - item: Mockups
-      - item: Encontrar tesoros
+      - item: Encontrar tesoros en la playa
 published: true
 ---
