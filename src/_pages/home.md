@@ -2,115 +2,100 @@
 layout: home
 permalink: /
 bg: bg-matrioska.svg
-title: "Entrega contínua de TODO lo que es importante aquí y ahora"
-title2: "
-Mi propósito es alinear activamente la esencia de varios mundos:
-<ul>
-<li>Arte y creación</li>
-<li>Prototipado evolutivo</li>
-<li>Diseño web UI/UX</li>
-<li>Maquetación Front-end</li>
-<li>Procesos y metodos ágiles</li>
-<li>Conciencia y meditación</li>
-</ul>
-"
-title3: "No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>"
-subtitle: "Transmite. Observa. Define. ¡Haz!"
-excerpt: "Proceso ideas y las llevo a productos mínimos viables reales que evolucionan."
-date: 2014-06-01
-modified: 2016-02-11
-
+title: Entrega contínua de TODO lo que es importante aquí y ahora
+title2: ' Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
+title3: 'No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>'
+subtitle: Transmite. Observa. Define. ¡Haz!
+excerpt: Proceso ideas y las llevo a productos mínimos viables reales que evolucionan.
+date: 2014-06-01T00:00:00.000Z
+modified: 2016-02-11T00:00:00.000Z
 cta:
-  cta_url: "/articles/todh/"
-  cta_label: "Descubro cómo descubrir"
-
+  cta_url: /articles/todh/
+  cta_label: Descubro cómo descubrir
 image:
   feature: bg-pincel2.jpg
   teaser: logo-todh.svg
   icon_bg: logo
-
 feature_row:
-
-  - image_path:
+  - image_path: null
     img_as_bg: false
-    alt: "Descubrir la forma de las ideas"
-    title:
-    excerpt: "Tengo claro que buenas semillas hacen buenos árboles."
-    url: "/work/"
-    btn_label: "Lab"
-
-  - image_path:
+    alt: Descubrir la forma de las ideas
+    title: null
+    excerpt: Tengo claro que buenas semillas hacen buenos árboles.
+    url: /work/
+    btn_label: Lab
+  - image_path: null
     img_as_bg: false
-    alt: "TODH, mi visión"
-    title:
-    excerpt: "Hablo de teorías, conceptos, herramientas, estrategias y maneras de pensar la realidad"
-    url: "/articles/"
-    btn_label: "Blog"
-
+    alt: 'TODH, mi visión'
+    title: null
+    excerpt: >-
+      Hablo de teorías, conceptos, herramientas, estrategias y maneras de pensar
+      la realidad
+    url: /articles/
+    btn_label: Blog
 video:
   - url: '{::nomarkdown}<video>(external video embed code)</video>{:/nomarkdown}'
-
 introText:
-  - header: "T-O-D-H"
-    description: "Transmitir, Observar, Definir y Hacer en coherencia"
-    p: "Un metamodelo de lo que es"
-    small:
-    excerpt: 'Get notified when I add new stuff &nbsp; [<i class="fa fa-twitter"></i> @t0tinspire](https://twitter.com/t0tinspire){: .btn .btn--twitter}'
+  - header: T-O-D-H
+    description: 'Transmitir, Observar, Definir y Hacer en coherencia'
+    p: Un metamodelo de lo que es
+    small: null
+    excerpt: >-
+      Get notified when I add new stuff &nbsp; [<i class="fa fa-twitter"></i>
+      @t0tinspire](https://twitter.com/t0tinspire){: .btn .btn--twitter}
     icon_bg: logo-todh
-    image_path:
-    image_description: "description"
-    url: "articles/todh"
+    image_path: null
+    image_description: description
+    url: articles/todh
     list:
-      - title:
-      - item:
-
+      - title: null
+      - item: null
 tabsPanel:
-
-  - tab_btn: "Conocimientos"
-    header:
-    description:
-    p:
-    small:
-    excerpt:
-    image_path:
-    image_description:
-    url:
+  - tab_btn: Conocimientos
+    header: null
+    description: null
+    p: null
+    small: null
+    excerpt: null
+    image_path: null
+    image_description: null
+    url: null
     list:
-      - title:
-      - item: "Arquitectura de Información"
-      - item: "Retoque Fotográfico"
-      - item: "Diseño Gráfico / Editorial"
-      - item: "Artes plásticas"
-      - item: "React JS"
-      - item: "Javascript"
-      - item: "inDesign"
-      - item: "Git / Github"
-      - item: "Gulp, NPM"
-      - item: "Jekyll"
-      - item: "Wordpress"
-      - item: "WP-Api REST"
-      - item: "Liquid"
-      - item: "JSON"
-      - item: "Jade"
-      - item: "Stylus / Sass"
-      - item: "Axure RP"
-
-  - tab_btn: "Habilidades"
-    header:
-    description:
-    p:
-    small:
-    excerpt:
-    image_path:
-    image_description:
-    url:
+      - title: null
+      - item: Arquitectura de Información
+      - item: Retoque Fotográfico
+      - item: Diseño Gráfico / Editorial
+      - item: Artes plásticas
+      - item: React JS
+      - item: Javascript
+      - item: inDesign
+      - item: Git / Github
+      - item: 'Gulp, NPM'
+      - item: Jekyll
+      - item: Wordpress
+      - item: WP-Api REST
+      - item: Liquid
+      - item: JSON
+      - item: Jade
+      - item: Stylus / Sass
+      - item: Axure RP
+  - tab_btn: Habilidades
+    header: null
+    description: null
+    p: null
+    small: null
+    excerpt: null
+    image_path: null
+    image_description: null
+    url: null
     list:
-      - title:
-      - item: "Sketching en papel"
-      - item: "Diseño de patrones, sistemas, guías"
-      - item: "Mucho Sketch / Principle"
-      - item: "Diseño gráfico / web"
-      - item: "HTML + CSS (Sass)"
-      - item: "Mockups"
-      - item: "Encontrar tesoros"
+      - title: null
+      - item: Sketching en papel
+      - item: 'Diseño de patrones, sistemas, guías'
+      - item: Sketch / Principle
+      - item: Diseño gráfico / web
+      - item: HTML + CSS (Sass)
+      - item: Mockups
+      - item: Encontrar tesoros
+published: true
 ---
