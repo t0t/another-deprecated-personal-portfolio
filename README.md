@@ -267,47 +267,6 @@ the `index.js` file you have to either rename the `index.js` file or rename the
 `vendor.js` file and automatically inject it at the bottom of your HTML. When
 running with `--prod` it'll automatically optimize as well.
 
-For more advanced uses, refer to the [`gulp-inject`][inject] documentation on
-how to create individual inject tags and inject specific files into them.
-
-**Gulp tasks inspired by [generator-jekyllized](https://github.com/sondr3/generator-jekyllized) by [Sondre Nilsen](https://github.com/sondr3).**
-
-[awspublish]: https://github.com/pgherveou/gulp-awspublish
-[browsersync]: https://github.com/shakyShane/browser-sync
-[browsersync-open]: https://browsersync.io/docs/options/#option-open
-[contribute]: https://github.com/sondr3/generator-jekyllized/blob/master/CONTRIBUTING.md
-[changelog]: https://github.com/sondr3/generator-jekyllized/blob/master/CHANGELOG.md
-[frequentlyasked]: https://github.com/sondr3/generator-jekyllized#frequently-asked-questions
-[gulp]: http://gulpjs.com/
-[gulpfile]: https://github.com/sondr3/generator-jekyllized/blob/master/generators/gulp/templates/gulpfile.js
-[inject]: https://github.com/klei/gulp-inject
-[jekyll-url]: http://jekyllrb.com/docs/github-pages/#project-page-url-structure
-[jekyll]: https://jekyllrb.com
-[libsass]: https://github.com/hcatlin/libsass
-[localtunnel]: http://localtunnel.me/
-[rsync]: https://github.com/jerrysu/gulp-rsync
-[yeoman]: http://yeoman.io
-[npm-image]: https://badge.fury.io/js/generator-jekyllized.svg
-[npm-url]: https://npmjs.org/package/generator-jekyllized
-[travis-image]: https://travis-ci.org/sondr3/generator-jekyllized.svg?branch=master
-[travis-url]: https://travis-ci.org/sondr3/generator-jekyllized
-[coveralls-image]: https://coveralls.io/repos/sondr3/generator-jekyllized/badge.svg
-[coveralls-url]: https://coveralls.io/r/sondr3/generator-jekyllized
-
----
-
-### Glitch Pages
-
-The home and 404 error pages are made up of three parts:
-
-1. **Page Content**: [`_pages/home.md`](src/_pages/home.md) and [`_pages/404.md`](src/_pages/404.md).
-
-The *animated text typing* effect is achieved with [**Typed.js**](http://www.mattboldt.com/demos/typed-js/). Text strings should be modified in `assets/javascripts/glitch.js` and match markup found in [`_pages/home.md`](src/_pages/home.md) and [`_pages/404.md`](src/_pages/404.md).
-
-### Archives
-
-To include the **Featured Posts** widget at the top of an archive page add the following to its YAML Front Matter and customize as necessary.
-
 ```
 feature:
   visible: true

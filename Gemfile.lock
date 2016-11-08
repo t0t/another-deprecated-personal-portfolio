@@ -8,9 +8,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    breakpoint (2.7.0)
-      sass (~> 3.3)
-      sassy-maps (< 1.0.0)
     colorator (0.1)
     ffi (1.9.14)
     ffi (1.9.14-x64-mingw32)
@@ -75,8 +72,6 @@ GEM
       nuggets (= 1.0.0)
     safe_yaml (1.0.4)
     sass (3.4.22)
-    sassy-maps (0.4.0)
-      sass (~> 3.3)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -87,7 +82,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  breakpoint
   jekyll
   jekyll-archives
   jekyll-sitemap
