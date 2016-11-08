@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/atom.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-11-05T16:31:20+01:00</updated>
+  <updated>2016-11-08T13:36:05+01:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Sergio Forés</title>
@@ -119,10 +119,19 @@
 &lt;p&gt;&lt;img src=&quot;http://t-o-d-h.com/assets/images/-1024.&quot; alt=&quot;&quot; class=&quot;page__hero-image&quot; srcset=&quot;http://t-o-d-h.com/assets/images/-320. 320w, http://t-o-d-h.com/assets/images/-600. 600w, http://t-o-d-h.com/assets/images/-768. 768w, http://t-o-d-h.com/assets/images/-1024. 1024w, http://t-o-d-h.com/assets/images/-1600. 1600w&quot; sizes=&quot;(max-width: 1200px) 100vw&quot; /&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;Preparando un sistema de navegación a partir de SVGs superpuestos. Muy triky pero daré con ello.&lt;/p&gt;
+    &lt;p&gt;Explorando posibilidades creativas con animaciones CSS&lt;/p&gt;
 
 &lt;p data-height=&quot;375&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;ORGGNP&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/t0t/pen/ORGGNP/&quot;&gt;ORGGNP&lt;/a&gt; by Sergio Forés (&lt;a href=&quot;http://codepen.io/t0t&quot;&gt;@t0t&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Un pequeño juego en javascript con evento que relaciona distintas formas y colores al azar&lt;/p&gt;
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;meLPyv&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;GEOCROM&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/t0t/pen/meLPyv/&quot;&gt;GEOCROM&lt;/a&gt; by Sergio Forés (&lt;a href=&quot;http://codepen.io/t0t&quot;&gt;@t0t&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Explorando consumo de Wordpress.com en sitio estático.&lt;/p&gt;
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;vNEvvR&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Wordpress.com Json Api&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/t0t/pen/vNEvvR/&quot;&gt;Wordpress.com Json Api&lt;/a&gt; by Sergio Forés (&lt;a href=&quot;http://codepen.io/t0t&quot;&gt;@t0t&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
 
     
