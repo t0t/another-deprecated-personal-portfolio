@@ -536,25 +536,21 @@ li {
       font-size: 1.8rem;
       line-height: 1.55; } }
 
-p,
 section,
 header {
   font-size: 0.7rem;
   line-height: 1.7; }
   @media screen and (min-width: 550px) {
-    p,
     section,
     header {
       letter-spacing: 1px;
       font-size: 1rem;
       line-height: 1.85; } }
   @media screen and (min-width: 756px) {
-    p,
     section,
     header {
       line-height: 1.7; } }
   @media screen and (min-width: 1430px) {
-    p,
     section,
     header {
       font-size: 1.8rem;
@@ -1253,8 +1249,16 @@ body:hover .visually-hidden button {
   margin-right: auto;
   color: #262626;
   background-position: center right;
-  background-repeat: no-repeat;
-  background-color: #f9f9f9; }
+  background-repeat: no-repeat; }
+  .page-header:before {
+    content: "";
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    mix-blend-mode: luminosity;
+    position: absolute;
+    top: 0; }
   .page-header ul {
     margin-top: 25px;
     margin-bottom: 0;
@@ -1277,7 +1281,6 @@ body:hover .visually-hidden button {
   margin-top: 0;
   margin-bottom: 25px;
   font-weight: bold;
-  letter-spacing: 7px;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
   -webkit-animation-timing-function: ease-in;
@@ -1311,7 +1314,6 @@ body:hover .visually-hidden button {
       line-height: 1.4; } }
   @media screen and (min-width: 1430px) {
     .page-excerpt {
-      font-size: 3rem;
       max-width: 850px;
       line-height: 1.2kb; } }
 
@@ -1332,58 +1334,29 @@ body:hover .visually-hidden button {
     font-size: 1rem;
     color: #262626;
     z-index: 100; }
-    @media screen and (min-width: 426px) {
-      .Content p {
-        font-size: 1.35rem; } }
     @media screen and (min-width: 1430px) {
       .Content p {
         font-size: 1.8rem; } }
   .Content > p:first-child {
     margin-top: 50px; }
-  .Content h1,
-  .Content h2,
-  .Content h3,
-  .Content h4,
-  .Content h5,
-  .Content h6,
-  .Content p {
-    max-width: 685px; }
-    @media screen and (min-width: 426px) {
-      .Content h1,
-      .Content h2,
-      .Content h3,
-      .Content h4,
-      .Content h5,
-      .Content h6,
-      .Content p {
-        max-width: 750px; } }
-    @media screen and (min-width: 1000px) {
-      .Content h1,
-      .Content h2,
-      .Content h3,
-      .Content h4,
-      .Content h5,
-      .Content h6,
-      .Content p {
-        max-width: 800px; } }
-    @media screen and (min-width: 1430px) {
-      .Content h1,
-      .Content h2,
-      .Content h3,
-      .Content h4,
-      .Content h5,
-      .Content h6,
-      .Content p {
-        max-width: 920px; } }
-    @media screen and (min-width: 1441px) {
-      .Content h1,
-      .Content h2,
-      .Content h3,
-      .Content h4,
-      .Content h5,
-      .Content h6,
-      .Content p {
-        max-width: 1300px; } }
+  @media screen and (min-width: 426px) {
+    .Content h1,
+    .Content h2,
+    .Content h3,
+    .Content h4,
+    .Content h5,
+    .Content h6,
+    .Content p {
+      max-width: 750px; } }
+  @media screen and (min-width: 1441px) {
+    .Content h1,
+    .Content h2,
+    .Content h3,
+    .Content h4,
+    .Content h5,
+    .Content h6,
+    .Content p {
+      max-width: 1300px; } }
   .Content h1,
   .Content h2,
   .Content h3,
@@ -1423,12 +1396,6 @@ body:hover .visually-hidden button {
     line-height: 1.7;
     font-size: 1rem;
     list-style: outside; }
-    @media screen and (min-width: 768px) {
-      .Content li {
-        font-size: 1.35rem; } }
-    @media screen and (min-width: 768px) {
-      .Content li {
-        font-size: 1.35rem; } }
     @media screen and (min-width: 1430px) {
       .Content li {
         font-size: 1.8rem; } }
@@ -2466,8 +2433,7 @@ body:hover .visually-hidden button {
             transition-duration: .2s;
     -webkit-transition-timing-function: linear;
             transition-timing-function: linear;
-    background-color: #f9f9f9;
-    box-shadow: 0px 3px 52px 13px rgba(0, 0, 0, 0.12); }
+    background-color: #f9f9f9; }
   .masthead .overlay__menu-trigger {
     padding-left: 10px;
     padding-right: 10px;
@@ -3515,7 +3481,8 @@ green     #859900  operators, other keywords
    TILES
    ========================================================================== */
 .tile__header {
-  margin-top: 3em;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3550,6 +3517,7 @@ green     #859900  operators, other keywords
               flex-direction: row; } }
 
 .tile__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3568,35 +3536,45 @@ green     #859900  operators, other keywords
   -webkit-box-flex: 1;
       -ms-flex: 1 300px;
           flex: 1 300px; }
-  .tile__item img {
+  .tile__item:before {
+    content: "";
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0.25em 0; }
-  @media (min-width: 600px) {
-    .tile__item {
-      min-height: 300px; } }
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    mix-blend-mode: luminosity; }
+  .tile__item figcaption {
+    margin-top: 0;
+    max-width: 100%;
+    z-index: 100;
+    position: absolute; }
+  .tile__item img {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
 
 .tile__category {
   display: block;
   text-align: center; }
 
 .tile__title {
-  color: rgba(0, 0, 255, 0.5);
-  font-size: 1.35rem;
+  color: #000;
   line-height: 1.5;
-  text-transform: uppercase;
+  text-transform: none;
   margin-top: 0;
-  padding-top: 4px;
-  border-top: 3px solid rgba(0, 0, 255, 0.5);
-  font-size: 1rem;
+  padding: 0 25px;
+  font-size: 1.35rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 100%;
           flex: 0 100%;
-  text-align: left;
+  text-align: center;
   padding-bottom: 25px; }
   @media (min-width: 600px) {
     .tile__title:hover {
-      background-color: #f9f9f9;
-      color: #000; } }
+      color: rgba(0, 0, 255, 0.5); } }
 
 /* ==========================================================================
    BANNERS

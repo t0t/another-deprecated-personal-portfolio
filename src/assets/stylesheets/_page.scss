@@ -30,11 +30,9 @@
   z-index: 10;
   height: 100vh;
   display: flex;
-  // flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: $spacing-unit;
-  // padding-bottom: $spacing-unit;
   align-items: center;
   align-content: center;
   margin-left: auto;
@@ -42,8 +40,17 @@
   color: $color_page_header;
   background-position: center right;
   background-repeat: no-repeat;
-  background-color: $color-cool;
 
+  &:before {
+    content: "";
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($white,.7);
+    mix-blend-mode: luminosity; // color; soft-light  color-dodge  color-burn  multiply  screen  luminosity
+    position: absolute;
+    top: 0;
+  }
   ul {
     margin-top: $spacing-unit;
     margin-bottom: 0;
@@ -95,7 +102,7 @@
   font-weight: bold;
   // text-transform: uppercase;
   // font-size: fs(big);
-  letter-spacing: 7px;
+  // letter-spacing: 7px;
   // line-height: $line-height-base - 0.50;
   animation-name: fade-in;
   animation-timing-function: ease-in;
@@ -141,7 +148,7 @@
     // max-width: 600px;
   }
   @media screen and (min-width: 1430px) {
-    font-size: fs(huge);
+    // font-size: fs(huge);
     max-width: 850px;
     line-height: $line-height-base - 0.5kb;
   }
@@ -172,17 +179,8 @@
     padding-right: $spacing-unit;
     font-size: fs(normal);
     color: $dark-gray;
-    // letter-spacing: 1px;
     z-index: 100;
 
-    @media screen and (min-width: 426px) {
-      // text-align: justify;
-      font-size: fs(x-normal);
-      // max-width: 750px; // keep measure at a readable length
-    }
-    @media screen and (min-width: 1000px) {
-      // max-width: 800px; // keep measure at a readable length
-    }
     @media screen and (min-width: 1430px) {
       // max-width: 920px; // keep measure at a readable length
       font-size: fs(big);
@@ -205,18 +203,18 @@
   h5,
   h6,
   p {
-    max-width: 685px; // keep measure at a readable length
 
     @media screen and (min-width: 426px) {
+      max-width: 750px; // keep measure at a readable length
       // text-align: justify;
       // font-size: fs(x-normal);
-      max-width: 750px; // keep measure at a readable length
+      // max-width: 750px; // keep measure at a readable length
     }
     @media screen and (min-width: 1000px) {
-      max-width: 800px; // keep measure at a readable length
+      // max-width: 800px; // keep measure at a readable length
     }
     @media screen and (min-width: 1430px) {
-      max-width: 920px; // keep measure at a readable length
+      // max-width: 920px; // keep measure at a readable length
       // font-size: fs(big);
       // line-height: $line-height-base - 0.15;
     }
@@ -275,10 +273,7 @@
     list-style: outside;
 
     @media screen and (min-width: 768px) {
-      font-size: fs(x-normal);
-    }
-    @media screen and (min-width: 768px) {
-      font-size: fs(x-normal);
+      // font-size: fs(x-normal);
     }
     @media screen and (min-width: 1000px) {
     }

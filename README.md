@@ -67,6 +67,8 @@ This is the source code of [t-o-d-h.com](http://t-o-d-h.com), a personal blog an
 - [x] Gulp + Jekyll Frontend workflow
 - [x] [Formspree](www.formspree.io) For basic forms
 - [ ] [Forestry](www.forestry.io) For Easy CMS
+- [ ] [formlinter](https://formlinter.com/)
+- [ ] [formkeep](https://formkeep.com/)
 - [ ] [Snip Cart](https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll) Shopping carts
 - Improve JS building process with browserify or similar...
 

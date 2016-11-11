@@ -3,14 +3,14 @@
    ========================================================================== */
 
 .tile__header {
-  margin-top: 3em;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
   font-size: fs(normal);
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: inherit;
   text-align: center;
-
 }
 
 .tiles {
@@ -25,6 +25,7 @@
 }
 
 .tile__item {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,17 +35,28 @@
   background-repeat: no-repeat;
   text-align: center;
   flex: 1 300px;
-  // padding: $spacing-unit;
-  // position: relative;
 
-  img {
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0.25em 0;
-    // border-radius: $border-radius;
+    height: 100%;
+    background-color: rgba($white,.7);
+    mix-blend-mode: luminosity; // color; soft-light  color-dodge  color-burn  multiply  screen  luminosity
   }
 
-  @media (min-width: $small) {
-    min-height: 300px;
+  figcaption {
+    margin-top: 0;
+    max-width: 100%;
+    z-index: 100;
+    position: absolute;
+  }
+  img {
+    align-self: flex-start;
   }
 
   &:hover {
@@ -54,46 +66,32 @@
       // box-shadow: 0 0 10px rgba(#000, 0.5);
     }
 
-    .tile__title {
-      // color: #000;
-    }
+    .tile__title {}
   }
 }
 
 .tile__category {
   display: block;
-  // width: 100%;
   text-align: center;
-
-  // &:before {
-  //   content: '\2192'; // right arrow
-  //   padding-right: 5px;
-  // }
 }
 
 .tile__item-time {}
 
 .tile__title {
-  color: $color_alt5;
-  font-size: fs(x-normal);
+  color: $black;
   line-height: $line-height-base - 0.20;
   // @extend %altfont_angle;
-  // letter-spacing: 3px;
-  text-transform: uppercase;
+  text-transform: none;
   margin-top: 0;
-  padding-top: 4px;
-  border-top: 3px solid $color_alt5;
-  font-size: fs(normal);
+  padding: 0 $spacing-unit;
+  font-size: fs(x-normal);
   flex: 0 100%;
-  text-align: left;
+  text-align: center;
   padding-bottom: $spacing-unit;
-  // position: absolute;
 
   @media (min-width: $small) {
     &:hover {
-      background-color: $color-cool;
-      color: $black;
-      // border: none;
+      color: $color_alt5;
     }
 
   }
