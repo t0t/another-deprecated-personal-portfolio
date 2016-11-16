@@ -84,6 +84,27 @@ svg {
   }
 }
 
+// AOS special scroll anims
+[data-aos="scroll-in"] {
+  transform: translateY(0);
+  opacity: 1;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transition-property: transform, opacity;
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+[data-aos="scroll-out"] {
+  transform: translateY(0);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transition-property: transform, opacity;
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
 
 /*
    Magnific-Popup zoom-in

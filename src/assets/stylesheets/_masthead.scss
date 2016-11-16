@@ -29,8 +29,8 @@
 
   &--sticky {
     height: 50px;
-    transition-property: height, background-color;
-    transition-duration: .2s;
+    transition-property: height;
+    transition-duration: 0;
     transition-timing-function: linear;
     background-color: $white;
     // box-shadow: 0px 3px 52px 13px rgba($black,.01);

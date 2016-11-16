@@ -6,7 +6,7 @@ title: Todo lo que importa, ya.
 title2: ' Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
 title3: 'No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>'
 subtitle: Transmite. Observa. Define. ¡Haz!
-excerpt: Prototipado evolutivo integral creativo y consciente.
+excerpt: Diseño y Desarrollo de prototipos evolutivos integrales
 date: 2014-06-01T00:00:00.000Z
 modified: 2016-02-11T00:00:00.000Z
 cta:
@@ -16,6 +16,7 @@ image:
   feature: bg-pincel2.jpg
   teaser: #logo-todh.svg
   icon_bg: #logo
+
 feature_row:
   - image_path: null
     img_as_bg: false
@@ -50,55 +51,50 @@ introText:
     list:
       - title: null
       - item: null
+
 tabsPanel:
   - tab_btn: Quién soy
     id: tabone
-    header: null
-    description: Para que haya encuentro uno debe renunciar a la identidad
-    p: parrafooooo
+    header:
+    description: Mi nombre es Sergio Forés, me autorealizo con el encuentro entre arte,  tecnología y conciencia. Actualizo el potencial en coherencia. Trato de ser una mejor versión de mí mismo.
+    p:
     small: null
     excerpt: null
-    image_path: null
+    image_path: cor
     image_description: null
     url: null
     list:
       - title: null
-      - item: Arquitectura de Información
-      - item: Retoque Fotográfico
-      - item: Diseño Gráfico / Editorial
-      - item: Artes plásticas
-      - item: React JS
-      - item: Javascript
-      - item: inDesign
-      - item: Git / Github
-      - item: 'Gulp, NPM'
-      - item: Jekyll
-      - item: Wordpress
-      - item: WP-Api REST
-      - item: Liquid
-      - item: JSON
-      - item: Jade
-      - item: Stylus / Sass
-      - item: Axure RP
-  - tab_btn: Que hago?
+      - item: Inteligencia vincular
+      - item: Pensamiento sistémico
+      - item: Freelance / Remoto
+      - item: Vivo cerca de Barcelona
+      - item: Soy padre de dos
+      - item: Me gusta el mar
+      - item: Trabajo en equipo
+      - item: Observador activo
+      - item: Eneatipo 5
+      - item: T-Shaped
+
+  - tab_btn: Qué ofrezco
     header: null
+    image_path: matrioska
     id: tabtwo
-    description: null
+    description: 'Ayudo a equipos multidisciplinares y emprendedores a transitar y evolucionar web/mobile. Poniendo especial atención en las bases: escalabilidad, flexibilidad, agilidad, creatividad y funcionalidad.'
     p: null
     small: null
     excerpt: null
-    image_path: null
     image_description: null
     url: null
     list:
       - title: null
-      - item: Sketching en papel
-      - item: 'Diseño de patrones, sistemas, guías'
-      - item: Sketch / Principle
+      - item: Ayudo a madurar ideas y conceptos
+      - item: Diagramación de contenidos
+      - item: Prototipado low/high res.
       - item: Diseño gráfico / web
       - item: HTML + CSS (Sass)
       - item: Mockups
-      - item: Encontrar tesoros en la playa
+
   - tab_btn: Skills
     header: null
     id: tabthree
@@ -113,29 +109,36 @@ tabsPanel:
       - title: null
       - item: Sketching en papel
       - item: 'Diseño de patrones, sistemas, guías'
-      - item: Sketch / Principle
+      - item: Sketch / Principle, Affinity, Photoshop...
       - item: Diseño gráfico / web
       - item: HTML + CSS (Sass)
       - item: Mockups
-      - item: Encontrar tesoros en la playa
+      - item: Git / Github
+      - item: 'Gulp, NPM'
+      - item: Jekyll
+      - item: Wordpress
+      - item: WP-Api REST
+      - item: Liquid
+      - item: JSON
+      - item: Jade
+      - item: Stylus / Sass
+      - item: Axure RP
+
   - tab_btn: Proceso
     header: null
     id: tabfour
-    description: null
+    description: Mi forma de trabajar se mueve cíclicamente de lo difuso a lo concreto mediante iteraciones y actualizaciones de mejora contínua.
     p: null
     small: null
     excerpt: null
-    image_path: null
+    image_path: mountain
     image_description: null
     url: null
     list:
       - title: null
-      - item: Sketching en papel
-      - item: 'Diseño de patrones, sistemas, guías'
-      - item: Sketch / Principle
-      - item: Diseño gráfico / web
-      - item: HTML + CSS (Sass)
-      - item: Mockups
-      - item: Encontrar tesoros en la playa
+      - item: Feedback, test, insights, relaciones humanas...
+      - item: Observación, percepción, despliegue de infinitas posibilidades, creatividad pura, atraemos el potencial...
+      - item: Estructura, estrategia, criba, discernimiento, forma, objetivo, construcción...
+      - item: Hechos, acciones reales, entrega, constatamos de forma empírica lo que está siendo...
 published: true
 ---

@@ -8,6 +8,7 @@ layout: default
 <main class="main  main--home" role="main">
 
   <section itemscope itemtype="http://schema.org/CreativeWork">
+
     <header class="page-header  page-header--home">
 
       {% if page.image.icon_bg %}
@@ -20,26 +21,15 @@ layout: default
     </header>
 
     <main itemprop="text">
-
       {% include components/tabs_panel.html %}
       {{ content }}
       {% include feature_row %}
     </main>
 
     {% if page.introText %}
-    <aside>
+    <aside data-aos="scroll-out">
       {% include components/intro-text.html %}
     </aside>
-    <div class="item" data-aos="example-anim1">1</div>
-<div class="item" data-aos="example-anim2">2</div>
-<div class="item" data-aos="example-anim3">3</div>
-<div class="item" data-aos="example-anim1">4</div>
-<div class="item" data-aos="example-anim2">5</div>
-<div class="item" data-aos="example-anim3">6</div>
-<div class="item" data-aos="example-anim1">7</div>
-<div class="item" data-aos="example-anim2">8</div>
-<div class="item" data-aos="example-anim3">9</div>
-
     {% endif %}
 
     {% if page.author != false %}

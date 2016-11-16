@@ -15,7 +15,7 @@
 
 
 AOS.init({
- duration: 1200
+ duration: 800
 });
 
 (function() {
@@ -24,7 +24,7 @@ AOS.init({
   var s= document.querySelector(".masthead");
 
   var scrollEffect = function() {
-    if(window.pageYOffset > 50) {
+    if(window.pageYOffset > 15) {
       s.classList.add("masthead--sticky");
     } else{
       s.classList.remove("masthead--sticky");

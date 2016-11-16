@@ -45,8 +45,8 @@ $color-gray: rgba(black,.04);
 .tabs .tab {
   order: 99; // Put the tabs last
   flex-grow: 1;
-    width: 100%;
-    display: none;
+  width: 100%;
+  display: none;
   padding: $base_spacing * 2;
   background: $color_alt2;
 }
@@ -62,7 +62,17 @@ $color-gray: rgba(black,.04);
   }
 }
 .tabs input[type="radio"]:checked + label + .tab {
-    display: block;
+    display: flex;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__header {
+    flex: 1;
+  }
 }
 
 @media (max-width: 45em) {

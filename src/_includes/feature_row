@@ -17,7 +17,9 @@
     {% endif %}
 
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}"
-    {% if f.img_as_bg %}style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');"{% endif %}>
+    {% if f.img_as_bg %}style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');"{% endif %}
+    data-aos="scroll-out"
+    >
 
         {% if f.image_path and f.img_as_bg != true %}
           <div class="archive__item-teaser " accesskey="" style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');">

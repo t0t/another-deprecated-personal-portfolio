@@ -1,6 +1,6 @@
-/* ==========================================================================
+/* =============================
    TODH
-   ========================================================================== */
+   =============================== */
 
 @import "variables";
 
@@ -11,47 +11,6 @@
 @import "components/contact"; // contact form
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "vendor/aos/aos.scss"; // scroll effects
-
-.item {
-  width: 200px;
-  height: 200px;
-  margin: 50px auto;
-  padding-top: 75px;
-  background: #ccc;
-  text-align: center;
-  color: #FFF;
-  font-size: 3em;
-}
-
-/* Animations */
-
-[data-aos="example-anim1"] {
-  transform: skewX(45deg);
-  opacity: 0;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: skewX(0);
-    opacity: 1;
-  }
-}
-
-[data-aos="example-anim2"] {
-  background: red;
-  transition-property: background;
-  &.aos-animate {
-    background: green;
-  }
-}
-
-[data-aos="example-anim3"] {
-  transform: rotate(360deg);
-  opacity: 0;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: rotate(0);
-    opacity: 1;
-  }
-}
 
 @import "mixins";
 @import "reset";
@@ -68,7 +27,6 @@
 @import "components/social"; // social links
 @import "components/intro-text"; // Intro text
 @import "components/steps"; // Steps
-@import "components/tabs-panel"; // Steps
 @import "components/tabs"; // Steps
 
 @import "components/author";

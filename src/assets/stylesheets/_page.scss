@@ -38,7 +38,7 @@
   margin-left: auto;
   margin-right: auto;
   color: $color_page_header;
-  background-position: center right;
+  background-position: center;
   background-repeat: no-repeat;
   // background-color: $color-cool2;
   /* bg-gradient: */
@@ -98,10 +98,7 @@ background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
   margin-top: 0;
-  margin-bottom: 0;
-  // @extend %altfont_angle;
-  // max-width: 800px;
-  // font-weight: bold;
+  margin-bottom: $spacing-unit / 2;
   font-size: fs(huge);
   animation-name: fade-in;
   animation-timing-function: ease-in;
@@ -115,7 +112,7 @@ background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
 
   @media screen and (min-width: 550px) {
     // font-size: fs(x-big);
-    margin-bottom: $spacing-unit / 3;
+    // margin-bottom: $spacing-unit / 3;
     // font-size: fs(x-huge);
     margin-left: $spacing-unit*2;
     margin-right: $spacing-unit*2;
@@ -135,7 +132,7 @@ background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
   color: $white;
 
   @media screen and (min-width: 550px) {
-    margin-top: $spacing-unit / 2;
+    // margin-top: $spacing-unit / 2;
     // font-size: fs(big);
     line-height: $line-height-base - 0.20;
     margin-left: $spacing-unit * 2;

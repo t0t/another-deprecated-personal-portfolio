@@ -21,12 +21,15 @@
     <div class="tab">
 
       {% if t.header %}
-        <h4>
-          {% if t.image_path %}
-            <svg class="icon  icon--{{ t.image_path }}"><use xlink:href="#icon-{{ t.image_path }}" /></svg>
-          {% endif %}
-         {{ t.header }}
-       </h4>
+        <h4 class="tab__header">
+          {{ t.header }}
+        </h4>
+      {% endif %}
+
+      {% if t.image_path %}
+        <svg class="icon  icon--tabs  icon--{{ t.image_path }}">
+          <use xlink:href="#icon-{{ t.image_path }}" />
+        </svg>
       {% endif %}
 
       {% if t.description %}<h5> {{ t.description }} </h5> {% endif %}
@@ -36,7 +39,7 @@
       {% if t.small %}<small> {{ i.small }} </small> {% endif %}
 
       {% if t.list %}
-        <ul class="TabsPanel__list">
+        <ul>
           {% for list in t.list %}
             {% if list.item %}
               <li>{{ list.item }}</li>

@@ -16,6 +16,11 @@
   // -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
   // perspective: 150px;
 
+  &--tabs {
+    width: 150px;
+    height: 150px;
+  }
+
   &.spin {
     animation: spin 2s infinite linear;
   }
