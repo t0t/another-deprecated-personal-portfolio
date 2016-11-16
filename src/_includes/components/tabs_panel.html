@@ -1,102 +1,56 @@
-<aside class="TabsPanel">
+{% include base_path %}
+{% if page.tabsPanel %}
 
-  {% include base_path %}
-  {% if page.tabsPanel %}
+<aside class="tabs">
 
-    <input type="radio" id="tab1" name="tab-control" checked>
-    <input type="radio" id="tab2" name="tab-control">
-    <input type="radio" id="tab3" name="tab-control">
-    <input type="radio" id="tab4" name="tab-control">
+  {% assign tabs = page.tabsPanel %}
 
-    {% assign tabs = page.tabsPanel %}
+  {% for t in tabs %}
 
-    <ul>
+    {% if t.id %}
+      <input type="radio" name="tabs" id="{{t.id}}"
+      {% if t.id == 'tabone' %}
+      checked="checked"
+      {% endif %}
+      >
+      <label for="{{t.id}}" role="button" class="btn  btn--tabs">
+        {{ t.tab_btn }}
+      </label>
+    {% endif %}
 
-      {% if page.tabsPanel[0].tab_btn %}
-        <li title="{{ page.tabsPanel[0].tab_btn }}">
-          <label for="tab1" role="button" class="btn  btn--tabs">
-            {{ page.tabsPanel[0].tab_btn }}
-          </label>
-        </li>
-      {% else %}
-        <li><label>¿Tab 1?</label></li>
+    <div class="tab">
+
+      {% if t.header %}
+        <h4>
+          {% if t.image_path %}
+            <svg class="icon  icon--{{ t.image_path }}"><use xlink:href="#icon-{{ t.image_path }}" /></svg>
+          {% endif %}
+         {{ t.header }}
+       </h4>
       {% endif %}
 
-      {% if page.tabsPanel[1].tab_btn %}
-        <li title="{{ page.tabsPanel[1].tab_btn }}">
-          <label for="tab2" role="button" class="btn  btn--tabs">
-            {{ page.tabsPanel[1].tab_btn }}
-          </label>
-        </li>
-      {% else %}
-        <li><label>¿Tab 2?</label></li>
+      {% if t.description %}<h5> {{ t.description }} </h5> {% endif %}
+
+      {% if t.p %}<p> {{ t.p }} </p> {% endif %}
+
+      {% if t.small %}<small> {{ i.small }} </small> {% endif %}
+
+      {% if t.list %}
+        <ul class="TabsPanel__list">
+          {% for list in t.list %}
+            {% if list.item %}
+              <li>{{ list.item }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
       {% endif %}
 
-      {% if page.tabsPanel[2].tab_btn %}
-        <li title="{{ page.tabsPanel[2].tab_btn }}">
-          <label for="tab3" role="button" class="btn  btn--tabs">
-            {{ page.tabsPanel[2].tab_btn }}
-          </label>
-        </li>
+      {% if t.small %}
+        <small>{{ t.small }}</small>
       {% endif %}
-
-      {% if page.tabsPanel[3].tab_btn %}
-        <li title="{{ page.tabsPanel[3].tab_btn }}">
-          <label for="tab4" role="button" class="btn  btn--tabs">
-            {{ page.tabsPanel[3].tab_btn }}
-          </label>
-        </li>
-      {% endif %}
-
-    </ul>
-
-    <div class="slider--tabs">
-      <div class="indicator"></div>
     </div>
-
-    <div class="content">
-
-      {% for t in tabs %}
-
-        <section class="TabsPanel__item">
-
-
-          {% if t.header %}
-            <h4>
-              {% if t.image_path %}
-                <svg class="icon  icon--{{ t.image_path }}"><use xlink:href="#icon-{{ t.image_path }}" /></svg>
-              {% endif %}
-             {{ t.header }}
-           </h4>
-          {% endif %}
-
-          {% if t.description %}<h5> {{ t.description }} </h5> {% endif %}
-
-          {% if t.p %}<p> {{ t.p }} </p> {% endif %}
-
-          {% if t.small %}<small> {{ i.small }} </small> {% endif %}
-
-          {% if t.list %}
-            <ul class="TabsPanel__list">
-              {% for list in t.list %}
-                {% if list.item %}
-                  <li>{{ list.item }}</li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          {% endif %}
-
-
-          {% if t.small %}
-            <small>{{ t.small }}</small>
-          {% endif %}
-
-        </section>
-
-      {% endfor %}
-
-    </div>
-
-  {% endif %}
+  {% endfor %}
 
 </aside>
+
+{% endif %}

@@ -8,6 +8,11 @@
 
 @include breakpoint-set('to ems', true);
 
+.flickr-embed-frame {
+  .branding {
+    display: none !important;
+  }
+}
 
 body {
   margin: 0;

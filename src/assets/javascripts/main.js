@@ -1,17 +1,38 @@
+// const x = "blu";
+// console.log(x);
+
+
+// import AOS from 'aos';
+// AOS.init();
+
+// var AOS = require('aos');
+// AOS.init();
+
+// require(['./node_modules/aos/dist/aos.js'], function(AOS){
+//       });
+// import AOS from './bower_components/aos/src/js/aos.js';
+
+
+
+AOS.init({
+ duration: 1200
+});
+
 (function() {
-
   'use strict';
-
   // Scroll
   var s= document.querySelector(".masthead");
 
-  window.addEventListener("scroll", function() {
+  var scrollEffect = function() {
     if(window.pageYOffset > 50) {
       s.classList.add("masthead--sticky");
     } else{
       s.classList.remove("masthead--sticky");
     }
-  });
+  }
+
+  window.addEventListener("scroll", scrollEffect);
+  //
 
 
   // TABS
@@ -32,30 +53,30 @@
 
 
   // Steps
-  var buttonStep1 = document.getElementById("buttonStep1");
-  var buttonStep2 = document.getElementById("buttonStep2");
-  var buttonStep3 = document.getElementById("buttonStep3");
-
-  //event
-  buttonStep1.addEventListener("click", goToStep2);
-  buttonStep2.addEventListener("click", goToStep3);
-  buttonStep3.addEventListener("click", goToStep1);
-
-  //function
-  function goToStep2() {
-    document.getElementById("step1").classList.toggle("hide");
-    document.getElementById("step2").classList.toggle("hide");
-  }
-
-  function goToStep3() {
-    document.getElementById("step2").classList.toggle("hide");
-    document.getElementById("step3").classList.toggle("hide");
-  }
-
-  function goToStep1() {
-    document.getElementById("step3").classList.toggle("hide");
-    document.getElementById("step1").classList.toggle("hide");
-  }
+  // var buttonStep1 = document.getElementById("buttonStep1");
+  // var buttonStep2 = document.getElementById("buttonStep2");
+  // var buttonStep3 = document.getElementById("buttonStep3");
+  //
+  // //event
+  // buttonStep1.addEventListener("click", goToStep2);
+  // buttonStep2.addEventListener("click", goToStep3);
+  // buttonStep3.addEventListener("click", goToStep1);
+  //
+  // //function
+  // function goToStep2() {
+  //   document.getElementById("step1").classList.toggle("hide");
+  //   document.getElementById("step2").classList.toggle("hide");
+  // }
+  //
+  // function goToStep3() {
+  //   document.getElementById("step2").classList.toggle("hide");
+  //   document.getElementById("step3").classList.toggle("hide");
+  // }
+  //
+  // function goToStep1() {
+  //   document.getElementById("step3").classList.toggle("hide");
+  //   document.getElementById("step1").classList.toggle("hide");
+  // }
 
 /* SHOW ELEMENT AFTER PAGE IS SCROLLED 100px */
 // var win = window,

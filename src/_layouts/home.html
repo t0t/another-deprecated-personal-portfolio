@@ -8,46 +8,39 @@ layout: default
 <main class="main  main--home" role="main">
 
   <section itemscope itemtype="http://schema.org/CreativeWork">
-
     <header class="page-header  page-header--home">
 
-    {% if page.image.icon_bg %}
-    <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
-    {% endif %}
+      {% if page.image.icon_bg %}
+      <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
+      {% endif %}
 
-      <div id="step1" class="step">
-        <h1 class="page-title">{{ page.title }}</h1>
-        <button id="buttonStep1" class="btn  btn--step">
-          <svg class="icon  icon--arrow-next"><use xlink:href="#icon-arrow-next" /></svg>
-        </button>
-      </div>
-
-      <div id="step2" class="hide  step">
-        <h1 class="page-title">{{ page.title2 }}</h1>
-        <button id="buttonStep2" class="btn  btn--step">
-          <svg class="icon  icon--arrow-next"><use xlink:href="#icon-arrow-next" /></svg></button>
-      </div>
-
-      <div id="step3" class="hide  step">
-        <h1 class="page-title">{{ page.title3 }}</h1>
-        <button id="buttonStep3" class="btn  btn--step">
-          <svg class="icon  icon--arrow-next"><use xlink:href="#icon-arrow-next" /></svg>
-      </button>
-      </div>
+      <h1 class="page-title">{{ page.title }}</h1>
+      <h2 class="page-excerpt">{{ page.excerpt }}</h2>
 
     </header>
+
+    <main itemprop="text">
+
+      {% include components/tabs_panel.html %}
+      {{ content }}
+      {% include feature_row %}
+    </main>
 
     {% if page.introText %}
     <aside>
       {% include components/intro-text.html %}
     </aside>
-    {% endif %}
+    <div class="item" data-aos="example-anim1">1</div>
+<div class="item" data-aos="example-anim2">2</div>
+<div class="item" data-aos="example-anim3">3</div>
+<div class="item" data-aos="example-anim1">4</div>
+<div class="item" data-aos="example-anim2">5</div>
+<div class="item" data-aos="example-anim3">6</div>
+<div class="item" data-aos="example-anim1">7</div>
+<div class="item" data-aos="example-anim2">8</div>
+<div class="item" data-aos="example-anim3">9</div>
 
-    <main itemprop="text">
-      {{ content }}
-      {% include feature_row %}
-      {% include components/tabs_panel.html %}
-    </main>
+    {% endif %}
 
     {% if page.author != false %}
     <footer class="post__footer">

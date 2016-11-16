@@ -4,7 +4,7 @@
 
 .main {
   overflow-x: hidden;
-  // padding-top: $spacing-unit*2;
+  padding-top: $spacing-unit * 4;
 
   &--home {
     // background-image: url('/assets/images/bg-pincel2.jpg');
@@ -28,7 +28,7 @@
 .page-header {
   position: relative;
   z-index: 10;
-  height: 100vh;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -40,12 +40,15 @@
   color: $color_page_header;
   background-position: center right;
   background-repeat: no-repeat;
+  // background-color: $color-cool2;
+  /* bg-gradient: */
+background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
 
   &:before {
     content: "";
     z-index: -1;
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
     background-color: rgba($white,.7);
     mix-blend-mode: luminosity; // color; soft-light  color-dodge  color-burn  multiply  screen  luminosity
     position: absolute;
@@ -81,7 +84,6 @@
     // @media screen and (min-width: 1024px) {
     //   min-height: 45vh;
     // }
-    // background-image: url('../images/bg-pincel.jpg');
     // background-size: 500px;
     // background-position: right;
     // background-repeat: no-repeat;
@@ -96,17 +98,15 @@
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
   margin-top: 0;
-  margin-bottom: $spacing-unit;
+  margin-bottom: 0;
   // @extend %altfont_angle;
   // max-width: 800px;
-  font-weight: bold;
-  // text-transform: uppercase;
-  // font-size: fs(big);
-  // letter-spacing: 7px;
-  // line-height: $line-height-base - 0.50;
+  // font-weight: bold;
+  font-size: fs(huge);
   animation-name: fade-in;
   animation-timing-function: ease-in;
   animation-duration: .4s;
+  color: $white;
 
   p {
     text-transform: none;
@@ -132,23 +132,21 @@
   text-align: center;
   margin-top: 0;
   text-transform: none;
-  // letter-spacing: 3px;
-  // @extend %altfont_angle; //fuente alternativa + angulo
+  color: $white;
 
   @media screen and (min-width: 550px) {
     margin-top: $spacing-unit / 2;
-    font-size: fs(big);
+    // font-size: fs(big);
     line-height: $line-height-base - 0.20;
     margin-left: $spacing-unit * 2;
     margin-right: $spacing-unit * 2;
   }
   @media screen and (min-width: 756px) {
-    font-size: fs(big);
+    // font-size: fs(big);
     line-height: $line-height-base - 0.30;
     // max-width: 600px;
   }
-  @media screen and (min-width: 1430px) {
-    // font-size: fs(huge);
+  @media screen and (min-width: 1429px) {
     max-width: 850px;
     line-height: $line-height-base - 0.5kb;
   }
@@ -167,6 +165,7 @@
 
   blockquote {
     p {
+      font-size: fs(x-normal);
       color: $color_alt5;
     }
   }
@@ -177,13 +176,13 @@
     margin-right: auto;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
-    font-size: fs(normal);
+    // font-size: fs(normal);
     color: $dark-gray;
     z-index: 100;
 
     @media screen and (min-width: 1430px) {
       // max-width: 920px; // keep measure at a readable length
-      font-size: fs(big);
+      // font-size: fs(big);
       // line-height: $line-height-base - 0.15;
     }
     @media screen and (min-width: 1441px) {

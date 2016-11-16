@@ -1,12 +1,12 @@
 ---
 layout: home
 permalink: /
-bg: bg-matrioska.svg
-title: Entrega contínua de TODO lo que es importante aquí y ahora
+bg: #bg-matrioska.svg
+title: Todo lo que importa, ya.
 title2: ' Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
 title3: 'No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>'
 subtitle: Transmite. Observa. Define. ¡Haz!
-excerpt: Proceso ideas y las llevo a productos mínimos viables reales que evolucionan.
+excerpt: Prototipado evolutivo integral creativo y consciente.
 date: 2014-06-01T00:00:00.000Z
 modified: 2016-02-11T00:00:00.000Z
 cta:
@@ -14,8 +14,8 @@ cta:
   cta_label: Descubro cómo descubrir
 image:
   feature: bg-pincel2.jpg
-  teaser: logo-todh.svg
-  icon_bg: logo
+  teaser: #logo-todh.svg
+  icon_bg: #logo
 feature_row:
   - image_path: null
     img_as_bg: false
@@ -51,10 +51,11 @@ introText:
       - title: null
       - item: null
 tabsPanel:
-  - tab_btn: Conocimientos
+  - tab_btn: Quién soy
+    id: tabone
     header: null
-    description: null
-    p: null
+    description: Para que haya encuentro uno debe renunciar a la identidad
+    p: parrafooooo
     small: null
     excerpt: null
     image_path: null
@@ -79,8 +80,47 @@ tabsPanel:
       - item: Jade
       - item: Stylus / Sass
       - item: Axure RP
-  - tab_btn: Habilidades
+  - tab_btn: Que hago?
     header: null
+    id: tabtwo
+    description: null
+    p: null
+    small: null
+    excerpt: null
+    image_path: null
+    image_description: null
+    url: null
+    list:
+      - title: null
+      - item: Sketching en papel
+      - item: 'Diseño de patrones, sistemas, guías'
+      - item: Sketch / Principle
+      - item: Diseño gráfico / web
+      - item: HTML + CSS (Sass)
+      - item: Mockups
+      - item: Encontrar tesoros en la playa
+  - tab_btn: Skills
+    header: null
+    id: tabthree
+    description: null
+    p: null
+    small: null
+    excerpt: null
+    image_path: cor
+    image_description: null
+    url: null
+    list:
+      - title: null
+      - item: Sketching en papel
+      - item: 'Diseño de patrones, sistemas, guías'
+      - item: Sketch / Principle
+      - item: Diseño gráfico / web
+      - item: HTML + CSS (Sass)
+      - item: Mockups
+      - item: Encontrar tesoros en la playa
+  - tab_btn: Proceso
+    header: null
+    id: tabfour
     description: null
     p: null
     small: null

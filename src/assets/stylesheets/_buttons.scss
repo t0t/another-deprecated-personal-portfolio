@@ -7,7 +7,7 @@
    =========================================== */
 
 .btn {
-  font-size: fs(normal);
+  font-size: fs(small) + 0.4;
   display: inline-block;
   margin: 0;
   padding: ($spacing-unit / 2) 8px;
@@ -33,7 +33,10 @@
 
   &--tabs {
     text-transform: uppercase;
-    font-size: fs(x-normal);
+    padding-top: 15px;
+    padding-left: $spacing-unit /  2;
+    padding-right: $spacing-unit /  2;
+    margin-right: $spacing-unit /  3;
     font-weight: normal;
     &:hover {
       color: $black;

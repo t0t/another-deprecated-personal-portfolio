@@ -15,6 +15,7 @@ image:
 tabsPanel:
 
   - tab_btn: "Filosofía"
+    id: tabone
     header: "No hay mapa más exacto que la realidad misma"
     description: "El mundo de la forma actualiza al mundo de las ideas, y al revés."
     p: "El mundo es relación y constantemente traemos micropaquetes de información de un contexto a otro. Este vaivén es el motor que da sentido a la existencia de todo, ya sea un proyecto profesional o tu propia vida."
@@ -25,6 +26,7 @@ tabsPanel:
     url:
 
   - tab_btn: "Proceso"
+    id: tabtwo
     header: "Todo aquí ya"
     description: "El proceso se basa en iteración y mejora contínua."
     p: "Es una espiral en la que actualizamos el estado. Empezamos en pequeño buscando desde el principio abarcar todo el proceso para ir de lo difuso a lo concreto. Busco permanecer ligero, usando tecnologías, rápidas, fáciles y útiles como Sass, liquid, Jade, Markdown, Yaml, Json, Html5, Gulp, Git... Refactorizar constantemente. Usar convenciones en la nomenclatura, html5 semántico..."

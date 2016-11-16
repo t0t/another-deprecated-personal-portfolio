@@ -22,14 +22,16 @@ home-secondary:
 
 # Masthead navigation links
 
-masthead:
-  - title: "Soy"
+navleft:
+  - title: "Todh"
     url: /about/
-  - title: "Pienso"
-    url: /articles/
-  - title: "Hago"
+  - title: "Lab"
     url: /work/
-  - title: "Digo"
+
+navright:
+  - title: "Blog"
+    url: /articles/
+  - title: "@"
     url: /contact/
 
 

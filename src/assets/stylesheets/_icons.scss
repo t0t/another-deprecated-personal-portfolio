@@ -37,6 +37,9 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    .masthead--sticky & {
+      padding: 5px 0;
+    }
   }
   &--cor {
     fill: none;

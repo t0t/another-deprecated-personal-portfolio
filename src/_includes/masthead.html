@@ -1,11 +1,9 @@
 <header id="logo-scroll" class="masthead">
 
-    {% include brand.html %}
-
     <nav id="nav-primary" class="masthead__menu-wrapper">
       <ul class="masthead__menu">
 
-        {% for link in site.data.navigation.masthead %}
+        {% for link in site.data.navigation.navleft %}
           <li>
             <a href="{{ site.url }}{{ link.url }}" class="masthead__menu-item
             {% unless page.url contains link.url %} active {% endunless %}
@@ -17,5 +15,23 @@
 
       </ul>
     </nav>
+
+    {% include brand.html %}
+
+    <nav id="nav-primary" class="masthead__menu-wrapper">
+      <ul class="masthead__menu">
+
+        {% for link in site.data.navigation.navright %}
+        <li>
+          <a href="{{ site.url }}{{ link.url }}" class="masthead__menu-item
+          {% unless page.url contains link.url %} active {% endunless %}
+          ">
+          {{ link.title }}
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </nav>
 
 </header>
