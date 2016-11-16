@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/atom.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-11-11T16:58:28+01:00</updated>
+  <updated>2016-11-16T20:13:27+01:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Sergio Forés</title>
@@ -119,17 +119,11 @@
 &lt;p&gt;&lt;img src=&quot;http://t-o-d-h.com/assets/images/-1024.&quot; alt=&quot;&quot; class=&quot;page__hero-image&quot; srcset=&quot;http://t-o-d-h.com/assets/images/-320. 320w, http://t-o-d-h.com/assets/images/-600. 600w, http://t-o-d-h.com/assets/images/-768. 768w, http://t-o-d-h.com/assets/images/-1024. 1024w, http://t-o-d-h.com/assets/images/-1600. 1600w&quot; sizes=&quot;(max-width: 1200px) 100vw&quot; /&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;Explorando posibilidades creativas con animaciones CSS&lt;/p&gt;
+    &lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;RorgEd&quot; data-default-tab=&quot;result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Responsive Tab Accordion&quot; class=&quot;codepen&quot;&gt;&lt;/p&gt;
 
-&lt;p data-height=&quot;375&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;ORGGNP&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/t0t/pen/ORGGNP/&quot;&gt;ORGGNP&lt;/a&gt; by Sergio Forés (&lt;a href=&quot;http://codepen.io/t0t&quot;&gt;@t0t&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;ORGGNP&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Un pequeño juego en javascript con evento que relaciona distintas formas y colores al azar&lt;/p&gt;
-
-&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;meLPyv&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;GEOCROM&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/t0t/pen/meLPyv/&quot;&gt;GEOCROM&lt;/a&gt; by Sergio Forés (&lt;a href=&quot;http://codepen.io/t0t&quot;&gt;@t0t&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Explorando consumo de Wordpress.com en sitio estático.&lt;/p&gt;
-
-&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;vNEvvR&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Wordpress.com Json Api&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/t0t/pen/vNEvvR/&quot;&gt;Wordpress.com Json Api&lt;/a&gt; by Sergio Forés (&lt;a href=&quot;http://codepen.io/t0t&quot;&gt;@t0t&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;meLPyv&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;t0t&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;GEOCROM&quot; class=&quot;codepen&quot;&gt;&lt;/p&gt;
 
 &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
@@ -963,6 +957,8 @@ El output es un prototipo funcional de baja fidelidad.&lt;/p&gt;
 &lt;p&gt;Tras un largo proceso de autoconocimiento y búsqueda de sentido en mi vida personal y profesional me di cuenta de esta gran obviedad, me dí cuenta de que sabía hablar pero aún no había aprendido a Decir. Tenía cosas importantes que contar a los demás y ni siquiera era capaz de explicarmelas a mí mismo.&lt;/p&gt;
 
 &lt;p&gt;En una ocasión tuve un pequeño Satori cuando mi hijo me pidió que le contara un cuento y yo me quedé bloqueado, mi mente trabajaba pero no fui capaz de pronunciar una sola palabra. Mi hijo ese día se durmió sin cuento y yo me quede ahí junto a él mirando el techo un buen rato tratando de averiguar porqué no había sido capaz de pronunciar el mejor cuento del mundo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/sergiofores/8074860391/in/album-72157676429845835/&quot; title=&quot;IMG_3285&quot;&gt;&lt;img src=&quot;https://c8.staticflickr.com/8/7125/8074860391_e3d4040d18_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;IMG_3285&quot; /&gt;&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Definitivamente tenía que aprender a decir, aún no me importaba tanto el qué, sólo quería comprender y practicar lo que se me revelaba como una capacidad extraordinaria, un potencial por descubrir. Tomé un lápiz y un papel y abrí esa puerta…&lt;/p&gt;
 
