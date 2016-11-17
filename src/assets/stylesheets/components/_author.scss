@@ -6,16 +6,7 @@
   align-content: center;
   align-items: center;
   position: relative;
-  background: linear-gradient(
-  to bottom,
-  $white 0%,
-  $light-gray 26%,
-  $light-gray 99%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-  // @media screen and (min-width: 426px) {
-  //   margin: $spacing-unit;
-  // }
+  // background-image: linear-gradient(-135deg, $white 0%, $color_alt7 100%);
 
   &__name {
     text-transform: uppercase;
@@ -24,15 +15,6 @@
     flex: 1 100%;
     color: $color_alt5;
     padding-bottom: $spacing-unit / 2;
-
-    // a:hover {
-    //   text-decoration: underline;
-    // }
-
-    // @media screen and (min-width: 1430px) {
-    //   font-size: fs(huge);
-    //   line-height: $line-height-base - 0.15;
-    // }
   }
 
   &__bio {

@@ -16,7 +16,7 @@
   order: 1; // Put the labels first
   display: block;
   cursor: pointer;
-  background-color: mix($color_alt2,$color_alt,30%);
+  background-color: $color_alpha_black2;
   transition: background ease 0.2s;
   text-transform: uppercase;
   &:nth-last-child(2) {
@@ -32,8 +32,8 @@
   flex-grow: 1;
   width: 100%;
   display: none;
-  padding: $base_spacing * 2;
-  background: $color_alt2;
+  padding: $base_spacing;
+  // background-color: $color_alt2;
 }
 // .tabs input {
 //   margin-bottom: 0;
@@ -64,6 +64,19 @@
   &__header {
     flex: 1;
   }
+  &__list {
+    margin-top: 0;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+
+    li {
+      padding-right: $spacing-unit / 2;
+    }
+  }
 }
 
 @media (max-width: 45em) {
@@ -74,6 +87,6 @@
   .tabs label {
     width: 100%;
     margin-right: 0;
-    margin-top: $base_spacing / 2;
+    margin-top: 1px;
   }
 }

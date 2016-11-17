@@ -40,10 +40,19 @@
       {% if t.small %}<small> {{ i.small }} </small> {% endif %}
 
       {% if t.list %}
-        <ul>
+        <ul class="tab__list">
           {% for list in t.list %}
             {% if list.item %}
-              <li>{{ list.item }}</li>
+              <li>
+                {% if t.image_path %}
+                  <svg class="icon  icon--ok">
+                    <use xlink:href="#icon-ok" />
+                  </svg>
+                {% endif %}
+
+                {{ list.item }}
+
+              </li>
             {% endif %}
           {% endfor %}
         </ul>

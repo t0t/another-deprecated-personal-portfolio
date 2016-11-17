@@ -16,9 +16,17 @@
   // -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
   // perspective: 150px;
 
+  &--ok {
+    width: 10px;
+    stroke: $color_alt8;
+    stroke-width: 2px;
+  }
+
   &--tabs {
-    width: 150px;
-    height: 150px;
+    stroke: $color_alt8;
+    width: 100px;
+    height: 100px;
+    align-self: center;
   }
 
   &.spin {

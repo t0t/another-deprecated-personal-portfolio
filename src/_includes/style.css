@@ -815,15 +815,9 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px; } }
-  @media (min-width: 1024px) {
-    html {
-      font-size: 18px; } }
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -1060,6 +1054,9 @@ textarea {
   background-size: cover;
   background-position: center center; }
 
+p {
+  font-size: 1rem; }
+
 small {
   font-size: 0.7rem; }
 
@@ -1083,8 +1080,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  line-height: 1.7;
-  max-width: 250px;
+  line-height: 1.4;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 425px) {
@@ -1101,7 +1097,6 @@ h3 {
   font-size: 1.35rem;
   line-height: 1.6;
   letter-spacing: 1px;
-  max-width: 250px;
   margin-left: auto;
   margin-right: auto;
   font-weight: inherit; }
@@ -1134,10 +1129,8 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  max-width: 250px;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0; }
+  margin-right: auto; }
   @media screen and (min-width: 550px) {
     h5 {
       max-width: 400px;
@@ -1950,7 +1943,6 @@ body:hover .visually-hidden button {
   color: #262626;
   background-position: center;
   background-repeat: no-repeat;
-  /* bg-gradient: */
   background-image: -webkit-linear-gradient(225deg, #9F9FFF 0%, #6F76E0 100%);
   background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%); }
   .page-header:before {
@@ -2857,7 +2849,7 @@ body:hover .visually-hidden button {
           order: 1;
   display: block;
   cursor: pointer;
-  background-color: #d9f1dc;
+  background-color: rgba(0, 0, 0, 0.1);
   -webkit-transition: background ease 0.2s;
   transition: background ease 0.2s;
   text-transform: uppercase; }
@@ -2875,8 +2867,7 @@ body:hover .visually-hidden button {
           flex-grow: 1;
   width: 100%;
   display: none;
-  padding: 50px;
-  background: #81e8b3; }
+  padding: 25px; }
 
 .tabs input[type="radio"] {
   position: absolute;
@@ -2909,6 +2900,21 @@ body:hover .visually-hidden button {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+  .tab__list {
+    margin-top: 0;
+    width: 100%;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .tab__list li {
+      padding-right: 12.5px; }
 
 @media (max-width: 45em) {
   .tabs .tab,
@@ -2919,7 +2925,7 @@ body:hover .visually-hidden button {
   .tabs label {
     width: 100%;
     margin-right: 0;
-    margin-top: 12.5px; } }
+    margin-top: 1px; } }
 
 .author {
   padding-top: 50px;
@@ -2936,10 +2942,7 @@ body:hover .visually-hidden button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  background: -webkit-linear-gradient(top, #fff 0%, rgba(0, 0, 0, 0.05) 26%, rgba(0, 0, 0, 0.05) 99%);
-  background: linear-gradient(to bottom, #fff 0%, rgba(0, 0, 0, 0.05) 26%, rgba(0, 0, 0, 0.05) 99%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  position: relative; }
   .author__name {
     text-transform: uppercase;
     font-size: 1.35rem;
@@ -2987,7 +2990,7 @@ body:hover .visually-hidden button {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 50px;
+  height: 75px;
   z-index: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3000,7 +3003,8 @@ body:hover .visually-hidden button {
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   -webkit-transition-timing-function: linear;
-          transition-timing-function: linear; }
+          transition-timing-function: linear;
+  background-color: #fff; }
   @media screen and (min-width: 374px) {
     .masthead {
       -webkit-box-pack: justify;
@@ -3018,20 +3022,10 @@ body:hover .visually-hidden button {
     height: 50px;
     -webkit-transition-property: height;
     transition-property: height;
-    -webkit-transition-duration: 0;
-            transition-duration: 0;
+    -webkit-transition-duration: .1;
+            transition-duration: .1;
     -webkit-transition-timing-function: linear;
-            transition-timing-function: linear;
-    background-color: #fff; }
-  .masthead .overlay__menu-trigger {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-weight: bold; }
-    .masthead .overlay__menu-trigger:before {
-      display: none; }
-    .masthead .overlay__menu-trigger:hover {
-      background-color: rgba(0, 0, 0, 0.05); }
+            transition-timing-function: linear; }
 
 @media screen and (max-width: 375px) {
   .masthead__menu-wrapper {
@@ -3373,9 +3367,17 @@ form ul, form ol, form li {
   vertical-align: middle;
   stroke-width: 1px;
   stroke: #000; }
+  .icon--ok {
+    width: 10px;
+    stroke: #8080FF;
+    stroke-width: 2px; }
   .icon--tabs {
-    width: 150px;
-    height: 150px; }
+    stroke: #8080FF;
+    width: 100px;
+    height: 100px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
   .icon.spin {
     -webkit-animation: spin 2s infinite linear;
             animation: spin 2s infinite linear; }

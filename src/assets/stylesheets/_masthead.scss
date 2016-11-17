@@ -8,13 +8,14 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 50px;
+  height: 75px;
   z-index: 500;
   display: flex;
   justify-content: space-around;
   align-items: center;
   transition-duration: .2s;
   transition-timing-function: linear;
+  background-color: $white;
 
   @media screen and (min-width: 374px) {
     justify-content: space-between;
@@ -31,27 +32,10 @@
   &--sticky {
     height: 50px;
     transition-property: height;
-    transition-duration: 0;
+    transition-duration: .1;
     transition-timing-function: linear;
-    background-color: $white;
-    // box-shadow: 0px 3px 52px 13px rgba($black,.01);
-    // background-color: lighten($color_alt7,10);
   }
 
-  .overlay__menu-trigger {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-weight: bold;
-
-    &:before {
-      display: none;
-    }
-
-    &:hover {
-      background-color: $light-gray;
-    }
-  }
 }
 
 .masthead__menu-wrapper {
