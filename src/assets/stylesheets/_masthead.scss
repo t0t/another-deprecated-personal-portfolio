@@ -1,12 +1,13 @@
-/* ===================================================
+/* ====
    MASTHEAD
-   =========================================== */
+   ==== */
 
 .masthead {
-  margin-top: 0;
+  // margin-top: 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   height: 50px;
   z-index: 500;
   display: flex;
@@ -84,15 +85,6 @@
 
 .masthead__title {
   display: none;
-
-  @include breakpoint($small) {
-    display: block;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
-    line-height: 0.8rem;
-    text-transform: uppercase;
-  }
 }
 
 .masthead__menu-item {
@@ -101,6 +93,8 @@
   text-transform: uppercase;
   font-size: fs(small) + 0.4;
   line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   &.active {
     color: $color_alt5 !important;
@@ -121,106 +115,5 @@
   @include breakpoint($small) {
     margin-left: 30px;
     margin-right: 0;
-  }
-}
-
-.overlay__menu-item {
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @include breakpoint($medium) {
-    width: 50%;
-  }
-
-  a {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .menu-thumb {
-    display: block;
-    width: 100px;
-    height: 60px;
-    order: -1;
-    margin-right: 1em;
-
-    img {
-      width: 100px;
-      height: 60px;
-      border-radius: $border-radius;
-    }
-  }
-
-  .menu-text {
-    flex: 1;
-  }
-
-  .menu-title {
-    font-size: 1.563rem;
-    line-height: 1.563rem;
-  }
-
-  .menu-excerpt {
-    font-size: 0.8rem;
-  }
-}
-
-.overlay__menu-item--secondary {
-  display: block;
-  padding-right: 0.5em;
-  font-size: 1.563rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @include breakpoint($small) {
-    width: 50%;
-  }
-
-  @include breakpoint($large) {
-    line-height: 1.953rem;
-  }
-}
-
-.overlay__menu-label {
-  margin: 30px 0 15px;
-  width: 100%;
-  font-family: $sans-serif;
-  font-weight: bold;
-  font-size: 0.8rem;
-  line-height: 1.25;
-  text-transform: uppercase;
-  /* lines in headline */
-  display: flex;
-  flex-direction: row;
-
-  &:after {
-    content: '\a0';
-    position: relative;
-    top: 0.4rem;
-    height: 4px;
-    background: $light-gray;
-    flex-grow: 1;
-  }
-
-  &:before {
-    margin-right: 10px;
-  }
-
-  &:after {
-    margin-left: 10px;
-  }
-}
-
-.overlay__menu-close {
-  margin-top: 30px;
-  margin-bottom: 0;
-  width: 100%;
-  // font-family: $monospace;
-  text-transform: uppercase;
-  border-radius: 0;
-
-  &:active {
-    transform: translateY(0); // override from default btn class
   }
 }

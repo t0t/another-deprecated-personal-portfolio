@@ -1,27 +1,13 @@
-// const x = "blu";
-// console.log(x);
-
-
-// import AOS from 'aos';
-// AOS.init();
-
-// var AOS = require('aos');
-// AOS.init();
-
-// require(['./node_modules/aos/dist/aos.js'], function(AOS){
-//       });
-// import AOS from './bower_components/aos/src/js/aos.js';
-
-
-
-AOS.init({
- duration: 800
-});
 
 (function() {
-  'use strict';
+  // 'use strict';
+
+  AOS.init({
+    duration: 800
+  });
+
   // Scroll
-  var s= document.querySelector(".masthead");
+  var s = document.querySelector(".masthead");
 
   var scrollEffect = function() {
     if(window.pageYOffset > 15) {
@@ -34,8 +20,16 @@ AOS.init({
   window.addEventListener("scroll", scrollEffect);
   //
 
-
   // TABS
+  // var btn = document.querySelectorAll(".btn");
+  // console.log(btn[2]);
+  // function action() {
+  //   console.log('clickkkk');
+  //   console.log(this);
+  // }
+  //
+  // btn.addEventListener("click", action);
+
   // var tBtn = document.querySelectorAll('.btn--tabs');
   // console.log(tBtn);
   //

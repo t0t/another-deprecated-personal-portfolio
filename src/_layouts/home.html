@@ -20,8 +20,9 @@ layout: default
 
     </header>
 
+    {% include components/tabs_panel.html %}
+    
     <main itemprop="text">
-      {% include components/tabs_panel.html %}
       {{ content }}
       {% include feature_row %}
     </main>

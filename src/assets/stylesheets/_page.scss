@@ -4,7 +4,7 @@
 
 .main {
   overflow-x: hidden;
-  padding-top: $spacing-unit * 4;
+  padding-top: $spacing-unit * 2;
 
   &--home {
     // background-image: url('/assets/images/bg-pincel2.jpg');
@@ -13,6 +13,7 @@
     // background-repeat: no-repeat;
 
     @media screen and (min-width: 376px) {
+      padding-top: $spacing-unit * 4;
       background-size: 75%;
       background-position: right 0;
       flex: 1 500px;

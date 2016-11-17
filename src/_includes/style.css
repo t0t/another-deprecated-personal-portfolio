@@ -1911,9 +1911,10 @@ body:hover .visually-hidden button {
    ========================================================================== */
 .main {
   overflow-x: hidden;
-  padding-top: 100px; }
+  padding-top: 50px; }
   @media screen and (min-width: 376px) {
     .main--home {
+      padding-top: 100px;
       background-size: 75%;
       background-position: right 0;
       -webkit-box-flex: 1;
@@ -2836,6 +2837,7 @@ body:hover .visually-hidden button {
  * Tabs
  */
 .tabs {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2844,7 +2846,10 @@ body:hover .visually-hidden button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem; }
+  position: relative; }
+  @media screen and (min-width: 376px) {
+    .tabs {
+      margin-top: 50px; } }
 
 .tabs label {
   -webkit-box-ordinal-group: 2;
@@ -2870,12 +2875,15 @@ body:hover .visually-hidden button {
           flex-grow: 1;
   width: 100%;
   display: none;
-  padding: 2rem;
+  padding: 50px;
   background: #81e8b3; }
 
 .tabs input[type="radio"] {
   position: absolute;
-  opacity: 0; }
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0; }
 
 .tabs input[type="radio"]:checked + label {
   background-color: #81e8b3;
@@ -2911,55 +2919,7 @@ body:hover .visually-hidden button {
   .tabs label {
     width: 100%;
     margin-right: 0;
-    margin-top: 0.5rem; } }
-
-text {
-  fill: black;
-  font-size: 12px;
-  stroke-width: 0; }
-
-.icon__item {
-  stroke-linecap: round; }
-  .icon__item--tres {
-    -webkit-animation-name: efecto-dash, efecto-grosor;
-            animation-name: efecto-dash, efecto-grosor;
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    stroke-width: 1;
-    stroke: #81e8b3;
-    fill: none;
-    stroke-dasharray: 700;
-    stroke-dashoffset: 700; }
-
-@-webkit-keyframes efecto-dash {
-  50% {
-    stroke-dashoffset: 0; } }
-
-@keyframes efecto-dash {
-  50% {
-    stroke-dashoffset: 0; } }
-
-@-webkit-keyframes efecto-grosor {
-  50% {
-    stroke-width: 5; } }
-
-@keyframes efecto-grosor {
-  50% {
-    stroke-width: 5; } }
-
-@-webkit-keyframes efecto-rotate {
-  50% {
-    -webkit-transform: rotate3d(2, 1, -1, 20deg);
-            transform: rotate3d(2, 1, -1, 20deg); } }
-
-@keyframes efecto-rotate {
-  50% {
-    -webkit-transform: rotate3d(2, 1, -1, 20deg);
-            transform: rotate3d(2, 1, -1, 20deg); } }
+    margin-top: 12.5px; } }
 
 .author {
   padding-top: 50px;
@@ -3019,14 +2979,14 @@ text {
       height: 100px;
       border-radius: 50%; }
 
-/* ===================================================
+/* ====
    MASTHEAD
-   =========================================== */
+   ==== */
 .masthead {
-  margin-top: 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   height: 50px;
   z-index: 500;
   display: -webkit-box;
@@ -3095,21 +3055,15 @@ text {
 
 .masthead__title {
   display: none; }
-  @media (min-width: 37.5em) {
-    .masthead__title {
-      display: block;
-      margin: 0;
-      padding: 0;
-      letter-spacing: 1px;
-      line-height: 0.8rem;
-      text-transform: uppercase; } }
 
 .masthead__menu-item {
   display: block;
   padding: 13px 13px;
   text-transform: uppercase;
   font-size: 1.1rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
   .masthead__menu-item.active {
     color: rgba(0, 0, 255, 0.5) !important; }
     .masthead__menu-item.active:hover {
@@ -3124,107 +3078,13 @@ text {
       margin-left: 30px;
       margin-right: 0; } }
 
-.overlay__menu-item {
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-  @media (min-width: 48em) {
-    .overlay__menu-item {
-      width: 50%; } }
-  .overlay__menu-item a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-  .overlay__menu-item .menu-thumb {
-    display: block;
-    width: 100px;
-    height: 60px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    margin-right: 1em; }
-    .overlay__menu-item .menu-thumb img {
-      width: 100px;
-      height: 60px;
-      border-radius: 4px; }
-  .overlay__menu-item .menu-text {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
-  .overlay__menu-item .menu-title {
-    font-size: 1.563rem;
-    line-height: 1.563rem; }
-  .overlay__menu-item .menu-excerpt {
-    font-size: 0.8rem; }
-
-.overlay__menu-item--secondary {
-  display: block;
-  padding-right: 0.5em;
-  font-size: 1.563rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-  @media (min-width: 37.5em) {
-    .overlay__menu-item--secondary {
-      width: 50%; } }
-  @media (min-width: 64em) {
-    .overlay__menu-item--secondary {
-      line-height: 1.953rem; } }
-
-.overlay__menu-label {
-  margin: 30px 0 15px;
-  width: 100%;
-  font-family: "Open Sans", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-weight: bold;
-  font-size: 0.8rem;
-  line-height: 1.25;
-  text-transform: uppercase;
-  /* lines in headline */
+.brand {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .overlay__menu-label:after {
-    content: '\a0';
-    position: relative;
-    top: 0.4rem;
-    height: 4px;
-    background: rgba(0, 0, 0, 0.05);
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
-  .overlay__menu-label:before {
-    margin-right: 10px; }
-  .overlay__menu-label:after {
-    margin-left: 10px; }
-
-.overlay__menu-close {
-  margin-top: 30px;
-  margin-bottom: 0;
-  width: 100%;
-  text-transform: uppercase;
-  border-radius: 0; }
-  .overlay__menu-close:active {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
-
-.brand {
-  display: none; }
-  @media screen and (min-width: 425px) {
-    .brand {
-      padding-right: 12.5px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+  display: flex; }
   .brand__name {
     color: #000;
     font-size: inherit;
@@ -3238,8 +3098,6 @@ text {
     stroke-width: 2;
     stroke-dashoffset: 13;
     stroke-dasharray: 3; }
-  .brand__logo {
-    background-color: red; }
   .brand .efecto--stroke-logo {
     -webkit-animation-name: efecto-stroke-dashoffset;
             animation-name: efecto-stroke-dashoffset;

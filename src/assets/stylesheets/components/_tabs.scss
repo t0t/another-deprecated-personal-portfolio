@@ -1,31 +1,16 @@
-$base_spacing: 1rem;
-$color-black: rgb(0,0,0);
-$color_white: rgb(255,255,255);
-$color_alt: seashell;
-$color_alt2: rgb(129, 232, 179);
-$color_base: rgb(129, 232, 179);
-$color-gray: rgba(black,.04);
-// $color_alt3: mistyrose;
-// $color_alt4: cornsilk;
-// $color_alt5: thistle;
-// $color_alt6: snow;
-// $color_alt7: rosybrown;
-// $color_alt8: seashell;
-// $color_alt9: papayawhip;
-// $color_alt10: oldlace;
-// $color_alt11: mintcream;
-// $color_alt12: honeydew;
-// $color_alt13: peachpuff;
-// $color_alt14: burlywood;
-
 /**
  * Tabs
  */
 .tabs {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap; // make sure it wraps
   justify-content: center;
-  margin-top: $base_spacing * 2;
+  position: relative;
+
+  @media screen and (min-width: 376px) {
+    margin-top: $base_spacing * 2;
+  }
 }
 .tabs label {
   order: 1; // Put the labels first
@@ -50,9 +35,15 @@ $color-gray: rgba(black,.04);
   padding: $base_spacing * 2;
   background: $color_alt2;
 }
+// .tabs input {
+//   margin-bottom: 0;
+// }
 .tabs input[type="radio"] {
-    position: absolute;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0; // fixed Safari bug "width"
 }
 .tabs input[type="radio"]:checked + label {
   background-color: $color_alt2;
@@ -85,43 +76,4 @@ $color-gray: rgba(black,.04);
     margin-right: 0;
     margin-top: $base_spacing / 2;
   }
-}
-
-text {
-  // font-family: 'Permanent Marker', cursive;
-  fill: $color-black;
-  font-size: 12px;
-  //letter-spacing: 11px;
-  stroke-width: 0;
-}
-
-.icon {
-  &__item {
-    stroke-linecap: round;
-
-    &--tres {
-      animation-name: efecto-dash, efecto-grosor;
-      animation-duration: 15s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      stroke-width: 1;
-      stroke: $color_base;
-      fill: none;
-      stroke-dasharray: 700;
-      stroke-dashoffset: 700;
-    }
-  }
-}
-
-// Dash offset
-@keyframes efecto-dash {
-  50% { stroke-dashoffset: 0; }
-}
-
-@keyframes efecto-grosor {
-  50% { stroke-width: 5; }
-}
-
-@keyframes efecto-rotate {
-  50% { transform: rotate3d(2, 1, -1, 20deg); }
 }

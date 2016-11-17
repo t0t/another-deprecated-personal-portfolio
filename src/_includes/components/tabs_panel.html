@@ -1,7 +1,7 @@
 {% include base_path %}
 {% if page.tabsPanel %}
 
-<aside class="tabs">
+<div class="tabs">
 
   {% assign tabs = page.tabsPanel %}
 
@@ -13,7 +13,8 @@
       checked="checked"
       {% endif %}
       >
-      <label for="{{t.id}}" role="button" class="btn  btn--tabs">
+      <label id="{{t.id}}" for="{{t.id}}" role="button" class="btn  btn--tabs"
+      >
         {{ t.tab_btn }}
       </label>
     {% endif %}
@@ -54,6 +55,6 @@
     </div>
   {% endfor %}
 
-</aside>
+</div>
 
 {% endif %}

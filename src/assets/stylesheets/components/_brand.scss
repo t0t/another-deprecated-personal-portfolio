@@ -1,10 +1,10 @@
 .brand {
-  display: none; // Oculta logo
+  // display: none; // Oculta logo
+  // padding-right: $spacing-unit /2;
+  align-items: center;
+  display: flex;
 
   @media screen and (min-width: 425px) {
-    padding-right: $spacing-unit /2;
-    align-items: center;
-    display: flex;
   }
 
   &__name {
@@ -32,7 +32,6 @@
   }
 
   &__logo {
-    background-color: red;
   }
 
   .efecto--stroke-logo {
