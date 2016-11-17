@@ -3,8 +3,6 @@
    ==== */
 
 .masthead {
-  // margin-top: 0;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -22,14 +20,13 @@
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
   }
-  @media (min-width: $small) {
-    height: $masthead-height;
-  }
-  @media (min-width: $small) {
+
+  @media screen and (min-width: 426px) {
     height: 100px;
   }
 
   &--sticky {
+    position: fixed;
     height: 50px;
     transition-property: height;
     transition-duration: .1;

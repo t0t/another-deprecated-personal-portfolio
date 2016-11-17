@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .main {
-  overflow-x: hidden;
-  padding-top: $spacing-unit * 2;
+  // overflow-x: hidden;
+  // padding-top: $spacing-unit * 3;
 
   &--home {
     // background-image: url('/assets/images/bg-pincel2.jpg');
@@ -12,15 +12,13 @@
     // background-position: right 50px;
     // background-repeat: no-repeat;
 
-    @media screen and (min-width: 376px) {
-      padding-top: $spacing-unit * 4;
+    @media screen and (min-width: 426px) {
       background-size: 75%;
       background-position: right 0;
       flex: 1 500px;
       background-attachment: fixed;
     }
     @media screen and (min-width: 1024px) {
-      // background-position: right 100px;
       flex: 1 500px;
     }
   }
@@ -33,11 +31,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: $spacing-unit;
+  padding: $spacing-unit;
   align-items: center;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   color: $color_page_header;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,8 +93,8 @@
   flex: 1 100%;
   text-align: center;
   padding-top: 0;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
+  // padding-left: $spacing-unit;
+  // padding-right: $spacing-unit;
   margin-top: 0;
   margin-bottom: $spacing-unit / 2;
   font-size: fs(huge);
