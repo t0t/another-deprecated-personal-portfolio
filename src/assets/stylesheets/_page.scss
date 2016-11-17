@@ -153,6 +153,7 @@
    ========================================================================== */
 
 .Content {
+
   @media screen and (min-width: 767px) {
     // display: flex;
     // flex-wrap: wrap;
@@ -434,7 +435,6 @@
   float: left;
   padding-right: 0.125em;
   font-weight: normal;
-  font-family: $serif;
   color: $link-color;
   background: $background-color;
 }

@@ -951,6 +951,13 @@ textarea {
 /* ==========================================================================
    ARCHIVE
    ========================================================================== */
+.archive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .archive__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,27 +967,41 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px; }
+  min-height: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 450px;
+          flex: 1 450px;
+  background-color: #b7f2d4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .archive__item:first-child {
+    min-height: 500px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 350px;
+            flex: 1 350px; }
+  .archive__item:nth-last-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 430px;
+            flex: 1 430px; }
+  .archive__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 350px;
+            flex: 1 350px; }
 
 .archive__item-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 0;
-  -ms-flex-item-align: center;
-      align-self: center; }
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: #8080FF;
+  color: #fff;
+  padding: 25px;
+  width: 100%; }
   .archive__item-body a {
     color: rgba(0, 0, 255, 0.5);
     font-size: fs(normal); }
@@ -1003,18 +1024,13 @@ textarea {
     width: 100%; }
 
 .archive__item-title {
-  padding-top: 0;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  text-align: center;
-  font-size: fs(big); }
-  @media screen and (min-width: 756px) {
-    .archive__item-title {
-      font-size: fs(big);
-      max-width: 700px; } }
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  font-size: fs(normal); }
   @media screen and (min-width: 1430px) {
     .archive__item-title {
-      font-size: fs(x-huge); } }
+      font-size: fs(x-normal); } }
 
 .archive__item-meta {
   margin-top: 0.5em;
@@ -1133,14 +1149,13 @@ h5 {
   margin-right: auto; }
   @media screen and (min-width: 550px) {
     h5 {
-      max-width: 400px;
       line-height: 1.85; } }
   @media screen and (min-width: 756px) {
     h5 {
       line-height: 1.7; } }
   @media screen and (min-width: 1430px) {
     h5 {
-      font-size: 3rem;
+      font-size: 1.8rem;
       line-height: 1.55; } }
 
 h1,
@@ -2184,7 +2199,6 @@ body:hover .visually-hidden button {
   float: left;
   padding-right: 0.125em;
   font-weight: normal;
-  font-family: "Playfair Display", serif;
   color: #262626;
   background: #fff; }
 
@@ -2893,8 +2907,8 @@ body:hover .visually-hidden button {
   margin-right: 25px; }
   .tab__header {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
+        -ms-flex: 1 50%;
+            flex: 1 50%; }
   .tab__list {
     margin-top: 0;
     width: 100%;
@@ -2909,8 +2923,12 @@ body:hover .visually-hidden button {
         -ms-flex-pack: center;
             justify-content: center; }
     .tab__list li {
-      padding-right: 12.5px; }
+      padding-right: 12.5px;
+      padding-bottom: 8.3333333333px; }
   .tab__excerpt {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 75%;
+            flex: 0 75%;
     margin-left: 12.5px;
     margin-right: 12.5px; }
 
@@ -3366,11 +3384,13 @@ form ul, form ol, form li {
   stroke-width: 1px;
   stroke: #000; }
   .icon--ok {
-    width: 10px;
+    width: 15px;
+    height: 20px;
     stroke: #8080FF;
     stroke-width: 2px; }
   .icon--tabs {
     stroke: #8080FF;
+    stroke-width: 2px;
     width: 100px;
     height: 100px;
     -ms-flex-item-align: center;
@@ -3461,7 +3481,7 @@ form ul, form ol, form li {
     left: 10%;
     height: 80%;
     width: 80%;
-    stroke: #e06c75;
+    stroke: rgba(0, 0, 0, 0.3);
     -webkit-filter: blur(3px);
             filter: blur(3px); }
   .icon--arrow-next {
@@ -4148,210 +4168,21 @@ green     #859900  operators, other keywords
       color: #000; }
 
 /* ==========================================================================
-   SlickMap CSS
-   modified from: https://www.astuteo.com/slickmap/
-   ========================================================================== */
-/* ------------------------------------------------------------
-    NUMBER OF COLUMNS: Adjust #primaryNav li to set the number
-    of columns required in your site map. The default is
-    4 columns (25%). 5 columns would be 20%, 6 columns would
-    be 16.6%, etc.
------------------------------------------------------------- */
-#primaryNav li {
-  width: 25%; }
-
-#primaryNav li ul li {
-  width: 100% !important; }
-
-#primaryNav.col5 li {
-  width: 100%; }
-  @media (min-width: 48em) {
-    #primaryNav.col5 li {
-      width: 20%; } }
-
-/*
-   General styles
+   Site Map
    ========================================================================== */
 .sitemap {
-  width: 100%; }
-  .sitemap a {
-    text-decoration: none; }
-  .sitemap ol, .sitemap ul {
-    list-style: none;
-    padding-top: 0; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .sitemap li {
-    margin-bottom: 0; }
-
-/*
-   Site Map Styles
-   ========================================================================== */
-/* top level */
-#primaryNav {
-  margin: 0;
-  padding: 0;
-  width: 100%; }
-  @media (min-width: 48em) {
-    #primaryNav {
-      float: left; } }
-
-#primaryNav #home {
-  display: block;
-  float: none;
-  position: relative;
-  z-index: 2;
-  margin-top: 0;
-  padding-bottom: 30px; }
-  @media (min-width: 48em) {
-    #primaryNav #home {
-      background: #fff url("../images/L1-left.png") center bottom no-repeat;
-      /* bg on >= medium screens */ } }
-
-#primaryNav li {
-  list-style-type: none;
-  padding: 30px 0;
-  margin-top: -30px; }
-  @media (min-width: 48em) {
-    #primaryNav li {
-      float: left;
-      background: url("../images/L1-center.png") center top no-repeat; } }
-
-#primaryNav li a {
-  margin: 0 20px 0 0;
-  padding: 10px;
-  display: block;
-  font-size: 14px;
-  font-family: "Open Sans", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
-  text-align: center;
-  color: #000;
-  background: #e9e9e9;
-  border: 2px solid #a3a3a3;
-  border-radius: 5px;
-  box-shadow: none; }
-
-#primaryNav li a:hover {
-  background-color: #ebebeb;
-  border-color: #e9e9e9; }
-
-@media (min-width: 48em) {
-  #primaryNav li:last-child {
-    background: url("../images/L1-right.png") center top no-repeat;
-    /* bg on >= medium screens */ } }
-
-@media (min-width: 48em) {
-  #primaryNav > li:last-child a {
-    margin-right: 0;
-    /* remove right margin on last list element */ } }
-
-/* 2nd level */
-#primaryNav li li {
-  width: 100%;
-  clear: left;
-  margin-top: 0;
-  padding: 10px 0 0 0; }
-  @media (min-width: 48em) {
-    #primaryNav li li {
-      background: url("../images/vertical-line.png") center bottom repeat-y;
-      /* bg on >= medium screens */ } }
-
-#primaryNav li li a {
-  background-color: #f4f4f4;
-  border-color: #c3c3c3; }
-
-#primaryNav li li a:hover {
-  background-color: whitesmoke;
-  border-color: #f4f4f4; }
-
-#primaryNav li li:first-child {
-  padding-top: 30px; }
-
-@media (min-width: 48em) {
-  #primaryNav li li:last-child {
-    background: url("../images/vertical-line.png") center bottom repeat-y;
-    /* bg on >= medium screens */ } }
-
-/* 3rd level */
-#primaryNav li li ul {
-  margin: 10px 0 0 0;
-  padding-bottom: 0;
-  width: 100%;
-  padding: 9px 0 10px 0; }
-  @media (min-width: 48em) {
-    #primaryNav li li ul {
-      float: right; } }
-  @media (min-width: 48em) {
-    #primaryNav li li ul {
-      background: #fff url("../images/L3-ul-top.png") center top no-repeat;
-      /* bg on >= medium screens */ } }
-
-#primaryNav li li li {
-  padding: 5px 0; }
-  @media (min-width: 48em) {
-    #primaryNav li li li {
-      background: url("../images/L3-center.png") left center no-repeat;
-      /* bg on >= medium screens */ } }
-
-#primaryNav li li li a {
-  background-color: #f9f9f9;
-  border-color: #c7c7c7;
-  font-size: 12px;
-  padding: 5px;
-  width: 80%; }
-  @media (min-width: 48em) {
-    #primaryNav li li li a {
-      float: right; } }
-
-#primaryNav li li li a:hover {
-  background-color: #fafafa;
-  border-color: #f9f9f9; }
-
-#primaryNav li li li:first-child {
-  padding: 15px 0 5px 0; }
-  @media (min-width: 48em) {
-    #primaryNav li li li:first-child {
-      background: url("../images/L3-li-top.png") left center no-repeat;
-      /* bg on >= medium screens */ } }
-
-@media (min-width: 48em) {
-  #primaryNav li li li:last-child {
-    padding-botom: 0;
-    background: url("../images/L3-bottom.png") left center no-repeat;
-    /* bg on >= medium screens */ } }
-
-/*
-   Utility Navigation
-   ========================================================================== */
-#utilityNav {
-  max-width: 50%;
-  margin-right: 10px; }
-  @media (min-width: 48em) {
-    #utilityNav {
-      float: right; } }
-
-#utilityNav li {
-  margin-bottom: 10px; }
-  @media (min-width: 48em) {
-    #utilityNav li {
-      float: left; } }
-
-#utilityNav li a {
-  margin: 0 10px 0 0;
-  padding: 5px 10px;
-  display: block;
-  border: 2px solid #c7c7c7;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #b3b3b3; }
-  @media (min-width: 48em) {
-    #utilityNav li a {
-      background: #f9f9f9 url("../images/white-highlight.png") top left repeat-x;
-      /* bg on >= medium screens */ } }
-
-#utilityNav li a:hover {
-  background-color: #fbfbfb;
-  border-color: #f9f9f9; }
+    list-style-type: none;
+    font-size: 1rem; }
 
 /* ==========================================================================
    WEBSITE STYLE GUIDE

@@ -17,13 +17,15 @@
   // perspective: 150px;
 
   &--ok {
-    width: 10px;
+    width: 15px;
+    height: 20px;
     stroke: $color_alt8;
     stroke-width: 2px;
   }
 
   &--tabs {
     stroke: $color_alt8;
+    stroke-width: 2px;
     width: 100px;
     height: 100px;
     align-self: center;
@@ -101,7 +103,7 @@
     left: 10%;
     height: 80%;
     width: 80%;
-    stroke: $color-cool2;
+    stroke: $color_alpha_black;
     filter: blur(3px);
   }
 

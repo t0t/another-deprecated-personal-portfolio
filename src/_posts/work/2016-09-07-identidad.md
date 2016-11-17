@@ -4,7 +4,7 @@ headline: "Branding"
 excerpt: "Diseño de logotipos"
 modified: 2016-09-29T16:32:07-04:00
 image:
-  feature: logo-fs.svg
+  feature: hdcatalog3.jpg
   teaser: bg-identidad.jpg
 
 gallery:
@@ -23,10 +23,6 @@ tags: [Branding]
 work: "Experiencia en creación de logotipos"
 comments: false
 comments_locked: true
-featured: false
 ---
 
-:smile:.
-
-
-{% include gallery caption="Pequeña colección **en proceso**." %}
+{% include gallery caption="Pequeña recopilación **en proceso**." %}

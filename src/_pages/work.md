@@ -16,9 +16,12 @@ image:
   teaser:
   icon_bg: cor
 ---
+En proceso...
 
+<div class="archive">
 {% for post in site.categories.work %}
   {% if post.featured != true %}
   {% include archive__item.html %}
   {% endif %}
 {% endfor %}
+</div>

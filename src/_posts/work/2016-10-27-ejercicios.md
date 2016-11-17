@@ -3,11 +3,9 @@ title: "Ejercicios"
 excerpt: "Algunas exploraciones de front"
 tags: [frontend, css]
 image:
-  feature: todh-spiral.jpg
+  feature: sistemas.jpg
   teaser: todh-spiral.jpg
   svg: imagen-post
-comments: false
-featured: false
 modified: 2016-10-27T16:32:07-01:00
 ---
 <p data-height="400" data-theme-id="light" data-slug-hash="RorgEd" data-default-tab="result" data-user="t0t" data-embed-version="2" data-pen-title="Responsive Tab Accordion" class="codepen"></p>

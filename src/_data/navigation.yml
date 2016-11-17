@@ -35,19 +35,6 @@ navright:
     url: /contact/
 
 
-# Primary site navigation links (overlay)
-
-primary:
-  - title: "Work Portfolio"
-    url: /work/
-    img: work-portfolio-menu-thumb.jpg
-    excerpt: "Things I've designed, illustrated, and developed"
-  - title: "Blog Articles"
-    url: /articles/
-    img: blog-articles-menu-thumb.jpg
-    excerpt: "Thoughts, inspiration, mistakes, and other minutia I've written"
-
-
 # Secondary site navigation links (overlay)
 
 secondary:
@@ -70,7 +57,7 @@ secondary:
 colophon-menu:
   - title: "Mapa del sitio"
     url: /sitemap/
-  - title: "Design Pattern"
+  - title: "Guía de estilo"
     url: /style-guide/
 
 colophon-social:

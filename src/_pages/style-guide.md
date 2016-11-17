@@ -1,10 +1,10 @@
 ---
 layout: style-guide
 permalink: /style-guide/
-title: "Style Guide"
+title: "Guía de estilo"
 date: 2015-01-28T12:05:57-05:00
 modified: 2016-10-26T10:32:14-05:00
-excerpt: "A handy collection of all the colors, typography, UI patterns, and components used on TODH."
+excerpt: "Realizo artesanalmente Sistemas Web y Patrones de Diseño"
 ads: false
 share: false
 ---

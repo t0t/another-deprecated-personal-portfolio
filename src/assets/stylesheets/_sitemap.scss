@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Site Map
+   ========================================================================== */
+
+.sitemap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  ul {
+  }
+
+  li {
+    list-style-type: none;
+    font-size: fs(normal);
+  }
+}
