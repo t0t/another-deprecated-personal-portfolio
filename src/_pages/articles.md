@@ -16,8 +16,6 @@ image:
   icon_bg: todh-grafico
 ---
 
-En proceso...
-
 <div class="archive">
 {% for post in site.categories.articles %}
   {% if post.featured != true %}

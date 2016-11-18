@@ -23,6 +23,15 @@
     stroke-width: 2px;
   }
 
+  &--next {
+    width: 40px;
+    height: 40px;
+    stroke: $white;
+    stroke-width: 2px;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
+  }
+
   &--tabs {
     stroke: $color_alt8;
     stroke-width: 2px;

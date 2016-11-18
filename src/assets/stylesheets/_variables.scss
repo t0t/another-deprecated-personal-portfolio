@@ -83,7 +83,8 @@ $highlighter-color            : #f3bc15;
 $color-cool                   : $lighter-gray;
 $brand-color                  : $black;
 $color_headers                : $color_alt3;
-$color-cool2                : rgb(224,108,117);
+$color-cool2                : rgba(224,108,117,.8);
+$color-archive                : rgba($color_alt8,.8);
 
 
 $primary-color                : mix($black, $lighter-gray, 20%);

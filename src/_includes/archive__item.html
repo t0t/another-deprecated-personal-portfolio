@@ -2,20 +2,20 @@
 {% if post.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ post.image.feature }}');"{% endif %}
 >
 
-  <div class="archive__item-body">
+<a class="btn   btn--archive  archive__item-body" href="{{ site.url }}{{ post.url }}">
 
-    <h5 class="archive__item-title" itemprop="headline">
+    <h6 class="archive__item-title" itemprop="headline">
       {{ post.title }}
-    </h5>
+    </h6>
 
-    <p class="archive__item-excerpt" itemprop="text">
+    <small class="archive__item-excerpt" itemprop="text">
       {{ post.excerpt }}
-    </p>
+    </small>
 
-    <a class="btn btn--default" href="{{ site.url }}{{ post.url }}">
-      A ver...
-    </a>
+    <svg class="icon  icon--next">
+      <use xlink:href="#icon-next" />
+    </svg>
 
-  </div>
+</a>
 
 </article>
