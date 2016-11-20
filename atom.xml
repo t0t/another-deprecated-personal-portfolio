@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/atom.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-11-20T09:47:45+01:00</updated>
+  <updated>2016-11-20T13:42:05+01:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Sergio Forés</title>
@@ -1093,7 +1093,9 @@ Benoit Mandelbrot&lt;/p&gt;
   &lt;p&gt;‘Si de verdad renunciamos al control, de pronto descubrimos un mundo oculto que ha estado ahí desde siempre, delante de nuestos ojos. De golpe, la inquietante presencia de este mundo poético y vibrante, rebosante de misterio, se revela ante nosotros. Todo halla expresión como lo que es. Todo está vivo y nos habla’. Nathaniel Dorsky, ‘Devotional Cinema’&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/O9hMUtGsrRs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;Video--responsive&quot;&gt;
+  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/O9hMUtGsrRs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Dicen que “tot” en sicología es el fenómeno de tener algo “en la punta de la lengua”. Este video, Tot, es un homenaje a mis pequeños maestros Teo y Otto. Un conjunto de instantes cotidianos donde ellos son los protagonistas.&lt;/p&gt;
 
