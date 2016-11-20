@@ -5,8 +5,8 @@ excerpt: "TODH también es... un viaje de reorientación profesional"
 modified: 2016-08-09T16:32:07-04:00
 
 image:
-  feature: todh-spiral.jpg
-  teaser: todh-spiral.jpg
+  feature: image_feature2.svg
+  teaser: image_feature2.svg
   thumb: todh-spiral.jpg
   svg: imagen-post2
 

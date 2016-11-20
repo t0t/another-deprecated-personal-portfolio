@@ -3,14 +3,8 @@
    ========================================================================== */
 
 .main {
-  // overflow-x: hidden;
-  // padding-top: $spacing-unit * 3;
 
   &--home {
-    // background-image: url('/assets/images/bg-pincel2.jpg');
-    // background-size: contain;
-    // background-position: right 50px;
-    // background-repeat: no-repeat;
 
     @media screen and (min-width: 426px) {
       background-size: 75%;
@@ -27,26 +21,22 @@
 .page-header {
   position: relative;
   z-index: 10;
-  height: 350px;
+  min-height: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: $spacing-unit;
   align-items: center;
   align-content: center;
-  // margin-left: auto;
-  // margin-right: auto;
-  color: $color_page_header;
+  color: $white;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   // background-color: $color-cool2;
-  background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
 
   &:before {
     content: "";
     z-index: -1;
-    // width: 100vw;
-    // height: 100vh;
     background-color: rgba($white,.7);
     mix-blend-mode: luminosity; // color; soft-light  color-dodge  color-burn  multiply  screen  luminosity
     position: absolute;
@@ -66,26 +56,22 @@
       }
     }
   }
-  // @media screen and (min-width: 1437px) {
-  //   height: 75vh;
-  // }
-
+  &--work {
+    background-image: linear-gradient(-135deg, #FFD0B8 0%, $color-archive 100%);
+  }
+  &--articles {
+    background-image: linear-gradient(-135deg, $color-cool2 0%, #DEAA90 100%);
+  }
+  &--single { //header para single pages
+    background-image: linear-gradient(-135deg, $color_alt7 0%, #DEAA90 100%);
+    align-content: flex-end;
+    color: $black;
+  }
   &--about {
-    // background-image: url('../images/bg-pincel.jpg');
-    // background-size: 500px;
-    // background-position: right;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
+    background-image: linear-gradient(-135deg, $color-archive 0%, $color_alt7 100%);
   }
   &--home {
-    // min-height: 50vh;
-    // @media screen and (min-width: 1024px) {
-    //   min-height: 45vh;
-    // }
-    // background-size: 500px;
-    // background-position: right;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
+    background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
   }
 }
 
@@ -101,7 +87,7 @@
   animation-name: fade-in;
   animation-timing-function: ease-in;
   animation-duration: .4s;
-  color: $white;
+  // color: $white;
 
   p {
     text-transform: none;
@@ -127,7 +113,7 @@
   text-align: center;
   margin-top: 0;
   text-transform: none;
-  color: $white;
+  // color: $white;
 
   @media screen and (min-width: 550px) {
     // margin-top: $spacing-unit / 2;

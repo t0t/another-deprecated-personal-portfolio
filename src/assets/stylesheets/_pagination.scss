@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+.Pagination {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $color_alpha_black2;
+  max-width: 200px;
+  padding: $spacing-unit / 2;
+  text-align: center;
+  margin-bottom: $spacing-unit * 2;
+}

@@ -11,67 +11,67 @@ sidebar: false
 
   <section itemscope itemtype="http://schema.org/CreativeWork">
 
-    <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
+  <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
 
-    <header class="page-header"
-    {% if page.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ page.image.feature }}');"{% endif %}
-    >
+  <header class="page-header page-header--single"
+  {% if page.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ page.image.feature }}');"{% endif %}>
 
-      {% if page.image.icon_bg %}
-      <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
-      {% endif %}
+    <h1 class="page-title" itemprop="headline">
+      {{ page.title }}
+    </h1>
 
-      <h1 class="page-title" itemprop="headline">
-        {{ page.title }}
-      </h1>
-
-      {% if page.excerpt %}
-        <h2 class="page-excerpt">
-          {{ page.excerpt }}
-        </h2>
-      {% endif %}
-
-      {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-      {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
-      {% include breadcrumbs.html %}
-
-    </header>
-
-    {% if page.feature.visible == true %}
-      {% include featured.html %}
+    {% if page.excerpt %}
+      <h2 class="page-excerpt">
+        {{ page.excerpt }}
+      </h2>
     {% endif %}
 
-      <article class="Content" itemprop="text">
-        {{ content }}
-        {% include post__comments.html %}
-      </article>
+    {% if page.image.icon_bg %}
+    <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
+    {% endif %}
 
-      {% if page.introText %}
-      <aside>
-        {% include intro-text.html %}
-      </aside>
-      {% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date_to_xmlschema }}">{% endif %}
+    {% include breadcrumbs.html %}
 
-      {% include post__social.html %}
+  </header>
 
-      {% if page.path contains '_posts' and page.tags %}
-      <aside class="post__taxonomy">
-        {% include post__taxonomy.html %}
-      </aside>
-      {% endif %}
-
-
-  </section>
-
-  {% if page.author != false %}
-  <footer class="post__footer">
-    {% include post__author.html %}
-  </footer>
+  {% if page.feature.visible == true %}
+    {% include featured.html %}
   {% endif %}
 
-  {% if page.path contains '_posts' and site.related_posts.size >= 2 %}
-    {% include related.html %}
+  <article class="Content" itemprop="text">
+    {{ content }}
+    {% include post__comments.html %}
+  </article>
+
+  {% include page__pagination.html %}
+
+  {% if page.introText %}
+  <aside>
+    {% include intro-text.html %}
+  </aside>
   {% endif %}
+
+  {% include post__social.html %}
+
+  {% if page.path contains '_posts' and page.tags %}
+  <aside class="post__taxonomy">
+    {% include post__taxonomy.html %}
+  </aside>
+  {% endif %}
+
+</section>
+
+{% if page.author != false %}
+<footer class="post__footer">
+  {% include post__author.html %}
+</footer>
+{% endif %}
+
+{% if page.path contains '_posts' and site.related_posts.size >= 2 %}
+  {% include related.html %}
+{% endif %}
 
 </main>
 

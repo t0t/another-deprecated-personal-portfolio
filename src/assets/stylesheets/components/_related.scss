@@ -1,0 +1,109 @@
+/* ==========================================================================
+   TILES
+   ========================================================================== */
+
+.Related {
+
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (min-width: $small) {
+    flex-direction: row;
+  }
+
+  &__header {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    font-size: fs(normal);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  &__tiles {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      flex: 0 33%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      font-size: 20px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color_alt8;
+      mix-blend-mode: lighten; // color; soft-light  color-dodge  color-burn  multiply  screen  luminosity
+    }
+
+    figcaption {
+      margin-top: 0;
+      max-width: 100%;
+      z-index: 100;
+      position: absolute;
+      bottom: 0;
+
+      a {
+        color: $black;
+      }
+    }
+    img {
+      align-self: flex-start;
+    }
+
+    &:hover {
+
+      // background-color: $color-cool;
+      img {
+        // box-shadow: 0 0 10px rgba(#000, 0.5);
+      }
+
+      .tile__title {}
+    }
+  }
+}
+
+  &__category {
+    display: block;
+    text-align: center;
+  }
+
+  &__item-time {}
+
+  &__title {
+    color: $black;
+    line-height: $line-height-base - 0.20;
+    // @extend %altfont_angle;
+    text-transform: none;
+    margin-top: 0;
+    padding: 0 $spacing-unit;
+    font-size: fs(x-normal);
+    flex: 0 100%;
+    text-align: center;
+    padding-bottom: $spacing-unit;
+
+    @media (min-width: $small) {
+      &:hover {
+        color: $color_alt5;
+      }
+    }
+  }
+
+}

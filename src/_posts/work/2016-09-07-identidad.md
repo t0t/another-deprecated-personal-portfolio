@@ -4,8 +4,8 @@ headline: "Branding"
 excerpt: "Diseño de logotipos"
 modified: 2016-09-29T16:32:07-04:00
 image:
-  feature: hdcatalog3.jpg
-  teaser: bg-identidad.jpg
+  feature: image_feature.svg
+  teaser: image_feature.svg
 
 gallery:
   - url: logo-fs.svg

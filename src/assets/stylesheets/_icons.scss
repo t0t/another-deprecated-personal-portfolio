@@ -23,6 +23,7 @@
     stroke-width: 2px;
   }
 
+  &--prev,
   &--next {
     width: 40px;
     height: 40px;
@@ -30,6 +31,20 @@
     stroke-width: 2px;
     margin-left: $spacing-unit;
     margin-right: $spacing-unit;
+  }
+
+  &--arrow-next,
+  &--arrow-prev {
+    width: 20px;
+    height: 20px;
+    transition-property: transform, stroke-width;
+    transition-duration: .5s;
+    stroke-width: 4px;
+    stroke: $color_alt2;
+    &:hover {
+      stroke-width: 8px;
+      transform: translateX(8px);
+    }
   }
 
   &--tabs {
@@ -114,16 +129,6 @@
     width: 80%;
     stroke: $color_alpha_black;
     filter: blur(3px);
-  }
-
-  &--arrow-next {
-    transition-property: transform, stroke-width;
-    transition-duration: .5s;
-    stroke-width: 4px;
-    &:hover {
-      stroke-width: 8px;
-      transform: translateX(8px);
-    }
   }
 
   &--todh {

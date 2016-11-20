@@ -18,8 +18,6 @@ image:
 
 <div class="archive">
 {% for post in site.categories.articles %}
-  {% if post.featured != true %}
   {% include archive__item.html %}
-  {% endif %}
 {% endfor %}
 </div>

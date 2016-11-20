@@ -1,0 +1,36 @@
+<nav class="Pagination">
+  {% capture category_name %}{{ page.categories | first }}{% endcapture %}
+  {% for post in site.categories.[category_name] %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in site.categories.[category_name] %}
+    {% if post_index0 == forloop.index %}{% assign next_post = post %}{% endif %}
+    {% if post_index1 == forloop.index0 %}{% assign prev_post = post %}{% endif %}
+  {% endfor %}
+
+  {% if prev_post %}
+    <a class="btn  prev" href="{{ prev_post.url }}"
+    title="{{ prev_post.title }}"
+    alt="{{ prev_post.title }}"
+    >
+      <svg class="icon  icon--arrow-prev">
+        <use xlink:href="#icon-arrow-prev" />
+      </svg>
+    </a>
+  {% endif %}
+
+  {% if next_post %}
+    <a class="btn  next" href="{{ next_post.url }}"
+    title="{{ next_post.title }}"
+    alt="{{ next_post.title }}"
+    >
+      <svg class="icon  icon--arrow-next">
+        <use xlink:href="#icon-arrow-next" />
+      </svg>
+    </a>
+  {% endif %}
+
+</nav>

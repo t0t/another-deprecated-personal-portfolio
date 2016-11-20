@@ -1,9 +1,12 @@
-<div class="container related">
-  <h3 class="tile__header">Relacionado</h3>
-  <div class="tiles">
+<div class="Related">
 
-    {% for post in site.related_posts limit:3 %}
-      <figure class="tile__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <h3 class="Related__header">Relacionado</h3>
+
+  <div class="Related__tiles">
+
+    {% for post in site.related_posts limit:6 %}
+
+      <figure class="Related__tiles__item" itemscope itemtype="http://schema.org/CreativeWork">
 
           <img src="{{ site.url }}/assets/images/{% if post.image.teaser %}{{ post.image.teaser }}{% else %}{{ site.teaser }}{% endif %}" itemprop="image" alt="{{ post.title }}">
 
@@ -22,6 +25,9 @@
         {% endif %}
 
       </figure>
+
     {% endfor %}
+
   </div>
+
 </div>

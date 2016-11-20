@@ -15,8 +15,8 @@
 @import "mixins";
 @import "reset";
 @import "external"; // external css, fonts
-@import "components/archive"; // archive listing
 @import "tipografia";
+@import "components/archive"; // archive listing
 @import "base";
 @import "grid";
 @import "animations";
@@ -34,6 +34,7 @@
 @import "components/brand";
 @import "features";
 @import "breadcrumbs";
+@import "pagination";
 
 @import "widgets";
 @import "tables";
@@ -44,7 +45,7 @@
 @import "slider";
 @import "google-search"; // Google search form box
 @import "syntax-highlighting";
-@import "tiles"; // post tiles
+@import "components/related"; // post related
 @import "banners"; // banner advertisements
 @import "footnotes";
 @import "colophon"; // site colophon

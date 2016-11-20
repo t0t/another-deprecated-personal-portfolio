@@ -6,8 +6,8 @@ excerpt: >-
   web
 modified: 2016-09-16T20:32:07.000Z
 image:
-  feature: todh-react.png
-  teaser: bg-react-firebase.jpg
+  feature: image_feature_default.svg
+  teaser: image_feature_default.svg
   thumb: todh-react.png
 sidebar: false
 author: false

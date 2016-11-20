@@ -8,7 +8,7 @@ author: true
 
 <div class="main" role="main">
 
-  <header class="page-header">
+  <header class="page-header  page-header--{% if page.feature.category == 'work' %}work{% elsif page.feature.category == 'articles' %}articles{% endif %}">
 
     {% if page.image.icon_bg %}
     <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>

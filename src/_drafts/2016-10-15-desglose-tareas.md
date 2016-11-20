@@ -3,8 +3,8 @@ title: "Desglose tareas"
 excerpt: "Un árbol de nodos de todo lo que se hace pero el cliente final no ve"
 tags: [Jekyll, Prototipado, web development, style guide, Markdown]
 image:
-  feature: todh-spiral.jpg
-  teaser: todh-spiral.jpg
+  feature: image_feature.svg
+  teaser: image_feature.svg
   svg: imagen-post
 comments: false
 featured: false
