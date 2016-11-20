@@ -4089,17 +4089,9 @@ green     #859900  operators, other keywords
         flex-wrap: wrap; }
     .Related__tiles__item {
       position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -4129,6 +4121,8 @@ green     #859900  operators, other keywords
       .Related__tiles__item img {
         -ms-flex-item-align: start;
             align-self: flex-start; }
+  .Related .tile__title {
+    width: 100%; }
   .Related__category {
     display: block;
     text-align: center; }
