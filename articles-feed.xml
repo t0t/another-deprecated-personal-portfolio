@@ -6,7 +6,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator>
   <link href="http://t-o-d-h.com/articles-feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://t-o-d-h.com/" rel="alternate" type="text/html" />
-  <updated>2016-11-21T04:00:04+01:00</updated>
+  <updated>2016-11-21T15:01:51+01:00</updated>
   <id>http://t-o-d-h.com/</id>
 
   <title>Articles - Sergio Forés</title>
@@ -214,65 +214,6 @@
 
   
     <summary type="text">Como darlo todo ahora (y sin mentir)</summary>
-  
-</entry>
-
-  
-    <entry>
-  <title>Prototipado de SPA con React + Firebase</title>
-  <link href="http://t-o-d-h.com/articles/todh-react-firebase/" rel="alternate" type="text/html" title="Prototipado de SPA con React + Firebase" />
-  <published>2016-09-16T00:00:00+02:00</published>
-
-  
-    <updated>2016-09-16T22:32:07+02:00</updated>
-  
-
-  <id>http://t-o-d-h.com/articles/todh-react-firebase</id>
-  <content type="html" xml:base="http://t-o-d-h.com/articles/todh-react-firebase/">
-    
-
-&lt;p&gt;&lt;img src=&quot;http://t-o-d-h.com/assets/images/-1024.&quot; alt=&quot;Articles&quot; class=&quot;page__hero-image&quot; srcset=&quot;http://t-o-d-h.com/assets/images/-320. 320w, http://t-o-d-h.com/assets/images/-600. 600w, http://t-o-d-h.com/assets/images/-768. 768w, http://t-o-d-h.com/assets/images/-1024. 1024w, http://t-o-d-h.com/assets/images/-1600. 1600w&quot; sizes=&quot;(max-width: 1200px) 100vw&quot; /&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;He querido bucear un poco en el mundo de ReactJS y en el uso de Firebase como CMS creando un prototipo.&lt;/p&gt;
-
-&lt;p&gt;Es sorprendente ver lo fácil que es hacer una single page App (SPA) con React que usa la arquitectura ES2015. Con la ayuda de re-base resulta cómodo añadir en el punto de entrada &lt;code class=&quot;highlighter-rouge&quot;&gt;componentDidMount()&lt;/code&gt; la carga de los datos de Firebase al más puro estilo API REST.&lt;/p&gt;
-
-&lt;p&gt;Puedes ver la demo &lt;a href=&quot;https://t0t.github.io/todh-react&quot;&gt;aquí&lt;/a&gt;. Y el código fuente &lt;a href=&quot;https://github.com/t0t/todh-react&quot;&gt;aquí&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;last-updated&quot;&gt;Last updated: September 16, 2016&lt;/p&gt;
-
-
-    
-
-&lt;p&gt;&lt;a href=&quot;http://t-o-d-h.com/articles/todh-react-firebase/&quot; rel=&quot;nofollow&quot;&gt;Prototipado de SPA con React + Firebase&lt;/a&gt; was originally published by &lt;a href=&quot;http://t-o-d-h.com/about/&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt; on &lt;a href=&quot;http://t-o-d-h.com&quot; rel=&quot;nofollow&quot;&gt;Sergio Forés&lt;/a&gt;&lt;/p&gt;
-
-
-  </content>
-
-  
-  <author>
-    
-      <name>Sergio Forés</name>
-    
-    
-    <uri>http://t-o-d-h.com/</uri>
-  </author>
-
-
-
-  
-    <category term="articles" />
-  
-
-  
-    <category term="TODH" />
-  
-    <category term="Proceso" />
-  
-
-  
-    <summary type="text">Explorando las posibilidades y beneficios de nuevas formas de hacer prototipos web</summary>
   
 </entry>
 
