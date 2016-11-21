@@ -1305,8 +1305,12 @@ abbr[data-original-title] {
 
 /* Links */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear; }
   a:hover, a:active {
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
     color: rgba(0, 0, 255, 0.5);
     outline: 0; }
 
@@ -2448,14 +2452,13 @@ body:hover .visually-hidden button {
         -ms-transform: translateY(1px);
             transform: translateY(1px); }
   .btn:hover {
-    -webkit-transition: padding .3s ease-in-out;
-    transition: padding .3s ease-in-out; }
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
     @media screen and (min-width: 375px) {
       .btn:hover {
         cursor: pointer; } }
   .btn--archive {
-    background-color: rgba(128, 128, 255, 0.8);
-    color: #fff;
+    color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -2929,8 +2932,12 @@ body:hover .visually-hidden button {
   background-color: rgba(0, 0, 0, 0.1);
   -webkit-transition: background ease 0.2s;
   transition: background ease 0.2s;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: background-color .5s linear;
+  transition: background-color .5s linear; }
   .tabs label:hover {
+    -webkit-transition: background-color .5s linear;
+    transition: background-color .5s linear;
     background-color: rgba(136, 136, 136, 0.3); }
 
 .tabs .tab {
@@ -3128,7 +3135,8 @@ body:hover .visually-hidden button {
           justify-content: space-between; }
   .masthead__menu a:not(.active) {
     cursor: default;
-    color: #000; }
+    color: #000;
+    border-bottom: 2px solid #8080FF; }
   @media (max-width: 900px) {
     .masthead__menu .is--hidden {
       display: none; } }
@@ -3143,7 +3151,9 @@ body:hover .visually-hidden button {
   font-size: 1.1rem;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 10px;
+  padding-bottom: 8px; }
   .masthead__menu-item.active {
     color: rgba(0, 0, 255, 0.5) !important; }
     .masthead__menu-item.active:hover {
@@ -3151,8 +3161,7 @@ body:hover .visually-hidden button {
       background-color: rgba(129, 232, 179, 0.57); }
   @media (min-width: 600px) {
     .masthead__menu-item {
-      padding: 6px 10px;
-      letter-spacing: 5px; } }
+      border-bottom-color: transparent; } }
   @media (min-width: 37.5em) {
     .masthead__menu-item {
       margin-left: 30px;

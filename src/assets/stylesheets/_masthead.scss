@@ -50,6 +50,7 @@
   a:not(.active) {
     cursor: default;
     color: $black;
+    border-bottom: 2px solid $color_alt8;
     &:hover {
       // background-color: $color-cool;
       // color: red;
@@ -76,6 +77,8 @@
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 10px;
+  padding-bottom: 8px;
 
   &.active {
     color: $color_alt5 !important;
@@ -87,8 +90,9 @@
   }
 
   @media (min-width: $small) {
-    padding: 6px 10px;
-    letter-spacing: 5px;
+    border-bottom-color: transparent;
+    // padding: 6px 10px;
+    // letter-spacing: 3px;
     // line-height: 0.8rem;
     // height: $masthead-height;
   }

@@ -18,17 +18,9 @@ body {
   margin: 0;
   padding: 0;
   color: $text-color;
-  // font-family: $serif;
-
   font-family: $font_main;
   font-style: normal;
-  // letter-spacing: 1px;
   line-height: 1.8;
-  // font-weight: 400;
-  // &.overflow--hidden {
-  //   /* when primary navigation is visible, the content in the background won't scroll */
-  //   overflow: hidden;
-  // }
 }
 
 u,
@@ -64,7 +56,7 @@ abbr[data-original-title] {
 
 a {
   text-decoration: none;
-  // color: blue;
+  transition: all .1s linear;
 
   &:focus {
     @extend %tab-focus;
@@ -72,7 +64,7 @@ a {
 
   &:hover,
   &:active {
-    // text-decoration: none;
+    transition: all 1s linear;
     color: $color_alt5;
     outline: 0;
   }

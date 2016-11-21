@@ -21,14 +21,17 @@ layout: default
     </header>
 
     {% include components/tabs_panel.html %}
-    
+
     <main itemprop="text">
       {{ content }}
       {% include feature_row %}
     </main>
 
     {% if page.introText %}
-    <aside data-aos="scroll-out">
+    <aside
+    data-aos="scroll-out"
+    data-aos-offset="0"
+    >
       {% include components/intro-text.html %}
     </aside>
     {% endif %}

@@ -3,8 +3,8 @@ title: "Prototipado Integral"
 excerpt: "Como se aplica TODH a un sitio web"
 tags: [Jekyll, Prototipado, web development, style guide, Markdown]
 image:
-  feature: image_feature.svg
-  teaser: image_feature.svg
+  feature: image_feature3.svg
+  teaser: image_feature3.svg
   svg: imagen-post
 comments: false
 featured: false

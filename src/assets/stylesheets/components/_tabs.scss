@@ -19,8 +19,10 @@
   background-color: $color_alpha_black2;
   transition: background ease 0.2s;
   text-transform: uppercase;
+  transition: background-color .5s linear;
 
   &:hover {
+    transition: background-color .5s linear;
     background-color: rgba($gray,.3);
   }
 }

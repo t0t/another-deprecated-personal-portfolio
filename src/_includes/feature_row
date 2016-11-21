@@ -19,6 +19,8 @@
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}"
     {% if f.img_as_bg %}style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');"{% endif %}
     data-aos="scroll-out"
+    data-aos-anchor-placement="center-bottom"
+    data-aos-offset="-150"
     >
 
         {% if f.image_path and f.img_as_bg != true %}

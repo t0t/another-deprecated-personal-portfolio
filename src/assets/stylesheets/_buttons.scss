@@ -28,7 +28,7 @@
   }
 
   &:hover {
-    transition: padding .3s ease-in-out;
+    transition: all .3s ease-in-out;
 
     @media screen and (min-width: 375px) {
       cursor: pointer;
@@ -36,8 +36,8 @@
   }
 
   &--archive {
-    background-color: $color-archive;
-    color: $white;
+    // background-color: $color_alpha_white;
+    color: $black;
     display: flex;
 
 

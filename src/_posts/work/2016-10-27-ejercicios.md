@@ -3,8 +3,8 @@ title: "Ejercicios"
 excerpt: "Algunas exploraciones de front"
 tags: [frontend, css]
 image:
-  feature: image_feature.svg
-  teaser: image_feature.svg
+  feature: image_feature3.svg
+  teaser: image_feature3.svg
   svg: imagen-post
 modified: 2016-10-27T16:32:07-01:00
 ---
