@@ -25,14 +25,11 @@
 
   &--prev,
   &--next {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     stroke: $color_alt8;
-    stroke-width: 2px;
-    margin-left: $spacing-unit;
-    margin-right: $spacing-unit;
+    stroke-width: 1px;
     transition: stroke-width .5s linear;
-    align-self: flex-end;
   }
 
   &--arrow-next,
@@ -52,8 +49,8 @@
   &--tabs {
     stroke: $color_alt2;
     stroke-width: 2px;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     align-self: center;
     margin: $spacing-unit;
   }
@@ -63,7 +60,6 @@
   }
 
   &--mountain {
-    // fill: none;
     animation-name: blur;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -106,7 +102,7 @@
   }
   &--logo-todh {
     flex: 1 100%;
-    stroke: $white;
+    stroke: $color_alpha_black;
     width: 150px;
     height: 150px;
   }
@@ -119,8 +115,6 @@
   &--button {
     width: 150px;
     height: 60px;
-    // position: absolute;
-    // left: -10px;
     top: 10px;
   }
 
@@ -134,7 +128,6 @@
     width: 20%;
     stroke: $white;
     stroke-width: 7px;
-    // filter: blur(3px);
   }
 
   &--todh {

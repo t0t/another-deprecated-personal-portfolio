@@ -52,9 +52,7 @@
   width: 0; // fixed Safari bug "width"
 }
 .tabs input[type="radio"]:checked + label {
-  // background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
   color: $black;
-  // background-color: $white;
   border-bottom-color: $color_alt2;
 
   &:hover {
@@ -68,8 +66,6 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  // margin-top: $spacing-unit*2;
   margin-left: $spacing-unit;
   margin-right: $spacing-unit;
 
@@ -81,13 +77,10 @@
     font-size: fs(x-normal);
   }
   &__list {
-    // margin-top: 0;
     max-width: 650px;
-    // padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    // justify-content: center;
 
     li {
       padding-right: $spacing-unit / 2;
@@ -96,15 +89,9 @@
     }
   }
   &__excerpt {
-    // max-width: 600px;
-    // margin-left: $spacing-unit / 2;
-    // margin-right: $spacing-unit / 2;
-    // margin-top: 0;
     margin-bottom: $spacing-unit/2;
     @media screen and (min-width: 756px) {
-      flex: 1 75%;
-      // padding-left: 10%;
-      // padding-right: 10%;
+      flex: 1 50%;
     }
   }
 }

@@ -41,6 +41,18 @@
     }
   }
 
+  &--intro {
+    color: $black;
+    background-color: $color_alt4;
+    border-radius: 50%;
+    svg {
+      stroke: $color_alpha_black;
+    }
+
+    &:hover {
+      background-color: $color_alpha_white;
+    }
+  }
   &--archive {
     color: $black;
 

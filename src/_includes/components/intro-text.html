@@ -23,8 +23,10 @@
           <small> {{ i.small }} </small>
         {% endif %}
 
-        <a class="btn btn--warning" href="{{ site.baseurl }}/{{ i.url }}/">
-          + info
+        <a class="btn btn--intro" href="{{ site.baseurl }}/{{ i.url }}/">
+          <svg class="icon  icon--next">
+            <use xlink:href="#icon-next" />
+          </svg>
         </a>
 
         {% if i.list == true %}

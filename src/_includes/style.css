@@ -2426,6 +2426,14 @@ body:hover .visually-hidden button {
     @media screen and (min-width: 375px) {
       .btn:hover {
         cursor: pointer; } }
+  .btn--intro {
+    color: #000;
+    background-color: rgba(129, 232, 179, 0.57);
+    border-radius: 50%; }
+    .btn--intro svg {
+      stroke: rgba(0, 0, 0, 0.3); }
+    .btn--intro:hover {
+      background-color: rgba(255, 255, 255, 0.95); }
   .btn--archive {
     color: #000; }
     .btn--archive:hover {
@@ -2826,17 +2834,10 @@ body:hover .visually-hidden button {
     text-transform: uppercase;
     margin: 20px 0; }
   .IntroText__subtitle {
-    margin-bottom: 20px;
     margin-top: 0;
-    font-size: 1.35rem;
     max-width: 700px;
     line-height: 1.3;
     text-align: center; }
-  .IntroText a {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 100%;
-            flex: 0 100%;
-    max-width: 100px; }
   .IntroText small {
     line-height: 1.3;
     max-width: 150px; }
@@ -2970,8 +2971,8 @@ body:hover .visually-hidden button {
     @media screen and (min-width: 756px) {
       .tab__excerpt {
         -webkit-box-flex: 1;
-            -ms-flex: 1 75%;
-                flex: 1 75%; } }
+            -ms-flex: 1 50%;
+                flex: 1 50%; } }
 
 @media (max-width: 45em) {
   .tabs .tab,
@@ -3590,16 +3591,12 @@ form ul, form ol, form li {
     stroke: #81e8b3;
     stroke-width: 2px; }
   .icon--prev, .icon--next {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     stroke: #8080FF;
-    stroke-width: 2px;
-    margin-left: 20px;
-    margin-right: 20px;
+    stroke-width: 1px;
     -webkit-transition: stroke-width .5s linear;
-    transition: stroke-width .5s linear;
-    -ms-flex-item-align: end;
-        align-self: flex-end; }
+    transition: stroke-width .5s linear; }
   .icon--arrow-next, .icon--arrow-prev {
     width: 20px;
     height: 20px;
@@ -3619,8 +3616,8 @@ form ul, form ol, form li {
   .icon--tabs {
     stroke: #81e8b3;
     stroke-width: 2px;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -3691,7 +3688,7 @@ form ul, form ol, form li {
     -webkit-box-flex: 1;
         -ms-flex: 1 100%;
             flex: 1 100%;
-    stroke: #fff;
+    stroke: rgba(0, 0, 0, 0.3);
     width: 150px;
     height: 150px; }
   .icon--anim-sentir {

@@ -3,7 +3,7 @@ layout: home
 permalink: /
 bg: #bg-matrioska.svg
 title: todo lo que importa, ya.
-title2: ' Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
+title2: 'Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
 title3: 'No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>'
 subtitle: Transmite. Observa. Define. ¡Haz!
 excerpt: Diseño y Desarrollo de prototipos evolutivos integrales
@@ -44,14 +44,14 @@ video:
   - url: '{::nomarkdown}<video>(external video embed code)</video>{:/nomarkdown}'
 
 introText:
-  - header: T-O-D-H
-    description: 'Transmitir, Observar, Definir y Hacer en coherencia'
-    p: Un metamodelo de lo que es
+  - header: "TODH"
+    description: 'Encuentro con el decir, sentir, pensar y hacer'
+    p: Una comprensión profunda de la trama de la realidad.
     small: null
     excerpt: >-
       Get notified when I add new stuff &nbsp; [<i class="fa fa-twitter"></i>
       @t0tinspire](https://twitter.com/t0tinspire){: .btn .btn--twitter}
-    icon_bg: logo-todh
+    icon_bg: #logo-todh
     image_path: null
     image_description: description
     url: articles/todh
