@@ -19,7 +19,7 @@
   &-title {
     text-align: center;
     flex: 1 100%;
-    @extend %altfont_angle; //fuente alternativa + angulo
+    @extend %angle; //fuente alternativa + angulo
   }
 
   // li {

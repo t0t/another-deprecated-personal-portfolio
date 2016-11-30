@@ -121,8 +121,7 @@
 }
 
 .page-excerpt {
-  // text-align: center;
-  transform: rotate(-2deg);
+  @extend %angle;
   margin-top: 0;
 
   span {

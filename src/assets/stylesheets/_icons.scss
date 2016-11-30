@@ -31,6 +31,8 @@
     stroke-width: 2px;
     margin-left: $spacing-unit;
     margin-right: $spacing-unit;
+    transition: stroke-width .5s linear;
+    align-self: flex-end;
   }
 
   &--arrow-next,

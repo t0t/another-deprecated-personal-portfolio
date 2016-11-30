@@ -8,14 +8,17 @@
   position: relative;
   text-align: center;
   min-height: 100vh;
+  background-color: $color_alt7;
   // background-image: linear-gradient(-135deg, $white 0%, $color_alt7 100%);
 
   &__name {
-    font-size: fs(x-big);
+    font-size: fs(big);
+    font-weight: bold;
     margin-top: 10px;
     flex: 1 100%;
     letter-spacing: inherit;
     padding-bottom: $spacing-unit / 2;
+    @extend %angle;
   }
 
   &__bio {
@@ -32,7 +35,7 @@
     }
     @media screen and (min-width: 1441px) {
       max-width: 1810px;
-      margin-top: $spacing-unit;
+      // margin-top: $spacing-unit;
       font-size: fs(big);
     }
   }

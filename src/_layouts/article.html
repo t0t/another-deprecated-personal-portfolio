@@ -42,7 +42,9 @@ sidebar: false
     {% include post__comments.html %}
   </article>
 
+  {% if page.previous or page.next %}
   {% include page__pagination.html %}
+  {%endif%}
 
   {% if page.introText %}
   <aside>

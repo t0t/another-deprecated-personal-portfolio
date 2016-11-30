@@ -1,14 +1,19 @@
 .social {
+  min-height: 150px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  align-content: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: $spacing-unit;
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
   margin-bottom: $spacing-unit;
   max-width: 400px;
+  background-color: $color_alpha_black2;
 
   @media screen and (min-width: 425px) {
     max-width: 550px;

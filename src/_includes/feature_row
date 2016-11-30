@@ -31,10 +31,10 @@
 
 				<figcaption class="tilter__caption">
           {% if f.title %}
-            <h2 class="tilter__title   archive__item-title">{{ f.title }}</h2>
+            <h2 class="tilter__title">{{ f.title }}</h2>
           {% endif %}
           {% if f.excerpt %}
-            <h4 class="archive__item-excerpt">
+            <h4>
               {{ f.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
             </h4>
           {% endif %}

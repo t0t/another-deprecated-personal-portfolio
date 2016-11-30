@@ -1,6 +1,6 @@
 ---
 permalink: /contact/
-title: "transmitir"
+title: "la vida es encuentro"
 date: 2015-05-22
 modified: 2016-01-05T16:13:31-05:00
 excerpt: "Abramos un canal de comunicación"

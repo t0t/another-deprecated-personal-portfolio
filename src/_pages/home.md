@@ -9,6 +9,8 @@ subtitle: Transmite. Observa. Define. ¡Haz!
 excerpt: Diseño y Desarrollo de prototipos evolutivos integrales
 date: 2014-06-01T00:00:00.000Z
 modified: 2016-02-11T00:00:00.000Z
+author: false
+
 cta:
   cta_url: /articles/todh/
   cta_label: Descubro cómo descubrir

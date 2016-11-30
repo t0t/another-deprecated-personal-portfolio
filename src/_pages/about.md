@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "observar"
+title: "observación activa"
 date: 2014-06-01
 modified: 2016-02-11
 layout: about
