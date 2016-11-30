@@ -1,0 +1,26 @@
+
+<svg width="464px" height="938px" viewBox="0 0 464 938" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="3.53975535" y="0" width="455.920489" height="938" rx="97"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="455.920489" height="938" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="29.0259939" y="111.852075" width="404.948012" height="715.003774" rx="3"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="404.948012" height="715.003774" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-4" fill="#34353A" x="0.70795107" y="120.34717" width="4.24770642" height="36.8120755" rx="2.12385321"></rect>
+        <rect id="Rectangle-4" fill="#34353A" x="0" y="285.293585" width="4.95565749" height="69.3766038" rx="2.47782875"></rect>
+        <rect id="Rectangle-4" fill="#34353A" x="0" y="199.634717" width="4.95565749" height="69.3766038" rx="2.47782875"></rect>
+        <rect id="Rectangle-4" fill="#34353A" x="458.044343" y="199.634717" width="4.95565749" height="69.3766038" rx="2.47782875"></rect>
+        <use id="Rectangle" stroke="#2B2E35" mask="url(#mask-2)" stroke-width="8" xlink:href="#path-1"></use>
+        <rect id="Rectangle-3" fill="#34353A" x="210.261468" y="55.9260377" width="82.1223242" height="10.6188679" rx="5.30943396"></rect>
+        <ellipse id="Oval-2" fill="#34353A" cx="178.40367" cy="60.8815094" rx="7.78746177" ry="7.78716981"></ellipse>
+        <path d="M231.5,906.851321 C248.703586,906.851321 262.649847,892.905582 262.649847,875.702642 C262.649847,858.499701 248.703586,844.553962 231.5,844.553962 C214.296414,844.553962 200.350153,858.499701 200.350153,875.702642 C200.350153,892.905582 214.296414,906.851321 231.5,906.851321 Z M231.5,911.806792 C211.55948,911.806792 195.394495,895.642413 195.394495,875.702642 C195.394495,855.76287 211.55948,839.598491 231.5,839.598491 C251.44052,839.598491 267.605505,855.76287 267.605505,875.702642 C267.605505,895.642413 251.44052,911.806792 231.5,911.806792 Z" id="Oval" fill="#34353A"></path>
+        <use id="Rectangle-2" stroke="#141318" mask="url(#mask-4)" stroke-width="6" xlink:href="#path-3"></use>
+    </g>
+</svg>

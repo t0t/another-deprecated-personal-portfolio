@@ -3,6 +3,8 @@
    ========================================================================== */
 
 .main {
+  // padding-bottom: 100px;
+  // background-color: $white;
 
   &--home {
 
@@ -21,18 +23,22 @@
 .page-header {
   position: relative;
   z-index: 10;
-  min-height: 350px;
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: $spacing-unit;
   align-items: center;
   align-content: center;
-  color: $white;
   background-size: cover;
-  background-position: center;
+  background-position: center -200px;
   background-repeat: no-repeat;
   // background-color: $color-cool2;
+  // background: linear-gradient(-135deg, $color_alt7 0%, $color_alt2 100%);
+
+  @media screen and (min-width: 500px) {
+    align-content: space-around;
+  }
 
   &:before {
     content: "";
@@ -42,6 +48,15 @@
     position: absolute;
     top: 0;
   }
+
+  img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+  }
+
+
   ul {
     margin-top: $spacing-unit;
     margin-bottom: 0;
@@ -57,21 +72,24 @@
     }
   }
   &--work {
-    background-image: linear-gradient(-135deg, #FFD0B8 0%, $color-archive 100%);
+    // background-image: linear-gradient(-135deg, #FFD0B8 0%, $color-archive 100%);
   }
   &--articles {
-    background-image: linear-gradient(-135deg, $color-cool2 0%, #DEAA90 100%);
+    // background-image: linear-gradient(-135deg, $color-cool2 0%, #DEAA90 100%);
   }
   &--single { //header para single pages
-    background-image: linear-gradient(-135deg, $color_alt7 0%, #DEAA90 100%);
-    align-content: flex-end;
-    color: $black;
+    // color: $color_alt8;
+    // background-image: linear-gradient(-135deg, $color_alt7 0%, #DEAA90 100%);
+    // align-content: flex-end;
+    // color: $black;
+
   }
   &--about {
-    background-image: linear-gradient(-135deg, $color-archive 0%, $color_alt7 100%);
+    // background-image: linear-gradient(-135deg, $color_alpha_black2 0%, $white 100%);
   }
   &--home {
-    background-image: linear-gradient(-135deg, #9F9FFF 0%, #6F76E0 100%);
+    background-position: center bottom;
+    // background-image: linear-gradient(-135deg, $color_alt7 0%, $color_alt2 100%);
   }
 }
 
@@ -79,15 +97,16 @@
   flex: 1 100%;
   text-align: center;
   padding-top: 0;
-  // padding-left: $spacing-unit;
-  // padding-right: $spacing-unit;
-  margin-top: 0;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  margin-left: $spacing-unit;
+  // margin-top: $spacing-unit*4;
   margin-bottom: $spacing-unit / 2;
-  font-size: fs(huge);
+  font-size: fs(x-huge);
   animation-name: fade-in;
   animation-timing-function: ease-in;
   animation-duration: .4s;
-  // color: $white;
+  // background-color: $color_alpha_white;
 
   p {
     text-transform: none;
@@ -95,37 +114,32 @@
   }
 
   @media screen and (min-width: 550px) {
-    // font-size: fs(x-big);
-    // margin-bottom: $spacing-unit / 3;
-    // font-size: fs(x-huge);
     margin-left: $spacing-unit*2;
     margin-right: $spacing-unit*2;
-    // letter-spacing: 5px;
   }
-  @media screen and (min-width: 1430px) {
-    // font-size: fs(x-huge);
-    // line-height: $line-height-base - 0.8;
-  }
+  @media screen and (min-width: 1430px) {}
 }
 
 .page-excerpt {
-  font-size: fs(normal);
-  text-align: center;
+  // text-align: center;
+  transform: rotate(-2deg);
   margin-top: 0;
-  text-transform: none;
-  // color: $white;
 
+  span {
+    display: inline;
+    background-color: $color_alt7;
+    padding-right: 5px;
+  }
   @media screen and (min-width: 550px) {
+    margin-right: 0;
     // margin-top: $spacing-unit / 2;
     // font-size: fs(big);
-    line-height: $line-height-base - 0.20;
-    margin-left: $spacing-unit * 2;
-    margin-right: $spacing-unit * 2;
+    // margin-left: $spacing-unit * 2;
+    // margin-right: $spacing-unit * 2;
+    max-width: 300px;
   }
   @media screen and (min-width: 756px) {
-    // font-size: fs(big);
-    line-height: $line-height-base - 0.30;
-    // max-width: 600px;
+
   }
   @media screen and (min-width: 1429px) {
     max-width: 850px;
@@ -148,7 +162,6 @@
   blockquote {
     p {
       font-size: fs(x-normal);
-      color: $color_alt5;
     }
   }
 
@@ -332,7 +345,6 @@
 
 /* footer */
 .post__footer {
-  // margin-top: 2em;
   text-align: center;
   // order: 2;
 }
@@ -340,15 +352,18 @@
 
 /* social */
 .post__social {
-  display: flex;
-  justify-content: center;
-  // flex-direction: column;
+  text-align: center;
   margin-bottom: $spacing-unit;
 
   a {
     &.btn {
-      // font-size: fs(small);
+      font-size: fs(normal);
+      font-weight: normal;
       color: $white !important;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 

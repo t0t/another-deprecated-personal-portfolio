@@ -10,17 +10,17 @@ author: true
 
   <header class="page-header  page-header--{% if page.feature.category == 'work' %}work{% elsif page.feature.category == 'articles' %}articles{% endif %}">
 
+    {% if page.image.feature %}
+    <img src="{{ site.url }}/assets/images/{{ page.image.feature}}" alt="{{ site.url }}/assets/images/{{ page.image.feature}}" />
+    {% endif %}
+
     {% if page.image.icon_bg %}
     <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
     {% endif %}
 
     <h1 class="page-title">{{ page.title }}</h1>
 
-    {% if page.excerpt %}
-      <h2 class="page-excerpt">
-        {{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}
-      </h2>
-    {% endif %}
+    {% include page-excerpt.html %}
 
     {% include breadcrumbs.html %}
 
@@ -30,9 +30,16 @@ author: true
     {% include featured.html %}
   {% endif %}
 
-  <div class="Content">
+  {% if page.layout == 'archive' %}
+    <section class="archive">
+      {{ content }}
+    </section>
+  {% else %}
+  <section class="Content">
     {{ content }}
-  </div>
+  </section>
+  {% endif %}
+
 
   {% if page.introText %}
   <aside>
@@ -45,9 +52,7 @@ author: true
   {% endif %}
 
   {% if page.author != false %}
-  <footer class="post__footer">
-    {% include post__author.html %}
-  </footer>
+    {% include components/author.html %}
   {% endif %}
 
 </div>

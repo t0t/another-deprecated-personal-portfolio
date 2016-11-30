@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "Observar"
+title: "observar"
 date: 2014-06-01
 modified: 2016-02-11
 layout: about
@@ -8,9 +8,9 @@ excerpt: "Soy todo aquello que soy capaz de ver"
 author: true
 
 image:
-  feature: bg-quiensoy.jpg
+  feature: bio-kayak.jpg
   teaser: image1.jpg
-  icon_bg: matrioska
+  icon_bg: #matrioska
 
 tabsPanel:
 
@@ -36,22 +36,12 @@ tabsPanel:
     image_description:
     url:
     list:
-      - item: "1. Propósito, Entrevistas, Research, Feedback, Testing..."
-      - item: "2. Sketching en papel, Wireframes en Axure RP..."
-      - item: "3. Diseño UI con Sketch, Look&feel, Tono, Gráfica..."
-      - item: "4. Maquetación en entorno de desarrollo, Templating, CSS..."
-      - item: "5. Control de versiones, Entorno de producción, refinamientos"
+      - item: "Propósito, Entrevistas, Research, Feedback, Testing..."
+      - item: "Sketching en papel, Wireframes en Axure RP..."
+      - item: "Diseño UI con Sketch, Look&feel, Tono, Gráfica..."
+      - item: "Maquetación en entorno de desarrollo, Templating, CSS..."
+      - item: "Control de versiones, Entorno de producción, refinamientos"
 ---
-{% capture caption %}
-Me gusta el mar
-{% endcapture %}
-
-<figure>
-<img src="{{ site.url }}/assets/images/bio-kayak.jpg" alt="kayak">
-<figcaption>
-{{ caption | markdownify | remove: "<p>" | remove: "</p>" }}
-</figcaption>
-</figure>
 
 Nací en un mes de julio de 1975 en Barcelona. Apasionado desde muy pequeño por el dibujo, me formé en Artes Aplicadas y Oficios Artísticos (Gargallo, EARVIC) y más tarde en Arte Electrónico y Diseño Digital (ESDI). Inicié mi camino freelance en el 2000 como diseñador web y gráfico. Desde entonces me he dedicado a hacer mucho Wordpress y también diseño gráfico y editorial. Paralelamente he ido acercandome más y más al mundo del Frontend realizando multiples cursos y a partir de la propia experiencia.
 

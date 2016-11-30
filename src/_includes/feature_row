@@ -16,46 +16,35 @@
       {% capture f_url %}{{ f.url | prepend: base_path }}{% endcapture %}
     {% endif %}
 
-    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}"
-    {% if f.img_as_bg %}style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');"{% endif %}
-    data-aos="scroll-out"
-    data-aos-anchor-placement="center-bottom"
-    data-aos-offset="-150"
+    <a href="{{ f_url }}" class="tilter  tilter--1  feature__item{% if include.type %}--{{ include.type }}{% endif %}"
     >
 
-        {% if f.image_path and f.img_as_bg != true %}
-          <div class="archive__item-teaser " accesskey="" style="background-image: url('{{ site.url }}/assets/images/{{ f.image_path}}');">
-            <!-- <img src=
-              {% if f.image_path contains "://" %}
-                "{{ f.image_path }}"
-              {% else %}
-                "{{ f.image_path | prepend: "/assets/images/" | prepend: base_path }}"
-              {% endif %}
-            alt="{% if f.alt %}{{ f.alt }}{% endif %}"> -->
-          </div>
+			<figure class="tilter__figure">
+
+				<img class="tilter__image" src="{{ site.url }}/assets/images/{{ f.image_path }}" alt="{{f.alt}}" />
+
+				<div class="tilter__deco tilter__deco--shine"><div></div></div>
+
+        {% if f.img_as_bg %}
+        <svg class="tilter__deco tilter__deco--lines"><use xlink:href="#icon-{{ f.img_as_bg}}" /></svg>
         {% endif %}
 
-        <div class="archive__item-body">
-
+				<figcaption class="tilter__caption">
           {% if f.title %}
-            <h2 class="archive__item-title">{{ f.title }}</h2>
+            <h2 class="tilter__title   archive__item-title">{{ f.title }}</h2>
           {% endif %}
-
           {% if f.excerpt %}
             <h4 class="archive__item-excerpt">
               {{ f.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
             </h4>
           {% endif %}
+				</figcaption>
 
-          {% if f.url %}
-              <a href="{{ f_url }}" class="btn  btn--default">
-                {{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}
-              </a>
-          {% endif %}
 
-        </div>
 
-    </div>
+			</figure>
+
+    </a>
 
   {% endfor %}
 

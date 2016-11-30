@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /articles/
-title: "DE-finir-scifrar-cidir"
+title: "definir, descifrar, decidir"
 date: 2014-06-02T12:26:34-04:00
 modified: 2016-02-26T10:36:43-05:00
 excerpt: "Todo lo que es sólido antes es etéreo. Las ideas..."
@@ -11,9 +11,9 @@ feature:
   headline: ""
   category: articles
 image:
-  feature:
+  feature: bg-pensar.jpg
   teaser:
-  icon_bg: todh-grafico
+  icon_bg: #todh-grafico
 ---
 
 <div class="archive">

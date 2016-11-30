@@ -6,11 +6,52 @@
     duration: 800
   });
 
+  // Anime
+
+
+  // Tilter
+  var tiltSettings = [
+			{},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 10, y: 10, z: 30},
+						rotation : {x: 0, y: -10, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					lines : {
+						translation : {x: 10, y: 10, z: [0,70]},
+						rotation : {x: 0, y: 0, z: -2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 10, y: -10, z: 0},
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					}
+				}
+			}
+			];
+
+			var idx = 0;
+			[].slice.call(document.querySelectorAll('.tilter')).forEach(function(el, pos) {
+				idx = pos%2 === 0 ? idx+1 : idx;
+				new TiltFx(el, tiltSettings[idx-1]);
+			});
+
   // Scroll
   var s = document.querySelector(".masthead");
 
   var scrollEffect = function() {
-    if(window.pageYOffset > 15) {
+    if(window.pageYOffset > 150) {
       s.classList.add("masthead--sticky");
     } else{
       s.classList.remove("masthead--sticky");

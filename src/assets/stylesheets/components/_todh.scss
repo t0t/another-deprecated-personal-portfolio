@@ -1,0 +1,59 @@
+.todh {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $spacing_unit;
+  justify-content: center;
+  align-items: center;
+  border: $grosor_grueso solid $black;
+  // border-radius: $radius;
+  // height: 90vh;
+
+  li {
+    list-style: none;
+    text-align: center;
+    color: $gray;
+    margin: 0;
+
+    &:hover {
+      color: $black !important;
+      font-weight: bold;
+      background-color: $white;
+    }
+  }
+
+  &__fase {
+    flex: 0 50%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+
+    &:hover > li {}
+
+    &--cero {
+      flex: 1 100%;
+    }
+    &--uno {
+      //border-right: $grosor_medio solid $color_base;
+      //border-bottom: $grosor_medio solid $color_base;
+    }
+    &--dos {
+      //border-bottom: $grosor_medio solid $color_base;
+    }
+    &--tres {
+      //border-left: $grosor_medio solid $color_base;
+
+    }
+    &--cuatro {}
+
+    &--uno,
+    &--dos,
+    &--tres,
+    &--cuatro {
+    }
+  }
+}

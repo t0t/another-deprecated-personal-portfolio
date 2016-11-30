@@ -11,11 +11,7 @@ layout: default
 
     <h1 class="page-title">{{ page.title }}</h1>
 
-    {% if page.excerpt %}
-      <h2 class="page-excerpt">
-        {{ page.excerpt }}
-      </h2>
-    {% endif %}
+    {% include page-excerpt.html %}
 
   </header>
 
@@ -25,7 +21,7 @@ layout: default
 
   {% if page.author != false %}
   <footer class="post__footer">
-    {% include post__author.html %}
+    {% include components/author.html %}
   </footer>
   {% endif %}
 

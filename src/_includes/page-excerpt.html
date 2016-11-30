@@ -1,0 +1,5 @@
+{% if page.excerpt %}
+  <h2 class="page-excerpt">
+    <span>{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  </h2>
+{% endif %}

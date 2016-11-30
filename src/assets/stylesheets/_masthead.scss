@@ -13,7 +13,9 @@
   align-items: center;
   transition-duration: .2s;
   transition-timing-function: linear;
-  background-color: $white;
+  position: fixed;
+
+  // background-color: $white;
 
   @media screen and (min-width: 374px) {
     justify-content: space-between;
@@ -26,7 +28,6 @@
   }
 
   &--sticky {
-    position: fixed;
     height: 50px;
     transition-property: height;
     transition-duration: .1;
@@ -50,7 +51,7 @@
   a:not(.active) {
     cursor: default;
     color: $black;
-    border-bottom: 2px solid $color_alt8;
+    border-bottom: 4px solid $color_alt8;
     &:hover {
       // background-color: $color-cool;
       // color: red;
@@ -72,16 +73,13 @@
 .masthead__menu-item {
   display: block;
   padding: 13px 13px;
-  text-transform: uppercase;
-  font-size: fs(small) + 0.4;
-  line-height: 1.2;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @extend %btn_size_default;
+  letter-spacing: 3px;
   padding-top: 10px;
   padding-bottom: 8px;
 
   &.active {
-    color: $color_alt5 !important;
+    // color: $color_alt5 !important;
 
     &:hover {
       color: $black !important;

@@ -13,8 +13,8 @@
 @mixin notice($notice-color) {
   padding: $spacing-unit;
   background-color: $notice-color;
-  border-top: 0.25em solid mix(#fff, $notice-color, 50%);
-  border-bottom: 0.25em solid mix(#fff, $notice-color, 50%);
+  // border-top: 0.25em solid mix(#fff, $notice-color, 50%);
+  // border-bottom: 0.25em solid mix(#fff, $notice-color, 50%);
   font-size: fs(normal);
 
   h4 {
@@ -83,7 +83,7 @@
 
 /* success notice */
 .notice--success {
-
+  color: $black;
   @include notice($success-color);
 }
 

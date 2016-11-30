@@ -7,49 +7,48 @@ layout: default
 
 <main class="main  main--home" role="main">
 
-  <section itemscope itemtype="http://schema.org/CreativeWork">
+    <header class="page-header  page-header--home"
+    >
 
-    <header class="page-header  page-header--home">
+      {% if page.image.feature %}
+      <img src="{{ site.url }}/assets/images/{{ page.image.feature}}" alt="{{ site.url }}/assets/images/{{ page.image.feature}}" />
+      {% endif %}
 
       {% if page.image.icon_bg %}
       <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
       {% endif %}
 
       <h1 class="page-title">{{ page.title }}</h1>
-      <h2 class="page-excerpt">{{ page.excerpt }}</h2>
+      
+      {% include page-excerpt.html %}
 
     </header>
 
     {% include components/tabs_panel.html %}
 
-    <main itemprop="text">
-      {{ content }}
-      {% include feature_row %}
-    </main>
+    {% include feature_row %}
 
-    {% if page.introText %}
-    <aside
+  {% if page.introText %}
+    <section itemscope itemtype="http://schema.org/CreativeWork"
     data-aos="scroll-out"
     data-aos-offset="0"
+    class="notice  notice--success"
     >
       {% include components/intro-text.html %}
-    </aside>
-    {% endif %}
+    </section>
+  {% endif %}
 
     {% if page.author != false %}
-    <footer class="post__footer">
-      {% include post__author.html %}
-    </footer>
+      {% include components/author.html %}
     {% endif %}
 
-    <!-- <video playsinline autoplay muted loop poster="{{ site.url }}/assets/images/bg-hago.svg" class="video">
+    <!-- <video playsinline autoplay muted loop poster="{{ site.url }}/assets/images/logo-todh.svg" class="Video">
       <source src="{{ site.url }}/assets/images/video_bg1.webm" type="video/webm">
       <source src="{{ site.url }}/assets/images/video_bg1.mp4" type="video/mp4">
     </video> -->
 
     {% include colophon.html %}
 
-  </section>
 
 
 </main>

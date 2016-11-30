@@ -19,7 +19,7 @@
   &--ok {
     width: 15px;
     height: 20px;
-    stroke: $color_alt8;
+    stroke: $color_alt2;
     stroke-width: 2px;
   }
 
@@ -27,7 +27,7 @@
   &--next {
     width: 40px;
     height: 40px;
-    stroke: $white;
+    stroke: $color_alt8;
     stroke-width: 2px;
     margin-left: $spacing-unit;
     margin-right: $spacing-unit;
@@ -48,11 +48,12 @@
   }
 
   &--tabs {
-    stroke: $color_alt8;
+    stroke: $color_alt2;
     stroke-width: 2px;
     width: 100px;
     height: 100px;
     align-self: center;
+    margin: $spacing-unit;
   }
 
   &.spin {
@@ -102,6 +103,7 @@
     animation-timing-function: linear;
   }
   &--logo-todh {
+    flex: 1 100%;
     stroke: $white;
     width: 150px;
     height: 150px;
@@ -123,12 +125,14 @@
   // iconos dentro de header (funcionan como bg)
   &--bg {
     position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 80%;
-    width: 80%;
-    stroke: $color_alpha_black;
-    filter: blur(3px);
+    top: 20%;
+    left: auto;
+    right: auto;
+    height: 20%;
+    width: 20%;
+    stroke: $white;
+    stroke-width: 7px;
+    // filter: blur(3px);
   }
 
   &--todh {

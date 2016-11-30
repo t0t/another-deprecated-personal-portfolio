@@ -6,19 +6,19 @@
 
   &__wrapper {
 
-    margin-top: $spacing-unit * 4;
+    margin-top: $spacing-unit * 2;
 
-    @media screen and (min-width: 775px) {
-      // flex-wrap: nowrap;
-      // display: flex;
-      // flex-wrap: wrap;
+    @media screen and (min-width: 375px) {
+      flex-wrap: nowrap;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
   &__item {
-    flex: 1 100%;
     // min-height: 100vh;
     display: flex;
+    flex: 1 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: inherit;
@@ -26,15 +26,19 @@
     background-repeat: no-repeat;
     background-position: auto;
     background-size: 600px;
+    margin-top: $spacing-unit;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
     margin-bottom: 100px;
 
     // &:nth-child(2) {}
 
-    @media screen and (min-width: 769px) {
-      background-attachment: fixed;
-    }
     @media screen and (min-width: 475px) {
       // background-size: contain;
+      flex: 1;
+    }
+    @media screen and (min-width: 769px) {
+      background-attachment: fixed;
     }
   }
 

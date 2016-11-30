@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 bg: #bg-matrioska.svg
-title: Todo lo que importa, ya.
+title: todo lo que importa, ya.
 title2: ' Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
 title3: 'No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>'
 subtitle: Transmite. Observa. Define. ¡Haz!
@@ -12,30 +12,35 @@ modified: 2016-02-11T00:00:00.000Z
 cta:
   cta_url: /articles/todh/
   cta_label: Descubro cómo descubrir
+
 image:
-  feature: bg-pincel2.jpg
+  feature: bg-home.jpg
   teaser: #logo-todh.svg
-  icon_bg: #logo
+  icon_bg: #mobil
 
 feature_row:
-  - image_path: null
-    img_as_bg: false
+
+  - image_path: cara.svg
+    img_as_bg: cara
     alt: Descubrir la forma de las ideas
-    title: null
+    title: Lab
     excerpt: Tengo claro que buenas semillas hacen buenos árboles.
     url: /work/
     btn_label: Lab
-  - image_path: null
-    img_as_bg: false
+
+  - image_path: bg-mountain.svg
+    img_as_bg: mountain
     alt: 'TODH, mi visión'
-    title: null
+    title: Blog
     excerpt: >-
       Hablo de teorías, conceptos, herramientas, estrategias y maneras de pensar
       la realidad
     url: /articles/
     btn_label: Blog
+
 video:
   - url: '{::nomarkdown}<video>(external video embed code)</video>{:/nomarkdown}'
+
 introText:
   - header: T-O-D-H
     description: 'Transmitir, Observar, Definir y Hacer en coherencia'
@@ -49,8 +54,8 @@ introText:
     image_description: description
     url: articles/todh
     list:
-      - title: null
-      - item: null
+      - title:
+      - item:
 
 tabsPanel:
   - tab_btn: Quién soy

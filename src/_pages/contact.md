@@ -1,20 +1,13 @@
 ---
 permalink: /contact/
-title: "Transmitir"
+title: "transmitir"
 date: 2015-05-22
 modified: 2016-01-05T16:13:31-05:00
 excerpt: "Abramos un canal de comunicación"
 image:
-  feature: manotierra.jpg
-  teaser: image1.jpg
-ads: false
-share: false
-author: true
-
-image:
-  feature:
+  feature: sistemas.jpg
   teaser:
-  icon_bg: mountain
+  icon_bg: #mountain
 ---
 
 <div class="Contact">

@@ -1,11 +1,8 @@
-<aside class="notice notice--warning">
 
   {% include base_path %}
   {% if page.introText %}
 
   {% assign intro = page.introText %}
-
-
 
     {% for i in intro %}
 
@@ -30,13 +27,14 @@
           + info
         </a>
 
-
+        {% if i.list == true %}
         <dl>
         {% for list in i.list %}
           <dt>{{ list.title }}</dt>
           <dd>{{ list.item }}</dd>
         {% endfor %}
         </dl>
+        {%endif%}
 
         {% if i.image_path %}
           <img src="{{i.image_path | prepend: "/assets/images/" | prepend: base_path}}" alt="{%if i.image_description %}{{i.image_description}}{%endif%}">
@@ -47,5 +45,3 @@
     {% endfor %}
 
   {% endif %}
-
-</aside>

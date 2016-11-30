@@ -8,8 +8,6 @@ author: true
 
 <main class="main" role="main">
 
-  <section itemscope itemtype="http://schema.org/CreativeWork">
-
     <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
 
     <header class="container page-header  page-header--about">
@@ -18,15 +16,15 @@ author: true
       <svg class="icon  icon--bg  icon--{{ page.image.icon_bg}}"><use xlink:href="#icon-{{ page.image.icon_bg}}" /></svg>
       {% endif %}
 
+      {% if page.image.feature %}
+      <img src="{{ site.url }}/assets/images/{{ page.image.feature}}" alt="{{ site.url }}/assets/images/{{ page.image.feature}}" />
+      {% endif %}
+
       <h1 class="page-title" itemprop="headline">
         {{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}
       </h1>
 
-      {% if page.excerpt %}
-        <h2 class="page-excerpt">
-          {{ page.excerpt }}
-        </h2>
-      {% endif %}
+      {% include page-excerpt.html %}
 
       {% include breadcrumbs.html %}
 
@@ -39,12 +37,8 @@ author: true
     {% include components/tabs_panel.html %}
 
   {% if page.author != false %}
-  <footer class="post__footer">
-    {% include post__author.html %}
-  </footer>
+    {% include components/author.html %}
   {% endif %}
-
-  </section>
 
 </main>
 

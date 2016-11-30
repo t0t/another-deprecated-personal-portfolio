@@ -4,8 +4,8 @@ headline: "Trabajo Editorial"
 excerpt: "Más de 10 años maquetando para papel"
 modified: 2016-09-29T16:32:07-04:00
 image:
-  feature: hdcatalog.jpg
-  teaser: bg-catalogos.jpg
+  feature: image_feature6.svg
+  teaser: image_feature6.svg
 
 gallery:
   - url: princesesbarbudes.jpg

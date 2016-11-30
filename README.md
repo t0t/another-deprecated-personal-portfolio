@@ -44,20 +44,29 @@ This is the source code of [t-o-d-h.com](http://t-o-d-h.com), a personal blog an
 - Testing JS
 - hash CSS en producción
 
-
-
 `<!-- <img src="{{t.image_path | prepend: "/assets/images/" | prepend: base_path}}" alt="{%if t.image_description %}{{t.image_description}}{%endif%}"> -->`
-
 
 `<header class="container page-header"
 {% if page.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ page.image.feature }}');"{% endif %}
 >`
 
+`<header class="page-header page-header--single"
+{% if page.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ page.image.feature }}');"{% endif %}>`
 
 `<svg class="icon icon--todh">
   <use xlink:href="#icon-imagen-post"></use>
 </svg>`
 
+`{% capture caption %}
+Me gusta el mar
+{% endcapture %}
+
+<figure>
+<img src="{{ site.url }}/assets/images/bio-kayak.jpg" alt="kayak">
+<figcaption>
+{{ caption | markdownify | remove: "<p>" | remove: "</p>" }}
+</figcaption>
+</figure>`
 
 ### To Do
 - [ ] Bower for frontend libraries like:

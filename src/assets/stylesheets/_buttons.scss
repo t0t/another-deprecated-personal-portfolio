@@ -1,21 +1,27 @@
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
-
+%btn_size_default {
+  font-size: fs(small) + 0.4;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /*
    Default button
    =========================================== */
 
 .btn {
-  font-size: fs(small) + 0.4;
-  display: inline-block;
+  @extend %btn_size_default;
+  // display: inline-block;
   margin: 0;
-  padding: ($spacing-unit / 2) 8px;
+  padding: ($spacing-unit/2) 8px;
   background-color: transparent;
-  line-height: 1;
   text-align: center;
   cursor: pointer;
-  color: $color_alt5;
+  color: $color_alpha_black;
   border: none;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -36,23 +42,19 @@
   }
 
   &--archive {
-    // background-color: $color_alpha_white;
     color: $black;
-    display: flex;
-
 
     &:hover {
-      color: $white;
-      background-color: darken($color-archive,5);
+      color: $black;
+      background-color: $color_alt2;
     }
   }
   &--tabs {
-    text-transform: uppercase;
     padding-top: 15px;
     padding-left: $spacing-unit /  2;
     padding-right: $spacing-unit /  2;
+    padding-bottom: $spacing-unit /  3;
     margin-right: $spacing-unit /  3;
-    font-weight: normal;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 

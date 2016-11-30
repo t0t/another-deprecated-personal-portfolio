@@ -9,21 +9,18 @@ sidebar: false
 
 <main class="main" role="main">
 
-  <section itemscope itemtype="http://schema.org/CreativeWork">
-
   <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
 
-  <header class="page-header page-header--single"
-  {% if page.image.feature %}style="background-image: url('{{ site.url }}/assets/images/{{ page.image.feature }}');"{% endif %}>
+  <header class="page-header page-header--single">
 
     <h1 class="page-title" itemprop="headline">
       {{ page.title }}
     </h1>
 
-    {% if page.excerpt %}
-      <h2 class="page-excerpt">
-        {{ page.excerpt }}
-      </h2>
+    {% include page-excerpt.html %}
+
+    {% if page.image.feature %}
+    <img src="{{ site.url }}/assets/images/{{ page.image.feature}}" alt="{{ site.url }}/assets/images/{{ page.image.feature}}" />
     {% endif %}
 
     {% if page.image.icon_bg %}
@@ -61,17 +58,13 @@ sidebar: false
   </aside>
   {% endif %}
 
-</section>
+  {% if page.author != false %}
+    {% include components/author.html %}
+  {% endif %}
 
-{% if page.author != false %}
-<footer class="post__footer">
-  {% include post__author.html %}
-</footer>
-{% endif %}
-
-{% if page.path contains '_posts' and site.related_posts.size >= 2 %}
-  {% include related.html %}
-{% endif %}
+  {% if page.path contains '_posts' and site.related_posts.size >= 2 %}
+    {% include related.html %}
+  {% endif %}
 
 </main>
 
