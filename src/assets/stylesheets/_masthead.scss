@@ -15,16 +15,13 @@
   transition-timing-function: linear;
   position: fixed;
 
-  // background-color: $white;
-
   @media screen and (min-width: 374px) {
     justify-content: space-between;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
   }
-
-  @media screen and (min-width: 426px) {
-    height: 100px;
+  @media screen and (min-width: $colosal) {
+    height: 200px;
   }
 
   &--sticky {
@@ -32,6 +29,9 @@
     transition-property: height;
     transition-duration: .1;
     transition-timing-function: linear;
+    @media screen and (min-width: $colosal) {
+      height: 150px;
+    }
   }
 
 }
@@ -52,14 +52,9 @@
     cursor: default;
     color: $black;
     border-bottom: 4px solid $color_alt8;
-    &:hover {
-      // background-color: $color-cool;
-      // color: red;
-    }
   }
 
   .is--hidden {
-
     @media (max-width: $medium-wide) {
       display: none;
     }
@@ -74,13 +69,11 @@
   display: block;
   padding: 13px 13px;
   @extend %btn_size_default;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 8px;
 
   &.active {
-    // color: $color_alt5 !important;
-
     &:hover {
       color: $black !important;
       background-color: $color_alt4;
@@ -89,14 +82,13 @@
 
   @media (min-width: $small) {
     border-bottom-color: transparent;
-    // padding: 6px 10px;
-    // letter-spacing: 3px;
-    // line-height: 0.8rem;
-    // height: $masthead-height;
   }
-
   @include breakpoint($small) {
     margin-left: 30px;
     margin-right: 0;
   }
+  @media screen and (min-width: $colosal) {
+    font-size: 3rem;
+  }
+
 }

@@ -752,62 +752,6 @@ body[data-aos-delay='3000'] [data-aos], [data-aos][data-aos][data-aos-delay='300
             transition-delay: 3000ms; }
 
 /* ==========================================================================
-   MIXINS
-   ========================================================================== */
-a:focus {
-  /* default */
-  outline: thin dotted #f3bc15;
-  /* Webkit */
-  outline: 5px auto #f3bc15;
-  outline-offset: -2px; }
-
-.archive__item-body, .page-excerpt, .author__name, .slider-title {
-  -webkit-transform: rotate(-2deg);
-      -ms-transform: rotate(-2deg);
-          transform: rotate(-2deg); }
-
-/*
-   em Function
-   ========================================================================== */
-/*
-   Bourbon Clearfix
-   ========================================================================== */
-/*
-   Typography Related Mixins
-   ========================================================================== */
-/* Vertical rhythm
-   https://github.com/sturobson/Sassifaction */
-/**
- * In this mixin you can specify the font size in PX and
- * it will calculate the REM based on your $doc-font-size
- * & $doc-line-height variables.
- *
- *  @include font-size(24);
- *
- * It will also create a bottom margin based on the
- * $doc-font-size & $doc-line-height variables unless you
- * specify that it shouldn't have one.
- *
- *  @include font-size(24, no);
- *
- * Or if you want to specify a different bottom margin to
- * be generated.
- *
- *  @include font-size(24, 32);
- *
- * This mixin also generates a pixel-less line height by
- * default unless you specify that you either don't want
- * one where I'd suggest declaring 1 within the mixin.
- *
- *  @include font-size(24, yes, 1);
- *
- * There's also the option to specify a different line-height
- * for it to generate to, where you would specify the
- * line-height in (effectively) it's pixel value.
- *
- *  @include font-size(24, yes, 40);
- */
-/* ==========================================================================
    STYLE RESETS
    ========================================================================== */
 html {
@@ -947,6 +891,62 @@ textarea {
   overflow: auto;
   vertical-align: top; }
 
+/* ==========================================================================
+   MIXINS
+   ========================================================================== */
+a:focus {
+  /* default */
+  outline: thin dotted #f3bc15;
+  /* Webkit */
+  outline: 5px auto #f3bc15;
+  outline-offset: -2px; }
+
+.archive__item-body, .page-excerpt, .author__name, .slider-title {
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg); }
+
+/*
+   em Function
+   ========================================================================== */
+/*
+   Bourbon Clearfix
+   ========================================================================== */
+/*
+   Typography Related Mixins
+   ========================================================================== */
+/* Vertical rhythm
+   https://github.com/sturobson/Sassifaction */
+/**
+ * In this mixin you can specify the font size in PX and
+ * it will calculate the REM based on your $doc-font-size
+ * & $doc-line-height variables.
+ *
+ *  @include font-size(24);
+ *
+ * It will also create a bottom margin based on the
+ * $doc-font-size & $doc-line-height variables unless you
+ * specify that it shouldn't have one.
+ *
+ *  @include font-size(24, no);
+ *
+ * Or if you want to specify a different bottom margin to
+ * be generated.
+ *
+ *  @include font-size(24, 32);
+ *
+ * This mixin also generates a pixel-less line height by
+ * default unless you specify that you either don't want
+ * one where I'd suggest declaring 1 within the mixin.
+ *
+ *  @include font-size(24, yes, 1);
+ *
+ * There's also the option to specify a different line-height
+ * for it to generate to, where you would specify the
+ * line-height in (effectively) it's pixel value.
+ *
+ *  @include font-size(24, yes, 40);
+ */
 p {
   font-size: 1.2rem; }
 
@@ -958,7 +958,7 @@ textarea {
   font-size: 1.2rem; }
 
 h1 {
-  line-height: 1;
+  line-height: 0.8;
   font-size: 1.8rem; }
   @media screen and (min-width: 425px) {
     h1 {
@@ -984,7 +984,10 @@ h2 {
       max-width: 700px; } }
   @media screen and (min-width: 1430px) {
     h2 {
-      max-width: 850px; } }
+      font-size: 3.5rem; } }
+  @media screen and (min-width: 2560px) {
+    h2 {
+      font-size: 4.5rem; } }
 
 h3 {
   font-size: 1.35rem;
@@ -1098,42 +1101,24 @@ header {
 
 .archive__item {
   min-height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%;
-  background-position: -200px 100px;
+  -ms-flex-preferred-size: 375px;
+      flex-basis: 375px;
   background-repeat: no-repeat;
-  background-size: cover; }
-  @media screen and (min-width: 769px) {
-    .archive__item:first-child {
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; }
-    .archive__item:last-child {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 47%;
-              flex: 1 47%; } }
-  @media screen and (min-width: 1439px) {
-    .archive__item:nth-last-child(4) {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 47%;
-              flex: 0 47%; }
-    .archive__item:nth-last-child(3) {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 47%;
-              flex: 0 47%; } }
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .archive__item:last-child {
+    margin-bottom: 60px; }
+  @media screen and (min-width: 768px) {
+    .archive__item {
+      background-position: 100px center; }
+      .archive__item:last-child {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 47%;
+                flex: 0 47%; } }
 
 .archive__item-body {
   display: -webkit-box;
@@ -1599,22 +1584,22 @@ blockquote {
     opacity: 0; }
 
 [data-aos="scroll-out"] {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(200px);
+      -ms-transform: translateY(200px);
+          transform: translateY(200px);
   opacity: 0;
   -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform; }
   [data-aos="scroll-out"].aos-animate {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform;
-    -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px);
     opacity: 1; }
 
 /*
@@ -1953,30 +1938,41 @@ body:hover .visually-hidden button {
             flex: 1 500px; } }
 
 .page-header {
-  position: relative;
-  z-index: 10;
-  min-height: 100vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 20px;
   background-size: cover;
   background-position: center -200px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 10; }
+  @media screen and (min-width: 500px) {
+    .page-header {
+      position: relative;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  @media (max-width: 667px) and (orientation: landscape) {
+    .page-header {
+      margin-bottom: 0; } }
+  @media (min-width: 775px) and (orientation: landscape) {
+    .page-header {
+      min-height: 100vh; } }
   @media screen and (min-width: 500px) {
     .page-header {
       -ms-flex-line-pack: distribute;
-          align-content: space-around; } }
+          align-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .page-header:before {
     content: "";
     z-index: -1;
@@ -1989,6 +1985,14 @@ body:hover .visually-hidden button {
     z-index: -1;
     left: 0;
     bottom: 0; }
+    @media (max-width: 775px) and (orientation: landscape) {
+      .page-header img {
+        bottom: -14px; } }
+    @media screen and (min-width: 2560px) {
+      .page-header img {
+        max-width: 875px;
+        bottom: 35%;
+        left: 30%; } }
   .page-header ul {
     margin-top: 20px;
     margin-bottom: 0;
@@ -2008,27 +2012,48 @@ body:hover .visually-hidden button {
           flex: 1 100%;
   text-align: center;
   padding-top: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  margin-top: 0;
   font-size: 4rem;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   -webkit-animation-duration: .4s;
-          animation-duration: .4s; }
+          animation-duration: .4s;
+  line-height: 1; }
+  @media (min-width: 767px) and (orientation: portrait) {
+    .page-title {
+      font-size: 8rem;
+      -webkit-transform: rotate(-2deg);
+          -ms-transform: rotate(-2deg);
+              transform: rotate(-2deg); } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .page-title {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      color: #b7f2d4; } }
+  @media screen and (min-width: 1024px) {
+    .page-title {
+      min-width: 1000px;
+      font-size: 6rem; } }
+  @media screen and (min-width: 1400px) {
+    .page-title {
+      min-width: 1200px;
+      margin-left: 40px;
+      margin-right: 40px;
+      font-size: 10rem; } }
+  @media screen and (min-width: 2560px) {
+    .page-title {
+      min-width: 2500px; } }
   .page-title p {
     text-transform: none;
     letter-spacing: 1px; }
-  @media screen and (min-width: 550px) {
-    .page-title {
-      margin-left: 40px;
-      margin-right: 40px; } }
 
 .page-excerpt {
-  margin-top: 0; }
+  margin-top: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%; }
   .page-excerpt span {
     display: inline;
     background-color: #b7f2d4;
@@ -2036,11 +2061,19 @@ body:hover .visually-hidden button {
   @media screen and (min-width: 550px) {
     .page-excerpt {
       margin-right: 0;
-      max-width: 300px; } }
-  @media screen and (min-width: 1429px) {
+      max-width: 350px; } }
+  @media (min-width: 767px) and (orientation: portrait) {
     .page-excerpt {
-      max-width: 850px;
-      line-height: 1.2kb; } }
+      margin-top: -450px; } }
+  @media screen and (min-width: 1430px) {
+    .page-excerpt {
+      max-width: 500px;
+      line-height: 1.2;
+      margin-left: 600px; } }
+  @media screen and (min-width: 2560px) {
+    .page-excerpt {
+      max-width: 875px;
+      margin-left: 400px; } }
 
 /*
    Content
@@ -2768,7 +2801,6 @@ body:hover .visually-hidden button {
       background-color: rgba(255, 255, 255, 0.25); }
 
 .social {
-  min-height: 150px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2778,23 +2810,24 @@ body:hover .visually-hidden button {
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-  max-width: 400px;
-  background-color: rgba(0, 0, 0, 0.1); }
-  @media screen and (min-width: 425px) {
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05); }
+  @media screen and (min-width: 775px) {
     .social {
+      min-height: 150px;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
       max-width: 550px; } }
-  @media screen and (min-width: 1024px) {
-    .social {
-      max-width: 720px; } }
   .social li {
     font-size: 1.2rem;
     letter-spacing: 0;
@@ -2823,7 +2856,6 @@ body:hover .visually-hidden button {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 0;
-  padding: 25px 50px;
   min-height: 300px; }
   .IntroText__title {
     -webkit-box-flex: 1;
@@ -2886,8 +2918,7 @@ body:hover .visually-hidden button {
   position: relative;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-image: -webkit-linear-gradient(77deg, #fff 0%, rgba(0, 0, 0, 0.09) 100%);
-  background-image: linear-gradient(13deg, #fff 0%, rgba(0, 0, 0, 0.09) 100%); }
+  background-color: rgba(0, 0, 0, 0.05); }
   @media screen and (min-width: 400px) {
     .tabs {
       padding-left: 10%;
@@ -2967,6 +2998,7 @@ body:hover .visually-hidden button {
       padding-right: 10px;
       padding-bottom: 6.6666666667px; }
   .tab__excerpt {
+    margin-top: 0;
     margin-bottom: 10px; }
     @media screen and (min-width: 756px) {
       .tab__excerpt {
@@ -3083,7 +3115,6 @@ body:hover .visually-hidden button {
   .author__name {
     font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 10px;
     -webkit-box-flex: 1;
         -ms-flex: 1 100%;
             flex: 1 100%;
@@ -3195,9 +3226,9 @@ body:hover .visually-hidden button {
               justify-content: space-between;
       padding-left: 20px;
       padding-right: 20px; } }
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: 2560px) {
     .masthead {
-      height: 100px; } }
+      height: 200px; } }
   .masthead--sticky {
     height: 50px;
     -webkit-transition-property: height;
@@ -3206,6 +3237,9 @@ body:hover .visually-hidden button {
             transition-duration: .1;
     -webkit-transition-timing-function: linear;
             transition-timing-function: linear; }
+    @media screen and (min-width: 2560px) {
+      .masthead--sticky {
+        height: 150px; } }
 
 @media screen and (max-width: 375px) {
   .masthead__menu-wrapper {
@@ -3234,7 +3268,7 @@ body:hover .visually-hidden button {
 .masthead__menu-item {
   display: block;
   padding: 13px 13px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 8px; }
   .masthead__menu-item.active:hover {
@@ -3247,6 +3281,9 @@ body:hover .visually-hidden button {
     .masthead__menu-item {
       margin-left: 30px;
       margin-right: 0; } }
+  @media screen and (min-width: 2560px) {
+    .masthead__menu-item {
+      font-size: 3rem; } }
 
 .brand {
   -webkit-box-align: center;
@@ -3585,6 +3622,11 @@ form ul, form ol, form li {
   vertical-align: middle;
   stroke-width: 1px;
   stroke: #000; }
+  @media screen and (min-width: 2560px) {
+    .icon {
+      width: 120px;
+      height: 120px;
+      stroke-width: 3px; } }
   .icon--ok {
     width: 15px;
     height: 20px;
@@ -3594,7 +3636,7 @@ form ul, form ol, form li {
     width: 50px;
     height: 50px;
     stroke: #8080FF;
-    stroke-width: 1px;
+    stroke-width: 3px;
     -webkit-transition: stroke-width .5s linear;
     transition: stroke-width .5s linear; }
   .icon--arrow-next, .icon--arrow-prev {

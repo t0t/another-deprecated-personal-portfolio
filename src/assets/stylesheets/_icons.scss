@@ -15,6 +15,11 @@
   stroke: $black;
   // -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
   // perspective: 150px;
+  @media screen and (min-width: $colosal) {
+    width: $spacing-unit*6;
+    height: $spacing-unit*6;
+    stroke-width: 3px;
+  }
 
   &--ok {
     width: 15px;
@@ -28,7 +33,7 @@
     width: 50px;
     height: 50px;
     stroke: $color_alt8;
-    stroke-width: 1px;
+    stroke-width: 3px;
     transition: stroke-width .5s linear;
   }
 

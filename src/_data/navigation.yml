@@ -14,7 +14,7 @@ home-primary:
 # Secondary home navigation links
 
 home-secondary:
-  - title: "Quien soy"
+  - title: "Soy"
     url: /about/
   - title: "Contact"
     url: /contact/
@@ -29,7 +29,7 @@ navleft:
     url: /articles/
 
 navright:
-  - title: "Sobre mí"
+  - title: "Soy"
     url: /about/
   - title: "@"
     url: /contact/

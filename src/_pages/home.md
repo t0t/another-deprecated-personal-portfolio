@@ -6,7 +6,7 @@ title: todo lo que importa, ya.
 title2: 'Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
 title3: 'No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>'
 subtitle: Transmite. Observa. Define. ¡Haz!
-excerpt: Diseño y Desarrollo de prototipos evolutivos integrales
+excerpt: Diseño y Desarrollo de prototipos web/mobile funcionales integrales y evolutivos
 date: 2014-06-01T00:00:00.000Z
 modified: 2016-02-11T00:00:00.000Z
 author: false

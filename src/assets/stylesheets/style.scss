@@ -12,8 +12,8 @@
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "vendor/aos/aos.scss"; // scroll effects
 
-@import "mixins";
 @import "reset";
+@import "mixins";
 @import "external"; // external css, fonts
 @import "tipografia";
 @import "components/archive"; // archive listing

@@ -95,13 +95,15 @@ svg {
     opacity: 0;
   }
 }
+
 [data-aos="scroll-out"] {
-  transform: translateY(0);
+  transform: translateY(200px);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
+    transform: translateY(0);
     transition-property: transform, opacity;
-    transform: translateY(-10px);
     opacity: 1;
   }
 }
