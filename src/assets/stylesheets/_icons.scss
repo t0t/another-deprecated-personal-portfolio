@@ -58,6 +58,10 @@
     height: 250px;
     align-self: center;
     margin: $spacing-unit;
+    @media screen and (min-width: $colosal) {
+      width: 500px;
+      height: 500px;
+    }
   }
 
   &.spin {

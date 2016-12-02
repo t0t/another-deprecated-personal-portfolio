@@ -59,10 +59,10 @@ section {
   // align-items: center;
   // flex-wrap: wrap;
   // justify-content: space-around;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
-/* Links */
 
+/* Links */
 a {
   text-decoration: none;
   transition: all .2s linear;
@@ -231,7 +231,6 @@ nav {
 /* Blockquotes */
 
 blockquote {
-  // margin-left: 10%;
   max-width: 900px;
   display: flex;
   flex-wrap: wrap;
@@ -240,14 +239,16 @@ blockquote {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  // border-top: 1px solid $color-cool2;
-  // border-bottom: 1px solid $color-cool2;
   margin-bottom: $spacing-unit*2;
   background-color: $color_alt7;
 
+  @media screen and (min-width: $colosal) {
+    max-width: 1400px;
+  }
+
   > p {
     max-width: 400px;
-    margin-bottom: $spacing-unit !important;
+    // margin-bottom: $spacing-unit !important;
   }
 
   a {

@@ -112,27 +112,28 @@
   text-align: center;
   padding-top: 0;
   margin-top: 0;
-  font-size: fs(x-huge);
+  font-size: fs(huge);
+  line-height: 1;
   animation-name: fade-in;
   animation-timing-function: ease-in;
   animation-duration: .4s;
-  line-height: 1;
 
-  @media (min-width: 767px) and (orientation: portrait) {
+  @media (min-width: $medium) and (orientation: portrait) {
     font-size: 8rem;
     transform: rotate(-2deg);
   }
-  @media (max-width: 767px) and (orientation: landscape) {
+  @media (max-width: $medium) and (orientation: landscape) {
+    font-size: fs(x-huge);
     margin-top: $spacing-unit*5;
     margin-bottom: $spacing-unit;
     color: $color_alt7;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $large) {
     min-width: 1000px;
     font-size: fs(x-huge) + 2;
     // line-height: 1;
   }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $x-large) {
     min-width: 1200px;
     margin-left: $spacing-unit*2;
     margin-right: $spacing-unit*2;
@@ -160,13 +161,13 @@
   }
   @media screen and (min-width: 550px) {
     margin-right: 0;
-    max-width: 350px;
+    max-width: 400px;
   }
   @media (min-width: 767px) and (orientation: portrait) {
     margin-top: -450px;
   }
   @media screen and (min-width: $x-large) {
-    max-width: 500px;
+    max-width: 600px;
     line-height: $line-height-base - 0.5;
     margin-left: 600px;
   }
@@ -183,14 +184,17 @@
 
 .Content {
 
-  @media screen and (min-width: 767px) {
+  // @media screen and (min-width: 767px) {
     // display: flex;
     // flex-wrap: wrap;
-  }
+  // }
 
   blockquote {
     p {
       font-size: fs(x-normal);
+      @media screen and (min-width: $colosal) {
+        font-size: fs(x-big);
+      }
     }
   }
 

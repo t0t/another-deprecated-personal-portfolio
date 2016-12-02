@@ -7,15 +7,13 @@
   flex-wrap: wrap; // make sure it wraps
   justify-content: center;
   position: relative;
-  padding-top: $base_spacing;
-  padding-bottom: $base_spacing;
+  padding: $base_spacing;
   background-color: $light-gray;
   // background-image: linear-gradient(13deg, $white 0%, rgba(0,0,0,0.09) 100%);
   // padding-left: $spacing-unit;
   // padding-right: $spacing-unit;
-  @media screen and (min-width: 400px) {
-    padding-left: 10%;
-    padding-right: 10%;
+  @media screen and (min-width: $medium) {
+    padding: $base_spacing*4;
   }
 }
 .tabs label {
@@ -37,14 +35,20 @@
 .tabs .tab {
   order: 99; // Put the tabs last
   flex-grow: 1;
-  max-width: 800px;
   display: none;
-  // padding: $base_spacing 0;
-  // background-color: $color_alt2;
+  @media screen and (min-width: $large) {
+    max-width: 900px;
+    background-color: $color_alt7;
+  }
+  @media screen and (min-width: $x-large) {
+    max-width: 1024px;
+  }
+  @media screen and (min-width: $colosal) {
+    max-width: 2340px;
+    padding: $spacing-unit*4;
+  }
 }
-// .tabs input {
-//   margin-bottom: 0;
-// }
+
 .tabs input[type="radio"] {
   position: absolute;
   top: 0;
@@ -67,8 +71,10 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-left: $spacing-unit;
   margin-right: $spacing-unit;
+  padding-top: $spacing-unit;
 
   &__header {
     flex: 1 50%;
@@ -92,8 +98,14 @@
   &__excerpt {
     margin-top: 0;
     margin-bottom: $spacing-unit/2;
-    @media screen and (min-width: 756px) {
+    margin-right: $spacing-unit;
+
+    @media screen and (min-width: $medium) {
       flex: 1 50%;
+    }
+    @media screen and (min-width: $colosal) {
+      flex: 0 65%;
+      font-size: fs(small) + 3;
     }
   }
 }

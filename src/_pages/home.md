@@ -6,7 +6,7 @@ title: todo lo que importa, ya.
 title2: 'Mi propósito es alinear activamente la esencia de varios mundos: <ul> <li>Arte y creación</li> <li>Prototipado evolutivo</li> <li>Diseño web UI/UX</li> <li>Maquetación Front-end</li> <li>Procesos y metodos ágiles</li> <li>Conciencia y meditación</li> </ul> '
 title3: 'No empujes el río, él fluye por si mismo. <p>~Proverbio chino</p>'
 subtitle: Transmite. Observa. Define. ¡Haz!
-excerpt: Diseño y Desarrollo de prototipos web/mobile funcionales integrales y evolutivos
+excerpt: Diseño prototipos web/mobile funcionales integrales y evolutivos
 date: 2014-06-01T00:00:00.000Z
 modified: 2016-02-11T00:00:00.000Z
 author: false
@@ -63,7 +63,7 @@ tabsPanel:
   - tab_btn: Quién soy
     id: tabone
     header:
-    description: Mi nombre es Sergio Forés, me autorealizo con el encuentro entre arte,  tecnología y conciencia. Actualizo el potencial en coherencia. Trato de ser una mejor versión de mí mismo.
+    description: Mi nombre es Sergio Forés, diseñador web/gráfico desde 2000 y frontend desde 2013. Vivo en un pueblecido cerca de Barcelona con una hermosa montaña cerca. Me descubro cada día dentro de un milagro. Creo que lo sabemos todo, pero que no sabemos que lo sabemos.  
     p:
     small: null
     excerpt: null
@@ -75,7 +75,6 @@ tabsPanel:
       - item: Inteligencia vincular
       - item: Pensamiento sistémico
       - item: Freelance / Remoto
-      - item: Vivo cerca de Barcelona
       - item: Soy padre de dos
       - item: Me gusta el mar
       - item: Trabajo en equipo
@@ -87,7 +86,7 @@ tabsPanel:
     header: null
     image_path: matrioska
     id: tabtwo
-    description: 'Ayudo a equipos multidisciplinares y emprendedores a transitar y evolucionar web/mobile. Poniendo especial atención en las bases: escalabilidad, flexibilidad, agilidad, creatividad y funcionalidad.'
+    description: 'Prototipado evolutivo high/lowfi desde una perspectiva holística. Ayudo a equipos multidisciplinares autoorganizados, startups o emprendedores creativos a transitar web/mobile. Escalabilidad, flexibilidad, agilidad, creatividad, funcionalidad, mejora contínua...'
     p: null
     small: null
     excerpt: null
@@ -132,9 +131,9 @@ tabsPanel:
       - item: Axure RP
 
   - tab_btn: Proceso
-    header: null
+    header: Cíclicamente, de lo difuso a lo concreto
     id: tabfour
-    description: Mi forma de trabajar se mueve cíclicamente de lo difuso a lo concreto mediante iteraciones y actualizaciones de mejora contínua.
+    description: Mi proceso, que llamo TODH, pasa por descubrir, descifrar, realizar y transmitir un modo radicalmente distinto de percibir la realidad. Comprendiendo los mecanismos por los cuales se actualiza contínuamente el potencial de las cosas podemos materializar objetos mucho más humanos, vinculares y vivos.
     p: null
     small: null
     excerpt: null

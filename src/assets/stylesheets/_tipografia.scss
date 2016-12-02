@@ -16,7 +16,9 @@ $size-vars: (
 );
 
 p {
-  font-size: fs(normal);
+  @media screen and (min-width: $colosal) {
+    font-size: fs(x-big);
+  }
 }
 small {
   font-size: fs(small);
@@ -100,17 +102,16 @@ h4 {
 }
 
 h5 {
-  font-size: fs(big);
+  font-size: fs(x-normal);
   margin-left: auto;
   margin-right: auto;
-  line-height: $line-height-base;
+  line-height: $line-height-base - 0.3;
 
-  @media screen and (min-width: 550px) {
-  }
-  @media screen and (min-width: 756px) {
+  @media screen and (min-width: $medium) {
+    font-size: fs(big);
     // line-height: $line-height-base;
   }
-  @media screen and (min-width: 1430px) {
+  @media screen and (min-width: $x-large) {
     font-size: fs(big);
     // line-height: $line-height-base - 0.15;
   }

@@ -1,10 +1,10 @@
 ---
 permalink: /about/
-title: "observación activa"
+title: "no sé quien soy: lo siento."
 date: 2014-06-01
 modified: 2016-02-11
 layout: about
-excerpt: "Soy todo aquello que soy capaz de ver"
+excerpt: "Cuando tu cerebro se da cuenta de cómo funciona se produce el encuentro con lo que ocurre."
 author: true
 
 image:
@@ -47,11 +47,9 @@ Nací en un mes de julio de 1975 en Barcelona. Apasionado desde muy pequeño por
 
 > Es vital comprender cada pequeña tarea como lo que es: un todo abarcable, consciente y conectado.
 
-En 2015, con 41 añitos, hago recapitulación y decido replantear completamente mis intereses personales y profesionales teniendo en cuenta el mundo cambiante en el que vivimos y mi constante necesidad de autorealización, desde entonces dirijo mi energía y enfoco mi evolución hacia lo que realmente importa: sacar el máximo partido de mis conocimientos y habilidades para brindarlos a quien más pueda aportar valor.
+Con 40 años hago recapitulación y decido replantear completamente mis intereses personales y profesionales teniendo en cuenta el mundo cambiante en el que vivimos y mi necesidad de autorealización, desde entonces dirijo mi energía y enfoco mi evolución hacia lo que realmente me importa aquello que he venido a hacer en esta vida.
 
-Tengo una visión holística de las cosas y me siento especialmente cómodo en el prototipado Html/CSS aportando en equipos multidisciplinares. Soy lo que viene llamándose un profesional con [forma de T](https://en.wikipedia.org/wiki/T-shaped_skills){: target="_blank"} pero, ante todo, un ser humano siendo humano. Ese es mi trabajo, el alineamiento, una coherencia entre el interior y el mundo. Así nace TODH.
-
-> Sigo siendo ese niño que trataba de comprender el mundo con sus lápices de colores, aunque ahora uso más herramientas.
+Tengo una visión holística de las cosas y me siento especialmente cómodo con el prototipado Html/CSS y el encuentro con otros profesionales.
 
 {% capture caption %}
 Trabajando en remoto

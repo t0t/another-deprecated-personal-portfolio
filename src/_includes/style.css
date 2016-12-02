@@ -947,8 +947,9 @@ a:focus {
  *
  *  @include font-size(24, yes, 40);
  */
-p {
-  font-size: 1.2rem; }
+@media screen and (min-width: 2560px) {
+  p {
+    font-size: 2.5rem; } }
 
 small {
   font-size: 0.7rem; }
@@ -1019,10 +1020,13 @@ h4 {
       font-size: 1.35rem; } }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.35rem;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.7; }
+  line-height: 1.4; }
+  @media screen and (min-width: 768px) {
+    h5 {
+      font-size: 1.8rem; } }
   @media screen and (min-width: 1430px) {
     h5 {
       font-size: 1.8rem; } }
@@ -1263,8 +1267,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
-  min-height: 100vh; }
+      align-content: flex-start; }
 
 /* Links */
 a {
@@ -1392,9 +1395,11 @@ blockquote {
   font-weight: bold;
   margin-bottom: 40px;
   background-color: #b7f2d4; }
+  @media screen and (min-width: 2560px) {
+    blockquote {
+      max-width: 1400px; } }
   blockquote > p {
-    max-width: 400px;
-    margin-bottom: 20px !important; }
+    max-width: 400px; }
   blockquote a {
     color: inherit; }
   blockquote cite {
@@ -2013,22 +2018,23 @@ body:hover .visually-hidden button {
   text-align: center;
   padding-top: 0;
   margin-top: 0;
-  font-size: 4rem;
+  font-size: 3rem;
+  line-height: 1;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   -webkit-animation-duration: .4s;
-          animation-duration: .4s;
-  line-height: 1; }
-  @media (min-width: 767px) and (orientation: portrait) {
+          animation-duration: .4s; }
+  @media (min-width: 768px) and (orientation: portrait) {
     .page-title {
       font-size: 8rem;
       -webkit-transform: rotate(-2deg);
           -ms-transform: rotate(-2deg);
               transform: rotate(-2deg); } }
-  @media (max-width: 767px) and (orientation: landscape) {
+  @media (max-width: 768px) and (orientation: landscape) {
     .page-title {
+      font-size: 4rem;
       margin-top: 100px;
       margin-bottom: 20px;
       color: #b7f2d4; } }
@@ -2036,7 +2042,7 @@ body:hover .visually-hidden button {
     .page-title {
       min-width: 1000px;
       font-size: 6rem; } }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1430px) {
     .page-title {
       min-width: 1200px;
       margin-left: 40px;
@@ -2061,13 +2067,13 @@ body:hover .visually-hidden button {
   @media screen and (min-width: 550px) {
     .page-excerpt {
       margin-right: 0;
-      max-width: 350px; } }
+      max-width: 400px; } }
   @media (min-width: 767px) and (orientation: portrait) {
     .page-excerpt {
       margin-top: -450px; } }
   @media screen and (min-width: 1430px) {
     .page-excerpt {
-      max-width: 500px;
+      max-width: 600px;
       line-height: 1.2;
       margin-left: 600px; } }
   @media screen and (min-width: 2560px) {
@@ -2083,6 +2089,9 @@ body:hover .visually-hidden button {
   /* cleaner underlines for links */ }
   .Content blockquote p {
     font-size: 1.35rem; }
+    @media screen and (min-width: 2560px) {
+      .Content blockquote p {
+        font-size: 2.5rem; } }
   .Content p {
     margin-bottom: 40px;
     margin-left: auto;
@@ -2480,6 +2489,9 @@ body:hover .visually-hidden button {
     margin-right: 6.6666666667px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
+    @media screen and (min-width: 2560px) {
+      .btn--tabs {
+        font-size: 2.5rem; } }
     .btn--tabs:hover {
       color: #000; }
   .btn--tile {
@@ -2916,13 +2928,11 @@ body:hover .visually-hidden button {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px;
   background-color: rgba(0, 0, 0, 0.05); }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 768px) {
     .tabs {
-      padding-left: 10%;
-      padding-right: 10%; } }
+      padding: 100px; } }
 
 .tabs label {
   -webkit-box-ordinal-group: 2;
@@ -2948,8 +2958,18 @@ body:hover .visually-hidden button {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 800px;
   display: none; }
+  @media screen and (min-width: 1024px) {
+    .tabs .tab {
+      max-width: 900px;
+      background-color: #b7f2d4; } }
+  @media screen and (min-width: 1430px) {
+    .tabs .tab {
+      max-width: 1024px; } }
+  @media screen and (min-width: 2560px) {
+    .tabs .tab {
+      max-width: 2340px;
+      padding: 80px; } }
 
 .tabs input[type="radio"] {
   position: absolute;
@@ -2975,8 +2995,12 @@ body:hover .visually-hidden button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  padding-top: 20px; }
   .tab__header {
     -webkit-box-flex: 1;
         -ms-flex: 1 50%;
@@ -2999,12 +3023,19 @@ body:hover .visually-hidden button {
       padding-bottom: 6.6666666667px; }
   .tab__excerpt {
     margin-top: 0;
-    margin-bottom: 10px; }
-    @media screen and (min-width: 756px) {
+    margin-bottom: 10px;
+    margin-right: 20px; }
+    @media screen and (min-width: 768px) {
       .tab__excerpt {
         -webkit-box-flex: 1;
             -ms-flex: 1 50%;
                 flex: 1 50%; } }
+    @media screen and (min-width: 2560px) {
+      .tab__excerpt {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 65%;
+                flex: 0 65%;
+        font-size: 3.7rem; } }
 
 @media (max-width: 45em) {
   .tabs .tab,
@@ -3664,6 +3695,10 @@ form ul, form ol, form li {
         -ms-grid-row-align: center;
         align-self: center;
     margin: 20px; }
+    @media screen and (min-width: 2560px) {
+      .icon--tabs {
+        width: 500px;
+        height: 500px; } }
   .icon.spin {
     -webkit-animation: spin 2s infinite linear;
             animation: spin 2s infinite linear; }
