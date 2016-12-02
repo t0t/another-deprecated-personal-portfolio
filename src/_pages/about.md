@@ -4,7 +4,7 @@ title: "no sé quien soy: lo siento."
 date: 2014-06-01
 modified: 2016-02-11
 layout: about
-excerpt: "Cuando tu cerebro se da cuenta de cómo funciona se produce el encuentro con lo que ocurre."
+excerpt: "La intensidad de la vida real es mucho más compleja que las construcciones mentales que hacemos acerca de ella."
 author: true
 
 image:

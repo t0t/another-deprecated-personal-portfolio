@@ -66,7 +66,7 @@ tabsPanel:
     description: Mi nombre es Sergio Forés, diseñador web/gráfico desde 2000 y frontend desde 2013. Vivo en un pueblecido cerca de Barcelona con una hermosa montaña cerca. Me descubro cada día dentro de un milagro. Creo que lo sabemos todo, pero que no sabemos que lo sabemos.  
     p:
     small: null
-    excerpt: null
+    excerpt: Todo lo que hay es ésto que está sucediendo.
     image_path: cor
     image_description: null
     url: null
